@@ -1,4 +1,4 @@
-baseURL = 'https://bothubpr.github.io'
+baseURL = 'http://192.168.10.32:8081/'
 languageCode = 'zh-cn'
 title = 'Ziv的极客日志'
 theme = 'PaperMod'
