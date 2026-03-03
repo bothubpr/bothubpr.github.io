@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>极客教程 on Ziv的极客日志</title>
+    <link>http://192.168.10.32:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 极客教程 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://192.168.10.32:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”</title>
+      <link>http://192.168.10.32:8081/posts/pg04/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.10.32:8081/posts/pg04/</guid>
+      <description>&lt;p&gt;哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 &lt;strong&gt;【最终章】&lt;/strong&gt;！&lt;/p&gt;
+&lt;p&gt;在前三篇里，俺们从零搭建了一个完全无人值守的 &lt;strong&gt;【本地极客知识库】&lt;/strong&gt;：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。&lt;/p&gt;
+&lt;p&gt;基础设施已经完美闭环，但极客的折腾永无止境！
+既然有了一个 24 小时待命的自动化基座，咱们为什么还要自己写文章？为何不直接压榨 AI 的“睡后算力”，让它成为咱们的 &lt;strong&gt;【赛博记者】&lt;/strong&gt;？&lt;/p&gt;
+&lt;p&gt;今天，俺将带你手搓一个纯 Python 的 AI 聚合爬虫。它会在每天清晨你还没睡醒时，自动去外网极客社区“进货”，并排版成一份带暗黑模式的硬核早报，直接塞进你的博客里！&lt;/p&gt;
+&lt;h2 id=&#34;-痛点破局信息过载与机翻的灾难&#34;&gt;★ 痛点破局：信息过载与“机翻”的灾难&lt;/h2&gt;
+&lt;p&gt;每天早晨刷手机，大伙儿肯定面临过这两个痛点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;【信息源太分散】&lt;/strong&gt;：Hacker News、Reddit、Product Hunt，挨个刷一遍半小时就没了。外文长篇大论，根本没时间细看。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;【劣质翻译的灾难】&lt;/strong&gt;：如果用浏览器自带的翻译，它会把所有的专业术语全毁掉。比如把 Kubernetes 翻成“舵手”，把 Containerization 翻成“集装箱化”，读起来简直让人吐血。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;咱们的 &lt;strong&gt;【AI 赛博记者】&lt;/strong&gt; 就是来“降维打击”这些痛点的。&lt;/p&gt;
+&lt;h2 id=&#34;-核心逻辑与反爬突围战&#34;&gt;★ 核心逻辑与“反爬”突围战&lt;/h2&gt;
+&lt;p&gt;这个脚本的核心逻辑很简单：利用 Python 的 &lt;code&gt;urllib&lt;/code&gt; 抓取四大极客社区的 RSS 源，打包丢给大模型（如 DeepSeek 或 OpenAI）进行总结，最后生成 Markdown 扔进咱们的 &lt;code&gt;SyncDrive&lt;/code&gt; 网盘。&lt;/p&gt;
+&lt;p&gt;但第一步“抓取”就差点翻车。当俺试图去抓 Reddit 的技术板块时，直接被它背后的 Cloudflare 防御盾弹了一个 &lt;code&gt;403 Forbidden&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【架构师的解法】&lt;/strong&gt;：咱们必须进行深度伪装。在原生 Python HTTP 请求中，强行注入极其逼真的浏览器 &lt;code&gt;User-Agent&lt;/code&gt;，并声明我们接收 &lt;code&gt;application/rss+xml&lt;/code&gt;。如果 Reddit 还是傲娇，俺还加入了 &lt;strong&gt;【Lobsters】&lt;/strong&gt;（国外极硬核且对爬虫友好的开发者社区）作为最强替补！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫</title>
+      <link>http://192.168.10.32:8081/posts/pg03/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.10.32:8081/posts/pg03/</guid>
+      <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
+&lt;p&gt;在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 &lt;strong&gt;【死死盯住】&lt;/strong&gt; 了它。&lt;/p&gt;
+&lt;p&gt;这听起来很完美：你往网盘扔一个 &lt;code&gt;.md&lt;/code&gt; 文件，网页就自动生成。
+但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 &lt;strong&gt;【YAML 格式头（Front Matter）】&lt;/strong&gt;。比如这样：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;我的日记&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;2026-03-04&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;draft&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。
+大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 &lt;strong&gt;【反人类的伪自动化】&lt;/strong&gt;！&lt;/p&gt;
+&lt;h2 id=&#34;-痛点破局我们需要一个-24-小时待命的赛博门卫&#34;&gt;★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫”&lt;/h2&gt;
+&lt;p&gt;既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 &lt;strong&gt;【格式清洗门卫】&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;它的工作逻辑极度简单粗暴：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;24 小时死死盯着咱们的 &lt;code&gt;SyncDrive&lt;/code&gt; 网盘。&lt;/li&gt;
+&lt;li&gt;只要发现新进来的 &lt;code&gt;.md&lt;/code&gt; 文件没有 &lt;code&gt;---&lt;/code&gt; 这个标志性的 YAML 头部。&lt;/li&gt;
+&lt;li&gt;它就瞬间冲上去，把文件的名字提取出来当做 &lt;code&gt;title&lt;/code&gt;，抓取当前的系统时间当做 &lt;code&gt;date&lt;/code&gt;，然后强行把标准的 YAML 头部 &lt;strong&gt;【缝合】&lt;/strong&gt; 进文章里！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。&lt;/p&gt;
+&lt;h2 id=&#34;-极客的傲骨抛弃第三方库纯手搓轮询&#34;&gt;★ 极客的傲骨：抛弃第三方库，纯手搓轮询&lt;/h2&gt;
+&lt;p&gt;在写这个脚本时，很多人第一反应是去 &lt;code&gt;pip install watchdog&lt;/code&gt;（一个专门监控文件系统的 Python 库）。&lt;/p&gt;
+&lt;p&gt;但俺作为首席架构师，有着不可妥协的 &lt;strong&gt;【代码洁癖】&lt;/strong&gt;：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 &lt;strong&gt;【绝对的稳定性】&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;俺直接动用 Python 自带的 &lt;code&gt;os&lt;/code&gt; 和 &lt;code&gt;time&lt;/code&gt; 库，写了一个极度轻量的死循环轮询脚本。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载</title>
+      <link>http://192.168.10.32:8081/posts/pg02/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.10.32:8081/posts/pg02/</guid>
+      <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
+&lt;p&gt;在上篇连载中，咱们成功用 Filebrowser 搭建了一个 &lt;strong&gt;【零摩擦的本地网盘】&lt;/strong&gt;。现在，你的 Markdown 笔记已经可以随手拖拽进 Ubuntu 虚拟机里了。&lt;/p&gt;
+&lt;p&gt;但网盘里的 &lt;code&gt;.md&lt;/code&gt; 文件终究只是“毛坯房”，咱们需要一台强悍的渲染引擎，把它们瞬间编译成带有暗黑模式、目录导航的精美极客网页。俺选用的引擎是目前地表最快的静态生成器—— &lt;strong&gt;【Hugo】&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;不过，Hugo 出了名的脾气古怪，有着极度的 &lt;strong&gt;【底层洁癖】&lt;/strong&gt;。今天，俺就带大伙儿扒一扒它的底裤，看看如何绕过它设下的重重陷阱！&lt;/p&gt;
+&lt;h2 id=&#34;-避雷指南千万别用-snap-装-hugo&#34;&gt;★ 避雷指南：千万别用 Snap 装 Hugo&lt;/h2&gt;
+&lt;p&gt;在 Ubuntu 上装软件，大伙儿的第一反应肯定是敲 &lt;code&gt;sudo apt install&lt;/code&gt; 或者用系统自带的 &lt;code&gt;snap&lt;/code&gt; 商店。&lt;/p&gt;
+&lt;p&gt;听俺一句劝：&lt;strong&gt;【绝对不要用 Snap 安装 Hugo！】&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Snap 本质上也是一个极其严格的 &lt;strong&gt;【沙盒环境】&lt;/strong&gt;。如果你用 Snap 装了 Hugo，当 Hugo 试图去读取咱们挂载在桌面（&lt;code&gt;~/Desktop/&lt;/code&gt;）的网盘文件时，会直接被操作系统的安全机制“无情绞杀”，报出一堆莫名其妙的 &lt;code&gt;Permission Denied&lt;/code&gt;（权限拒绝）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【架构师的解法】&lt;/strong&gt;：直接去 Hugo 的 GitHub Releases 页面，下载最新的 Linux &lt;code&gt;tar.gz&lt;/code&gt; 压缩包，解压后把二进制文件直接扔进 &lt;code&gt;/usr/local/bin/&lt;/code&gt;。绕过所有中间商，把引擎的控制权 100% 握在自己手里！&lt;/p&gt;
+&lt;h2 id=&#34;-跨越物理隔离神奇的虚拟挂载&#34;&gt;★ 跨越物理隔离：神奇的“虚拟挂载”&lt;/h2&gt;
+&lt;p&gt;Hugo 的“洁癖”体现在它的目录结构上：它要求所有的文章必须乖乖放在它自己生成的 &lt;code&gt;content/posts/&lt;/code&gt; 文件夹下。&lt;/p&gt;
+&lt;p&gt;但这违背了咱们的自动化初衷！咱们的文章明明放在上一篇建好的 &lt;code&gt;SyncDrive&lt;/code&gt; 网盘里。如果每次都要复制文件，那还搞啥自动化？如果用 Linux 的软链接（&lt;code&gt;ln -s&lt;/code&gt;），又容易遇到各类缓存同步的诡异 Bug。&lt;/p&gt;
+&lt;p&gt;这里，俺要祭出 Hugo 的一个高级黑魔法：&lt;strong&gt;【模块虚拟挂载 (Module Mounts)】&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【系列连载一】打造极客终极自动化知识库：零摩擦打通本地 Markdown 投放区</title>
+      <link>http://192.168.10.32:8081/posts/pg01/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://192.168.10.32:8081/posts/pg01/</guid>
+      <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
+&lt;p&gt;最近俺一直在折腾 AI Agent（智能体），尤其是试图压榨它们的“睡后算力”。俺的终极目标是：在本地搭建一个 &lt;strong&gt;【完全无人值守】&lt;/strong&gt; 的自动化博客与知识库，甚至让 AI 每天清晨自动为我生成一份排版精美的硬核科技早报。&lt;/p&gt;
+&lt;p&gt;经过几个深夜的反复 Debug 和重构，这套系统终于完美跑通了！为了把这段极其硬核的“踩坑与架构”全记录分享给大伙儿，俺决定开启一个分为四篇的系列连载：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;【打通桥梁】&lt;/strong&gt; 零摩擦的物理桥梁 —— 用 Filebrowser 搭建本地 Markdown 投放区（本篇）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;【引擎点火】&lt;/strong&gt; 驯服 Hugo 引擎的“底层洁癖” —— 本地热渲染与跨目录挂载&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;【解放双手】&lt;/strong&gt; 纯 Python 手搓“自动格式清洗”门卫 —— 无感注入 YAML 头部&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;【终极杀器】&lt;/strong&gt; 睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;今天，咱们先从最基础，也是最影响日常体验的第一步开始：干掉繁琐的 FTP/SSH，造一个 &lt;strong&gt;【拖拽即生效】&lt;/strong&gt; 的物理桥梁。&lt;/p&gt;
+&lt;h2 id=&#34;-交代一下俺的运行环境&#34;&gt;★ 交代一下俺的运行环境&lt;/h2&gt;
+&lt;p&gt;在开始之前，先跟大伙儿同步一下这套架构的底层环境。这不是啥高不可攀的云端集群，而是任何人都能在自己电脑上跑起来的本地环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;【宿主机】&lt;/strong&gt;：日常办公使用的 Windows 系统。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;【服务节点】&lt;/strong&gt;：跑在局域网内的一台 Ubuntu 虚拟机（分配了固定的局域网 IP，带轻量级桌面环境）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;【赛博苦力】&lt;/strong&gt;：俺使用了基于 OpenClaw 框架的 AI 特工（底层调用大模型 API）。因为有严格的 API 交互限额，这意味着俺必须用 &lt;strong&gt;【最高密度的复合指令】&lt;/strong&gt; 来指挥它干活，绝不能让它陷入报错死循环。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-踩坑实录ai-特工的沙盒刺客&#34;&gt;★ 踩坑实录：AI 特工的“沙盒刺客”&lt;/h2&gt;
+&lt;p&gt;既然有了 Ubuntu 虚拟机和 AI 特工，俺的第一反应是：直接给特工下发 Prompt，让它用 Python 写个抓取脚本，然后保存在俺的 Ubuntu 桌面（&lt;code&gt;~/Desktop/&lt;/code&gt;）。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

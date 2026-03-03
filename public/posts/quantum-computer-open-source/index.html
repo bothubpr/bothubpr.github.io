@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8081&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>如何自己造一台量子计算机？一群物理学家正在开源革命 | Ziv的极客日志</title>
+<meta name="keywords" content="">
+<meta name="description" content="
+当全世界都在追逐量子计算的商用前景时，加拿大的一群物理学家选择了一条完全不同的路——把所有技术开源，让每个人都能自己动手造量子计算机。
+
+核心观点提炼
+1. 开源是为了打破垄断
+核心观点：量子计算被誉为下一场技术革命，但目前财富和技术都被少数公司垄断。Open Quantum Design (OQD) 试图让量子计算成为&quot;人类共同的技术&quot;。
+
+&ldquo;每一次技术革命——工业革命、互联网、AI——财富都集中在少数人手里。我们有机会让量子计算掌握在全人类手中。&rdquo; —— Greg Dick
+
+2. 降低门槛，让创业者也能入场
+核心观点：传统量子计算需要数亿美元融资，普通人根本无法参与。开源设计让开发者可以在&quot;攒够1000万&quot;之前先动手实践。
+
+学生可以自己学习硬件开发技能（光学、电子学、真空技术）
+创业者可以直接玩机器，迭代自己的想法
+不用重复造轮子，有现成的开源技术可用
+
+3. 技术规格：30量子比特，99%保真度
+
+  
+      
+          参数
+          目标值
+      
+  
+  
+      
+          量子比特数
+          30
+      
+      
+          双量子比特门保真度
+          ~99%
+      
+      
+          技术路线
+          离子阱 (Trapped-Ion)
+      
+  
+
+
+&ldquo;我们不追求成为地球上最大最强的量子计算机，而是要造最容易被理解和访问的一台。&rdquo; —— Crystal Senko
+
+4. 对抗炒作：诚实的预期
+核心观点：量子计算被过度炒作了。人们经常把&quot;今年会发生的事&quot;和&quot;十年后可能发生的事&quot;混为一谈。
+
+量子计算不会明天就解决气候变化或治愈癌症
+今年可能实现：小规模容错量子门测试（几个逻辑量子比特）
+真正有价值的应用可能需要数年甚至数十年
+
+5. 加拿大的科技主权野心
+核心观点：开源反而能增强国家科技主权。
+
+政府不想依赖单一供应商
+开源意味着更透明的设计，更少的安全隐患
+每个国家都希望对自己的云服务和关键数字基础设施有控制权
+
+6. 企业合作模式
+OQD 与多家公司合作，比如光子量子计算公司 Xanadu：
+
+Xanadu 用 OQD 的离子阱控制电子设备来测试他们的编译器
+清晰的信息共享规则让合作变得简单
+
+采访金句
+
+Rajibul Islam: &ldquo;我们公司没有盈利动机去夸大技术，所以可以做到完全透明。&rdquo;
+
+
+Crystal Senko: &ldquo;我想尊重实现这项技术需要的工作量。&rdquo;
+
+深度阅读指南
+请帮我深度读取并解析这篇文章：https://physics.aps.org/articles/v19/24
+重点关注：
+
+提炼核心技术架构或创新观点；
+告诉我这项技术/产品解决了什么行业痛点；
+总结读者评论中最有价值的反面意见或潜在缺陷。
+
+
+本文是对 Physics Magazine 采访文章的中文编译，原文发表于 2026 年 2 月 26 日。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="http://192.168.10.32:8081/posts/quantum-computer-open-source/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://192.168.10.32:8081/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://192.168.10.32:8081/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://192.168.10.32:8081/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://192.168.10.32:8081/apple-touch-icon.png">
+<link rel="mask-icon" href="http://192.168.10.32:8081/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://192.168.10.32:8081/posts/quantum-computer-open-source/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://192.168.10.32:8081/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      如何自己造一台量子计算机？一群物理学家正在开源革命
+    </h1>
+    <div class="post-meta"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%a0%b8%e5%bf%83%e8%a7%82%e7%82%b9%e6%8f%90%e7%82%bc" aria-label="核心观点提炼">核心观点提炼</a><ul>
+                        
+                <li>
+                    <a href="#1-%e5%bc%80%e6%ba%90%e6%98%af%e4%b8%ba%e4%ba%86%e6%89%93%e7%a0%b4%e5%9e%84%e6%96%ad" aria-label="1. 开源是为了打破垄断">1. 开源是为了打破垄断</a></li>
+                <li>
+                    <a href="#2-%e9%99%8d%e4%bd%8e%e9%97%a8%e6%a7%9b%e8%ae%a9%e5%88%9b%e4%b8%9a%e8%80%85%e4%b9%9f%e8%83%bd%e5%85%a5%e5%9c%ba" aria-label="2. 降低门槛，让创业者也能入场">2. 降低门槛，让创业者也能入场</a></li>
+                <li>
+                    <a href="#3-%e6%8a%80%e6%9c%af%e8%a7%84%e6%a0%bc30%e9%87%8f%e5%ad%90%e6%af%94%e7%89%b999%e4%bf%9d%e7%9c%9f%e5%ba%a6" aria-label="3. 技术规格：30量子比特，99%保真度">3. 技术规格：30量子比特，99%保真度</a></li>
+                <li>
+                    <a href="#4-%e5%af%b9%e6%8a%97%e7%82%92%e4%bd%9c%e8%af%9a%e5%ae%9e%e7%9a%84%e9%a2%84%e6%9c%9f" aria-label="4. 对抗炒作：诚实的预期">4. 对抗炒作：诚实的预期</a></li>
+                <li>
+                    <a href="#5-%e5%8a%a0%e6%8b%bf%e5%a4%a7%e7%9a%84%e7%a7%91%e6%8a%80%e4%b8%bb%e6%9d%83%e9%87%8e%e5%bf%83" aria-label="5. 加拿大的科技主权野心">5. 加拿大的科技主权野心</a></li>
+                <li>
+                    <a href="#6-%e4%bc%81%e4%b8%9a%e5%90%88%e4%bd%9c%e6%a8%a1%e5%bc%8f" aria-label="6. 企业合作模式">6. 企业合作模式</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e9%87%87%e8%ae%bf%e9%87%91%e5%8f%a5" aria-label="采访金句">采访金句</a></li>
+                <li>
+                    <a href="#%e6%b7%b1%e5%ba%a6%e9%98%85%e8%af%bb%e6%8c%87%e5%8d%97" aria-label="深度阅读指南">深度阅读指南</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><blockquote>
+<p>当全世界都在追逐量子计算的商用前景时，加拿大的一群物理学家选择了一条完全不同的路——把所有技术开源，让每个人都能自己动手造量子计算机。</p>
+</blockquote>
+<h2 id="核心观点提炼">核心观点提炼<a hidden class="anchor" aria-hidden="true" href="#核心观点提炼">#</a></h2>
+<h3 id="1-开源是为了打破垄断">1. 开源是为了打破垄断<a hidden class="anchor" aria-hidden="true" href="#1-开源是为了打破垄断">#</a></h3>
+<p><strong>核心观点</strong>：量子计算被誉为下一场技术革命，但目前财富和技术都被少数公司垄断。Open Quantum Design (OQD) 试图让量子计算成为&quot;人类共同的技术&quot;。</p>
+<blockquote>
+<p>&ldquo;每一次技术革命——工业革命、互联网、AI——财富都集中在少数人手里。我们有机会让量子计算掌握在全人类手中。&rdquo; —— Greg Dick</p>
+</blockquote>
+<h3 id="2-降低门槛让创业者也能入场">2. 降低门槛，让创业者也能入场<a hidden class="anchor" aria-hidden="true" href="#2-降低门槛让创业者也能入场">#</a></h3>
+<p><strong>核心观点</strong>：传统量子计算需要数亿美元融资，普通人根本无法参与。开源设计让开发者可以在&quot;攒够1000万&quot;之前先动手实践。</p>
+<ul>
+<li>学生可以自己学习硬件开发技能（光学、电子学、真空技术）</li>
+<li>创业者可以直接玩机器，迭代自己的想法</li>
+<li>不用重复造轮子，有现成的开源技术可用</li>
+</ul>
+<h3 id="3-技术规格30量子比特99保真度">3. 技术规格：30量子比特，99%保真度<a hidden class="anchor" aria-hidden="true" href="#3-技术规格30量子比特99保真度">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>参数</th>
+          <th>目标值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>量子比特数</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>双量子比特门保真度</td>
+          <td>~99%</td>
+      </tr>
+      <tr>
+          <td>技术路线</td>
+          <td>离子阱 (Trapped-Ion)</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>&ldquo;我们不追求成为地球上最大最强的量子计算机，而是要造最容易被理解和访问的一台。&rdquo; —— Crystal Senko</p>
+</blockquote>
+<h3 id="4-对抗炒作诚实的预期">4. 对抗炒作：诚实的预期<a hidden class="anchor" aria-hidden="true" href="#4-对抗炒作诚实的预期">#</a></h3>
+<p><strong>核心观点</strong>：量子计算被过度炒作了。人们经常把&quot;今年会发生的事&quot;和&quot;十年后可能发生的事&quot;混为一谈。</p>
+<ul>
+<li>量子计算不会明天就解决气候变化或治愈癌症</li>
+<li>今年可能实现：小规模容错量子门测试（几个逻辑量子比特）</li>
+<li>真正有价值的应用可能需要数年甚至数十年</li>
+</ul>
+<h3 id="5-加拿大的科技主权野心">5. 加拿大的科技主权野心<a hidden class="anchor" aria-hidden="true" href="#5-加拿大的科技主权野心">#</a></h3>
+<p><strong>核心观点</strong>：开源反而能增强国家科技主权。</p>
+<ul>
+<li>政府不想依赖单一供应商</li>
+<li>开源意味着更透明的设计，更少的安全隐患</li>
+<li>每个国家都希望对自己的云服务和关键数字基础设施有控制权</li>
+</ul>
+<h3 id="6-企业合作模式">6. 企业合作模式<a hidden class="anchor" aria-hidden="true" href="#6-企业合作模式">#</a></h3>
+<p>OQD 与多家公司合作，比如光子量子计算公司 <strong>Xanadu</strong>：</p>
+<ul>
+<li>Xanadu 用 OQD 的离子阱控制电子设备来测试他们的编译器</li>
+<li>清晰的信息共享规则让合作变得简单</li>
+</ul>
+<h2 id="采访金句">采访金句<a hidden class="anchor" aria-hidden="true" href="#采访金句">#</a></h2>
+<blockquote>
+<p><strong>Rajibul Islam</strong>: &ldquo;我们公司没有盈利动机去夸大技术，所以可以做到完全透明。&rdquo;</p>
+</blockquote>
+<blockquote>
+<p><strong>Crystal Senko</strong>: &ldquo;我想尊重实现这项技术需要的工作量。&rdquo;</p>
+</blockquote>
+<h2 id="深度阅读指南">深度阅读指南<a hidden class="anchor" aria-hidden="true" href="#深度阅读指南">#</a></h2>
+<p>请帮我深度读取并解析这篇文章：https://physics.aps.org/articles/v19/24</p>
+<p>重点关注：</p>
+<ol>
+<li>提炼核心技术架构或创新观点；</li>
+<li>告诉我这项技术/产品解决了什么行业痛点；</li>
+<li>总结读者评论中最有价值的反面意见或潜在缺陷。</li>
+</ol>
+<hr>
+<p><em>本文是对 Physics Magazine 采访文章的中文编译，原文发表于 2026 年 2 月 26 日。</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://192.168.10.32:8081/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

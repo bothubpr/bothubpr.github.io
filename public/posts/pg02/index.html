@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8081&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载 | Ziv的极客日志</title>
+<meta name="keywords" content="自动化, Hugo, 极客教程">
+<meta name="description" content="哈喽，各位极客小伙伴们！
+在上篇连载中，咱们成功用 Filebrowser 搭建了一个 【零摩擦的本地网盘】。现在，你的 Markdown 笔记已经可以随手拖拽进 Ubuntu 虚拟机里了。
+但网盘里的 .md 文件终究只是“毛坯房”，咱们需要一台强悍的渲染引擎，把它们瞬间编译成带有暗黑模式、目录导航的精美极客网页。俺选用的引擎是目前地表最快的静态生成器—— 【Hugo】。
+不过，Hugo 出了名的脾气古怪，有着极度的 【底层洁癖】。今天，俺就带大伙儿扒一扒它的底裤，看看如何绕过它设下的重重陷阱！
+★ 避雷指南：千万别用 Snap 装 Hugo
+在 Ubuntu 上装软件，大伙儿的第一反应肯定是敲 sudo apt install 或者用系统自带的 snap 商店。
+听俺一句劝：【绝对不要用 Snap 安装 Hugo！】
+Snap 本质上也是一个极其严格的 【沙盒环境】。如果你用 Snap 装了 Hugo，当 Hugo 试图去读取咱们挂载在桌面（~/Desktop/）的网盘文件时，会直接被操作系统的安全机制“无情绞杀”，报出一堆莫名其妙的 Permission Denied（权限拒绝）。
+【架构师的解法】：直接去 Hugo 的 GitHub Releases 页面，下载最新的 Linux tar.gz 压缩包，解压后把二进制文件直接扔进 /usr/local/bin/。绕过所有中间商，把引擎的控制权 100% 握在自己手里！
+★ 跨越物理隔离：神奇的“虚拟挂载”
+Hugo 的“洁癖”体现在它的目录结构上：它要求所有的文章必须乖乖放在它自己生成的 content/posts/ 文件夹下。
+但这违背了咱们的自动化初衷！咱们的文章明明放在上一篇建好的 SyncDrive 网盘里。如果每次都要复制文件，那还搞啥自动化？如果用 Linux 的软链接（ln -s），又容易遇到各类缓存同步的诡异 Bug。
+这里，俺要祭出 Hugo 的一个高级黑魔法：【模块虚拟挂载 (Module Mounts)】。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="http://192.168.10.32:8081/posts/pg02/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://192.168.10.32:8081/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://192.168.10.32:8081/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://192.168.10.32:8081/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://192.168.10.32:8081/apple-touch-icon.png">
+<link rel="mask-icon" href="http://192.168.10.32:8081/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://192.168.10.32:8081/posts/pg02/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://192.168.10.32:8081/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载
+    </h1>
+    <div class="post-meta"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-%e9%81%bf%e9%9b%b7%e6%8c%87%e5%8d%97%e5%8d%83%e4%b8%87%e5%88%ab%e7%94%a8-snap-%e8%a3%85-hugo" aria-label="★ 避雷指南：千万别用 Snap 装 Hugo">★ 避雷指南：千万别用 Snap 装 Hugo</a></li>
+                <li>
+                    <a href="#-%e8%b7%a8%e8%b6%8a%e7%89%a9%e7%90%86%e9%9a%94%e7%a6%bb%e7%a5%9e%e5%a5%87%e7%9a%84%e8%99%9a%e6%8b%9f%e6%8c%82%e8%bd%bd" aria-label="★ 跨越物理隔离：神奇的“虚拟挂载”">★ 跨越物理隔离：神奇的“虚拟挂载”</a></li>
+                <li>
+                    <a href="#-%e8%af%a1%e5%bc%82%e7%9a%84%e7%8e%84%e5%ad%a6-bug%e6%96%87%e7%ab%a0%e5%8e%bb%e5%93%aa%e4%ba%86" aria-label="★ 诡异的玄学 Bug：文章去哪了？">★ 诡异的玄学 Bug：文章去哪了？</a><ul>
+                        
+                <li>
+                    <a href="#1-%e8%87%b4%e5%91%bd%e7%9a%84%e7%a9%ba%e6%a0%bc%e7%82%b9%e4%b8%8d%e8%bf%9b%e5%8e%bb%e7%9a%84%e8%af%a6%e6%83%85%e9%a1%b5" aria-label="1. 致命的空格：点不进去的详情页">1. 致命的空格：点不进去的详情页</a></li>
+                <li>
+                    <a href="#2-%e6%97%b6%e7%a9%ba%e6%8a%98%e5%8f%a0%e6%ad%bb%e6%b4%bb%e4%b8%8d%e6%98%be%e7%a4%ba%e7%9a%84%e6%96%b0%e6%96%87%e7%ab%a0" aria-label="2. 时空折叠：死活不显示的新文章">2. 时空折叠：死活不显示的新文章</a></li>
+                <li>
+                    <a href="#3-%e8%b7%a8%e8%ae%be%e5%a4%87%e5%a4%b1%e8%81%94%e8%a2%ab%e8%87%aa%e4%bd%9c%e8%81%aa%e6%98%8e%e6%8b%90%e8%b7%91%e7%9a%84%e8%b7%af%e7%94%b1" aria-label="3. 跨设备失联：被“自作聪明”拐跑的路由">3. 跨设备失联：被“自作聪明”拐跑的路由</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-%e7%bb%88%e6%9e%81%e7%82%b9%e7%81%ab%e5%90%af%e5%8a%a8%e4%bd%a0%e7%9a%84-v8-%e5%bc%95%e6%93%8e" aria-label="★ 终极点火：启动你的 V8 引擎">★ 终极点火：启动你的 V8 引擎</a></li>
+                <li>
+                    <a href="#-%e4%b8%8b%e6%9c%9f%e9%a2%84%e5%91%8a" aria-label="★ 下期预告">★ 下期预告</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>哈喽，各位极客小伙伴们！</p>
+<p>在上篇连载中，咱们成功用 Filebrowser 搭建了一个 <strong>【零摩擦的本地网盘】</strong>。现在，你的 Markdown 笔记已经可以随手拖拽进 Ubuntu 虚拟机里了。</p>
+<p>但网盘里的 <code>.md</code> 文件终究只是“毛坯房”，咱们需要一台强悍的渲染引擎，把它们瞬间编译成带有暗黑模式、目录导航的精美极客网页。俺选用的引擎是目前地表最快的静态生成器—— <strong>【Hugo】</strong>。</p>
+<p>不过，Hugo 出了名的脾气古怪，有着极度的 <strong>【底层洁癖】</strong>。今天，俺就带大伙儿扒一扒它的底裤，看看如何绕过它设下的重重陷阱！</p>
+<h2 id="-避雷指南千万别用-snap-装-hugo">★ 避雷指南：千万别用 Snap 装 Hugo<a hidden class="anchor" aria-hidden="true" href="#-避雷指南千万别用-snap-装-hugo">#</a></h2>
+<p>在 Ubuntu 上装软件，大伙儿的第一反应肯定是敲 <code>sudo apt install</code> 或者用系统自带的 <code>snap</code> 商店。</p>
+<p>听俺一句劝：<strong>【绝对不要用 Snap 安装 Hugo！】</strong></p>
+<p>Snap 本质上也是一个极其严格的 <strong>【沙盒环境】</strong>。如果你用 Snap 装了 Hugo，当 Hugo 试图去读取咱们挂载在桌面（<code>~/Desktop/</code>）的网盘文件时，会直接被操作系统的安全机制“无情绞杀”，报出一堆莫名其妙的 <code>Permission Denied</code>（权限拒绝）。</p>
+<p><strong>【架构师的解法】</strong>：直接去 Hugo 的 GitHub Releases 页面，下载最新的 Linux <code>tar.gz</code> 压缩包，解压后把二进制文件直接扔进 <code>/usr/local/bin/</code>。绕过所有中间商，把引擎的控制权 100% 握在自己手里！</p>
+<h2 id="-跨越物理隔离神奇的虚拟挂载">★ 跨越物理隔离：神奇的“虚拟挂载”<a hidden class="anchor" aria-hidden="true" href="#-跨越物理隔离神奇的虚拟挂载">#</a></h2>
+<p>Hugo 的“洁癖”体现在它的目录结构上：它要求所有的文章必须乖乖放在它自己生成的 <code>content/posts/</code> 文件夹下。</p>
+<p>但这违背了咱们的自动化初衷！咱们的文章明明放在上一篇建好的 <code>SyncDrive</code> 网盘里。如果每次都要复制文件，那还搞啥自动化？如果用 Linux 的软链接（<code>ln -s</code>），又容易遇到各类缓存同步的诡异 Bug。</p>
+<p>这里，俺要祭出 Hugo 的一个高级黑魔法：<strong>【模块虚拟挂载 (Module Mounts)】</strong>。</p>
+<p>咱们只需要在博客的控制枢纽 <code>hugo.toml</code> 的最底部，注入下面这几行代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">module</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 保持默认的 content 目录不动</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;content&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;content&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 【核心魔法】：将外部网盘的绝对路径，虚拟映射到 Hugo 的 posts 目录下</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">mounts</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">source</span> = <span style="color:#e6db74">&#39;/home/ziv/Desktop/SyncDrive&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">target</span> = <span style="color:#e6db74">&#39;content/posts&#39;</span>
+</span></span></code></pre></div><p>这招简直是 <strong>【降维打击】</strong>！Hugo 会在内存里“产生幻觉”，误以为网盘里的文件就在自己的肚子里。物理上完全隔离，逻辑上完美融合！</p>
+<h2 id="-诡异的玄学-bug文章去哪了">★ 诡异的玄学 Bug：文章去哪了？<a hidden class="anchor" aria-hidden="true" href="#-诡异的玄学-bug文章去哪了">#</a></h2>
+<p>搞定了目录挂载，俺兴冲冲地敲下 <code>hugo server</code> 启动引擎，结果迎面撞上了三个极其隐蔽的“玄学 Bug”，险些让俺当场怀疑人生。</p>
+<h3 id="1-致命的空格点不进去的详情页">1. 致命的空格：点不进去的详情页<a hidden class="anchor" aria-hidden="true" href="#1-致命的空格点不进去的详情页">#</a></h3>
+<p>俺测试了一篇名字很长的英文文章，结果主页能显示卡片，<strong>【一点击详情页直接 404】</strong>。
+排查半天发现，文件名里包含了空格（比如 <code>The Fastest Way .md</code>）。在局域网路由里，空格会被转码成恶心的 <code>%20</code>，导致底层寻址直接崩盘。
+<strong>【铁律】</strong>：所有的 Markdown 文件名，<strong>【严禁使用空格】</strong>，一律用减号 <code>-</code> 替代！</p>
+<h3 id="2-时空折叠死活不显示的新文章">2. 时空折叠：死活不显示的新文章<a hidden class="anchor" aria-hidden="true" href="#2-时空折叠死活不显示的新文章">#</a></h3>
+<p>有些文章扔进网盘后，主页死活不渲染。
+原因极其坑爹：Hugo 默认 <strong>【绝对不渲染未来的文章】</strong>。如果你文件的 YAML 时间戳比当前系统时间快了哪怕一分钟，Hugo 就会把它当做“定时发送的草稿”直接雪藏。
+<strong>【解法】</strong>：启动引擎时，必须加上 <code>--buildFuture</code> 参数，强行折叠时空！</p>
+<h3 id="3-跨设备失联被自作聪明拐跑的路由">3. 跨设备失联：被“自作聪明”拐跑的路由<a hidden class="anchor" aria-hidden="true" href="#3-跨设备失联被自作聪明拐跑的路由">#</a></h3>
+<p>当俺在 Windows 上访问局域网 IP <code>192.168.10.32:8081</code> 时，主页进去了，但鼠标悬停在卡片上，发现链接全被写死了 <code>localhost:8081</code>，点击直接报错。
+这是因为 Hugo 默认你只在单机调试，自作聪明地替换了路由。
+<strong>【解法】</strong>：启动时必须使用 <code>--baseURL</code> 强行绑定服务器的真实 IP！</p>
+<h2 id="-终极点火启动你的-v8-引擎">★ 终极点火：启动你的 V8 引擎<a hidden class="anchor" aria-hidden="true" href="#-终极点火启动你的-v8-引擎">#</a></h2>
+<p>把上面所有的坑都趟平之后，咱们终于可以敲下这行 <strong>【终极点火指令】</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 强行绑定局域网IP，无视未来时间，禁用快速渲染缓存</span>
+</span></span><span style="display:flex;"><span>hugo server --bind<span style="color:#f92672">=</span>0.0.0.0 --port<span style="color:#f92672">=</span><span style="color:#ae81ff">8081</span> --baseURL<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[http://192.168.10.32:8081/](http://192.168.10.32:8081/)&#34;</span> --buildDrafts --buildFuture --disableFastRender
+</span></span></code></pre></div><p>当这行命令跑起来，切回你的浏览器刷新。你会看到你的网盘文件瞬间列阵完毕，每一次点击都如丝般顺滑！</p>
+<h2 id="-下期预告">★ 下期预告<a hidden class="anchor" aria-hidden="true" href="#-下期预告">#</a></h2>
+<p>现在，只要你往网盘里扔一个 <strong>【格式标准】</strong> 的 Markdown，网页就会立刻更新。</p>
+<p>但这还不够极客！因为 Hugo 强依赖文章开头的 <code>YAML</code> 格式头（Front Matter）。难道俺们每次写日记，还要手动去敲 <code>title:</code> 和 <code>date:</code> 吗？这也太反人类了！</p>
+<p>在下一篇 <strong>【解放双手：纯 Python 手搓“自动格式清洗”门卫】</strong> 中，俺将带你写一个极其轻量的后台监听脚本。<strong>你只管往网盘里扔纯文本，剩下的排版格式，全由 AI 门卫在毫秒间替你补齐！</strong></p>
+<p>敬请期待！</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://192.168.10.32:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/">自动化</a></li>
+      <li><a href="http://192.168.10.32:8081/tags/hugo/">Hugo</a></li>
+      <li><a href="http://192.168.10.32:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/">极客教程</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://192.168.10.32:8081/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
