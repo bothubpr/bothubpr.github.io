@@ -1,0 +1,19 @@
+baseURL = 'https://bothubpr.github.io/'
+languageCode = 'zh-cn'
+title = 'Ziv的极客日志'
+theme = 'PaperMod'
+
+[params]
+tocopen = true
+author = "Ziv"
+disableThemeToggle = false
+showtoc = true
+mainSections = ["posts"]
+
+[module]
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+  [[module.mounts]]
+    source = '/home/ziv/Desktop/SyncDrive'
+    target = 'content/posts'

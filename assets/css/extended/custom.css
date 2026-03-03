@@ -1,0 +1,14 @@
+html {
+    /* 核心魔法：将全局根字号缩小，所有 rem 单位会自动等比缩小 */
+    font-size: 13px; 
+}
+
+.post-content {
+    /* 让正文行距稍微紧凑一点，提升硬核文本的阅读效率 */
+    line-height: 1.7;
+}
+
+.post-title {
+    /* 让文章大标题的字号再克制一点 */
+    font-size: 2rem;
+}

@@ -1,0 +1,28 @@
+<style>
+    /* 1. 强制重置全局根字号 (对应你设置的 14px) */
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+    /* 2. 正文内容的字号和紧凑行距 */
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* 3. 文章顶部的总标题 (如 test-011) */
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+    /* 4. 核心目标：强行缩小正文里的 Markdown 标题 (##, ###) */
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+    /* 5. 代码块稍微调小，显得更精致 */
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
