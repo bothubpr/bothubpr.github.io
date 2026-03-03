@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on Ziv的极客日志</title>
-    <link>http://192.168.10.32:8081/tags/hugo/</link>
+    <link>http://localhost:8081/tags/hugo/</link>
     <description>Recent content in Hugo on Ziv的极客日志</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.10.32:8081/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8081/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载</title>
-      <link>http://192.168.10.32:8081/posts/pg02/</link>
+      <link>http://localhost:8081/posts/pg02/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.10.32:8081/posts/pg02/</guid>
+      <guid>http://localhost:8081/posts/pg02/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
 &lt;p&gt;在上篇连载中，咱们成功用 Filebrowser 搭建了一个 &lt;strong&gt;【零摩擦的本地网盘】&lt;/strong&gt;。现在，你的 Markdown 笔记已经可以随手拖拽进 Ubuntu 虚拟机里了。&lt;/p&gt;
 &lt;p&gt;但网盘里的 &lt;code&gt;.md&lt;/code&gt; 文件终究只是“毛坯房”，咱们需要一台强悍的渲染引擎，把它们瞬间编译成带有暗黑模式、目录导航的精美极客网页。俺选用的引擎是目前地表最快的静态生成器—— &lt;strong&gt;【Hugo】&lt;/strong&gt;。&lt;/p&gt;
@@ -29,9 +29,9 @@
     </item>
     <item>
       <title>【系列连载一】打造极客终极自动化知识库：零摩擦打通本地 Markdown 投放区</title>
-      <link>http://192.168.10.32:8081/posts/pg01/</link>
+      <link>http://localhost:8081/posts/pg01/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.10.32:8081/posts/pg01/</guid>
+      <guid>http://localhost:8081/posts/pg01/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
 &lt;p&gt;最近俺一直在折腾 AI Agent（智能体），尤其是试图压榨它们的“睡后算力”。俺的终极目标是：在本地搭建一个 &lt;strong&gt;【完全无人值守】&lt;/strong&gt; 的自动化博客与知识库，甚至让 AI 每天清晨自动为我生成一份排版精美的硬核科技早报。&lt;/p&gt;
 &lt;p&gt;经过几个深夜的反复 Debug 和重构，这套系统终于完美跑通了！为了把这段极其硬核的“踩坑与架构”全记录分享给大伙儿，俺决定开启一个分为四篇的系列连载：&lt;/p&gt;

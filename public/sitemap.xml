@@ -2,10 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.10.32:8081/categories/</loc>
+    <loc>http://localhost:8081/posts/pg02/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.10.32:8081/tags/</loc>
+    <loc>http://localhost:8081/posts/ai_daily_news_2026-03-03/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.10.32:8081/</loc>
+    <loc>http://localhost:8081/tags/hugo/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/posts/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/tags/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/posts/quantum-computer-open-source/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/posts/pg01/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/posts/ai_daily_news_2026-03-02/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:8081/categories/</loc>
   </url>
 </urlset>
