@@ -142,6 +142,28 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>哈喽，各位极客小伙伴们！
+在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。
+这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：
+--- title: &#34;我的日记&#34; date: 2026-03-04 draft: false --- 如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。 大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！
+★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫” 既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。
+它的工作逻辑极度简单粗暴：
+24 小时死死盯着咱们的 SyncDrive 网盘。 只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。 它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！ 只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。
+★ 极客的傲骨：抛弃第三方库，纯手搓轮询 在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。
+但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。
+俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫" href="http://localhost:8081/posts/pg03/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载
     </h2>
   </header>

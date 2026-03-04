@@ -6,8 +6,38 @@
     <description>Recent content in 极客教程 on Ziv的极客日志</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫</title>
+      <link>http://localhost:8081/posts/pg03/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8081/posts/pg03/</guid>
+      <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
+&lt;p&gt;在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 &lt;strong&gt;【死死盯住】&lt;/strong&gt; 了它。&lt;/p&gt;
+&lt;p&gt;这听起来很完美：你往网盘扔一个 &lt;code&gt;.md&lt;/code&gt; 文件，网页就自动生成。
+但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 &lt;strong&gt;【YAML 格式头（Front Matter）】&lt;/strong&gt;。比如这样：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;我的日记&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;2026-03-04&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;draft&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。
+大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 &lt;strong&gt;【反人类的伪自动化】&lt;/strong&gt;！&lt;/p&gt;
+&lt;h2 id=&#34;-痛点破局我们需要一个-24-小时待命的赛博门卫&#34;&gt;★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫”&lt;/h2&gt;
+&lt;p&gt;既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 &lt;strong&gt;【格式清洗门卫】&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;它的工作逻辑极度简单粗暴：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;24 小时死死盯着咱们的 &lt;code&gt;SyncDrive&lt;/code&gt; 网盘。&lt;/li&gt;
+&lt;li&gt;只要发现新进来的 &lt;code&gt;.md&lt;/code&gt; 文件没有 &lt;code&gt;---&lt;/code&gt; 这个标志性的 YAML 头部。&lt;/li&gt;
+&lt;li&gt;它就瞬间冲上去，把文件的名字提取出来当做 &lt;code&gt;title&lt;/code&gt;，抓取当前的系统时间当做 &lt;code&gt;date&lt;/code&gt;，然后强行把标准的 YAML 头部 &lt;strong&gt;【缝合】&lt;/strong&gt; 进文章里！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。&lt;/p&gt;
+&lt;h2 id=&#34;-极客的傲骨抛弃第三方库纯手搓轮询&#34;&gt;★ 极客的傲骨：抛弃第三方库，纯手搓轮询&lt;/h2&gt;
+&lt;p&gt;在写这个脚本时，很多人第一反应是去 &lt;code&gt;pip install watchdog&lt;/code&gt;（一个专门监控文件系统的 Python 库）。&lt;/p&gt;
+&lt;p&gt;但俺作为首席架构师，有着不可妥协的 &lt;strong&gt;【代码洁癖】&lt;/strong&gt;：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 &lt;strong&gt;【绝对的稳定性】&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;俺直接动用 Python 自带的 &lt;code&gt;os&lt;/code&gt; 和 &lt;code&gt;time&lt;/code&gt; 库，写了一个极度轻量的死循环轮询脚本。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载</title>
       <link>http://localhost:8081/posts/pg02/</link>

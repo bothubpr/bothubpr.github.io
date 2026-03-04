@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8081&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>AI 极客早报 - 2026-03-04 | Ziv的极客日志</title>
+<meta name="keywords" content="">
+<meta name="description" content="[Claude 是 Electron 应用，因为我们已失去了原生开发]
+
+来源标签: Lobsters
+内容精炼: 文章批判了当前软件开发生态过度依赖 Electron 等跨平台框架，导致应用臃肿、性能低下。作者认为，追求“一次编写，到处运行”的便利性，是以牺牲原生应用 (Native App) 的性能、能效和用户体验为代价的，反映了行业对工程效率的过度追求。
+原文链接: https://tonsky.me/blog/fall-of-native/
+
+[美国最高法院拒绝审理关于 AI 生成材料版权的争议]
+
+来源标签: Lobsters
+内容精炼: 美国最高法院决定不受理一起关于 AI 生成内容 (AI-generated material) 版权归属的案件。这一决定意味着，在缺乏联邦立法或更高层级司法裁决的情况下，关于人工智能创作物版权 (Copyright) 的模糊性和法律不确定性将持续存在。
+原文链接: https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/
+
+[Weave – 一种基于实体的、具备语言感知能力的合并算法]
+
+来源标签: Hacker News
+内容精炼: Weave 是一个创新的代码合并 (Merge) 算法，它通过理解代码的实体结构（如函数、类）而非简单的文本行差异来进行合并。这种方法旨在更智能地处理代码冲突，减少手动干预，提升版本控制 (Version Control) 系统的协作效率。
+原文链接: https://github.com/Ataraxy-Labs/weave
+
+[AgentBus – 通过 REST API 实现的集中式 AI 智能体间通信]
+
+来源标签: Hacker News
+内容精炼: AgentBus 是一个为 AI 智能体 (AI Agent) 设计的集中式消息传递平台。它提供标准化的 REST API，允许不同的 AI 智能体之间进行结构化通信和协作，旨在简化多智能体系统 (Multi-Agent System) 的构建与集成。
+原文链接: https://agentbus.org/
+
+[唐纳德·克努特的“类Claude”有向哈密顿环分解]
+
+来源标签: Lobsters
+内容精炼: 计算机科学先驱高德纳 (Donald Knuth) 发布了一篇技术论文，探讨了在有向图中寻找哈密顿环 (Hamiltonian Cycles) 分解的新方法。论文标题中的“类Claude”暗示其可能受到当前大语言模型 (LLM) 推理方式的启发，或将图论与新型计算范式结合。
+原文链接: https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf
+
+[图形编程资源汇总]
+
+来源标签: Hacker News
+内容精炼: 这是一个精心整理的图形编程 (Graphics Programming) 资源集合网站。内容涵盖了从基础的渲染管线 (Rendering Pipeline)、着色器 (Shaders) 编写，到高级的实时光线追踪 (Real-time Ray Tracing) 等技术的学习路径、教程、论文和工具链接。
+原文链接: https://develop--gpvm-website.netlify.app/resources/
+
+[面向设计师和开发者的 Mac 外接显示器指南（第二部分）]
+
+来源标签: Hacker News
+内容精炼: 文章深入探讨了为 Mac 选择外接显示器 (External Displays) 的技术细节，重点关注色彩准确性、分辨率缩放 (Resolution Scaling)、HDR 支持以及不同接口（如 Thunderbolt, USB-C）对专业工作流的影响，为视觉创作者和开发者提供实用选购建议。
+原文链接: https://bjango.com/articles/macexternaldisplays2/
+
+[Ruby Central 让 Ruby 倒退的四个月]
+
+来源标签: Lobsters
+内容精炼: 作者严厉批评了 Ruby 语言官方管理机构 Ruby Central 近期的决策，认为其治理混乱、沟通不畅，并在关键的技术方向（如打包、工具链）上做出了不利于社区和语言发展的决定，导致 Ruby 生态出现倒退风险。
+原文链接: https://andre.arko.net/2026/03/03/four-months-of-ruby-central-moving-ruby-backward/
+
+[AI 对软件发布的真实影响：来自 Product Hunt 的证据]
+
+来源标签: Product Hunt
+内容精炼: 文章通过分析 Product Hunt 平台上的发布数据，量化研究了 AI 技术对软件创业的影响。研究发现，集成 AI 功能的软件产品在发布时获得的关注度（如投票、评论）显著更高，但同时也面临更激烈的竞争和更快的热度消退速度。
+原文链接: https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/
+
+
+首席架构师的深度阅读指南">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="http://localhost:8081/posts/ai_daily_news_2026-03-04/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:8081/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:8081/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:8081/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:8081/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:8081/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:8081/posts/ai_daily_news_2026-03-04/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:8081/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI 极客早报 - 2026-03-04
+    </h1>
+    <div class="post-meta"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#claude-%e6%98%af-electron-%e5%ba%94%e7%94%a8%e5%9b%a0%e4%b8%ba%e6%88%91%e4%bb%ac%e5%b7%b2%e5%a4%b1%e5%8e%bb%e4%ba%86%e5%8e%9f%e7%94%9f%e5%bc%80%e5%8f%91" aria-label="[Claude 是 Electron 应用，因为我们已失去了原生开发]">[Claude 是 Electron 应用，因为我们已失去了原生开发]</a></li>
+                <li>
+                    <a href="#%e7%be%8e%e5%9b%bd%e6%9c%80%e9%ab%98%e6%b3%95%e9%99%a2%e6%8b%92%e7%bb%9d%e5%ae%a1%e7%90%86%e5%85%b3%e4%ba%8e-ai-%e7%94%9f%e6%88%90%e6%9d%90%e6%96%99%e7%89%88%e6%9d%83%e7%9a%84%e4%ba%89%e8%ae%ae" aria-label="[美国最高法院拒绝审理关于 AI 生成材料版权的争议]">[美国最高法院拒绝审理关于 AI 生成材料版权的争议]</a></li>
+                <li>
+                    <a href="#weave--%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8e%e5%ae%9e%e4%bd%93%e7%9a%84%e5%85%b7%e5%a4%87%e8%af%ad%e8%a8%80%e6%84%9f%e7%9f%a5%e8%83%bd%e5%8a%9b%e7%9a%84%e5%90%88%e5%b9%b6%e7%ae%97%e6%b3%95" aria-label="[Weave – 一种基于实体的、具备语言感知能力的合并算法]">[Weave – 一种基于实体的、具备语言感知能力的合并算法]</a></li>
+                <li>
+                    <a href="#agentbus--%e9%80%9a%e8%bf%87-rest-api-%e5%ae%9e%e7%8e%b0%e7%9a%84%e9%9b%86%e4%b8%ad%e5%bc%8f-ai-%e6%99%ba%e8%83%bd%e4%bd%93%e9%97%b4%e9%80%9a%e4%bf%a1" aria-label="[AgentBus – 通过 REST API 实现的集中式 AI 智能体间通信]">[AgentBus – 通过 REST API 实现的集中式 AI 智能体间通信]</a></li>
+                <li>
+                    <a href="#%e5%94%90%e7%ba%b3%e5%be%b7%e5%85%8b%e5%8a%aa%e7%89%b9%e7%9a%84%e7%b1%bbclaude%e6%9c%89%e5%90%91%e5%93%88%e5%af%86%e9%a1%bf%e7%8e%af%e5%88%86%e8%a7%a3" aria-label="[唐纳德·克努特的“类Claude”有向哈密顿环分解]">[唐纳德·克努特的“类Claude”有向哈密顿环分解]</a></li>
+                <li>
+                    <a href="#%e5%9b%be%e5%bd%a2%e7%bc%96%e7%a8%8b%e8%b5%84%e6%ba%90%e6%b1%87%e6%80%bb" aria-label="[图形编程资源汇总]">[图形编程资源汇总]</a></li>
+                <li>
+                    <a href="#%e9%9d%a2%e5%90%91%e8%ae%be%e8%ae%a1%e5%b8%88%e5%92%8c%e5%bc%80%e5%8f%91%e8%80%85%e7%9a%84-mac-%e5%a4%96%e6%8e%a5%e6%98%be%e7%a4%ba%e5%99%a8%e6%8c%87%e5%8d%97%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86" aria-label="[面向设计师和开发者的 Mac 外接显示器指南（第二部分）]">[面向设计师和开发者的 Mac 外接显示器指南（第二部分）]</a></li>
+                <li>
+                    <a href="#ruby-central-%e8%ae%a9-ruby-%e5%80%92%e9%80%80%e7%9a%84%e5%9b%9b%e4%b8%aa%e6%9c%88" aria-label="[Ruby Central 让 Ruby 倒退的四个月]">[Ruby Central 让 Ruby 倒退的四个月]</a></li>
+                <li>
+                    <a href="#ai-%e5%af%b9%e8%bd%af%e4%bb%b6%e5%8f%91%e5%b8%83%e7%9a%84%e7%9c%9f%e5%ae%9e%e5%bd%b1%e5%93%8d%e6%9d%a5%e8%87%aa-product-hunt-%e7%9a%84%e8%af%81%e6%8d%ae" aria-label="[AI 对软件发布的真实影响：来自 Product Hunt 的证据]">[AI 对软件发布的真实影响：来自 Product Hunt 的证据]</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="claude-是-electron-应用因为我们已失去了原生开发">[Claude 是 Electron 应用，因为我们已失去了原生开发]<a hidden class="anchor" aria-hidden="true" href="#claude-是-electron-应用因为我们已失去了原生开发">#</a></h3>
+<ul>
+<li>来源标签: Lobsters</li>
+<li>内容精炼: 文章批判了当前软件开发生态过度依赖 Electron 等跨平台框架，导致应用臃肿、性能低下。作者认为，追求“一次编写，到处运行”的便利性，是以牺牲原生应用 (Native App) 的性能、能效和用户体验为代价的，反映了行业对工程效率的过度追求。</li>
+<li>原文链接: <a href="https://tonsky.me/blog/fall-of-native/">https://tonsky.me/blog/fall-of-native/</a></li>
+</ul>
+<h3 id="美国最高法院拒绝审理关于-ai-生成材料版权的争议">[美国最高法院拒绝审理关于 AI 生成材料版权的争议]<a hidden class="anchor" aria-hidden="true" href="#美国最高法院拒绝审理关于-ai-生成材料版权的争议">#</a></h3>
+<ul>
+<li>来源标签: Lobsters</li>
+<li>内容精炼: 美国最高法院决定不受理一起关于 AI 生成内容 (AI-generated material) 版权归属的案件。这一决定意味着，在缺乏联邦立法或更高层级司法裁决的情况下，关于人工智能创作物版权 (Copyright) 的模糊性和法律不确定性将持续存在。</li>
+<li>原文链接: <a href="https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/">https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/</a></li>
+</ul>
+<h3 id="weave--一种基于实体的具备语言感知能力的合并算法">[Weave – 一种基于实体的、具备语言感知能力的合并算法]<a hidden class="anchor" aria-hidden="true" href="#weave--一种基于实体的具备语言感知能力的合并算法">#</a></h3>
+<ul>
+<li>来源标签: Hacker News</li>
+<li>内容精炼: Weave 是一个创新的代码合并 (Merge) 算法，它通过理解代码的实体结构（如函数、类）而非简单的文本行差异来进行合并。这种方法旨在更智能地处理代码冲突，减少手动干预，提升版本控制 (Version Control) 系统的协作效率。</li>
+<li>原文链接: <a href="https://github.com/Ataraxy-Labs/weave">https://github.com/Ataraxy-Labs/weave</a></li>
+</ul>
+<h3 id="agentbus--通过-rest-api-实现的集中式-ai-智能体间通信">[AgentBus – 通过 REST API 实现的集中式 AI 智能体间通信]<a hidden class="anchor" aria-hidden="true" href="#agentbus--通过-rest-api-实现的集中式-ai-智能体间通信">#</a></h3>
+<ul>
+<li>来源标签: Hacker News</li>
+<li>内容精炼: AgentBus 是一个为 AI 智能体 (AI Agent) 设计的集中式消息传递平台。它提供标准化的 REST API，允许不同的 AI 智能体之间进行结构化通信和协作，旨在简化多智能体系统 (Multi-Agent System) 的构建与集成。</li>
+<li>原文链接: <a href="https://agentbus.org/">https://agentbus.org/</a></li>
+</ul>
+<h3 id="唐纳德克努特的类claude有向哈密顿环分解">[唐纳德·克努特的“类Claude”有向哈密顿环分解]<a hidden class="anchor" aria-hidden="true" href="#唐纳德克努特的类claude有向哈密顿环分解">#</a></h3>
+<ul>
+<li>来源标签: Lobsters</li>
+<li>内容精炼: 计算机科学先驱高德纳 (Donald Knuth) 发布了一篇技术论文，探讨了在有向图中寻找哈密顿环 (Hamiltonian Cycles) 分解的新方法。论文标题中的“类Claude”暗示其可能受到当前大语言模型 (LLM) 推理方式的启发，或将图论与新型计算范式结合。</li>
+<li>原文链接: <a href="https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf">https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf</a></li>
+</ul>
+<h3 id="图形编程资源汇总">[图形编程资源汇总]<a hidden class="anchor" aria-hidden="true" href="#图形编程资源汇总">#</a></h3>
+<ul>
+<li>来源标签: Hacker News</li>
+<li>内容精炼: 这是一个精心整理的图形编程 (Graphics Programming) 资源集合网站。内容涵盖了从基础的渲染管线 (Rendering Pipeline)、着色器 (Shaders) 编写，到高级的实时光线追踪 (Real-time Ray Tracing) 等技术的学习路径、教程、论文和工具链接。</li>
+<li>原文链接: <a href="https://develop--gpvm-website.netlify.app/resources/">https://develop--gpvm-website.netlify.app/resources/</a></li>
+</ul>
+<h3 id="面向设计师和开发者的-mac-外接显示器指南第二部分">[面向设计师和开发者的 Mac 外接显示器指南（第二部分）]<a hidden class="anchor" aria-hidden="true" href="#面向设计师和开发者的-mac-外接显示器指南第二部分">#</a></h3>
+<ul>
+<li>来源标签: Hacker News</li>
+<li>内容精炼: 文章深入探讨了为 Mac 选择外接显示器 (External Displays) 的技术细节，重点关注色彩准确性、分辨率缩放 (Resolution Scaling)、HDR 支持以及不同接口（如 Thunderbolt, USB-C）对专业工作流的影响，为视觉创作者和开发者提供实用选购建议。</li>
+<li>原文链接: <a href="https://bjango.com/articles/macexternaldisplays2/">https://bjango.com/articles/macexternaldisplays2/</a></li>
+</ul>
+<h3 id="ruby-central-让-ruby-倒退的四个月">[Ruby Central 让 Ruby 倒退的四个月]<a hidden class="anchor" aria-hidden="true" href="#ruby-central-让-ruby-倒退的四个月">#</a></h3>
+<ul>
+<li>来源标签: Lobsters</li>
+<li>内容精炼: 作者严厉批评了 Ruby 语言官方管理机构 Ruby Central 近期的决策，认为其治理混乱、沟通不畅，并在关键的技术方向（如打包、工具链）上做出了不利于社区和语言发展的决定，导致 Ruby 生态出现倒退风险。</li>
+<li>原文链接: <a href="https://andre.arko.net/2026/03/03/four-months-of-ruby-central-moving-ruby-backward/">https://andre.arko.net/2026/03/03/four-months-of-ruby-central-moving-ruby-backward/</a></li>
+</ul>
+<h3 id="ai-对软件发布的真实影响来自-product-hunt-的证据">[AI 对软件发布的真实影响：来自 Product Hunt 的证据]<a hidden class="anchor" aria-hidden="true" href="#ai-对软件发布的真实影响来自-product-hunt-的证据">#</a></h3>
+<ul>
+<li>来源标签: Product Hunt</li>
+<li>内容精炼: 文章通过分析 Product Hunt 平台上的发布数据，量化研究了 AI 技术对软件创业的影响。研究发现，集成 AI 功能的软件产品在发布时获得的关注度（如投票、评论）显著更高，但同时也面临更激烈的竞争和更快的热度消退速度。</li>
+<li>原文链接: <a href="https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/">https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/</a></li>
+</ul>
+<hr>
+<p>首席架构师的深度阅读指南</p>
+<p>请帮我深度读取并解析这篇文章：[此处粘贴URL]。我希望你：</p>
+<ol>
+<li>提炼核心技术架构或核心观点；</li>
+<li>告诉我这项技术/产品解决了什么行业痛点；</li>
+<li>总结读者评论中最有价值的反面意见或潜在缺陷。</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:8081/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

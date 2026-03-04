@@ -142,6 +142,94 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>哈喽，各位极客小伙伴们！
+在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。
+这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：
+--- title: &#34;我的日记&#34; date: 2026-03-04 draft: false --- 如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。 大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！
+★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫” 既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。
+它的工作逻辑极度简单粗暴：
+24 小时死死盯着咱们的 SyncDrive 网盘。 只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。 它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！ 只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。
+★ 极客的傲骨：抛弃第三方库，纯手搓轮询 在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。
+但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。
+俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫" href="http://localhost:8081/posts/pg03/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-04
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>[Claude 是 Electron 应用，因为我们已失去了原生开发] 来源标签: Lobsters 内容精炼: 文章批判了当前软件开发生态过度依赖 Electron 等跨平台框架，导致应用臃肿、性能低下。作者认为，追求“一次编写，到处运行”的便利性，是以牺牲原生应用 (Native App) 的性能、能效和用户体验为代价的，反映了行业对工程效率的过度追求。 原文链接: https://tonsky.me/blog/fall-of-native/ [美国最高法院拒绝审理关于 AI 生成材料版权的争议] 来源标签: Lobsters 内容精炼: 美国最高法院决定不受理一起关于 AI 生成内容 (AI-generated material) 版权归属的案件。这一决定意味着，在缺乏联邦立法或更高层级司法裁决的情况下，关于人工智能创作物版权 (Copyright) 的模糊性和法律不确定性将持续存在。 原文链接: https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/ [Weave – 一种基于实体的、具备语言感知能力的合并算法] 来源标签: Hacker News 内容精炼: Weave 是一个创新的代码合并 (Merge) 算法，它通过理解代码的实体结构（如函数、类）而非简单的文本行差异来进行合并。这种方法旨在更智能地处理代码冲突，减少手动干预，提升版本控制 (Version Control) 系统的协作效率。 原文链接: https://github.com/Ataraxy-Labs/weave [AgentBus – 通过 REST API 实现的集中式 AI 智能体间通信] 来源标签: Hacker News 内容精炼: AgentBus 是一个为 AI 智能体 (AI Agent) 设计的集中式消息传递平台。它提供标准化的 REST API，允许不同的 AI 智能体之间进行结构化通信和协作，旨在简化多智能体系统 (Multi-Agent System) 的构建与集成。 原文链接: https://agentbus.org/ [唐纳德·克努特的“类Claude”有向哈密顿环分解] 来源标签: Lobsters 内容精炼: 计算机科学先驱高德纳 (Donald Knuth) 发布了一篇技术论文，探讨了在有向图中寻找哈密顿环 (Hamiltonian Cycles) 分解的新方法。论文标题中的“类Claude”暗示其可能受到当前大语言模型 (LLM) 推理方式的启发，或将图论与新型计算范式结合。 原文链接: https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf [图形编程资源汇总] 来源标签: Hacker News 内容精炼: 这是一个精心整理的图形编程 (Graphics Programming) 资源集合网站。内容涵盖了从基础的渲染管线 (Rendering Pipeline)、着色器 (Shaders) 编写，到高级的实时光线追踪 (Real-time Ray Tracing) 等技术的学习路径、教程、论文和工具链接。 原文链接: https://develop--gpvm-website.netlify.app/resources/ [面向设计师和开发者的 Mac 外接显示器指南（第二部分）] 来源标签: Hacker News 内容精炼: 文章深入探讨了为 Mac 选择外接显示器 (External Displays) 的技术细节，重点关注色彩准确性、分辨率缩放 (Resolution Scaling)、HDR 支持以及不同接口（如 Thunderbolt, USB-C）对专业工作流的影响，为视觉创作者和开发者提供实用选购建议。 原文链接: https://bjango.com/articles/macexternaldisplays2/ [Ruby Central 让 Ruby 倒退的四个月] 来源标签: Lobsters 内容精炼: 作者严厉批评了 Ruby 语言官方管理机构 Ruby Central 近期的决策，认为其治理混乱、沟通不畅，并在关键的技术方向（如打包、工具链）上做出了不利于社区和语言发展的决定，导致 Ruby 生态出现倒退风险。 原文链接: https://andre.arko.net/2026/03/03/four-months-of-ruby-central-moving-ruby-backward/ [AI 对软件发布的真实影响：来自 Product Hunt 的证据] 来源标签: Product Hunt 内容精炼: 文章通过分析 Product Hunt 平台上的发布数据，量化研究了 AI 技术对软件创业的影响。研究发现，集成 AI 功能的软件产品在发布时获得的关注度（如投票、评论）显著更高，但同时也面临更激烈的竞争和更快的热度消退速度。 原文链接: https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/ 首席架构师的深度阅读指南
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-04" href="http://localhost:8081/posts/ai_daily_news_2026-03-04/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 辅助发现有向图哈密顿循环的通用构造
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 计算机科学泰斗 Donald Knuth 抛出的开放问题被 Claude Opus 4.6 在一小时内解决。Knuth 随后给出了严格的数学证明，确认该构造对所有奇数 m 有效。
+背景 Knuth 在研究《计算机程序设计艺术》未来卷册中的有向哈密顿循环问题时，构造了如下有向图：
+图中共有 m³ 个顶点，记为 ijk（0 ≤ i, j, k &lt; m）。每个顶点有三条出边，分别指向：
+i&#43;jk：i 加 1（模 m） ij&#43;k：j 加 1（模 m） ijk&#43;：k 加 1（模 m） 开放问题：能否将这 3m³ 条弧分解为三个有向哈密顿循环？
+Knuth 自身仅解决了 m = 3 的特殊情况。其友Filip Stappers 通过枚举发现了 m = 4 至 16 的数值解，但通用构造（对任意 m &gt; 2）始终未知。
+Claude 的求解过程 Filip 将此问题提交给 Claude Opus 4.6，并要求其记录每次探索的进展。Claude 共进行了 31 轮探索，主要尝试包括：
+早期尝试：线性函数、二次函数、深度优先搜索、2D 蛇形分析等方法，均未能找到通用构造。
+关键突破（第15-20轮）：Claude 引入了纤维分解（Fiber Decomposition）方法，将顶点按 s = (i &#43; j &#43; k) mod m 分层分析。结合模拟退火算法，Claude 找到了 m = 3 和 m = 4 的具体解。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 辅助发现有向图哈密顿循环的通用构造" href="http://localhost:8081/posts/knuth-claude-cycles/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">量子计算再突破！光首次模拟诺贝尔奖量子效应
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 2026年3月，量子科技领域迎来两大重磅突破：光首次模拟了量子霍尔效应，以及科学家成功解锁单个光子内的隐藏维度。这些进展意味着什么？将如何改变量子计算的未来？
+今日量子要闻速览 1. 历史性突破：光模仿了诺贝尔奖量子效应 来源: ScienceDaily
+发布时间: 2026年3月1日
+机构: 蒙特利尔大学
+核心事实：
+科学家首次实现光（光子）模拟量子霍尔效应（Quantum Hall Effect） 此前该效应仅在电子中观察到，因为电子带电荷 光子不带电荷，因此无法自然响应电磁场 研究发表在 Physical Review X 技术细节：
+当电流在材料中流动并施加垂直磁场时，会产生横向电压——这就是霍尔效应。1980年代，科学家在极低温强磁场下的超薄导体中发现了量子霍尔效应：横向电压不再平滑增加，而是以完美的阶梯状跳跃。
+“光以量子化的方式漂移，沿着与电子在强磁场中类似的普遍阶梯前进。”
+—— 蒙特利尔大学物理学教授 Philippe St-Jean
+这些&#34;平台&#34;（plateaus）是通用的，不依赖于材料成分、形状或微观缺陷，完全由自然基本常数决定：电子电荷和普朗克常数。
+为什么重要：
+计量学革命 — 光学系统可能成为测量精度的新黄金标准 量子计量学 — 精确控制光的流动可能扩展到量子信息处理 更强大的量子光子计算机 — 可能带来更坚韧、更可靠的量子光子技术 新型传感器 — 微小的偏差可能揭示微妙的环境干扰 2. 重大进展：解锁光子内的隐藏维度 来源: ScienceDaily
+发布时间: 2026年2月26日
+机构: 维特沃特斯兰德大学（南非）、巴塞罗那自治大学
+核心事实：
+科学家发现了塑造量子光的新方法 可以在单个光子中创建高维态（high-dimensional states） 每个光子可以携带更多信息 研究发表在 Nature Photonics 技术细节：
+研究者通过精确控制光子的空间模式、时序和光谱，设计出所谓的结构光子（structured photons）。
+“20年前，这个领域的工具箱几乎是空的。今天，我们有了芯片上的量子结构光源，紧凑而高效，能够创造和控制量子态。”
+—— 维特沃特斯兰德大学 Andrew Forbes 教授
+为什么重要：
+高维编码 — 每个光子可以携带更多信息，且抗干扰能力更强 量子通信 — 对安全通信系统特别有吸引力 量子成像 — 下一代成像技术 拓扑量子态 — 让脆弱的量子信号更加稳定 这两件事有什么关联？ 维度 光模拟量子霍尔效应 解锁光子隐藏维度 共同点 都是量子光学突破 都是量子光学突破 核心突破 光的&#34;横向漂移&#34;量子化 光子的空间/时间维度控制 应用方向 计量学、传感器 量子通信、量子计算 本质上：两者都在探索如何精确控制光在量子层面的行为。这是量子计算和量子通信硬件的基础。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 量子计算再突破！光首次模拟诺贝尔奖量子效应" href="http://localhost:8081/posts/quantum-breakthrough-2026/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载
     </h2>
   </header>

@@ -6,15 +6,15 @@ hugo v0.157.0-7747abbb316b03c8f353fd3be62d5011fa883ee6+extended linux/amd64 Buil
 
                   │ EN 
 ─────────┼──
- Pages            │ 21 
+ Pages            │ 27 
  Paginator pages  │  0 
  Non-page files   │  0 
  Static files     │  0 
  Processed images │  0 
- Aliases          │  5 
+ Aliases          │  6 
  Cleaned          │  0 
 
-Built in 165 ms
+Built in 296 ms
 Environment: "development"
 Serving pages from disk
 Web Server is available at http://localhost:8081/ (bind address 0.0.0.0) 
