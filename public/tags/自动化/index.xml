@@ -6,8 +6,30 @@
     <description>Recent content in 自动化 on Ziv的极客日志</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”</title>
+      <link>http://localhost:8081/posts/pg04/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8081/posts/pg04/</guid>
+      <description>&lt;p&gt;哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 &lt;strong&gt;【最终章】&lt;/strong&gt;！&lt;/p&gt;
+&lt;p&gt;在前三篇里，俺们从零搭建了一个完全无人值守的 &lt;strong&gt;【本地极客知识库】&lt;/strong&gt;：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。&lt;/p&gt;
+&lt;p&gt;基础设施已经完美闭环，但极客的折腾永无止境！
+既然有了一个 24 小时待命的自动化基座，咱们为什么还要自己写文章？为何不直接压榨 AI 的“睡后算力”，让它成为咱们的 &lt;strong&gt;【赛博记者】&lt;/strong&gt;？&lt;/p&gt;
+&lt;p&gt;今天，俺将带你手搓一个纯 Python 的 AI 聚合爬虫。它会在每天清晨你还没睡醒时，自动去外网极客社区“进货”，并排版成一份带暗黑模式的硬核早报，直接塞进你的博客里！&lt;/p&gt;
+&lt;h2 id=&#34;-痛点破局信息过载与机翻的灾难&#34;&gt;★ 痛点破局：信息过载与“机翻”的灾难&lt;/h2&gt;
+&lt;p&gt;每天早晨刷手机，大伙儿肯定面临过这两个痛点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;【信息源太分散】&lt;/strong&gt;：Hacker News、Reddit、Product Hunt，挨个刷一遍半小时就没了。外文长篇大论，根本没时间细看。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;【劣质翻译的灾难】&lt;/strong&gt;：如果用浏览器自带的翻译，它会把所有的专业术语全毁掉。比如把 Kubernetes 翻成“舵手”，把 Containerization 翻成“集装箱化”，读起来简直让人吐血。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;咱们的 &lt;strong&gt;【AI 赛博记者】&lt;/strong&gt; 就是来“降维打击”这些痛点的。&lt;/p&gt;
+&lt;h2 id=&#34;-核心逻辑与反爬突围战&#34;&gt;★ 核心逻辑与“反爬”突围战&lt;/h2&gt;
+&lt;p&gt;这个脚本的核心逻辑很简单：利用 Python 的 &lt;code&gt;urllib&lt;/code&gt; 抓取四大极客社区的 RSS 源，打包丢给大模型（如 DeepSeek 或 OpenAI）进行总结，最后生成 Markdown 扔进咱们的 &lt;code&gt;SyncDrive&lt;/code&gt; 网盘。&lt;/p&gt;
+&lt;p&gt;但第一步“抓取”就差点翻车。当俺试图去抓 Reddit 的技术板块时，直接被它背后的 Cloudflare 防御盾弹了一个 &lt;code&gt;403 Forbidden&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【架构师的解法】&lt;/strong&gt;：咱们必须进行深度伪装。在原生 Python HTTP 请求中，强行注入极其逼真的浏览器 &lt;code&gt;User-Agent&lt;/code&gt;，并声明我们接收 &lt;code&gt;application/rss+xml&lt;/code&gt;。如果 Reddit 还是傲娇，俺还加入了 &lt;strong&gt;【Lobsters】&lt;/strong&gt;（国外极硬核且对爬虫友好的开发者社区）作为最强替补！&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫</title>
       <link>http://localhost:8081/posts/pg03/</link>

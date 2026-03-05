@@ -6,26 +6,33 @@
     <description>Recent content in Tags on Ziv的极客日志</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:8081/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:8081/tags/ai/</link>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8081/tags/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Python</title>
       <link>http://localhost:8081/tags/python/</link>
-      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:8081/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>极客教程</title>
       <link>http://localhost:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/</guid>
       <description></description>
     </item>
     <item>
       <title>自动化</title>
       <link>http://localhost:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
-      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</guid>
       <description></description>
     </item>

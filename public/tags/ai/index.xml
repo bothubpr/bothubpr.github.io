@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AI on Ziv的极客日志</title>
-    <link>http://192.168.10.32:8081/tags/ai/</link>
+    <link>http://localhost:8081/tags/ai/</link>
     <description>Recent content in AI on Ziv的极客日志</description>
     <generator>Hugo -- 0.157.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://192.168.10.32:8081/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8081/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”</title>
-      <link>http://192.168.10.32:8081/posts/pg04/</link>
+      <link>http://localhost:8081/posts/pg04/</link>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://192.168.10.32:8081/posts/pg04/</guid>
+      <guid>http://localhost:8081/posts/pg04/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 &lt;strong&gt;【最终章】&lt;/strong&gt;！&lt;/p&gt;
 &lt;p&gt;在前三篇里，俺们从零搭建了一个完全无人值守的 &lt;strong&gt;【本地极客知识库】&lt;/strong&gt;：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。&lt;/p&gt;
 &lt;p&gt;基础设施已经完美闭环，但极客的折腾永无止境！
