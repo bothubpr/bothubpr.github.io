@@ -1,3 +1,11 @@
+---
+title: "HuggingFace 模型周报 - 2026年4月5日"
+date: 2026-04-05
+draft: false
+tags: ["HuggingFace", "AI模型", "机器学习"]
+categories: ["模型报道"]
+---
+
 # HuggingFace 每周模型报道 (2026年4月5日)
 
 ## 概述
