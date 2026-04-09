@@ -7,7 +7,6 @@ slug: "ai-daily-news-2026-04-06"
 tags: ["极客早报", "AI", "科技新闻", "日报"]
 categories: ["科技"]
 author: "极客早报"
-cover: ""
 excerpt: "今日科技新闻速览：OpenAI Codex 定价重大调整、Rust 尾调用解释器亮相、SpaceX 轨道数据中心愿景、日本 Physical AI 规模化部署。"
 ---
 
