@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Claude on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/tags/claude/</link>
+    <description>Recent content in Claude on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/claude/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claude Code 源码泄露：事件始末、隐藏功能与行业影响</title>
+      <link>https://bothubpr.github.io/posts/claude_code_source_leak_2026-04-02/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/claude_code_source_leak_2026-04-02/</guid>
+      <description>&lt;h1 id=&#34;claude-code-源码泄露事件始末隐藏功能与行业影响&#34;&gt;Claude Code 源码泄露：事件始末、隐藏功能与行业影响&lt;/h1&gt;
+&lt;h2 id=&#34;-事件时间线&#34;&gt;📅 事件时间线&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;时间&lt;/th&gt;
+          &lt;th&gt;事件&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年3月31日&lt;/td&gt;
+          &lt;td&gt;Claude Code npm 包中的 source map 文件意外暴露，TypeScript 源码可公开下载&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年4月1日&lt;/td&gt;
+          &lt;td&gt;安全研究员 @Fried_rice（Chaofan Shou）率先在 X 上披露此事&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2026年4月2日&lt;/td&gt;
+          &lt;td&gt;GitHub 镜像仓库出现，开发者社区开始深度分析代码&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;-事件始末&#34;&gt;🔓 事件始末&lt;/h2&gt;
+&lt;h3 id=&#34;泄露原因&#34;&gt;泄露原因&lt;/h3&gt;
+&lt;p&gt;Anthropic 在发布 Claude Code CLI 工具至 npm  registry 时，附带的 &lt;code&gt;.map&lt;/code&gt; source map 文件直接指向了 Anthropic 私有 R2 存储桶中的原始 TypeScript 源码。这意味着任何人只需下载 npm 包并解析 map 文件，就能获取&lt;strong&gt;未经混淆的完整源代码&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;这不是一次黑客攻击，而是发布流程中的&lt;strong&gt;供应链暴露（supply-chain exposure）&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;泄露规模&#34;&gt;泄露规模&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;文件数量&lt;/strong&gt;：~1,900 个 TypeScript 文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;代码规模&lt;/strong&gt;：超过 &lt;strong&gt;512,000 行&lt;/strong&gt;代码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言&lt;/strong&gt;：TypeScript（strict 模式）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;运行时&lt;/strong&gt;：Bun&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;终端 UI&lt;/strong&gt;：React + Ink&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;代码架构&lt;/strong&gt;：高度模块化，工具系统、命令系统、bridge 系统分离&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;谁发现了&#34;&gt;谁发现了？&lt;/h3&gt;
+&lt;p&gt;@Fried_rice（Chaofan Shou）于 2026年3月31日在 X 上公开了这一发现。他指出：&lt;em&gt;&amp;ldquo;Claude code source code has been leaked via a map file in their npm registry!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

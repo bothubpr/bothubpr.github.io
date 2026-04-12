@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI 极客早报 | 2026年4月8日 | Ziv的极客日志</title>
+<meta name="keywords" content="AI, 极客早报, 每日新闻">
+<meta name="description" content="
+每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。
+
+Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案
+来源：HN
+Anthropic 正式发布 Project Glasswing，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 490 个 HN points，社区关注度极高。
+
+🔗 阅读原文
+
+伊朗黑客升级攻击策略，持续瞄准美国关键基础设施
+来源：TechCrunch
+FBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。
+
+🔗 阅读原文
+
+俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动
+来源：TechCrunch
+俄罗斯政府黑客组织 APT28（Fancy Bear） 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。
+
+🔗 阅读原文
+
+Cloudflare 公布后量子密码学路线图：2029 年完成全面升级
+来源：HN
+Cloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 2029 年前将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 &ldquo;Q-Day&rdquo; 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。
+
+🔗 阅读原文
+
+评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案
+来源：Ars Technica">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="AI 极客早报 | 2026年4月8日">
+  <meta property="og:description" content=" 每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。
+Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案 来源：HN
+Anthropic 正式发布 Project Glasswing，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 490 个 HN points，社区关注度极高。
+🔗 阅读原文
+伊朗黑客升级攻击策略，持续瞄准美国关键基础设施 来源：TechCrunch
+FBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。
+🔗 阅读原文
+俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动 来源：TechCrunch
+俄罗斯政府黑客组织 APT28（Fancy Bear） 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。
+🔗 阅读原文
+Cloudflare 公布后量子密码学路线图：2029 年完成全面升级 来源：HN
+Cloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 2029 年前将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 “Q-Day” 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。
+🔗 阅读原文
+评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案 来源：Ars Technica">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-08T08:00:00+08:00">
+    <meta property="article:modified_time" content="2026-04-08T08:00:00+08:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="极客早报">
+    <meta property="article:tag" content="每日新闻">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI 极客早报 | 2026年4月8日">
+<meta name="twitter:description" content="
+每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。
+
+Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案
+来源：HN
+Anthropic 正式发布 Project Glasswing，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 490 个 HN points，社区关注度极高。
+
+🔗 阅读原文
+
+伊朗黑客升级攻击策略，持续瞄准美国关键基础设施
+来源：TechCrunch
+FBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。
+
+🔗 阅读原文
+
+俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动
+来源：TechCrunch
+俄罗斯政府黑客组织 APT28（Fancy Bear） 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。
+
+🔗 阅读原文
+
+Cloudflare 公布后量子密码学路线图：2029 年完成全面升级
+来源：HN
+Cloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 2029 年前将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 &ldquo;Q-Day&rdquo; 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。
+
+🔗 阅读原文
+
+评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案
+来源：Ars Technica">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI 极客早报 | 2026年4月8日",
+      "item": "https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI 极客早报 | 2026年4月8日",
+  "name": "AI 极客早报 | 2026年4月8日",
+  "description": " 每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。\nAnthropic 发布 Project Glasswing：AI 时代关键软件安全新方案 来源：HN\nAnthropic 正式发布 Project Glasswing，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 490 个 HN points，社区关注度极高。\n🔗 阅读原文\n伊朗黑客升级攻击策略，持续瞄准美国关键基础设施 来源：TechCrunch\nFBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。\n🔗 阅读原文\n俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动 来源：TechCrunch\n俄罗斯政府黑客组织 APT28（Fancy Bear） 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。\n🔗 阅读原文\nCloudflare 公布后量子密码学路线图：2029 年完成全面升级 来源：HN\nCloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 2029 年前将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 \u0026ldquo;Q-Day\u0026rdquo; 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。\n🔗 阅读原文\n评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案 来源：Ars Technica\n",
+  "keywords": [
+    "AI", "极客早报", "每日新闻"
+  ],
+  "articleBody": " 每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。\nAnthropic 发布 Project Glasswing：AI 时代关键软件安全新方案 来源：HN\nAnthropic 正式发布 Project Glasswing，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 490 个 HN points，社区关注度极高。\n🔗 阅读原文\n伊朗黑客升级攻击策略，持续瞄准美国关键基础设施 来源：TechCrunch\nFBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。\n🔗 阅读原文\n俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动 来源：TechCrunch\n俄罗斯政府黑客组织 APT28（Fancy Bear） 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。\n🔗 阅读原文\nCloudflare 公布后量子密码学路线图：2029 年完成全面升级 来源：HN\nCloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 2029 年前将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 “Q-Day” 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。\n🔗 阅读原文\n评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案 来源：Ars Technica\n《纽约时报》联合 AI 评测公司 Oumi 分析发现，Google AI Overviews（由 Gemini 驱动）准确率约 90%，也就是说每小时产生数十万条错误答案。90% 的准确率听起来好像还行，但放在 Google 的搜索量面前，这个错误率意味着海量用户在接收误导信息。AI 加持的搜索引擎可靠性问题再次引发广泛讨论。\n🔗 阅读原文\nAnthropic 公布 Claude Mythos Preview 系统卡片，详细说明能力边界与安全评估 来源：HN\nAnthropic 公布了 Claude Mythos Preview 的完整系统卡片（PDF 格式），详细披露了该模型的能力边界与安全评估内容，引发社区热议，收获 321 个 HN points。系统卡片作为 AI 公司透明度建设的重要工具，Mythos Preview 这次的信息披露量在业内属于较高水平，值得关注。\n🔗 阅读原文\nAnthropic 年化收入突破 300 亿美元，扩大与 Google 和 Broadcom 的算力合作 来源：TechCrunch\nAnthropic 扩大了与 Google 和 Broadcom 的算力战略合作，伴随年化收入正式突破 300 亿美元大关。AI 算力需求持续井喷，头部公司的收入增速丝毫未减速。Google TPU 和 Broadcom 的定制 ASIC 在这场算力军备竞赛中扮演了关键角色。\n🔗 阅读原文\nChrome 正式引入 Vertical Tabs 垂直标签页，帮你告别标签混乱 来源：TechCrunch\nGoogle Chrome 正式引入 **Vertical Tabs（垂直标签页）**功能，标签页从顶部横向排列改为左侧纵向堆叠，配合更简洁的 Reading Mode，帮助用户高效管理大量打开的标签页。这个功能是用户呼声最高的功能之一，如今终于落地，相信能拯救不少\"标签页收集爱好者\"。\n🔗 阅读原文\nIntel 押注先进芯片封装技术：2.5D/3D 封装成为重获竞争力的核心战略 来源：Ars Technica\nIntel 宣布将**先进芯片封装（Advanced Chip Packaging）**技术作为在 AI 芯片浪潮中重获竞争力的核心战略，重点布局 2.5D/3D 封装产能。在制程工艺竞争日趋激烈的当下，封装技术被认为是差异化竞争的重要方向，Intel 显然想在这个问题上扳回一局。\n🔗 阅读原文\nIntel 确认加入 Elon Musk 的 Terafab 芯片项目，德克萨斯州共建新晶圆厂 来源：TechCrunch\nIntel 正式确认加入 Elon Musk 的 Terafab 芯片项目，将与 SpaceX 和 Tesla 共同在德克萨斯州建设新型半导体晶圆厂。继 AMD 和 Samsung 之后，Intel 成为 Terafab 生态的又一重要成员，半导体行业正在被 Elon Musk 的垂直整合野心所重塑。\n🔗 阅读原文\n首席架构师的深度阅读指南 本周最值得深入研究的主题：\n后量子密码学：Cloudflare 的路线图是理解 Q-Day 威胁的绝佳入门材料，了解 PQC 迁移的复杂性 Project Glasswing：Anthropic 在 AI 安全交叉领域的最新尝试，可结合 Mythos Preview 系统卡片一起读 先进芯片封装：Intel 的战略转向体现了整个行业从\"制程为王\"向\"封装为王\"的范式转变，值得跟踪 🔗 觉得有收获？欢迎订阅 AI 极客早报，每天早上 8 点准时推送。\n",
+  "wordCount" : "224",
+  "inLanguage": "en",
+  "datePublished": "2026-04-08T08:00:00+08:00",
+  "dateModified": "2026-04-08T08:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI 极客早报 | 2026年4月8日
+    </h1>
+    <div class="post-meta"><span title='2026-04-08 08:00:00 +0800 CST'>April 8, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#anthropic-%e5%8f%91%e5%b8%83-project-glasswingai-%e6%97%b6%e4%bb%a3%e5%85%b3%e9%94%ae%e8%bd%af%e4%bb%b6%e5%ae%89%e5%85%a8%e6%96%b0%e6%96%b9%e6%a1%88" aria-label="Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案">Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案</a></li>
+                <li>
+                    <a href="#%e4%bc%8a%e6%9c%97%e9%bb%91%e5%ae%a2%e5%8d%87%e7%ba%a7%e6%94%bb%e5%87%bb%e7%ad%96%e7%95%a5%e6%8c%81%e7%bb%ad%e7%9e%84%e5%87%86%e7%be%8e%e5%9b%bd%e5%85%b3%e9%94%ae%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd" aria-label="伊朗黑客升级攻击策略，持续瞄准美国关键基础设施">伊朗黑客升级攻击策略，持续瞄准美国关键基础设施</a></li>
+                <li>
+                    <a href="#%e4%bf%84%e7%bd%97%e6%96%af-apt28-%e7%bb%84%e7%bb%87%e5%85%a5%e4%be%b5%e6%95%b0%e5%8d%83%e5%8f%b0%e5%ae%b6%e7%94%a8%e8%b7%af%e7%94%b1%e5%99%a8%e5%8f%91%e5%8a%a8%e5%a4%a7%e8%a7%84%e6%a8%a1%e9%97%b4%e8%b0%8d%e6%b4%bb%e5%8a%a8" aria-label="俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动">俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动</a></li>
+                <li>
+                    <a href="#cloudflare-%e5%85%ac%e5%b8%83%e5%90%8e%e9%87%8f%e5%ad%90%e5%af%86%e7%a0%81%e5%ad%a6%e8%b7%af%e7%ba%bf%e5%9b%be2029-%e5%b9%b4%e5%ae%8c%e6%88%90%e5%85%a8%e9%9d%a2%e5%8d%87%e7%ba%a7" aria-label="Cloudflare 公布后量子密码学路线图：2029 年完成全面升级">Cloudflare 公布后量子密码学路线图：2029 年完成全面升级</a></li>
+                <li>
+                    <a href="#%e8%af%84%e6%b5%8b%e6%98%be%e7%a4%ba-google-ai-overviews-%e5%87%86%e7%a1%ae%e7%8e%87%e7%ba%a6-90%e6%af%8f%e5%b0%8f%e6%97%b6%e4%ba%a7%e7%94%9f%e6%95%b0%e5%8d%81%e4%b8%87%e6%9d%a1%e9%94%99%e8%af%af%e7%ad%94%e6%a1%88" aria-label="评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案">评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案</a></li>
+                <li>
+                    <a href="#anthropic-%e5%85%ac%e5%b8%83-claude-mythos-preview-%e7%b3%bb%e7%bb%9f%e5%8d%a1%e7%89%87%e8%af%a6%e7%bb%86%e8%af%b4%e6%98%8e%e8%83%bd%e5%8a%9b%e8%be%b9%e7%95%8c%e4%b8%8e%e5%ae%89%e5%85%a8%e8%af%84%e4%bc%b0" aria-label="Anthropic 公布 Claude Mythos Preview 系统卡片，详细说明能力边界与安全评估">Anthropic 公布 Claude Mythos Preview 系统卡片，详细说明能力边界与安全评估</a></li>
+                <li>
+                    <a href="#anthropic-%e5%b9%b4%e5%8c%96%e6%94%b6%e5%85%a5%e7%aa%81%e7%a0%b4-300-%e4%ba%bf%e7%be%8e%e5%85%83%e6%89%a9%e5%a4%a7%e4%b8%8e-google-%e5%92%8c-broadcom-%e7%9a%84%e7%ae%97%e5%8a%9b%e5%90%88%e4%bd%9c" aria-label="Anthropic 年化收入突破 300 亿美元，扩大与 Google 和 Broadcom 的算力合作">Anthropic 年化收入突破 300 亿美元，扩大与 Google 和 Broadcom 的算力合作</a></li>
+                <li>
+                    <a href="#chrome-%e6%ad%a3%e5%bc%8f%e5%bc%95%e5%85%a5-vertical-tabs-%e5%9e%82%e7%9b%b4%e6%a0%87%e7%ad%be%e9%a1%b5%e5%b8%ae%e4%bd%a0%e5%91%8a%e5%88%ab%e6%a0%87%e7%ad%be%e6%b7%b7%e4%b9%b1" aria-label="Chrome 正式引入 Vertical Tabs 垂直标签页，帮你告别标签混乱">Chrome 正式引入 Vertical Tabs 垂直标签页，帮你告别标签混乱</a></li>
+                <li>
+                    <a href="#intel-%e6%8a%bc%e6%b3%a8%e5%85%88%e8%bf%9b%e8%8a%af%e7%89%87%e5%b0%81%e8%a3%85%e6%8a%80%e6%9c%af25d3d-%e5%b0%81%e8%a3%85%e6%88%90%e4%b8%ba%e9%87%8d%e8%8e%b7%e7%ab%9e%e4%ba%89%e5%8a%9b%e7%9a%84%e6%a0%b8%e5%bf%83%e6%88%98%e7%95%a5" aria-label="Intel 押注先进芯片封装技术：2.5D/3D 封装成为重获竞争力的核心战略">Intel 押注先进芯片封装技术：2.5D/3D 封装成为重获竞争力的核心战略</a></li>
+                <li>
+                    <a href="#intel-%e7%a1%ae%e8%ae%a4%e5%8a%a0%e5%85%a5-elon-musk-%e7%9a%84-terafab-%e8%8a%af%e7%89%87%e9%a1%b9%e7%9b%ae%e5%be%b7%e5%85%8b%e8%90%a8%e6%96%af%e5%b7%9e%e5%85%b1%e5%bb%ba%e6%96%b0%e6%99%b6%e5%9c%86%e5%8e%82" aria-label="Intel 确认加入 Elon Musk 的 Terafab 芯片项目，德克萨斯州共建新晶圆厂">Intel 确认加入 Elon Musk 的 Terafab 芯片项目，德克萨斯州共建新晶圆厂</a></li>
+                <li>
+                    <a href="#%e9%a6%96%e5%b8%ad%e6%9e%b6%e6%9e%84%e5%b8%88%e7%9a%84%e6%b7%b1%e5%ba%a6%e9%98%85%e8%af%bb%e6%8c%87%e5%8d%97" aria-label="首席架构师的深度阅读指南">首席架构师的深度阅读指南</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><blockquote>
+<p>每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。</p></blockquote>
+<hr>
+<h3 id="anthropic-发布-project-glasswingai-时代关键软件安全新方案">Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案<a hidden class="anchor" aria-hidden="true" href="#anthropic-发布-project-glasswingai-时代关键软件安全新方案">#</a></h3>
+<p><strong>来源</strong>：<a href="https://www.anthropic.com/glasswing">HN</a></p>
+<p>Anthropic 正式发布 <strong>Project Glasswing</strong>，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 <strong>490 个 HN points</strong>，社区关注度极高。</p>
+<blockquote>
+<p>🔗 <a href="https://www.anthropic.com/glasswing">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="伊朗黑客升级攻击策略持续瞄准美国关键基础设施">伊朗黑客升级攻击策略，持续瞄准美国关键基础设施<a hidden class="anchor" aria-hidden="true" href="#伊朗黑客升级攻击策略持续瞄准美国关键基础设施">#</a></h3>
+<p><strong>来源</strong>：<a href="https://techcrunch.com/2026/04/07/iranian-hackers-are-targeting-american-critical-infrastructure-u-s-agencies-warn/">TechCrunch</a></p>
+<p>FBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。</p>
+<blockquote>
+<p>🔗 <a href="https://techcrunch.com/2026/04/07/iranian-hackers-are-targeting-american-critical-infrastructure-u-s-agencies-warn/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="俄罗斯-apt28-组织入侵数千台家用路由器发动大规模间谍活动">俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动<a hidden class="anchor" aria-hidden="true" href="#俄罗斯-apt28-组织入侵数千台家用路由器发动大规模间谍活动">#</a></h3>
+<p><strong>来源</strong>：<a href="https://techcrunch.com/2026/04/07/russian-government-hackers-broke-into-thousands-of-home-routers-to-steal-passwords/">TechCrunch</a></p>
+<p>俄罗斯政府黑客组织 <strong>APT28（Fancy Bear）</strong> 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。</p>
+<blockquote>
+<p>🔗 <a href="https://techcrunch.com/2026/04/07/russian-government-hackers-broke-into-thousands-of-home-routers-to-steal-passwords/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="cloudflare-公布后量子密码学路线图2029-年完成全面升级">Cloudflare 公布后量子密码学路线图：2029 年完成全面升级<a hidden class="anchor" aria-hidden="true" href="#cloudflare-公布后量子密码学路线图2029-年完成全面升级">#</a></h3>
+<p><strong>来源</strong>：<a href="https://blog.cloudflare.com/post-quantum-roadmap/">HN</a></p>
+<p>Cloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 <strong>2029 年前</strong>将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 &ldquo;Q-Day&rdquo; 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。</p>
+<blockquote>
+<p>🔗 <a href="https://blog.cloudflare.com/post-quantum-roadmap/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="评测显示-google-ai-overviews-准确率约-90每小时产生数十万条错误答案">评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案<a hidden class="anchor" aria-hidden="true" href="#评测显示-google-ai-overviews-准确率约-90每小时产生数十万条错误答案">#</a></h3>
+<p><strong>来源</strong>：<a href="https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/">Ars Technica</a></p>
+<p>《纽约时报》联合 AI 评测公司 Oumi 分析发现，Google <strong>AI Overviews</strong>（由 Gemini 驱动）准确率约 <strong>90%</strong>，也就是说每小时产生数十万条错误答案。90% 的准确率听起来好像还行，但放在 Google 的搜索量面前，这个错误率意味着海量用户在接收误导信息。AI 加持的搜索引擎可靠性问题再次引发广泛讨论。</p>
+<blockquote>
+<p>🔗 <a href="https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="anthropic-公布-claude-mythos-preview-系统卡片详细说明能力边界与安全评估">Anthropic 公布 Claude Mythos Preview 系统卡片，详细说明能力边界与安全评估<a hidden class="anchor" aria-hidden="true" href="#anthropic-公布-claude-mythos-preview-系统卡片详细说明能力边界与安全评估">#</a></h3>
+<p><strong>来源</strong>：<a href="https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf">HN</a></p>
+<p>Anthropic 公布了 <strong>Claude Mythos Preview</strong> 的完整系统卡片（PDF 格式），详细披露了该模型的能力边界与安全评估内容，引发社区热议，收获 <strong>321 个 HN points</strong>。系统卡片作为 AI 公司透明度建设的重要工具，Mythos Preview 这次的信息披露量在业内属于较高水平，值得关注。</p>
+<blockquote>
+<p>🔗 <a href="https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="anthropic-年化收入突破-300-亿美元扩大与-google-和-broadcom-的算力合作">Anthropic 年化收入突破 300 亿美元，扩大与 Google 和 Broadcom 的算力合作<a hidden class="anchor" aria-hidden="true" href="#anthropic-年化收入突破-300-亿美元扩大与-google-和-broadcom-的算力合作">#</a></h3>
+<p><strong>来源</strong>：<a href="https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/">TechCrunch</a></p>
+<p>Anthropic 扩大了与 <strong>Google 和 Broadcom</strong> 的算力战略合作，伴随年化收入正式突破 <strong>300 亿美元</strong>大关。AI 算力需求持续井喷，头部公司的收入增速丝毫未减速。Google TPU 和 Broadcom 的定制 ASIC 在这场算力军备竞赛中扮演了关键角色。</p>
+<blockquote>
+<p>🔗 <a href="https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="chrome-正式引入-vertical-tabs-垂直标签页帮你告别标签混乱">Chrome 正式引入 Vertical Tabs 垂直标签页，帮你告别标签混乱<a hidden class="anchor" aria-hidden="true" href="#chrome-正式引入-vertical-tabs-垂直标签页帮你告别标签混乱">#</a></h3>
+<p><strong>来源</strong>：<a href="https://techcrunch.com/2026/04/07/chrome-is-finally-getting-vertical-tabs/">TechCrunch</a></p>
+<p><strong>Google Chrome</strong> 正式引入 **Vertical Tabs（垂直标签页）**功能，标签页从顶部横向排列改为左侧纵向堆叠，配合更简洁的 Reading Mode，帮助用户高效管理大量打开的标签页。这个功能是用户呼声最高的功能之一，如今终于落地，相信能拯救不少&quot;标签页收集爱好者&quot;。</p>
+<blockquote>
+<p>🔗 <a href="https://techcrunch.com/2026/04/07/chrome-is-finally-getting-vertical-tabs/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="intel-押注先进芯片封装技术25d3d-封装成为重获竞争力的核心战略">Intel 押注先进芯片封装技术：2.5D/3D 封装成为重获竞争力的核心战略<a hidden class="anchor" aria-hidden="true" href="#intel-押注先进芯片封装技术25d3d-封装成为重获竞争力的核心战略">#</a></h3>
+<p><strong>来源</strong>：<a href="https://arstechnica.com/gadgets/2026/04/intel-is-going-all-in-on-advanced-chip-packaging/">Ars Technica</a></p>
+<p>Intel 宣布将**先进芯片封装（Advanced Chip Packaging）**技术作为在 AI 芯片浪潮中重获竞争力的核心战略，重点布局 <strong>2.5D/3D 封装</strong>产能。在制程工艺竞争日趋激烈的当下，封装技术被认为是差异化竞争的重要方向，Intel 显然想在这个问题上扳回一局。</p>
+<blockquote>
+<p>🔗 <a href="https://arstechnica.com/gadgets/2026/04/intel-is-going-all-in-on-advanced-chip-packaging/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="intel-确认加入-elon-musk-的-terafab-芯片项目德克萨斯州共建新晶圆厂">Intel 确认加入 Elon Musk 的 Terafab 芯片项目，德克萨斯州共建新晶圆厂<a hidden class="anchor" aria-hidden="true" href="#intel-确认加入-elon-musk-的-terafab-芯片项目德克萨斯州共建新晶圆厂">#</a></h3>
+<p><strong>来源</strong>：<a href="https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/">TechCrunch</a></p>
+<p>Intel 正式确认加入 <strong>Elon Musk 的 Terafab 芯片项目</strong>，将与 SpaceX 和 Tesla 共同在德克萨斯州建设新型半导体晶圆厂。继 AMD 和 Samsung 之后，Intel 成为 Terafab 生态的又一重要成员，半导体行业正在被 Elon Musk 的垂直整合野心所重塑。</p>
+<blockquote>
+<p>🔗 <a href="https://techcrunch.com/2026/04/07/intel-signs-on-to-elon-musks-terafab-chips-project/">阅读原文</a></p></blockquote>
+<hr>
+<h3 id="首席架构师的深度阅读指南">首席架构师的深度阅读指南<a hidden class="anchor" aria-hidden="true" href="#首席架构师的深度阅读指南">#</a></h3>
+<p>本周最值得深入研究的主题：</p>
+<ul>
+<li><strong>后量子密码学</strong>：Cloudflare 的路线图是理解 Q-Day 威胁的绝佳入门材料，了解 PQC 迁移的复杂性</li>
+<li><strong>Project Glasswing</strong>：Anthropic 在 AI 安全交叉领域的最新尝试，可结合 Mythos Preview 系统卡片一起读</li>
+<li><strong>先进芯片封装</strong>：Intel 的战略转向体现了整个行业从&quot;制程为王&quot;向&quot;封装为王&quot;的范式转变，值得跟踪</li>
+</ul>
+<blockquote>
+<p>🔗 觉得有收获？欢迎订阅 AI 极客早报，每天早上 8 点准时推送。</p></blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bothubpr.github.io/tags/ai/">AI</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E6%9E%81%E5%AE%A2%E6%97%A9%E6%8A%A5/">极客早报</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E6%AF%8F%E6%97%A5%E6%96%B0%E9%97%BB/">每日新闻</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

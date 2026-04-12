@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on Ziv的极客日志</title>
-    <link>http://localhost:8081/tags/python/</link>
+    <link>https://bothubpr.github.io/tags/python/</link>
     <description>Recent content in Python on Ziv的极客日志</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8081/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bothubpr.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”</title>
-      <link>http://localhost:8081/posts/pg04/</link>
+      <link>https://bothubpr.github.io/posts/pg04/</link>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8081/posts/pg04/</guid>
+      <guid>https://bothubpr.github.io/posts/pg04/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 &lt;strong&gt;【最终章】&lt;/strong&gt;！&lt;/p&gt;
 &lt;p&gt;在前三篇里，俺们从零搭建了一个完全无人值守的 &lt;strong&gt;【本地极客知识库】&lt;/strong&gt;：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。&lt;/p&gt;
 &lt;p&gt;基础设施已经完美闭环，但极客的折腾永无止境！
@@ -32,14 +32,14 @@
     </item>
     <item>
       <title>【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫</title>
-      <link>http://localhost:8081/posts/pg03/</link>
+      <link>https://bothubpr.github.io/posts/pg03/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8081/posts/pg03/</guid>
+      <guid>https://bothubpr.github.io/posts/pg03/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
 &lt;p&gt;在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 &lt;strong&gt;【死死盯住】&lt;/strong&gt; 了它。&lt;/p&gt;
 &lt;p&gt;这听起来很完美：你往网盘扔一个 &lt;code&gt;.md&lt;/code&gt; 文件，网页就自动生成。
 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 &lt;strong&gt;【YAML 格式头（Front Matter）】&lt;/strong&gt;。比如这样：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;我的日记&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;2026-03-04&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;draft&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;

@@ -2,17 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>自动化 on Ziv的极客日志</title>
-    <link>http://localhost:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
+    <link>https://bothubpr.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
     <description>Recent content in 自动化 on Ziv的极客日志</description>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.146.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 极客早报 - 2026-03-29</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;各位极客老铁好，这里是 &lt;strong&gt;AI 极客早报&lt;/strong&gt;。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-白宫新版-app-被逆向工程安全研究员发现了什么&#34;&gt;🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：&lt;/strong&gt; Lobsters | 分类：安全&lt;/p&gt;
+&lt;p&gt;旅客们对 TSA 安检排队忍无可忍，开始雇人当&amp;quot;排队代排&amp;quot;。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.thereallo.dev/blog/decompiling-the-white-house-app&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-miasma用毒沼泽困住-ai-网络爬虫的开源工具&#34;&gt;🛡️ Miasma：用&amp;quot;毒沼泽&amp;quot;困住 AI 网络爬虫的开源工具&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：&lt;/strong&gt; HN | 分类：AI安全&lt;/p&gt;
+&lt;p&gt;一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于&amp;quot;以彼之道还施彼身&amp;quot;，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/austin-weeks/miasma&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-科研翻车手套可能是微塑料数据虚高的元凶&#34;&gt;🧪 科研翻车：手套可能是微塑料数据虚高的&amp;quot;元凶&amp;quot;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：&lt;/strong&gt; HN | 分类：科学研究&lt;/p&gt;
+&lt;p&gt;密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是&amp;quot;排除干扰变量&amp;quot;，结果第一步就翻车了。向严谨道歉，向手套致敬。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://news.umich.edu/nitrile-and-latex-gloves-may-cause-overestimation-of-microplastics-u-m-study-reveals/&#34;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-latmd用-markdown-构建代码库的-knowledge-graph&#34;&gt;📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：&lt;/strong&gt; HN | 分类：开发者工具&lt;/p&gt;
+&lt;p&gt;一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接&amp;quot;查图&amp;quot;而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【系列连载番外篇】打通最后一公里：从本地极客网盘到 GitHub Pages 的“全自动发车”</title>
+      <link>https://bothubpr.github.io/posts/pg05/</link>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/pg05/</guid>
+      <description>&lt;p&gt;哈喽，各位极客小伙伴们！这是咱们自动化博客系列的 &lt;strong&gt;【特别番外篇】&lt;/strong&gt;！&lt;/p&gt;
+&lt;p&gt;在前四篇连载中，俺们在本地局域网里搭建了一个完美的“全自动知识库”。但独乐乐不如众乐乐，作为极客，咱们的终极目标肯定是把这套硬核架构 &lt;strong&gt;【推向公网】&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;今天，俺就来扒一扒，如何白嫖 GitHub 的云端算力，并给咱们的 Python 门卫装上“火箭推进器”，实现真正的：&lt;strong&gt;网盘拖拽即发车，全球 CDN 秒级同步！&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-痛点破局静态博客的时空锁与繁琐的-push&#34;&gt;★ 痛点破局：静态博客的“时空锁”与繁琐的 Push&lt;/h2&gt;
+&lt;p&gt;只要你玩过 Hugo 或 Hexo 这类静态博客，你一定懂这种痛苦：
+每次写完文章，不仅要手动敲 &lt;code&gt;hugo&lt;/code&gt; 命令生成静态页面（HTML），还要手动 &lt;code&gt;git add .&lt;/code&gt;、&lt;code&gt;git commit&lt;/code&gt;、&lt;code&gt;git push&lt;/code&gt; 把它们推送到 GitHub 上。&lt;/p&gt;
+&lt;p&gt;更要命的是 &lt;strong&gt;【时空折叠悖论】&lt;/strong&gt;：如果你写了一篇日期标为明天的文章，本地不加特殊参数，它根本就不会生成！这意味着，你每天还得定个闹钟，按时去敲命令发布。这简直是 &lt;strong&gt;【反人类的伪自动化】&lt;/strong&gt;！&lt;/p&gt;
+&lt;h2 id=&#34;-降维打击第一步云端流水线-github-actions-换家&#34;&gt;★ 降维打击第一步：云端流水线 (GitHub Actions) 换家&lt;/h2&gt;
+&lt;p&gt;为了彻底解决每天手动打包和“未来文章”无法定时发布的问题，俺决定进行 &lt;strong&gt;【架构大换血】&lt;/strong&gt;：
+以后，俺们再也不在本地生成静态页面了，俺们要把原稿直接推上云端，让 GitHub 的超级计算机替咱们干活！&lt;/p&gt;
+&lt;p&gt;在你的博客根目录下新建 &lt;code&gt;.github/workflows/hugo.yaml&lt;/code&gt;，注入这套 CI/CD 黑魔法：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Deploy Hugo site to Pages&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;push&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;branches&lt;/span&gt;: [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;schedule&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;cron&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;30 22 * * *&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# 每天北京时间早上 6 点半自动运行一次！&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# ... (省略部分权限配置)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;build&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-latest&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;submodules&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;fetch-depth&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Setup Hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;peaceiris/actions-hugo@v3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;hugo-version&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;latest&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;extended&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Build&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;# 【核心魔法】：强行加入 --buildFuture，每天定时打破时空锁！&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;hugo --minify --buildFuture &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;# ... (省略部署步骤)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;有了它，哪怕俺这几天全在睡大觉，只要定时的 Cron 任务一触发，未来日期的文章就会全自动“破壳而出”！&lt;/p&gt;</description>
+    </item>
     <item>
       <title>【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”</title>
-      <link>http://localhost:8081/posts/pg04/</link>
+      <link>https://bothubpr.github.io/posts/pg04/</link>
       <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8081/posts/pg04/</guid>
+      <guid>https://bothubpr.github.io/posts/pg04/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 &lt;strong&gt;【最终章】&lt;/strong&gt;！&lt;/p&gt;
 &lt;p&gt;在前三篇里，俺们从零搭建了一个完全无人值守的 &lt;strong&gt;【本地极客知识库】&lt;/strong&gt;：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。&lt;/p&gt;
 &lt;p&gt;基础设施已经完美闭环，但极客的折腾永无止境！
@@ -32,14 +101,14 @@
     </item>
     <item>
       <title>【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫</title>
-      <link>http://localhost:8081/posts/pg03/</link>
+      <link>https://bothubpr.github.io/posts/pg03/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8081/posts/pg03/</guid>
+      <guid>https://bothubpr.github.io/posts/pg03/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
 &lt;p&gt;在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 &lt;strong&gt;【死死盯住】&lt;/strong&gt; 了它。&lt;/p&gt;
 &lt;p&gt;这听起来很完美：你往网盘扔一个 &lt;code&gt;.md&lt;/code&gt; 文件，网页就自动生成。
 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 &lt;strong&gt;【YAML 格式头（Front Matter）】&lt;/strong&gt;。比如这样：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;我的日记&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;2026-03-04&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;draft&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
@@ -62,9 +131,9 @@
     </item>
     <item>
       <title>【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载</title>
-      <link>http://localhost:8081/posts/pg02/</link>
+      <link>https://bothubpr.github.io/posts/pg02/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8081/posts/pg02/</guid>
+      <guid>https://bothubpr.github.io/posts/pg02/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
 &lt;p&gt;在上篇连载中，咱们成功用 Filebrowser 搭建了一个 &lt;strong&gt;【零摩擦的本地网盘】&lt;/strong&gt;。现在，你的 Markdown 笔记已经可以随手拖拽进 Ubuntu 虚拟机里了。&lt;/p&gt;
 &lt;p&gt;但网盘里的 &lt;code&gt;.md&lt;/code&gt; 文件终究只是“毛坯房”，咱们需要一台强悍的渲染引擎，把它们瞬间编译成带有暗黑模式、目录导航的精美极客网页。俺选用的引擎是目前地表最快的静态生成器—— &lt;strong&gt;【Hugo】&lt;/strong&gt;。&lt;/p&gt;
@@ -81,9 +150,9 @@
     </item>
     <item>
       <title>【系列连载一】打造极客终极自动化知识库：零摩擦打通本地 Markdown 投放区</title>
-      <link>http://localhost:8081/posts/pg01/</link>
+      <link>https://bothubpr.github.io/posts/pg01/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8081/posts/pg01/</guid>
+      <guid>https://bothubpr.github.io/posts/pg01/</guid>
       <description>&lt;p&gt;哈喽，各位极客小伙伴们！&lt;/p&gt;
 &lt;p&gt;最近俺一直在折腾 AI Agent（智能体），尤其是试图压榨它们的“睡后算力”。俺的终极目标是：在本地搭建一个 &lt;strong&gt;【完全无人值守】&lt;/strong&gt; 的自动化博客与知识库，甚至让 AI 每天清晨自动为我生成一份排版精美的硬核科技早报。&lt;/p&gt;
 &lt;p&gt;经过几个深夜的反复 Debug 和重构，这套系统终于完美跑通了！为了把这段极其硬核的“踩坑与架构”全记录分享给大伙儿，俺决定开启一个分为四篇的系列连载：&lt;/p&gt;

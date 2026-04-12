@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>GitHub 热门项目日报 - 2026-04-07 | Ziv的极客日志</title>
+<meta name="keywords" content="GitHub, 开源, 技术">
+<meta name="description" content="GitHub 热门项目日报 · 2026-04-07
+
+每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+
+🔥 llama.cpp
+来源: GitHub | 项目链接
+llama.cpp 是一个用 C/C&#43;&#43; 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。
+
+🔥 Next.js
+来源: GitHub | 项目链接
+Next.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。
+
+🔥 LangChain
+来源: GitHub | 项目链接
+LangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/github_daily_2026-04-07/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/github_daily_2026-04-07/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/github_daily_2026-04-07/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="GitHub 热门项目日报 - 2026-04-07">
+  <meta property="og:description" content="GitHub 热门项目日报 · 2026-04-07 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 llama.cpp 来源: GitHub | 项目链接
+llama.cpp 是一个用 C/C&#43;&#43; 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。
+🔥 Next.js 来源: GitHub | 项目链接
+Next.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。
+🔥 LangChain 来源: GitHub | 项目链接
+LangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-07T00:00:00+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="开源">
+    <meta property="article:tag" content="技术">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub 热门项目日报 - 2026-04-07">
+<meta name="twitter:description" content="GitHub 热门项目日报 · 2026-04-07
+
+每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+
+🔥 llama.cpp
+来源: GitHub | 项目链接
+llama.cpp 是一个用 C/C&#43;&#43; 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。
+
+🔥 Next.js
+来源: GitHub | 项目链接
+Next.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。
+
+🔥 LangChain
+来源: GitHub | 项目链接
+LangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "GitHub 热门项目日报 - 2026-04-07",
+      "item": "https://bothubpr.github.io/posts/github_daily_2026-04-07/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GitHub 热门项目日报 - 2026-04-07",
+  "name": "GitHub 热门项目日报 - 2026-04-07",
+  "description": "GitHub 热门项目日报 · 2026-04-07 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。\n🔥 llama.cpp 来源: GitHub | 项目链接\nllama.cpp 是一个用 C/C++ 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。\n🔥 Next.js 来源: GitHub | 项目链接\nNext.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。\n🔥 LangChain 来源: GitHub | 项目链接\nLangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。\n",
+  "keywords": [
+    "GitHub", "开源", "技术"
+  ],
+  "articleBody": "GitHub 热门项目日报 · 2026-04-07 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。\n🔥 llama.cpp 来源: GitHub | 项目链接\nllama.cpp 是一个用 C/C++ 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。\n🔥 Next.js 来源: GitHub | 项目链接\nNext.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。\n🔥 LangChain 来源: GitHub | 项目链接\nLangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。\n🔥 Vite 来源: GitHub | 项目链接\nVite 是下一代前端构建工具，由 Vue.js 作者尤雨溪创建，现已支持 React、Svelte、Solid 等主流框架。其核心优势在于极快的冷启动和热更新，采用原生 ES 模块（ESM）开发、Rollup 生产打包以及高度可配置的插件系统。技术亮点包括按需编译、依赖预构建、SSR 支持、库模式以及内置的构建优化（如代码分割、异步 chunk 加载）。适用场景包括现代单页应用（SPA）、组件库开发、静态站点和渐进式 Web 应用（PWA）。\n🔥 Tailwind CSS 来源: GitHub | 项目链接\nTailwind CSS 是一个实用优先的原子化 CSS 框架，由 Adam Wathan、Jonathan Reinink、David Hemphill 和 Steve Schoger 共同维护。它通过提供低级的、可组合的实用类，让开发者能够快速构建自定义设计而不需要编写自定义 CSS。技术亮点包括 JIT（即时编译）模式、可配置的设计系统、深度的响应式和状态变体支持，以及庞大的插件生态系统。适用场景包括原型设计、设计系统实施、企业级前端项目以及需要高度定制样式的应用。\n数据来源：GitHub Trending、Brave 搜索\n",
+  "wordCount" : "123",
+  "inLanguage": "en",
+  "datePublished": "2026-04-07T00:00:00Z",
+  "dateModified": "2026-04-07T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/github_daily_2026-04-07/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      GitHub 热门项目日报 - 2026-04-07
+    </h1>
+    <div class="post-meta"><span title='2026-04-07 00:00:00 +0000 UTC'>April 7, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#github-%e7%83%ad%e9%97%a8%e9%a1%b9%e7%9b%ae%e6%97%a5%e6%8a%a5--2026-04-07" aria-label="GitHub 热门项目日报 · 2026-04-07">GitHub 热门项目日报 · 2026-04-07</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#-llamacpp" aria-label="🔥 llama.cpp">🔥 llama.cpp</a></li>
+                <li>
+                    <a href="#-nextjs" aria-label="🔥 Next.js">🔥 Next.js</a></li>
+                <li>
+                    <a href="#-langchain" aria-label="🔥 LangChain">🔥 LangChain</a></li>
+                <li>
+                    <a href="#-vite" aria-label="🔥 Vite">🔥 Vite</a></li>
+                <li>
+                    <a href="#-tailwind-css" aria-label="🔥 Tailwind CSS">🔥 Tailwind CSS</a>
+                </li>
+            </ul>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="github-热门项目日报--2026-04-07">GitHub 热门项目日报 · 2026-04-07<a hidden class="anchor" aria-hidden="true" href="#github-热门项目日报--2026-04-07">#</a></h1>
+<blockquote>
+<p>每天 5 分钟，了解 GitHub 上最值得关注的开源项目。</p></blockquote>
+<hr>
+<h3 id="-llamacpp">🔥 llama.cpp<a hidden class="anchor" aria-hidden="true" href="#-llamacpp">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/ggerganov/llama.cpp">项目链接</a></p>
+<p>llama.cpp 是一个用 C/C++ 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。</p>
+<hr>
+<h3 id="-nextjs">🔥 Next.js<a hidden class="anchor" aria-hidden="true" href="#-nextjs">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/vercel/next.js">项目链接</a></p>
+<p>Next.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。</p>
+<hr>
+<h3 id="-langchain">🔥 LangChain<a hidden class="anchor" aria-hidden="true" href="#-langchain">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/langchain-ai/langchain">项目链接</a></p>
+<p>LangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。</p>
+<hr>
+<h3 id="-vite">🔥 Vite<a hidden class="anchor" aria-hidden="true" href="#-vite">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/vitejs/vite">项目链接</a></p>
+<p>Vite 是下一代前端构建工具，由 Vue.js 作者尤雨溪创建，现已支持 React、Svelte、Solid 等主流框架。其核心优势在于极快的冷启动和热更新，采用原生 ES 模块（ESM）开发、Rollup 生产打包以及高度可配置的插件系统。技术亮点包括按需编译、依赖预构建、SSR 支持、库模式以及内置的构建优化（如代码分割、异步 chunk 加载）。适用场景包括现代单页应用（SPA）、组件库开发、静态站点和渐进式 Web 应用（PWA）。</p>
+<hr>
+<h3 id="-tailwind-css">🔥 Tailwind CSS<a hidden class="anchor" aria-hidden="true" href="#-tailwind-css">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/tailwindlabs/tailwindcss">项目链接</a></p>
+<p>Tailwind CSS 是一个实用优先的原子化 CSS 框架，由 Adam Wathan、Jonathan Reinink、David Hemphill 和 Steve Schoger 共同维护。它通过提供低级的、可组合的实用类，让开发者能够快速构建自定义设计而不需要编写自定义 CSS。技术亮点包括 JIT（即时编译）模式、可配置的设计系统、深度的响应式和状态变体支持，以及庞大的插件生态系统。适用场景包括原型设计、设计系统实施、企业级前端项目以及需要高度定制样式的应用。</p>
+<hr>
+<p><em>数据来源：GitHub Trending、Brave 搜索</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bothubpr.github.io/tags/github/">GitHub</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E5%BC%80%E6%BA%90/">开源</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E6%8A%80%E6%9C%AF/">技术</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

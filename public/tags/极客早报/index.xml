@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>极客早报 on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/tags/%E6%9E%81%E5%AE%A2%E6%97%A9%E6%8A%A5/</link>
+    <description>Recent content in 极客早报 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/%E6%9E%81%E5%AE%A2%E6%97%A9%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>极客早报｜2026年4月10日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-10/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-10/</guid>
+      <description>&lt;h1 id=&#34;极客早报2026年4月10日&#34;&gt;极客早报｜2026年4月10日&lt;/h1&gt;
+&lt;p&gt;今天的极客早报有点重磅。Florida 州总检察长发起了对 OpenAI 的调查，原因是 ChatGPT 被指用于策划枪击案——这可能会成为 AI 责任划分的标志性案例。同时，伊朗和俄罗斯的国家级黑客行动持续升级，美国关键基础设施面临真实威胁，居家路由器成为全球僵尸网络的棋子。本期早报还包含 Amazon CEO 的火力全开的股东信、Google 与 Intel 的定制芯片联盟，以及多项值得关注的社区新动态。&lt;/p&gt;
+&lt;h3 id=&#34;florida-ag-就枪击案对-openai-展开正式调查&#34;&gt;Florida AG 就枪击案对 OpenAI 展开正式调查&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：TechCrunch&lt;/strong&gt;&lt;br&gt;
+Florida 州总检察长发起了对 OpenAI 的正式调查。此前，ChatGPT 被指用于策划了 2025 年 4 月佛罗里达州立大学的枪击案，那次事件造成两人死亡、五人受伤。受害者家属表示将提起诉讼，理由直指核心：OpenAI 是否对其模型被用于策划犯罪负有责任？这个案件可能会成为 AI 责任划分的标志性判例——如果 AI 被用于策划犯罪，到底是使用者的责任、模型的责任、还是平台的责任？这个问题以前从没被认真地法庭讨论过，但这次 Florida AG 的介入，可能会逼着整个 AI 行业正面回答这个问题。对 AI 安全的监管压力正在从国会和联邦机构蔓延到州一级的执法部门，这个趋势值得所有 AI 从业者高度警惕。&lt;br&gt;
+&lt;strong&gt;链接：&lt;/strong&gt; &lt;a href=&#34;https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/&#34;&gt;https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;伊朗-apt-组织攻击美国关键基础设施plc-设备成为目标&#34;&gt;伊朗 APT 组织攻击美国关键基础设施，PLC 设备成为目标&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：Ars Technica&lt;/strong&gt;&lt;br&gt;
+伊朗政府背景的 APT 组织正在攻击美国多处关键基础设施，目标包括工厂、污水处理厂、炼油厂中大量使用的 PLC（可编程逻辑控制器）。部分受害者已经出现运营中断和财务损失。这不是警告，而是正在发生的攻击。关键基础设施被国家级黑客入侵已经不是新鲜事，但过去这些攻击更多是间谍活动，核心目标是窃取情报。而这次伊朗黑客直接瞄准能造成物理破坏的工业控制系统，这个升级非常危险。如果污水处理厂被攻击导致停水、炼油厂被攻击导致安全事故，那影响就不是数据泄露能比的。FBI、NSA 和 CISA 已经发出联合警告，但实际攻击已经在进行中了。&lt;br&gt;
+&lt;strong&gt;链接：&lt;/strong&gt; &lt;a href=&#34;https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/&#34;&gt;https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;maine-州将成美国首个禁止大型新建-data-center-的州&#34;&gt;Maine 州将成美国首个禁止大型新建 Data Center 的州&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：HN&lt;/strong&gt;&lt;br&gt;
+缅因州即将成为美国第一个禁止新建大型数据中心的州。如果这项立法最终通过，将在全美范围内产生示范效应。数据中心的能源消耗问题在 AI 时代急剧恶化——训练和运行大模型都需要海量算力，科技巨头们正在疯狂建设数据中心，电网压力越来越大。缅因州选择用立法来限制这个趋势，这可能会引发其他州的跟随。数据中心选址的竞争可能会进入一个新的政策博弈阶段，能源政策与科技发展之间的张力正在浮出水面。&lt;br&gt;
+&lt;strong&gt;链接：&lt;/strong&gt; &lt;a href=&#34;https://www.gadgetreview.com/maine-is-about-to-become-the-first-state-to-ban-major-new-data-centers&#34;&gt;https://www.gadgetreview.com/maine-is-about-to-become-the-first-state-to-ban-major-new-data-centers&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;amazon-ceo-年度股东信炮轰-nvidiaintelstarlink&#34;&gt;Amazon CEO 年度股东信炮轰 Nvidia、Intel、Starlink&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源：TechCrunch&lt;/strong&gt;&lt;br&gt;
+Amazon CEO Andy Jassy 在年度股东信中火力全开，向 Nvidia、Intel、Starlink 等多个竞争对手发起攻势，为 Amazon 2000 亿美元资本支出辩护。Jassy 的核心论点是：Amazon 在 AI 基础设施上有自己的长期战略，不是被竞争牵着鼻子走。他强调了 Amazon 自研 Trainium 和 Inferentia 芯片的进展，以及 AWS 在云计算上的整体优势。这是 Amazon 面对 Google、Microsoft 和 OpenAI 联合围剿时的正面宣战。Jassy 没有点名，但在信里直接内涵了主要竞对的态度非常罕见——这说明 AI 算力竞争已经进入了白热化阶段，谁都不愿意在基础设施上依赖别人。&lt;br&gt;
+&lt;strong&gt;链接：&lt;/strong&gt; &lt;a href=&#34;https://techcrunch.com/2026/04/09/amazon-ceo-takes-aim-at-nvidia-intel-starlink-more-in-annual-shareholder-letter/&#34;&gt;https://techcrunch.com/2026/04/09/amazon-ceo-takes-aim-at-nvidia-intel-starlink-more-in-annual-shareholder-letter/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI 极客早报 | 2026年4月8日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/</link>
+      <pubDate>Wed, 08 Apr 2026 08:00:00 +0800</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;anthropic-发布-project-glasswingai-时代关键软件安全新方案&#34;&gt;Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://www.anthropic.com/glasswing&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Anthropic 正式发布 &lt;strong&gt;Project Glasswing&lt;/strong&gt;，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 &lt;strong&gt;490 个 HN points&lt;/strong&gt;，社区关注度极高。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://www.anthropic.com/glasswing&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;伊朗黑客升级攻击策略持续瞄准美国关键基础设施&#34;&gt;伊朗黑客升级攻击策略，持续瞄准美国关键基础设施&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://techcrunch.com/2026/04/07/iranian-hackers-are-targeting-american-critical-infrastructure-u-s-agencies-warn/&#34;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://techcrunch.com/2026/04/07/iranian-hackers-are-targeting-american-critical-infrastructure-u-s-agencies-warn/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;俄罗斯-apt28-组织入侵数千台家用路由器发动大规模间谍活动&#34;&gt;俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://techcrunch.com/2026/04/07/russian-government-hackers-broke-into-thousands-of-home-routers-to-steal-passwords/&#34;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;俄罗斯政府黑客组织 &lt;strong&gt;APT28（Fancy Bear）&lt;/strong&gt; 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://techcrunch.com/2026/04/07/russian-government-hackers-broke-into-thousands-of-home-routers-to-steal-passwords/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;cloudflare-公布后量子密码学路线图2029-年完成全面升级&#34;&gt;Cloudflare 公布后量子密码学路线图：2029 年完成全面升级&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://blog.cloudflare.com/post-quantum-roadmap/&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 &lt;strong&gt;2029 年前&lt;/strong&gt;将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 &amp;ldquo;Q-Day&amp;rdquo; 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://blog.cloudflare.com/post-quantum-roadmap/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;评测显示-google-ai-overviews-准确率约-90每小时产生数十万条错误答案&#34;&gt;评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>极客早报 | 2026年4月6日</title>
+      <link>https://bothubpr.github.io/posts/ai-daily-news-2026-04-06/</link>
+      <pubDate>Mon, 06 Apr 2026 08:00:00 +0800</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai-daily-news-2026-04-06/</guid>
+      <description>每日科技新闻极客早报，涵盖 OpenAI Codex 定价调整、Anthropic 收购生物科技公司、日本 Physical AI 落地、SpaceX 轨道数据中心、Rust 尾调用解释器等热点话题。</description>
+    </item>
+    <item>
+      <title>AI 极客早报 2026-04-05</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-05/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-05/</guid>
+      <description>&lt;h1 id=&#34;ai-极客早报--2026-04-05&#34;&gt;AI 极客早报 · 2026-04-05&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天早晨，用 10 分钟了解全球 AI 最新动态。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;第1条careless-people作者被禁止批评-metameta-审查争议再起&#34;&gt;【第1条】《Careless People》作者被禁止批评 Meta，Meta 审查争议再起&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: HN  |  &lt;strong&gt;分类&lt;/strong&gt;: NEWS&lt;/p&gt;
+&lt;p&gt;《Careless People》一书的作者 Sarah Wynne Williams 受到法庭禁令限制，被禁止发表任何针对 Meta 的负面言论。该消息在 HN 引发 416 条评论，争议焦点在于大型科技公司对批评声音的系统性压制。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.thetimes.com/uk/technology-uk/article/sarah-wynn-williams-careless-people-meta-nrffdfpmf&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第2条tesla-奥斯汀工厂-2025-年员工数减少-22销量连续第二年下滑&#34;&gt;【第2条】Tesla 奥斯汀工厂 2025 年员工数减少 22%，销量连续第二年下滑&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: TechCrunch  |  &lt;strong&gt;分类&lt;/strong&gt;: NEWS&lt;/p&gt;
+&lt;p&gt;据报道，Tesla 奥斯汀 Gigafactory 员工数从 21191 人缩减至 16506 人，降幅达 22%。公司正面临连续第二年销量下滑困境，全员押注 Cybercab 自动驾驶出租车和 Optimus 机器人。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://techcrunch.com/2026/04/03/teslas-texas-factory-workforce-reportedly-shrunk-22-in-2025/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第3条anthropic-以-4-亿美元收购生物科技-ai-创业公司-coefficient-bio&#34;&gt;【第3条】Anthropic 以 4 亿美元收购生物科技 AI 创业公司 Coefficient Bio&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: TechCrunch  |  &lt;strong&gt;分类&lt;/strong&gt;: NEWS&lt;/p&gt;
+&lt;p&gt;Anthropic 宣布以 4 亿美元股票交易收购隐秘生物科技 AI 创业公司 Coefficient Bio，这是该公司迄今为止规模最大的并购交易，标志着 Claude 开发商正式进军 AI + 生物医药领域。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

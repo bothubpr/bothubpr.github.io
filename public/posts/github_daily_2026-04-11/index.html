@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>GitHub 热门项目日报 - 2026-04-11 | Ziv的极客日志</title>
+<meta name="keywords" content="GitHub, 开源, 技术">
+<meta name="description" content="GitHub 热门项目日报 · 2026-04-11
+
+每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+
+🔥 Hermes Agent
+来源: GitHub | 项目链接
+Hermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。
+
+🔥 VoxCPM2
+来源: GitHub | 项目链接
+VoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。
+
+🔥 OpenDataLoader PDF
+来源: GitHub | 项目链接
+OpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/github_daily_2026-04-11/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/github_daily_2026-04-11/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/github_daily_2026-04-11/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="GitHub 热门项目日报 - 2026-04-11">
+  <meta property="og:description" content="GitHub 热门项目日报 · 2026-04-11 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 Hermes Agent 来源: GitHub | 项目链接
+Hermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。
+🔥 VoxCPM2 来源: GitHub | 项目链接
+VoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。
+🔥 OpenDataLoader PDF 来源: GitHub | 项目链接
+OpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-11T00:00:00+00:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="开源">
+    <meta property="article:tag" content="技术">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub 热门项目日报 - 2026-04-11">
+<meta name="twitter:description" content="GitHub 热门项目日报 · 2026-04-11
+
+每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+
+🔥 Hermes Agent
+来源: GitHub | 项目链接
+Hermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。
+
+🔥 VoxCPM2
+来源: GitHub | 项目链接
+VoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。
+
+🔥 OpenDataLoader PDF
+来源: GitHub | 项目链接
+OpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "GitHub 热门项目日报 - 2026-04-11",
+      "item": "https://bothubpr.github.io/posts/github_daily_2026-04-11/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GitHub 热门项目日报 - 2026-04-11",
+  "name": "GitHub 热门项目日报 - 2026-04-11",
+  "description": "GitHub 热门项目日报 · 2026-04-11 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。\n🔥 Hermes Agent 来源: GitHub | 项目链接\nHermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。\n🔥 VoxCPM2 来源: GitHub | 项目链接\nVoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。\n🔥 OpenDataLoader PDF 来源: GitHub | 项目链接\nOpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。\n",
+  "keywords": [
+    "GitHub", "开源", "技术"
+  ],
+  "articleBody": "GitHub 热门项目日报 · 2026-04-11 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。\n🔥 Hermes Agent 来源: GitHub | 项目链接\nHermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。\n🔥 VoxCPM2 来源: GitHub | 项目链接\nVoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。\n🔥 OpenDataLoader PDF 来源: GitHub | 项目链接\nOpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。\n🔥 Superpowers 来源: GitHub | 项目链接\nSuperpowers 是一个面向 AI 编程代理的开源技能框架与软件开发方法论，旨在解决 AI 编码助手在长会话中上下文丢失、规范偏离等问题。它将 30 年软件工程经验提炼为一组可组合的“技能”，代理在任务前自动检查并遵循这些强制工作流。技能涵盖计划、实施、评审、交付全流程，支持 Claude Code、Cursor、Codex、Gemini CLI 等主流编码助手。Superpowers 适合希望将 AI 助手工程化、规范化使用的开发团队，尤其适合需要高质量、可重复产出的项目。\n🔥 Open‑Harness 来源: GitHub | 项目链接\nOpen‑Harness 是一个代码优先、可组合的 TypeScript SDK，用于构建强大的 AI 代理。它基于 Vercel AI SDK 5，支持任何该 SDK 兼容的模型，提供了从 AGENTS.md 文件加载代理指令、MCP 服务器连接、子代理委托、技能管理、工具批准提示和长对话自动压缩等核心功能。与 Claude Agent SDK 等专有方案相比，Open‑Harness 更轻量、更灵活，适合开发者将代理能力嵌入自己的应用程序中。它适用于需要自定义 AI 代理逻辑的生产级应用。\n🔥 Kronos 来源: GitHub | 项目链接\nKronos 是首个专门为金融市场“语言”——K 线序列设计的基础模型。它基于全球 45+ 交易所的数据进行预训练，通过专用的分词器将连续的多维 OHLCV 数据量化为分层离散 token，然后使用 Transformer 架构学习通用、高保真的金融表征。Kronos 支持多种量化金融任务，如概率预测、异常检测、资产相关性分析等。该项目为金融时间序列分析提供了一个统一的模型基础，适用于量化研究员、算法交易员以及对金融市场建模感兴趣的研究者。\n数据来源：GitHub Trending、Brave 搜索\n",
+  "wordCount" : "146",
+  "inLanguage": "en",
+  "datePublished": "2026-04-11T00:00:00Z",
+  "dateModified": "2026-04-11T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/github_daily_2026-04-11/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      GitHub 热门项目日报 - 2026-04-11
+    </h1>
+    <div class="post-meta"><span title='2026-04-11 00:00:00 +0000 UTC'>April 11, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#github-%e7%83%ad%e9%97%a8%e9%a1%b9%e7%9b%ae%e6%97%a5%e6%8a%a5--2026-04-11" aria-label="GitHub 热门项目日报 · 2026-04-11">GitHub 热门项目日报 · 2026-04-11</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#-hermes-agent" aria-label="🔥 Hermes Agent">🔥 Hermes Agent</a></li>
+                <li>
+                    <a href="#-voxcpm2" aria-label="🔥 VoxCPM2">🔥 VoxCPM2</a></li>
+                <li>
+                    <a href="#-opendataloader-pdf" aria-label="🔥 OpenDataLoader PDF">🔥 OpenDataLoader PDF</a></li>
+                <li>
+                    <a href="#-superpowers" aria-label="🔥 Superpowers">🔥 Superpowers</a></li>
+                <li>
+                    <a href="#-openharness" aria-label="🔥 Open‑Harness">🔥 Open‑Harness</a></li>
+                <li>
+                    <a href="#-kronos" aria-label="🔥 Kronos">🔥 Kronos</a>
+                </li>
+            </ul>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="github-热门项目日报--2026-04-11">GitHub 热门项目日报 · 2026-04-11<a hidden class="anchor" aria-hidden="true" href="#github-热门项目日报--2026-04-11">#</a></h1>
+<blockquote>
+<p>每天 5 分钟，了解 GitHub 上最值得关注的开源项目。</p></blockquote>
+<hr>
+<h3 id="-hermes-agent">🔥 Hermes Agent<a hidden class="anchor" aria-hidden="true" href="#-hermes-agent">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/NousResearch/hermes-agent">项目链接</a></p>
+<p>Hermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。</p>
+<hr>
+<h3 id="-voxcpm2">🔥 VoxCPM2<a hidden class="anchor" aria-hidden="true" href="#-voxcpm2">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/OpenBMB/VoxCPM">项目链接</a></p>
+<p>VoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。</p>
+<hr>
+<h3 id="-opendataloader-pdf">🔥 OpenDataLoader PDF<a hidden class="anchor" aria-hidden="true" href="#-opendataloader-pdf">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/opendataloader-project/opendataloader-pdf">项目链接</a></p>
+<p>OpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。</p>
+<hr>
+<h3 id="-superpowers">🔥 Superpowers<a hidden class="anchor" aria-hidden="true" href="#-superpowers">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/obra/Superpowers">项目链接</a></p>
+<p>Superpowers 是一个面向 AI 编程代理的开源技能框架与软件开发方法论，旨在解决 AI 编码助手在长会话中上下文丢失、规范偏离等问题。它将 30 年软件工程经验提炼为一组可组合的“技能”，代理在任务前自动检查并遵循这些强制工作流。技能涵盖计划、实施、评审、交付全流程，支持 Claude Code、Cursor、Codex、Gemini CLI 等主流编码助手。Superpowers 适合希望将 AI 助手工程化、规范化使用的开发团队，尤其适合需要高质量、可重复产出的项目。</p>
+<hr>
+<h3 id="-openharness">🔥 Open‑Harness<a hidden class="anchor" aria-hidden="true" href="#-openharness">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/MaxGfeller/open-harness">项目链接</a></p>
+<p>Open‑Harness 是一个代码优先、可组合的 TypeScript SDK，用于构建强大的 AI 代理。它基于 Vercel AI SDK 5，支持任何该 SDK 兼容的模型，提供了从 AGENTS.md 文件加载代理指令、MCP 服务器连接、子代理委托、技能管理、工具批准提示和长对话自动压缩等核心功能。与 Claude Agent SDK 等专有方案相比，Open‑Harness 更轻量、更灵活，适合开发者将代理能力嵌入自己的应用程序中。它适用于需要自定义 AI 代理逻辑的生产级应用。</p>
+<hr>
+<h3 id="-kronos">🔥 Kronos<a hidden class="anchor" aria-hidden="true" href="#-kronos">#</a></h3>
+<p><strong>来源</strong>: GitHub | <a href="https://github.com/shiyu-coder/kronos">项目链接</a></p>
+<p>Kronos 是首个专门为金融市场“语言”——K 线序列设计的基础模型。它基于全球 45+ 交易所的数据进行预训练，通过专用的分词器将连续的多维 OHLCV 数据量化为分层离散 token，然后使用 Transformer 架构学习通用、高保真的金融表征。Kronos 支持多种量化金融任务，如概率预测、异常检测、资产相关性分析等。该项目为金融时间序列分析提供了一个统一的模型基础，适用于量化研究员、算法交易员以及对金融市场建模感兴趣的研究者。</p>
+<hr>
+<p><em>数据来源：GitHub Trending、Brave 搜索</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bothubpr.github.io/tags/github/">GitHub</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E5%BC%80%E6%BA%90/">开源</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E6%8A%80%E6%9C%AF/">技术</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

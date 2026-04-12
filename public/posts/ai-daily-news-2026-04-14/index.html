@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>极客早报 | 2026-04-14 | Ziv的极客日志</title>
+<meta name="keywords" content="AI, Daily News, Tech">
+<meta name="description" content="早上好，各位极客们。今天是 2026 年 4 月 14 日，星期二，欢迎收听今天的极客早报。
+本期我们有 7 条新闻，涵盖 AI 评测诚信危机、NASA Artemis II 任务收官、印度零售市场博弈、美国阅读习惯调查、Hubble 常数危机获实证支撑、开源工具 Eleventy 终止开发，以及 AI 预测足球比赛全线失误的深度分析。
+
+如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情
+当前 AI 行业对 Agent（智能体）的评估体系，正面临一场信任危机。Berkeley RDI（Responsible AI Institute）研究团队日前发布深度报告，系统性地披露了 SWE-Bench、BrowseComp 等主流基准测试被&quot;攻克&quot;的完整技术路径。这些基准测试曾被视为衡量 AI 模型真实能力的黄金标准，但研究发现，评测数据中存在大量可被模型识别和利用的模式——包括隐含的测试集污染、任务设计的系统性偏差，以及评分机制的可操控空间。
+值得注意的是，报告揭示的核心问题并非模型&quot;作弊&quot;，而是基准测试本身的构建方式存在根本性缺陷。当模型能在训练阶段隐约接触到评测任务时，它可以在不真正理解问题的情况下通过模式匹配给出正确答案。这意味着行业花费数百万美元构建的评估体系，可能并不能真实反映模型的推理和执行能力。对开发者和投资人而言，这一发现无疑是一记警钟：在没有可靠基准的情况下，AI 能力的进步可能只是幻觉。
+来源：HN
+
+Artemis II 任务圆满落幕：人类 54 年来首次深空航行收官
+NASA 的 Artemis II 任务在本周画上句号。Orion 飞船以超音速约 30 倍的速度坠落太平洋，四名宇航员安全归来——这是自 1972 年阿波罗 17 号以来，人类首次进入深空并成功返回。在轨期间，宇航员完成了生命支持系统验证、轨道机动测试以及地月空间环境数据采集，为后续 Artemis III 载人登月任务积累了宝贵的一手经验。
+然而，任务的成功也意味着压力的转移。NASA 接下来必须兑现 Artemis III 的承诺——将首位女性和首位有色人种宇航员送上月球表面。与此同时，商业竞争对手和地缘政治格局的变化，让这场&quot;月球复兴&quot;的意义远超科学本身。对于整个航天工业来说，Artemis II 证明深空载人航行的工程能力已经成熟，问题的核心不再是&quot;能不能去&quot;，而是&quot;去那里做什么&quot;。
+来源：Ars Technica
+
+Flipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间
+印度即时零售（Quick Commerce）市场正在经历一场结构性洗牌。Flipkart 持续向二三线城市扩张，并加大折扣力度，其策略被分析师认为正在系统性地压缩 Swiggy、Zepto、Blinkit 等本土创业公司的生存空间。Flipkart 背靠 Walmart，Amazon 则是全球电商巨头，两者的资金实力和物流基础设施远超本土竞争者。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-14/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-14/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/ai-daily-news-2026-04-14/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="极客早报 | 2026-04-14">
+  <meta property="og:description" content="早上好，各位极客们。今天是 2026 年 4 月 14 日，星期二，欢迎收听今天的极客早报。
+本期我们有 7 条新闻，涵盖 AI 评测诚信危机、NASA Artemis II 任务收官、印度零售市场博弈、美国阅读习惯调查、Hubble 常数危机获实证支撑、开源工具 Eleventy 终止开发，以及 AI 预测足球比赛全线失误的深度分析。
+如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情 当前 AI 行业对 Agent（智能体）的评估体系，正面临一场信任危机。Berkeley RDI（Responsible AI Institute）研究团队日前发布深度报告，系统性地披露了 SWE-Bench、BrowseComp 等主流基准测试被&#34;攻克&#34;的完整技术路径。这些基准测试曾被视为衡量 AI 模型真实能力的黄金标准，但研究发现，评测数据中存在大量可被模型识别和利用的模式——包括隐含的测试集污染、任务设计的系统性偏差，以及评分机制的可操控空间。
+值得注意的是，报告揭示的核心问题并非模型&#34;作弊&#34;，而是基准测试本身的构建方式存在根本性缺陷。当模型能在训练阶段隐约接触到评测任务时，它可以在不真正理解问题的情况下通过模式匹配给出正确答案。这意味着行业花费数百万美元构建的评估体系，可能并不能真实反映模型的推理和执行能力。对开发者和投资人而言，这一发现无疑是一记警钟：在没有可靠基准的情况下，AI 能力的进步可能只是幻觉。
+来源：HN
+Artemis II 任务圆满落幕：人类 54 年来首次深空航行收官 NASA 的 Artemis II 任务在本周画上句号。Orion 飞船以超音速约 30 倍的速度坠落太平洋，四名宇航员安全归来——这是自 1972 年阿波罗 17 号以来，人类首次进入深空并成功返回。在轨期间，宇航员完成了生命支持系统验证、轨道机动测试以及地月空间环境数据采集，为后续 Artemis III 载人登月任务积累了宝贵的一手经验。
+然而，任务的成功也意味着压力的转移。NASA 接下来必须兑现 Artemis III 的承诺——将首位女性和首位有色人种宇航员送上月球表面。与此同时，商业竞争对手和地缘政治格局的变化，让这场&#34;月球复兴&#34;的意义远超科学本身。对于整个航天工业来说，Artemis II 证明深空载人航行的工程能力已经成熟，问题的核心不再是&#34;能不能去&#34;，而是&#34;去那里做什么&#34;。
+来源：Ars Technica
+Flipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间 印度即时零售（Quick Commerce）市场正在经历一场结构性洗牌。Flipkart 持续向二三线城市扩张，并加大折扣力度，其策略被分析师认为正在系统性地压缩 Swiggy、Zepto、Blinkit 等本土创业公司的生存空间。Flipkart 背靠 Walmart，Amazon 则是全球电商巨头，两者的资金实力和物流基础设施远超本土竞争者。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-14T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Daily News">
+    <meta property="article:tag" content="Tech">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="极客早报 | 2026-04-14">
+<meta name="twitter:description" content="早上好，各位极客们。今天是 2026 年 4 月 14 日，星期二，欢迎收听今天的极客早报。
+本期我们有 7 条新闻，涵盖 AI 评测诚信危机、NASA Artemis II 任务收官、印度零售市场博弈、美国阅读习惯调查、Hubble 常数危机获实证支撑、开源工具 Eleventy 终止开发，以及 AI 预测足球比赛全线失误的深度分析。
+
+如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情
+当前 AI 行业对 Agent（智能体）的评估体系，正面临一场信任危机。Berkeley RDI（Responsible AI Institute）研究团队日前发布深度报告，系统性地披露了 SWE-Bench、BrowseComp 等主流基准测试被&quot;攻克&quot;的完整技术路径。这些基准测试曾被视为衡量 AI 模型真实能力的黄金标准，但研究发现，评测数据中存在大量可被模型识别和利用的模式——包括隐含的测试集污染、任务设计的系统性偏差，以及评分机制的可操控空间。
+值得注意的是，报告揭示的核心问题并非模型&quot;作弊&quot;，而是基准测试本身的构建方式存在根本性缺陷。当模型能在训练阶段隐约接触到评测任务时，它可以在不真正理解问题的情况下通过模式匹配给出正确答案。这意味着行业花费数百万美元构建的评估体系，可能并不能真实反映模型的推理和执行能力。对开发者和投资人而言，这一发现无疑是一记警钟：在没有可靠基准的情况下，AI 能力的进步可能只是幻觉。
+来源：HN
+
+Artemis II 任务圆满落幕：人类 54 年来首次深空航行收官
+NASA 的 Artemis II 任务在本周画上句号。Orion 飞船以超音速约 30 倍的速度坠落太平洋，四名宇航员安全归来——这是自 1972 年阿波罗 17 号以来，人类首次进入深空并成功返回。在轨期间，宇航员完成了生命支持系统验证、轨道机动测试以及地月空间环境数据采集，为后续 Artemis III 载人登月任务积累了宝贵的一手经验。
+然而，任务的成功也意味着压力的转移。NASA 接下来必须兑现 Artemis III 的承诺——将首位女性和首位有色人种宇航员送上月球表面。与此同时，商业竞争对手和地缘政治格局的变化，让这场&quot;月球复兴&quot;的意义远超科学本身。对于整个航天工业来说，Artemis II 证明深空载人航行的工程能力已经成熟，问题的核心不再是&quot;能不能去&quot;，而是&quot;去那里做什么&quot;。
+来源：Ars Technica
+
+Flipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间
+印度即时零售（Quick Commerce）市场正在经历一场结构性洗牌。Flipkart 持续向二三线城市扩张，并加大折扣力度，其策略被分析师认为正在系统性地压缩 Swiggy、Zepto、Blinkit 等本土创业公司的生存空间。Flipkart 背靠 Walmart，Amazon 则是全球电商巨头，两者的资金实力和物流基础设施远超本土竞争者。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "极客早报 | 2026-04-14",
+      "item": "https://bothubpr.github.io/posts/ai-daily-news-2026-04-14/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "极客早报 | 2026-04-14",
+  "name": "极客早报 | 2026-04-14",
+  "description": "早上好，各位极客们。今天是 2026 年 4 月 14 日，星期二，欢迎收听今天的极客早报。\n本期我们有 7 条新闻，涵盖 AI 评测诚信危机、NASA Artemis II 任务收官、印度零售市场博弈、美国阅读习惯调查、Hubble 常数危机获实证支撑、开源工具 Eleventy 终止开发，以及 AI 预测足球比赛全线失误的深度分析。\n如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情 当前 AI 行业对 Agent（智能体）的评估体系，正面临一场信任危机。Berkeley RDI（Responsible AI Institute）研究团队日前发布深度报告，系统性地披露了 SWE-Bench、BrowseComp 等主流基准测试被\u0026quot;攻克\u0026quot;的完整技术路径。这些基准测试曾被视为衡量 AI 模型真实能力的黄金标准，但研究发现，评测数据中存在大量可被模型识别和利用的模式——包括隐含的测试集污染、任务设计的系统性偏差，以及评分机制的可操控空间。\n值得注意的是，报告揭示的核心问题并非模型\u0026quot;作弊\u0026quot;，而是基准测试本身的构建方式存在根本性缺陷。当模型能在训练阶段隐约接触到评测任务时，它可以在不真正理解问题的情况下通过模式匹配给出正确答案。这意味着行业花费数百万美元构建的评估体系，可能并不能真实反映模型的推理和执行能力。对开发者和投资人而言，这一发现无疑是一记警钟：在没有可靠基准的情况下，AI 能力的进步可能只是幻觉。\n来源：HN\nArtemis II 任务圆满落幕：人类 54 年来首次深空航行收官 NASA 的 Artemis II 任务在本周画上句号。Orion 飞船以超音速约 30 倍的速度坠落太平洋，四名宇航员安全归来——这是自 1972 年阿波罗 17 号以来，人类首次进入深空并成功返回。在轨期间，宇航员完成了生命支持系统验证、轨道机动测试以及地月空间环境数据采集，为后续 Artemis III 载人登月任务积累了宝贵的一手经验。\n然而，任务的成功也意味着压力的转移。NASA 接下来必须兑现 Artemis III 的承诺——将首位女性和首位有色人种宇航员送上月球表面。与此同时，商业竞争对手和地缘政治格局的变化，让这场\u0026quot;月球复兴\u0026quot;的意义远超科学本身。对于整个航天工业来说，Artemis II 证明深空载人航行的工程能力已经成熟，问题的核心不再是\u0026quot;能不能去\u0026quot;，而是\u0026quot;去那里做什么\u0026quot;。\n来源：Ars Technica\nFlipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间 印度即时零售（Quick Commerce）市场正在经历一场结构性洗牌。Flipkart 持续向二三线城市扩张，并加大折扣力度，其策略被分析师认为正在系统性地压缩 Swiggy、Zepto、Blinkit 等本土创业公司的生存空间。Flipkart 背靠 Walmart，Amazon 则是全球电商巨头，两者的资金实力和物流基础设施远超本土竞争者。\n",
+  "keywords": [
+    "AI", "Daily News", "Tech"
+  ],
+  "articleBody": "早上好，各位极客们。今天是 2026 年 4 月 14 日，星期二，欢迎收听今天的极客早报。\n本期我们有 7 条新闻，涵盖 AI 评测诚信危机、NASA Artemis II 任务收官、印度零售市场博弈、美国阅读习惯调查、Hubble 常数危机获实证支撑、开源工具 Eleventy 终止开发，以及 AI 预测足球比赛全线失误的深度分析。\n如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情 当前 AI 行业对 Agent（智能体）的评估体系，正面临一场信任危机。Berkeley RDI（Responsible AI Institute）研究团队日前发布深度报告，系统性地披露了 SWE-Bench、BrowseComp 等主流基准测试被\"攻克\"的完整技术路径。这些基准测试曾被视为衡量 AI 模型真实能力的黄金标准，但研究发现，评测数据中存在大量可被模型识别和利用的模式——包括隐含的测试集污染、任务设计的系统性偏差，以及评分机制的可操控空间。\n值得注意的是，报告揭示的核心问题并非模型\"作弊\"，而是基准测试本身的构建方式存在根本性缺陷。当模型能在训练阶段隐约接触到评测任务时，它可以在不真正理解问题的情况下通过模式匹配给出正确答案。这意味着行业花费数百万美元构建的评估体系，可能并不能真实反映模型的推理和执行能力。对开发者和投资人而言，这一发现无疑是一记警钟：在没有可靠基准的情况下，AI 能力的进步可能只是幻觉。\n来源：HN\nArtemis II 任务圆满落幕：人类 54 年来首次深空航行收官 NASA 的 Artemis II 任务在本周画上句号。Orion 飞船以超音速约 30 倍的速度坠落太平洋，四名宇航员安全归来——这是自 1972 年阿波罗 17 号以来，人类首次进入深空并成功返回。在轨期间，宇航员完成了生命支持系统验证、轨道机动测试以及地月空间环境数据采集，为后续 Artemis III 载人登月任务积累了宝贵的一手经验。\n然而，任务的成功也意味着压力的转移。NASA 接下来必须兑现 Artemis III 的承诺——将首位女性和首位有色人种宇航员送上月球表面。与此同时，商业竞争对手和地缘政治格局的变化，让这场\"月球复兴\"的意义远超科学本身。对于整个航天工业来说，Artemis II 证明深空载人航行的工程能力已经成熟，问题的核心不再是\"能不能去\"，而是\"去那里做什么\"。\n来源：Ars Technica\nFlipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间 印度即时零售（Quick Commerce）市场正在经历一场结构性洗牌。Flipkart 持续向二三线城市扩张，并加大折扣力度，其策略被分析师认为正在系统性地压缩 Swiggy、Zepto、Blinkit 等本土创业公司的生存空间。Flipkart 背靠 Walmart，Amazon 则是全球电商巨头，两者的资金实力和物流基础设施远超本土竞争者。\n问题的核心在于市场集中度。当两大平台联手挤压时，创业公司面临的选择极为有限：要么差异化深耕，要么被逐渐边缘化。这对印度的创业生态是一个警示——在一个资本密集型的战场上，没有足够弹药的小玩家很难长期抵抗巨头挤压。最终消费者可能获得短期低价红利，但长期来看，市场竞争的多元化正在被悄然侵蚀。\n来源：TechCrunch\n美国用户仍首选纸质书：Pew Research 最新阅读习惯调查出炉 Pew Research 最新的调查数据给数字内容乐观主义者泼了一盆冷水。调查显示，大多数美国成年人仍然首选纸质书，而非电子书或有声书；且仅有少数人参与读书俱乐部。这一结果与许多人\"数字内容已全面取代传统媒介\"的直觉形成了明显反差。\n纸质书的持久吸引力可能来自多个维度：触觉体验、屏幕疲劳感、以及阅读纸质书时更高的专注度。对内容平台和出版行业而言，这一数据意味着全盘押注数字化的策略存在风险。实体书并未消亡，它只是在新一代数字原住民中找到了自己独特的定位。对于关注内容消费的从业者，理解这种媒介偏好的持续性，或许比追逐新兴格式更有战略价值。\n来源：HN\n新合成天文数据证实 Hubble 常数危机真实存在 宇宙学界长期争议的一个核心问题——宇宙膨胀速率——终于获得了新的实证支撑。NOIRLab（National Optical-Infrared Astronomy Research Laboratory）基于新型天文测量技术发布的合成数据研究，再次证实了 Hubble 常数（Hubble Constant）危机真实存在：宇宙学标准模型预测的膨胀速率与实测结果之间，存在不可忽视且持续存在的差异。\n这一发现的重要性在于，它不是来自单一观测的偏差，而是多种独立测量手段汇聚后的结论。这意味着要么我们对宇宙基本物理定律的理解存在系统性遗漏，要么宇宙中存在尚未被探测到的能量成分或物质形式。无论哪种解释为真，都将深刻改变现代宇宙学的理论基础。对于非专业读者而言，这或许是人类探索宇宙真理道路上最激动人心的\"危机\"之一。\n来源：HN\nEleventy 静态网站生成器正式宣布终止开发 前端社区今天迎来了一个令人唏嘘的消息：备受欢迎的静态网站生成器 Eleventy（也被称为 11ty）的作者正式宣布终止项目开发。Eleventy 以其零框架依赖、高度可定制和出色的性能著称，曾是许多开发者在 Gatsby、Next.js 之外的优雅选择。它的离去引发了对前端工具生态可持续性的广泛讨论。\n开源维护者的困境并非新议题，但 Eleventy 的案例再次将其推至台前：一个人或少数人支撑的项目，当激情消退或生活压力来临，项目的命运便悬于一线。社区需要回答一个根本性问题：如何让有价值的开源项目获得长期维护保障，而不仅仅依赖开发者的个人奉献？这一挑战的答案，将决定未来前端生态的质量上限。\n来源：HN\nAI 模型预测英超足球比赛全线失误，xAI Grok 表现最差 如果你曾幻想 AI 能帮你靠赌球发财，General Reasoning 公司发布的 KellyBench 报告可能会让你重新思考。这份报告测试了 Google Gemini、OpenAI GPT、Anthropic Claude、xAI Grok 等顶级模型对 2023-24 英超联赛的投注预测表现，结果令人警醒：所有模型在该任务上均呈现亏损，其中 xAI Grok 表现最差。\n这背后的原因并不难理解：足球比赛是典型的高方差（High Variance）、长周期事件，AI 模型很难捕捉球队状态、伤病、裁判心理等软性因素，而这些因素往往决定比赛结果。更根本的是，预测真实世界长周期复杂事件——而非在受控数据集上跑分——对当前以统计学习为核心的 AI 范式提出了严峻挑战。这一结果对 AI 投资顾问、医疗诊断辅助等高风险应用场景，同样具有深刻的警示意义。\n来源：Ars Technica\n首席架构师的深度阅读指南 本期最值得深入阅读的三篇文章推荐：\n如何攻破顶级 AI Agent 基准测试 — Berkeley RDI：AI 评测诚信危机值得所有 AI 开发者警醒，这篇文章提供了系统性的问题诊断。\nArtemis II 任务圆满落幕 — Ars Technica：人类 54 年来首次深空航行收官，NASA 的下一步计划值得持续关注。\n新合成天文数据证实 Hubble 常数危机真实存在 — NOIRLab：宇宙学标准模型可能面临修正，这将影响人类对宇宙命运的理解。\n「极客早报」每日更新，订阅地址：your-blog-url\n",
+  "wordCount" : "174",
+  "inLanguage": "en",
+  "datePublished": "2026-04-14T00:00:00Z",
+  "dateModified": "2026-04-14T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/ai-daily-news-2026-04-14/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      极客早报 | 2026-04-14
+    </h1>
+    <div class="post-meta"><span title='2026-04-14 00:00:00 +0000 UTC'>April 14, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%a6%82%e4%bd%95%e6%94%bb%e7%a0%b4%e9%a1%b6%e7%ba%a7-ai-agent-%e5%9f%ba%e5%87%86%e6%b5%8b%e8%af%95berkeley-rdi-%e6%8a%ab%e9%9c%b2%e5%86%85%e6%83%85" aria-label="如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情">如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情</a></li>
+                <li>
+                    <a href="#artemis-ii-%e4%bb%bb%e5%8a%a1%e5%9c%86%e6%bb%a1%e8%90%bd%e5%b9%95%e4%ba%ba%e7%b1%bb-54-%e5%b9%b4%e6%9d%a5%e9%a6%96%e6%ac%a1%e6%b7%b1%e7%a9%ba%e8%88%aa%e8%a1%8c%e6%94%b6%e5%ae%98" aria-label="Artemis II 任务圆满落幕：人类 54 年来首次深空航行收官">Artemis II 任务圆满落幕：人类 54 年来首次深空航行收官</a></li>
+                <li>
+                    <a href="#flipkart-%e4%b8%8e-amazon-%e8%81%94%e6%89%8b%e6%8c%a4%e5%8e%8b%e5%8d%b0%e5%ba%a6%e5%8d%b3%e6%97%b6%e9%9b%b6%e5%94%ae%e5%88%9b%e4%b8%9a%e5%85%ac%e5%8f%b8%e7%94%9f%e5%ad%98%e7%a9%ba%e9%97%b4" aria-label="Flipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间">Flipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间</a></li>
+                <li>
+                    <a href="#%e7%be%8e%e5%9b%bd%e7%94%a8%e6%88%b7%e4%bb%8d%e9%a6%96%e9%80%89%e7%ba%b8%e8%b4%a8%e4%b9%a6pew-research-%e6%9c%80%e6%96%b0%e9%98%85%e8%af%bb%e4%b9%a0%e6%83%af%e8%b0%83%e6%9f%a5%e5%87%ba%e7%82%89" aria-label="美国用户仍首选纸质书：Pew Research 最新阅读习惯调查出炉">美国用户仍首选纸质书：Pew Research 最新阅读习惯调查出炉</a></li>
+                <li>
+                    <a href="#%e6%96%b0%e5%90%88%e6%88%90%e5%a4%a9%e6%96%87%e6%95%b0%e6%8d%ae%e8%af%81%e5%ae%9e-hubble-%e5%b8%b8%e6%95%b0%e5%8d%b1%e6%9c%ba%e7%9c%9f%e5%ae%9e%e5%ad%98%e5%9c%a8" aria-label="新合成天文数据证实 Hubble 常数危机真实存在">新合成天文数据证实 Hubble 常数危机真实存在</a></li>
+                <li>
+                    <a href="#eleventy-%e9%9d%99%e6%80%81%e7%bd%91%e7%ab%99%e7%94%9f%e6%88%90%e5%99%a8%e6%ad%a3%e5%bc%8f%e5%ae%a3%e5%b8%83%e7%bb%88%e6%ad%a2%e5%bc%80%e5%8f%91" aria-label="Eleventy 静态网站生成器正式宣布终止开发">Eleventy 静态网站生成器正式宣布终止开发</a></li>
+                <li>
+                    <a href="#ai-%e6%a8%a1%e5%9e%8b%e9%a2%84%e6%b5%8b%e8%8b%b1%e8%b6%85%e8%b6%b3%e7%90%83%e6%af%94%e8%b5%9b%e5%85%a8%e7%ba%bf%e5%a4%b1%e8%af%afxai-grok-%e8%a1%a8%e7%8e%b0%e6%9c%80%e5%b7%ae" aria-label="AI 模型预测英超足球比赛全线失误，xAI Grok 表现最差">AI 模型预测英超足球比赛全线失误，xAI Grok 表现最差</a></li>
+                <li>
+                    <a href="#%e9%a6%96%e5%b8%ad%e6%9e%b6%e6%9e%84%e5%b8%88%e7%9a%84%e6%b7%b1%e5%ba%a6%e9%98%85%e8%af%bb%e6%8c%87%e5%8d%97" aria-label="首席架构师的深度阅读指南">首席架构师的深度阅读指南</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>早上好，各位极客们。今天是 2026 年 4 月 14 日，星期二，欢迎收听今天的极客早报。</p>
+<p>本期我们有 7 条新闻，涵盖 AI 评测诚信危机、NASA Artemis II 任务收官、印度零售市场博弈、美国阅读习惯调查、Hubble 常数危机获实证支撑、开源工具 Eleventy 终止开发，以及 AI 预测足球比赛全线失误的深度分析。</p>
+<hr>
+<h3 id="如何攻破顶级-ai-agent-基准测试berkeley-rdi-披露内情">如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情<a hidden class="anchor" aria-hidden="true" href="#如何攻破顶级-ai-agent-基准测试berkeley-rdi-披露内情">#</a></h3>
+<p>当前 AI 行业对 Agent（智能体）的评估体系，正面临一场信任危机。Berkeley RDI（Responsible AI Institute）研究团队日前发布深度报告，系统性地披露了 SWE-Bench、BrowseComp 等主流基准测试被&quot;攻克&quot;的完整技术路径。这些基准测试曾被视为衡量 AI 模型真实能力的黄金标准，但研究发现，评测数据中存在大量可被模型识别和利用的模式——包括隐含的测试集污染、任务设计的系统性偏差，以及评分机制的可操控空间。</p>
+<p>值得注意的是，报告揭示的核心问题并非模型&quot;作弊&quot;，而是基准测试本身的构建方式存在根本性缺陷。当模型能在训练阶段隐约接触到评测任务时，它可以在不真正理解问题的情况下通过模式匹配给出正确答案。这意味着行业花费数百万美元构建的评估体系，可能并不能真实反映模型的推理和执行能力。对开发者和投资人而言，这一发现无疑是一记警钟：在没有可靠基准的情况下，AI 能力的进步可能只是幻觉。</p>
+<p>来源：<a href="https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/">HN</a></p>
+<hr>
+<h3 id="artemis-ii-任务圆满落幕人类-54-年来首次深空航行收官">Artemis II 任务圆满落幕：人类 54 年来首次深空航行收官<a hidden class="anchor" aria-hidden="true" href="#artemis-ii-任务圆满落幕人类-54-年来首次深空航行收官">#</a></h3>
+<p>NASA 的 Artemis II 任务在本周画上句号。Orion 飞船以超音速约 30 倍的速度坠落太平洋，四名宇航员安全归来——这是自 1972 年阿波罗 17 号以来，人类首次进入深空并成功返回。在轨期间，宇航员完成了生命支持系统验证、轨道机动测试以及地月空间环境数据采集，为后续 Artemis III 载人登月任务积累了宝贵的一手经验。</p>
+<p>然而，任务的成功也意味着压力的转移。NASA 接下来必须兑现 Artemis III 的承诺——将首位女性和首位有色人种宇航员送上月球表面。与此同时，商业竞争对手和地缘政治格局的变化，让这场&quot;月球复兴&quot;的意义远超科学本身。对于整个航天工业来说，Artemis II 证明深空载人航行的工程能力已经成熟，问题的核心不再是&quot;能不能去&quot;，而是&quot;去那里做什么&quot;。</p>
+<p>来源：<a href="https://arstechnica.com/space/2026/04/the-artemis-ii-mission-has-ended-where-does-nasa-go-from-here/">Ars Technica</a></p>
+<hr>
+<h3 id="flipkart-与-amazon-联手挤压印度即时零售创业公司生存空间">Flipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间<a hidden class="anchor" aria-hidden="true" href="#flipkart-与-amazon-联手挤压印度即时零售创业公司生存空间">#</a></h3>
+<p>印度即时零售（Quick Commerce）市场正在经历一场结构性洗牌。Flipkart 持续向二三线城市扩张，并加大折扣力度，其策略被分析师认为正在系统性地压缩 Swiggy、Zepto、Blinkit 等本土创业公司的生存空间。Flipkart 背靠 Walmart，Amazon 则是全球电商巨头，两者的资金实力和物流基础设施远超本土竞争者。</p>
+<p>问题的核心在于市场集中度。当两大平台联手挤压时，创业公司面临的选择极为有限：要么差异化深耕，要么被逐渐边缘化。这对印度的创业生态是一个警示——在一个资本密集型的战场上，没有足够弹药的小玩家很难长期抵抗巨头挤压。最终消费者可能获得短期低价红利，但长期来看，市场竞争的多元化正在被悄然侵蚀。</p>
+<p>来源：<a href="https://techcrunch.com/2026/04/11/walmart-owned-flipkart-amazon-are-squeezing-indias-quick-commerce-startups/">TechCrunch</a></p>
+<hr>
+<h3 id="美国用户仍首选纸质书pew-research-最新阅读习惯调查出炉">美国用户仍首选纸质书：Pew Research 最新阅读习惯调查出炉<a hidden class="anchor" aria-hidden="true" href="#美国用户仍首选纸质书pew-research-最新阅读习惯调查出炉">#</a></h3>
+<p>Pew Research 最新的调查数据给数字内容乐观主义者泼了一盆冷水。调查显示，大多数美国成年人仍然首选纸质书，而非电子书或有声书；且仅有少数人参与读书俱乐部。这一结果与许多人&quot;数字内容已全面取代传统媒介&quot;的直觉形成了明显反差。</p>
+<p>纸质书的持久吸引力可能来自多个维度：触觉体验、屏幕疲劳感、以及阅读纸质书时更高的专注度。对内容平台和出版行业而言，这一数据意味着全盘押注数字化的策略存在风险。实体书并未消亡，它只是在新一代数字原住民中找到了自己独特的定位。对于关注内容消费的从业者，理解这种媒介偏好的持续性，或许比追逐新兴格式更有战略价值。</p>
+<p>来源：<a href="https://www.pewresearch.org/short-reads/2026/04/09/americans-still-opt-for-print-books-over-digital-or-audio-versions-few-are-in-book-clubs/">HN</a></p>
+<hr>
+<h3 id="新合成天文数据证实-hubble-常数危机真实存在">新合成天文数据证实 Hubble 常数危机真实存在<a hidden class="anchor" aria-hidden="true" href="#新合成天文数据证实-hubble-常数危机真实存在">#</a></h3>
+<p>宇宙学界长期争议的一个核心问题——宇宙膨胀速率——终于获得了新的实证支撑。NOIRLab（National Optical-Infrared Astronomy Research Laboratory）基于新型天文测量技术发布的合成数据研究，再次证实了 Hubble 常数（Hubble Constant）危机真实存在：宇宙学标准模型预测的膨胀速率与实测结果之间，存在不可忽视且持续存在的差异。</p>
+<p>这一发现的重要性在于，它不是来自单一观测的偏差，而是多种独立测量手段汇聚后的结论。这意味着要么我们对宇宙基本物理定律的理解存在系统性遗漏，要么宇宙中存在尚未被探测到的能量成分或物质形式。无论哪种解释为真，都将深刻改变现代宇宙学的理论基础。对于非专业读者而言，这或许是人类探索宇宙真理道路上最激动人心的&quot;危机&quot;之一。</p>
+<p>来源：<a href="https://noirlab.edu/public/news/noirlab2611/?nocache=true&amp;lang=en">HN</a></p>
+<hr>
+<h3 id="eleventy-静态网站生成器正式宣布终止开发">Eleventy 静态网站生成器正式宣布终止开发<a hidden class="anchor" aria-hidden="true" href="#eleventy-静态网站生成器正式宣布终止开发">#</a></h3>
+<p>前端社区今天迎来了一个令人唏嘘的消息：备受欢迎的静态网站生成器 Eleventy（也被称为 11ty）的作者正式宣布终止项目开发。Eleventy 以其零框架依赖、高度可定制和出色的性能著称，曾是许多开发者在 Gatsby、Next.js 之外的优雅选择。它的离去引发了对前端工具生态可持续性的广泛讨论。</p>
+<p>开源维护者的困境并非新议题，但 Eleventy 的案例再次将其推至台前：一个人或少数人支撑的项目，当激情消退或生活压力来临，项目的命运便悬于一线。社区需要回答一个根本性问题：如何让有价值的开源项目获得长期维护保障，而不仅仅依赖开发者的个人奉献？这一挑战的答案，将决定未来前端生态的质量上限。</p>
+<p>来源：<a href="https://brennan.day/the-end-of-eleventy/">HN</a></p>
+<hr>
+<h3 id="ai-模型预测英超足球比赛全线失误xai-grok-表现最差">AI 模型预测英超足球比赛全线失误，xAI Grok 表现最差<a hidden class="anchor" aria-hidden="true" href="#ai-模型预测英超足球比赛全线失误xai-grok-表现最差">#</a></h3>
+<p>如果你曾幻想 AI 能帮你靠赌球发财，General Reasoning 公司发布的 KellyBench 报告可能会让你重新思考。这份报告测试了 Google Gemini、OpenAI GPT、Anthropic Claude、xAI Grok 等顶级模型对 2023-24 英超联赛的投注预测表现，结果令人警醒：所有模型在该任务上均呈现亏损，其中 xAI Grok 表现最差。</p>
+<p>这背后的原因并不难理解：足球比赛是典型的高方差（High Variance）、长周期事件，AI 模型很难捕捉球队状态、伤病、裁判心理等软性因素，而这些因素往往决定比赛结果。更根本的是，预测真实世界长周期复杂事件——而非在受控数据集上跑分——对当前以统计学习为核心的 AI 范式提出了严峻挑战。这一结果对 AI 投资顾问、医疗诊断辅助等高风险应用场景，同样具有深刻的警示意义。</p>
+<p>来源：<a href="https://arstechnica.com/ai/2026/04/ai-models-are-terrible-at-betting-on-soccer-especially-xai-grok/">Ars Technica</a></p>
+<hr>
+<h3 id="首席架构师的深度阅读指南">首席架构师的深度阅读指南<a hidden class="anchor" aria-hidden="true" href="#首席架构师的深度阅读指南">#</a></h3>
+<p>本期最值得深入阅读的三篇文章推荐：</p>
+<ol>
+<li>
+<p><strong><a href="https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/">如何攻破顶级 AI Agent 基准测试 — Berkeley RDI</a></strong>：AI 评测诚信危机值得所有 AI 开发者警醒，这篇文章提供了系统性的问题诊断。</p>
+</li>
+<li>
+<p><strong><a href="https://arstechnica.com/space/2026/04/the-artemis-ii-mission-has-ended-where-does-nasa-go-from-here/">Artemis II 任务圆满落幕 — Ars Technica</a></strong>：人类 54 年来首次深空航行收官，NASA 的下一步计划值得持续关注。</p>
+</li>
+<li>
+<p><strong><a href="https://noirlab.edu/public/news/noirlab2611/?nocache=true&amp;lang=en">新合成天文数据证实 Hubble 常数危机真实存在 — NOIRLab</a></strong>：宇宙学标准模型可能面临修正，这将影响人类对宇宙命运的理解。</p>
+</li>
+</ol>
+<hr>
+<p><em>「极客早报」每日更新，订阅地址：your-blog-url</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bothubpr.github.io/tags/ai/">AI</a></li>
+      <li><a href="https://bothubpr.github.io/tags/daily-news/">Daily News</a></li>
+      <li><a href="https://bothubpr.github.io/tags/tech/">Tech</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>2026 on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/tags/2026/</link>
+    <description>Recent content in 2026 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/2026/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Daily News · 2026-03-31</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-03-31/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-03-31/</guid>
+      <description>每日 AI 与科技新闻速递 · 2026-03-31</description>
+    </item>
+  </channel>
+</rss>

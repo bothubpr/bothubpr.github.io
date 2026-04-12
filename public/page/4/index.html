@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.146.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ziv的极客日志</title>
+
+<meta name="description" content="">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://bothubpr.github.io/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="Ziv的极客日志">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ziv的极客日志">
+<meta name="twitter:description" content="">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ziv的极客日志",
+  "url": "https://bothubpr.github.io/",
+  "description": "",
+  "logo": "https://bothubpr.github.io/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 【最终章】！
+在前三篇里，俺们从零搭建了一个完全无人值守的 【本地极客知识库】：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。
+基础设施已经完美闭环，但极客的折腾永无止境！ 既然有了一个 24 小时待命的自动化基座，咱们为什么还要自己写文章？为何不直接压榨 AI 的“睡后算力”，让它成为咱们的 【赛博记者】？
+今天，俺将带你手搓一个纯 Python 的 AI 聚合爬虫。它会在每天清晨你还没睡醒时，自动去外网极客社区“进货”，并排版成一份带暗黑模式的硬核早报，直接塞进你的博客里！
+★ 痛点破局：信息过载与“机翻”的灾难 每天早晨刷手机，大伙儿肯定面临过这两个痛点：
+【信息源太分散】：Hacker News、Reddit、Product Hunt，挨个刷一遍半小时就没了。外文长篇大论，根本没时间细看。 【劣质翻译的灾难】：如果用浏览器自带的翻译，它会把所有的专业术语全毁掉。比如把 Kubernetes 翻成“舵手”，把 Containerization 翻成“集装箱化”，读起来简直让人吐血。 咱们的 【AI 赛博记者】 就是来“降维打击”这些痛点的。
+★ 核心逻辑与“反爬”突围战 这个脚本的核心逻辑很简单：利用 Python 的 urllib 抓取四大极客社区的 RSS 源，打包丢给大模型（如 DeepSeek 或 OpenAI）进行总结，最后生成 Markdown 扔进咱们的 SyncDrive 网盘。
+但第一步“抓取”就差点翻车。当俺试图去抓 Reddit 的技术板块时，直接被它背后的 Cloudflare 防御盾弹了一个 403 Forbidden。
+【架构师的解法】：咱们必须进行深度伪装。在原生 Python HTTP 请求中，强行注入极其逼真的浏览器 User-Agent，并声明我们接收 application/rss&#43;xml。如果 Reddit 还是傲娇，俺还加入了 【Lobsters】（国外极硬核且对爬虫友好的开发者社区）作为最强替补！
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-05 00:00:00 +0000 UTC'>March 5, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”" href="https://bothubpr.github.io/posts/pg04/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-05
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>[没人因为追求简洁而获得晋升] 来源标签: Lobsters 内容精炼: 文章探讨了在大型软件组织中，复杂系统往往比简洁设计更能吸引关注和资源，导致工程师缺乏构建和维护简单系统的动力。作者分析了这一现象背后的组织与激励结构问题。 原文链接: https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/ [Claude 是 Electron 应用，因为我们已失去原生开发能力] 来源标签: Lobsters 内容精炼: 作者批评了当前桌面应用开发过度依赖 Electron 等跨平台框架，导致应用臃肿、性能低下。文章追溯了原生 (Native) 应用开发的衰落，并讨论了其对用户体验和软件生态的长期影响。 原文链接: https://tonsky.me/blog/fall-of-native/ [加州的数字年龄验证法案与自由开源软件] 来源标签: Lobsters 内容精炼: 文章分析了加州 AB 1043 法案（数字年龄验证法）对自由开源软件 (FOSS) 项目可能带来的合规挑战。重点探讨了法案中关于年龄验证 (Age Assurance) 的要求如何与开源项目的分布式、低门槛参与模式产生冲突。 原文链接: https://runxiyu.org/comp/ab1043/ [Claude 的循环] 来源标签: Lobsters 内容精炼: 这篇由计算机科学家高德纳 (Donald Knuth) 撰写的论文，探讨了人工智能 Claude 在处理复杂递归和自指问题时的行为模式，分析了其推理中出现的特定循环 (Cycles) 现象及其理论意义。 原文链接: https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf [永远不要推迟未来的任务] 来源标签: Lobsters 内容精炼: 作者从个人生产力角度，分析了“推迟” (Snooze) 未来待办事项这一常见习惯的弊端。文章提出了更有效的时间与任务管理策略，以避免决策疲劳和承诺堆积。 原文链接: https://jacko.io/snooze.html [玩家与虚无主义者：Product Hunt 分析（2014–2021）] 来源标签: Product Hunt 内容精炼: 这份2022年的报告对 Product Hunt 平台2014至2021年的数据进行了分析，识别出“玩家”（追求积分和排名）和“虚无主义者”（批判性参与）两类主要用户群体，并探讨了社区动态与产品成功之间的关系。 原文链接: https://components.news/the-gamer-and-the-nihilist/ [Show HN: 构建了一个基于用户-产品匹配的 Product Hunt 替代品] 来源标签: Product Hunt 内容精炼: 这是一个新上线的产品发布平台，其核心创新在于利用算法进行用户-产品匹配 (User-Product Matching)，旨在帮助用户更精准地发现感兴趣的产品，而非依赖统一的流行度榜单。 原文链接: https://www.productlaunch.cc/ [Show HN: 一个让用户赚钱的 Product Hunt] 来源标签: Product Hunt 内容精炼: 该项目推出了一个新型产品发现平台，其商业模式允许用户通过推广或评测产品来直接获得收益，旨在改变传统平台仅由发布者获利的现状。 原文链接: https://www.toolspotting.com/ 首席架构师的深度阅读指南
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-05 00:00:00 +0000 UTC'>March 5, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-05" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-05/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>哈喽，各位极客小伙伴们！
+在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。
+这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：
+--- title: &#34;我的日记&#34; date: 2026-03-04 draft: false --- 如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。 大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！
+★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫” 既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。
+它的工作逻辑极度简单粗暴：
+24 小时死死盯着咱们的 SyncDrive 网盘。 只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。 它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！ 只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。
+★ 极客的傲骨：抛弃第三方库，纯手搓轮询 在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。
+但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。
+俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫" href="https://bothubpr.github.io/posts/pg03/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-04
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>[Claude 是 Electron 应用，因为我们已失去了原生开发] 来源标签: Lobsters 内容精炼: 文章批判了当前软件开发生态过度依赖 Electron 等跨平台框架，导致应用臃肿、性能低下。作者认为，追求“一次编写，到处运行”的便利性，是以牺牲原生应用 (Native App) 的性能、能效和用户体验为代价的，反映了行业对工程效率的过度追求。 原文链接: https://tonsky.me/blog/fall-of-native/ [美国最高法院拒绝审理关于 AI 生成材料版权的争议] 来源标签: Lobsters 内容精炼: 美国最高法院决定不受理一起关于 AI 生成内容 (AI-generated material) 版权归属的案件。这一决定意味着，在缺乏联邦立法或更高层级司法裁决的情况下，关于人工智能创作物版权 (Copyright) 的模糊性和法律不确定性将持续存在。 原文链接: https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/ [Weave – 一种基于实体的、具备语言感知能力的合并算法] 来源标签: Hacker News 内容精炼: Weave 是一个创新的代码合并 (Merge) 算法，它通过理解代码的实体结构（如函数、类）而非简单的文本行差异来进行合并。这种方法旨在更智能地处理代码冲突，减少手动干预，提升版本控制 (Version Control) 系统的协作效率。 原文链接: https://github.com/Ataraxy-Labs/weave [AgentBus – 通过 REST API 实现的集中式 AI 智能体间通信] 来源标签: Hacker News 内容精炼: AgentBus 是一个为 AI 智能体 (AI Agent) 设计的集中式消息传递平台。它提供标准化的 REST API，允许不同的 AI 智能体之间进行结构化通信和协作，旨在简化多智能体系统 (Multi-Agent System) 的构建与集成。 原文链接: https://agentbus.org/ [唐纳德·克努特的“类Claude”有向哈密顿环分解] 来源标签: Lobsters 内容精炼: 计算机科学先驱高德纳 (Donald Knuth) 发布了一篇技术论文，探讨了在有向图中寻找哈密顿环 (Hamiltonian Cycles) 分解的新方法。论文标题中的“类Claude”暗示其可能受到当前大语言模型 (LLM) 推理方式的启发，或将图论与新型计算范式结合。 原文链接: https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf [图形编程资源汇总] 来源标签: Hacker News 内容精炼: 这是一个精心整理的图形编程 (Graphics Programming) 资源集合网站。内容涵盖了从基础的渲染管线 (Rendering Pipeline)、着色器 (Shaders) 编写，到高级的实时光线追踪 (Real-time Ray Tracing) 等技术的学习路径、教程、论文和工具链接。 原文链接: https://develop--gpvm-website.netlify.app/resources/ [面向设计师和开发者的 Mac 外接显示器指南（第二部分）] 来源标签: Hacker News 内容精炼: 文章深入探讨了为 Mac 选择外接显示器 (External Displays) 的技术细节，重点关注色彩准确性、分辨率缩放 (Resolution Scaling)、HDR 支持以及不同接口（如 Thunderbolt, USB-C）对专业工作流的影响，为视觉创作者和开发者提供实用选购建议。 原文链接: https://bjango.com/articles/macexternaldisplays2/ [Ruby Central 让 Ruby 倒退的四个月] 来源标签: Lobsters 内容精炼: 作者严厉批评了 Ruby 语言官方管理机构 Ruby Central 近期的决策，认为其治理混乱、沟通不畅，并在关键的技术方向（如打包、工具链）上做出了不利于社区和语言发展的决定，导致 Ruby 生态出现倒退风险。 原文链接: https://andre.arko.net/2026/03/03/four-months-of-ruby-central-moving-ruby-backward/ [AI 对软件发布的真实影响：来自 Product Hunt 的证据] 来源标签: Product Hunt 内容精炼: 文章通过分析 Product Hunt 平台上的发布数据，量化研究了 AI 技术对软件创业的影响。研究发现，集成 AI 功能的软件产品在发布时获得的关注度（如投票、评论）显著更高，但同时也面临更激烈的竞争和更快的热度消退速度。 原文链接: https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/ 首席架构师的深度阅读指南
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-04" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-04/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 辅助发现有向图哈密顿循环的通用构造
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 计算机科学泰斗 Donald Knuth 抛出的开放问题被 Claude Opus 4.6 在一小时内解决。Knuth 随后给出了严格的数学证明，确认该构造对所有奇数 m 有效。
+背景 Knuth 在研究《计算机程序设计艺术》未来卷册中的有向哈密顿循环问题时，构造了如下有向图：
+图中共有 m³ 个顶点，记为 ijk（0 ≤ i, j, k &lt; m）。每个顶点有三条出边，分别指向：
+i&#43;jk：i 加 1（模 m） ij&#43;k：j 加 1（模 m） ijk&#43;：k 加 1（模 m） 开放问题：能否将这 3m³ 条弧分解为三个有向哈密顿循环？
+Knuth 自身仅解决了 m = 3 的特殊情况。其友Filip Stappers 通过枚举发现了 m = 4 至 16 的数值解，但通用构造（对任意 m &gt; 2）始终未知。
+Claude 的求解过程 Filip 将此问题提交给 Claude Opus 4.6，并要求其记录每次探索的进展。Claude 共进行了 31 轮探索，主要尝试包括：
+早期尝试：线性函数、二次函数、深度优先搜索、2D 蛇形分析等方法，均未能找到通用构造。
+关键突破（第15-20轮）：Claude 引入了纤维分解（Fiber Decomposition）方法，将顶点按 s = (i &#43; j &#43; k) mod m 分层分析。结合模拟退火算法，Claude 找到了 m = 3 和 m = 4 的具体解。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 辅助发现有向图哈密顿循环的通用构造" href="https://bothubpr.github.io/posts/knuth-claude-cycles-02/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">量子计算再突破！光首次模拟诺贝尔奖量子效应
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 2026年3月，量子科技领域迎来两大重磅突破：光首次模拟了量子霍尔效应，以及科学家成功解锁单个光子内的隐藏维度。这些进展意味着什么？将如何改变量子计算的未来？
+今日量子要闻速览 1. 历史性突破：光模仿了诺贝尔奖量子效应 来源: ScienceDaily
+发布时间: 2026年3月1日
+机构: 蒙特利尔大学
+核心事实：
+科学家首次实现光（光子）模拟量子霍尔效应（Quantum Hall Effect） 此前该效应仅在电子中观察到，因为电子带电荷 光子不带电荷，因此无法自然响应电磁场 研究发表在 Physical Review X 技术细节：
+当电流在材料中流动并施加垂直磁场时，会产生横向电压——这就是霍尔效应。1980年代，科学家在极低温强磁场下的超薄导体中发现了量子霍尔效应：横向电压不再平滑增加，而是以完美的阶梯状跳跃。
+“光以量子化的方式漂移，沿着与电子在强磁场中类似的普遍阶梯前进。”
+—— 蒙特利尔大学物理学教授 Philippe St-Jean
+这些&#34;平台&#34;（plateaus）是通用的，不依赖于材料成分、形状或微观缺陷，完全由自然基本常数决定：电子电荷和普朗克常数。
+为什么重要：
+计量学革命 — 光学系统可能成为测量精度的新黄金标准 量子计量学 — 精确控制光的流动可能扩展到量子信息处理 更强大的量子光子计算机 — 可能带来更坚韧、更可靠的量子光子技术 新型传感器 — 微小的偏差可能揭示微妙的环境干扰 2. 重大进展：解锁光子内的隐藏维度 来源: ScienceDaily
+发布时间: 2026年2月26日
+机构: 维特沃特斯兰德大学（南非）、巴塞罗那自治大学
+核心事实：
+科学家发现了塑造量子光的新方法 可以在单个光子中创建高维态（high-dimensional states） 每个光子可以携带更多信息 研究发表在 Nature Photonics 技术细节：
+研究者通过精确控制光子的空间模式、时序和光谱，设计出所谓的结构光子（structured photons）。
+“20年前，这个领域的工具箱几乎是空的。今天，我们有了芯片上的量子结构光源，紧凑而高效，能够创造和控制量子态。”
+—— 维特沃特斯兰德大学 Andrew Forbes 教授
+为什么重要：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 量子计算再突破！光首次模拟诺贝尔奖量子效应" href="https://bothubpr.github.io/posts/quantum-breakthrough-2026/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>哈喽，各位极客小伙伴们！
+在上篇连载中，咱们成功用 Filebrowser 搭建了一个 【零摩擦的本地网盘】。现在，你的 Markdown 笔记已经可以随手拖拽进 Ubuntu 虚拟机里了。
+但网盘里的 .md 文件终究只是“毛坯房”，咱们需要一台强悍的渲染引擎，把它们瞬间编译成带有暗黑模式、目录导航的精美极客网页。俺选用的引擎是目前地表最快的静态生成器—— 【Hugo】。
+不过，Hugo 出了名的脾气古怪，有着极度的 【底层洁癖】。今天，俺就带大伙儿扒一扒它的底裤，看看如何绕过它设下的重重陷阱！
+★ 避雷指南：千万别用 Snap 装 Hugo 在 Ubuntu 上装软件，大伙儿的第一反应肯定是敲 sudo apt install 或者用系统自带的 snap 商店。
+听俺一句劝：【绝对不要用 Snap 安装 Hugo！】
+Snap 本质上也是一个极其严格的 【沙盒环境】。如果你用 Snap 装了 Hugo，当 Hugo 试图去读取咱们挂载在桌面（~/Desktop/）的网盘文件时，会直接被操作系统的安全机制“无情绞杀”，报出一堆莫名其妙的 Permission Denied（权限拒绝）。
+【架构师的解法】：直接去 Hugo 的 GitHub Releases 页面，下载最新的 Linux tar.gz 压缩包，解压后把二进制文件直接扔进 /usr/local/bin/。绕过所有中间商，把引擎的控制权 100% 握在自己手里！
+★ 跨越物理隔离：神奇的“虚拟挂载” Hugo 的“洁癖”体现在它的目录结构上：它要求所有的文章必须乖乖放在它自己生成的 content/posts/ 文件夹下。
+但这违背了咱们的自动化初衷！咱们的文章明明放在上一篇建好的 SyncDrive 网盘里。如果每次都要复制文件，那还搞啥自动化？如果用 Linux 的软链接（ln -s），又容易遇到各类缓存同步的诡异 Bug。
+这里，俺要祭出 Hugo 的一个高级黑魔法：【模块虚拟挂载 (Module Mounts)】。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载" href="https://bothubpr.github.io/posts/pg02/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-03
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>[Giggles：一个功能完备的 React TUI 框架] 来源标签: Hacker News 内容精炼: 开发者 zion-off 开源了 Giggles，一个“开箱即用”的 React 框架，专门用于构建终端用户界面 (Terminal User Interface, TUI)。该项目旨在简化 TUI 应用的开发流程，为 React 开发者进入命令行应用开发提供便利。 原文链接: https://github.com/zion-off/giggles [Ars Technica 因 AI 捏造引文争议解雇记者] 来源标签: Hacker News 内容精炼: 知名科技媒体 Ars Technica 解雇了一名记者，起因是该记者在报道中使用了人工智能 (AI) 工具，并发布了未经核实的、由 AI 生成的虚假引文。这一事件引发了关于新闻业中 AI 使用伦理和事实核查流程的广泛讨论。 原文链接: https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes [如何构建你自己的量子计算机] 来源标签: Hacker News 内容精炼: 一篇来自《物理评论》的文章，以通俗易懂的方式概述了构建一台基础量子计算机 (Quantum Computer) 所涉及的核心物理原理和工程挑战。文章解释了量子比特 (Qubit)、量子纠缠 (Quantum Entanglement) 等概念，并讨论了当前实验平台的现状。 原文链接: https://physics.aps.org/articles/v19/24 [GRAM：一个剔除了所有 AI 功能的 Zed 编辑器分支] 来源标签: Lobsters 内容精炼: 开发者推出了 GRAM，这是流行代码编辑器 Zed 的一个分支版本。该项目的主要特点是移除了 Zed 中所有与人工智能 (AI) 相关的功能，旨在为那些偏好简洁、专注的编程环境，或对 AI 集成有隐私、性能顾虑的用户提供一个替代选择。 原文链接: https://gram.liten.app/ [摩托罗拉与 GrapheneOS 达成新合作] 来源标签: Lobsters 内容精炼: 摩托罗拉宣布与注重隐私和安全性的移动操作系统 GrapheneOS 建立新的合作伙伴关系。此举旨在为企业对商业 (B2B) 客户提供增强安全性的移动解决方案，预计将在 MWC 2026 上展示相关产品，标志着主流手机厂商对强化隐私的安卓 (Android) 分支的认可。 原文链接: https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/ [两种错误类型] 来源标签: Lobsters 内容精炼: 作者 Evan Hahn 探讨了在软件开发和系统设计中常见的两种根本性错误类型：乐观错误 (乐观假设导致故障) 和悲观错误 (过度防御导致功能缺失或性能下降)。文章分析了各自的成因、影响及平衡策略，对系统架构设计具有指导意义。 原文链接: https://evanhahn.com/the-two-kinds-of-error/ [量化瑞士的“婚姻税”] 来源标签: Lobsters 内容精炼: 一篇数据分析博客文章，深入研究了瑞士税法中因夫妻合并报税可能导致的额外税负，即所谓的“婚姻税”。文章通过数据建模和可视化，量化了不同收入组合下的税负差异，为理解该政策的实际影响提供了数据支撑。 原文链接: https://gendx.dev/blog/2026/03/02/swiss-marriage-tax.html [GRAM 1.0 版本发布] 来源标签: Lobsters 内容精炼: 基于 Zed 编辑器、移除了所有 AI 功能的分支项目 GRAM 发布了其 1.0 正式版本。该版本标志着项目进入稳定阶段，为寻求无 AI 干扰、高性能代码编辑器的用户提供了一个明确的选择。 原文链接: https://gram.liten.app/posts/first-release/ [AI 对软件发布的真实影响：来自 Product Hunt 的证据] 来源标签: Product Hunt 内容精炼: 一篇基于 Product Hunt 平台数据的分析文章，旨在客观评估人工智能 (AI) 工具对软件产品发布成功率、关注度和用户反馈的实际影响。文章通过数据对比，试图揭示 AI 辅助开发或营销是带来了实质优势，还是仅仅增加了市场噪音。 原文链接: https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/ 首席架构师的深度阅读指南
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-03" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-03/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">如何自己造一台量子计算机？一群物理学家正在开源革命
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 当全世界都在追逐量子计算的商用前景时，加拿大的一群物理学家选择了一条完全不同的路——把所有技术开源，让每个人都能自己动手造量子计算机。
+核心观点提炼 1. 开源是为了打破垄断 核心观点：量子计算被誉为下一场技术革命，但目前财富和技术都被少数公司垄断。Open Quantum Design (OQD) 试图让量子计算成为&#34;人类共同的技术&#34;。
+“每一次技术革命——工业革命、互联网、AI——财富都集中在少数人手里。我们有机会让量子计算掌握在全人类手中。” —— Greg Dick
+2. 降低门槛，让创业者也能入场 核心观点：传统量子计算需要数亿美元融资，普通人根本无法参与。开源设计让开发者可以在&#34;攒够1000万&#34;之前先动手实践。
+学生可以自己学习硬件开发技能（光学、电子学、真空技术） 创业者可以直接玩机器，迭代自己的想法 不用重复造轮子，有现成的开源技术可用 3. 技术规格：30量子比特，99%保真度 参数 目标值 量子比特数 30 双量子比特门保真度 ~99% 技术路线 离子阱 (Trapped-Ion) “我们不追求成为地球上最大最强的量子计算机，而是要造最容易被理解和访问的一台。” —— Crystal Senko
+4. 对抗炒作：诚实的预期 核心观点：量子计算被过度炒作了。人们经常把&#34;今年会发生的事&#34;和&#34;十年后可能发生的事&#34;混为一谈。
+量子计算不会明天就解决气候变化或治愈癌症 今年可能实现：小规模容错量子门测试（几个逻辑量子比特） 真正有价值的应用可能需要数年甚至数十年 5. 加拿大的科技主权野心 核心观点：开源反而能增强国家科技主权。
+政府不想依赖单一供应商 开源意味着更透明的设计，更少的安全隐患 每个国家都希望对自己的云服务和关键数字基础设施有控制权 6. 企业合作模式 OQD 与多家公司合作，比如光子量子计算公司 Xanadu：
+Xanadu 用 OQD 的离子阱控制电子设备来测试他们的编译器 清晰的信息共享规则让合作变得简单 采访金句 Rajibul Islam: “我们公司没有盈利动机去夸大技术，所以可以做到完全透明。”
+Crystal Senko: “我想尊重实现这项技术需要的工作量。”
+深度阅读指南 请帮我深度读取并解析这篇文章：https://physics.aps.org/articles/v19/24
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 如何自己造一台量子计算机？一群物理学家正在开源革命" href="https://bothubpr.github.io/posts/quantum-computer-open-source/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【系列连载一】打造极客终极自动化知识库：零摩擦打通本地 Markdown 投放区
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>哈喽，各位极客小伙伴们！
+最近俺一直在折腾 AI Agent（智能体），尤其是试图压榨它们的“睡后算力”。俺的终极目标是：在本地搭建一个 【完全无人值守】 的自动化博客与知识库，甚至让 AI 每天清晨自动为我生成一份排版精美的硬核科技早报。
+经过几个深夜的反复 Debug 和重构，这套系统终于完美跑通了！为了把这段极其硬核的“踩坑与架构”全记录分享给大伙儿，俺决定开启一个分为四篇的系列连载：
+【打通桥梁】 零摩擦的物理桥梁 —— 用 Filebrowser 搭建本地 Markdown 投放区（本篇） 【引擎点火】 驯服 Hugo 引擎的“底层洁癖” —— 本地热渲染与跨目录挂载 【解放双手】 纯 Python 手搓“自动格式清洗”门卫 —— 无感注入 YAML 头部 【终极杀器】 睡后算力压榨 —— 打造每天清晨的“AI 赛博记者” 今天，咱们先从最基础，也是最影响日常体验的第一步开始：干掉繁琐的 FTP/SSH，造一个 【拖拽即生效】 的物理桥梁。
+★ 交代一下俺的运行环境 在开始之前，先跟大伙儿同步一下这套架构的底层环境。这不是啥高不可攀的云端集群，而是任何人都能在自己电脑上跑起来的本地环境：
+【宿主机】：日常办公使用的 Windows 系统。 【服务节点】：跑在局域网内的一台 Ubuntu 虚拟机（分配了固定的局域网 IP，带轻量级桌面环境）。 【赛博苦力】：俺使用了基于 OpenClaw 框架的 AI 特工（底层调用大模型 API）。因为有严格的 API 交互限额，这意味着俺必须用 【最高密度的复合指令】 来指挥它干活，绝不能让它陷入报错死循环。 ★ 踩坑实录：AI 特工的“沙盒刺客” 既然有了 Ubuntu 虚拟机和 AI 特工，俺的第一反应是：直接给特工下发 Prompt，让它用 Python 写个抓取脚本，然后保存在俺的 Ubuntu 桌面（~/Desktop/）。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-02 00:00:00 +0000 UTC'>March 2, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 【系列连载一】打造极客终极自动化知识库：零摩擦打通本地 Markdown 投放区" href="https://bothubpr.github.io/posts/pg01/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://bothubpr.github.io/page/3/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://bothubpr.github.io/page/5/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

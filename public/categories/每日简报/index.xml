@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>每日简报 on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/categories/%E6%AF%8F%E6%97%A5%E7%AE%80%E6%8A%A5/</link>
+    <description>Recent content in 每日简报 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/categories/%E6%AF%8F%E6%97%A5%E7%AE%80%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub 热门项目日报 - 2026-04-11</title>
+      <link>https://bothubpr.github.io/posts/github_daily_2026-04-11/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/github_daily_2026-04-11/</guid>
+      <description>&lt;h1 id=&#34;github-热门项目日报--2026-04-11&#34;&gt;GitHub 热门项目日报 · 2026-04-11&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天 5 分钟，了解 GitHub 上最值得关注的开源项目。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-hermes-agent&#34;&gt;🔥 Hermes Agent&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/NousResearch/hermes-agent&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-voxcpm2&#34;&gt;🔥 VoxCPM2&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/OpenBMB/VoxCPM&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;VoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-opendataloader-pdf&#34;&gt;🔥 OpenDataLoader PDF&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/opendataloader-project/opendataloader-pdf&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub 热门项目日报 - 2026-04-10</title>
+      <link>https://bothubpr.github.io/posts/github_daily_2026-04-10/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/github_daily_2026-04-10/</guid>
+      <description>&lt;h1 id=&#34;github-热门项目日报--2026-04-10&#34;&gt;GitHub 热门项目日报 · 2026-04-10&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天 5 分钟，了解 GitHub 上最值得关注的开源项目。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-hermes-agent&#34;&gt;🔥 Hermes Agent&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/NousResearch/hermes-agent&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hermes Agent 是由 Nous Research 开发的自我改进型 AI Agent，拥有内置的学习闭环系统。它能够从经验中创建技能，在使用过程中不断改进，搜索自己的过往对话，并建立对用户需求的深度理解。今日新增 5,884 stars，总星数已达 45,575。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;项目作者/组织&lt;/strong&gt;: Nous Research&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主要功能/用途&lt;/strong&gt;: 提供可成长的 AI Agent 平台，支持技能创建、记忆管理和多平台集成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术亮点/创新点&lt;/strong&gt;: 内置学习循环、持久化知识、自适应技能提升&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;: 个人 AI 助手、自动化任务处理、代码辅助、多轮对话系统&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Star 趋势&lt;/strong&gt;: 今日新增 5,884 stars，总星数 45,575（Python）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-superpowers&#34;&gt;🔥 Superpowers&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/obra/superpowers&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Superpowers 是 Andrej Karpathy 推出的 Agentic 技能框架，使用 Shell 脚本实现模块化的 AI 能力组合。该框架强调轻量、可组合的技能单元，让开发者能够快速构建和部署 AI Agent。今日新增 2,299 stars，总星数突破 143,974。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;项目作者/组织&lt;/strong&gt;: obra（Andrej Karpathy）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主要功能/用途&lt;/strong&gt;: 提供一套 Shell 脚本库，用于定义、调用和管理 AI Agent 技能&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术亮点/创新点&lt;/strong&gt;: 极简设计、技能可组合性、无缝集成现有工具链&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;: AI 工作流自动化、快速原型验证、教育演示&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Star 趋势&lt;/strong&gt;: 今日新增 2,299 stars，总星数 143,974（Shell）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-deeptutor&#34;&gt;🔥 DeepTutor&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/DeepTutor/DeepTutor&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub 热门项目日报 - 2026-04-09</title>
+      <link>https://bothubpr.github.io/posts/github_daily_2026-04-09/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/github_daily_2026-04-09/</guid>
+      <description>&lt;h1 id=&#34;github-热门项目日报--2026-04-09&#34;&gt;GitHub 热门项目日报 · 2026-04-09&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天 5 分钟，了解 GitHub 上最值得关注的开源项目。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-gitnexus&#34;&gt;🔥 GitNexus&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/abhigyanpatwari/GitNexus&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitNexus 是一个零服务器代码智能引擎，完全在浏览器中运行。由开发者 abhigyanpatwari 创建，它能够将任何 GitHub 仓库或 ZIP 文件即时转换为交互式知识图谱，并内置 Graph RAG 智能体。该项目通过 MCP（Model Context Protocol）为 AI 编码助手（如 Cursor、Claude Code）提供深度的代码库架构视图，让 AI 真正理解代码之间的依赖关系、调用链和执行流程。技术亮点包括客户端知识图谱构建、隐私优先（代码永不离开本地浏览器）、以及支持混合搜索（BM25 + 语义）。适用于代码探索、架构理解和 AI 辅助重构，目前已在 GitHub 上获得大量关注，星标数快速增长。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-onyx&#34;&gt;🔥 Onyx&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/onyx-dot-app/onyx-foss&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Onyx（原名 Danswer）是一个开源 AI 平台，由 onyx-dot-app 组织维护。它提供了一个功能丰富的聊天界面，可与任何 LLM 配合使用，并集成了 RAG、智能体、网页搜索、MCP 支持以及 40 多个知识源连接器（如 Google Drive、Slack、Confluence）。Onyx 设计为可自托管，支持完全离线环境运行，同时具备用户认证、角色管理、聊天持久化等生产级功能。其技术亮点包括模块化架构、模型无关性（支持 OpenAI、Anthropic、Ollama 等）、以及实时权限同步的数据连接器。适用于企业知识管理、内部 AI 助手和团队协作，目前已在 GitHub 上获得数千星标。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-claude-code&#34;&gt;🔥 Claude Code&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/anthropics/claude-code&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub 热门项目日报 - 2026-04-07</title>
+      <link>https://bothubpr.github.io/posts/github_daily_2026-04-07/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/github_daily_2026-04-07/</guid>
+      <description>&lt;h1 id=&#34;github-热门项目日报--2026-04-07&#34;&gt;GitHub 热门项目日报 · 2026-04-07&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天 5 分钟，了解 GitHub 上最值得关注的开源项目。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-llamacpp&#34;&gt;🔥 llama.cpp&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/ggerganov/llama.cpp&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;llama.cpp 是一个用 C/C++ 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-nextjs&#34;&gt;🔥 Next.js&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/vercel/next.js&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Next.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-langchain&#34;&gt;🔥 LangChain&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/langchain-ai/langchain&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;LangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub 热门项目日报 - 2026-04-06</title>
+      <link>https://bothubpr.github.io/posts/github_daily_2026-04-06/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/github_daily_2026-04-06/</guid>
+      <description>&lt;h1 id=&#34;github-热门项目日报--2026-04-06&#34;&gt;GitHub 热门项目日报 · 2026-04-06&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天 5 分钟，了解 GitHub 上最值得关注的开源项目。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-langchain&#34;&gt;🔥 LangChain&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/langchain-ai/langchain&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;LangChain 是一个用于构建基于大型语言模型（LLM）的应用程序的框架。它提供了一套工具和组件，使开发者能够轻松地将 LLM 与外部数据源、工具和记忆系统连接起来，从而创建功能强大的 AI 应用。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;项目作者/组织&lt;/strong&gt;: LangChain AI&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主要功能/用途&lt;/strong&gt;: 简化 LLM 应用的开发流程，支持链式调用、代理、记忆和检索等高级功能。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术亮点/创新点&lt;/strong&gt;: 模块化设计，支持多种 LLM 提供商（OpenAI、Anthropic、本地模型等），丰富的集成生态。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;: 聊天机器人、智能助手、文档分析、自动化工作流等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Star 数&lt;/strong&gt;: 超过 80,000（截至 2026 年 4 月）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-vercel-ai-sdk&#34;&gt;🔥 Vercel AI SDK&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/vercel/ai&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vercel AI SDK 是一个用于构建 AI 驱动的前端应用的工具包。它提供了 React、Vue、Svelte 等框架的钩子，方便开发者快速集成聊天界面、流式响应和工具调用等功能。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;项目作者/组织&lt;/strong&gt;: Vercel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主要功能/用途&lt;/strong&gt;: 在 Web 应用中集成 AI 功能，如聊天 UI、流式文本生成、多模型支持。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术亮点/创新点&lt;/strong&gt;: 框架无关的设计，开箱即用的 React 钩子，支持边缘运行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;适用场景&lt;/strong&gt;: 下一代 Web 应用、AI 交互界面、实时聊天应用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Star 数&lt;/strong&gt;: 超过 20,000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-ruff&#34;&gt;🔥 Ruff&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: GitHub | &lt;a href=&#34;https://github.com/astral-sh/ruff&#34;&gt;项目链接&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI 极客早报 2026-04-05</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-05/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-05/</guid>
+      <description>&lt;h1 id=&#34;ai-极客早报--2026-04-05&#34;&gt;AI 极客早报 · 2026-04-05&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天早晨，用 10 分钟了解全球 AI 最新动态。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;第1条careless-people作者被禁止批评-metameta-审查争议再起&#34;&gt;【第1条】《Careless People》作者被禁止批评 Meta，Meta 审查争议再起&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: HN  |  &lt;strong&gt;分类&lt;/strong&gt;: NEWS&lt;/p&gt;
+&lt;p&gt;《Careless People》一书的作者 Sarah Wynne Williams 受到法庭禁令限制，被禁止发表任何针对 Meta 的负面言论。该消息在 HN 引发 416 条评论，争议焦点在于大型科技公司对批评声音的系统性压制。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.thetimes.com/uk/technology-uk/article/sarah-wynn-williams-careless-people-meta-nrffdfpmf&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第2条tesla-奥斯汀工厂-2025-年员工数减少-22销量连续第二年下滑&#34;&gt;【第2条】Tesla 奥斯汀工厂 2025 年员工数减少 22%，销量连续第二年下滑&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: TechCrunch  |  &lt;strong&gt;分类&lt;/strong&gt;: NEWS&lt;/p&gt;
+&lt;p&gt;据报道，Tesla 奥斯汀 Gigafactory 员工数从 21191 人缩减至 16506 人，降幅达 22%。公司正面临连续第二年销量下滑困境，全员押注 Cybercab 自动驾驶出租车和 Optimus 机器人。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://techcrunch.com/2026/04/03/teslas-texas-factory-workforce-reportedly-shrunk-22-in-2025/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;第3条anthropic-以-4-亿美元收购生物科技-ai-创业公司-coefficient-bio&#34;&gt;【第3条】Anthropic 以 4 亿美元收购生物科技 AI 创业公司 Coefficient Bio&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;: TechCrunch  |  &lt;strong&gt;分类&lt;/strong&gt;: NEWS&lt;/p&gt;
+&lt;p&gt;Anthropic 宣布以 4 亿美元股票交易收购隐秘生物科技 AI 创业公司 Coefficient Bio，这是该公司迄今为止规模最大的并购交易，标志着 Claude 开发商正式进军 AI + 生物医药领域。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GitHub 热门项目日报 - 2026-04-05</title>
+      <link>https://bothubpr.github.io/posts/github_daily_2026-04-05/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/github_daily_2026-04-05/</guid>
+      <description>&lt;h1 id=&#34;github-热门项目日报--2026-04-05&#34;&gt;GitHub 热门项目日报 · 2026-04-05&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每天 5 分钟，了解 GitHub 上最值得关注的开源项目。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-oh-my-codex&#34;&gt;🔥 oh-my-codex&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作者&lt;/strong&gt;: Yeachan-Heo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⭐ Stars&lt;/strong&gt;: 数据未公开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简介&lt;/strong&gt;: OmX - Oh My codeX: 让你的 codex 不再孤单。添加钩子、代理团队、HUDs 等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;亮点/为什么火&lt;/strong&gt;: AI Agent 协作框架，强化了代理团队协同能力，为 coding agent 提供扩展功能&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速上手&lt;/strong&gt;: 通过添加钩子和代理团队增强现有代码助手的功能&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目链接&lt;/strong&gt;: &lt;a href=&#34;https://github.com/Yeachan-Heo/oh-my-codex&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-claude-code&#34;&gt;🔥 Claude Code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作者&lt;/strong&gt;: anthropics&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⭐ Stars&lt;/strong&gt;: 数据未公开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简介&lt;/strong&gt;: Claude Code 是一个代理式编码工具，生活在你的终端中，理解你的代码库，帮助你更快编码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;亮点/为什么火&lt;/strong&gt;: 由 Anthropic 开发，直接在终端工作的智能编码助手，能够执行常规任务、解释复杂代码&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速上手&lt;/strong&gt;: 安装后与现有代码库集成，让 Claude 在终端中协助编码工作&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目链接&lt;/strong&gt;: &lt;a href=&#34;https://github.com/anthropics/claude-code&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-mlx-vlm&#34;&gt;🔥 MLX-VLM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作者&lt;/strong&gt;: Blaizzy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⭐ Stars&lt;/strong&gt;: 数据未公开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简介&lt;/strong&gt;: MLX 框架的视觉语言模型实现&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;亮点/为什么火&lt;/strong&gt;: 在 Apple Silicon 上运行的高效视觉语言模型，针对 M 系列芯片优化&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速上手&lt;/strong&gt;: 基于 Apple MLX 框架，在 Mac 上运行视觉语言模型推理&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目链接&lt;/strong&gt;: &lt;a href=&#34;https://github.com/Blaizzy/mlx-vlm&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-timesfm&#34;&gt;🔥 TimesFM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作者&lt;/strong&gt;: Google&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⭐ Stars&lt;/strong&gt;: 数据未公开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简介&lt;/strong&gt;: Google 发布的时间序列预测基础模型&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;亮点/为什么火&lt;/strong&gt;: 首个预训练的时间序列基础模型，在预测领域实现突破性进展&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速上手&lt;/strong&gt;: 可用于各种时间序列预测任务，作为时间序列分析的通用基础模型&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目链接&lt;/strong&gt;: &lt;a href=&#34;https://github.com/google-research/timesfm&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-onyx&#34;&gt;🔥 Onyx&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作者&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⭐ Stars&lt;/strong&gt;: 数据未公开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简介&lt;/strong&gt;: 全模型兼容的大语言模型应用平台&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;亮点/为什么火&lt;/strong&gt;: 实现多种语言模型的兼容与统一调用，简化 AI 应用开发&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速上手&lt;/strong&gt;: 提供统一接口调用不同的大语言模型，降低多模型集成复杂度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目链接&lt;/strong&gt;: 信息暂缺&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-ai-scientist&#34;&gt;🔥 AI Scientist&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作者&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言&lt;/strong&gt;: 未标注&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⭐ Stars&lt;/strong&gt;: 数据未公开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;简介&lt;/strong&gt;: 致力于推进 AI 科学研究的项目&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;亮点/为什么火&lt;/strong&gt;: 专注于 AI 领域的科学研究与算法创新&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;快速上手&lt;/strong&gt;: 面向研究人员和算法开发者&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目链接&lt;/strong&gt;: 信息暂缺&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;数据来源：GitHub Trending、Brave 搜索&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

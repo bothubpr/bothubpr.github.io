@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HuggingFace on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/tags/huggingface/</link>
+    <description>Recent content in HuggingFace on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/huggingface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HuggingFace 模型周报 - 2026年4月9日</title>
+      <link>https://bothubpr.github.io/posts/huggingface_weekly_2026-04-09/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/huggingface_weekly_2026-04-09/</guid>
+      <description>&lt;h1 id=&#34;huggingface-每周模型报道-2026年4月9日&#34;&gt;HuggingFace 每周模型报道 (2026年4月9日)&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;本周（2026年4月6日）Hugging Face 趋势模型榜单显示，Google 的 Gemma 4 系列占据主导地位，社区蒸馏模型和 1-bit 量化模型引发广泛关注。企业参与度显著提升，Netflix 首次发布视频生成模型 VOID。整体来看，开源模型正朝着多模态、轻量化、专业化方向发展。&lt;/p&gt;
+&lt;p&gt;以下是本周最值得关注的 4 个新模型/更新。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-gemma-4&#34;&gt;1. Gemma 4&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;发布日期&lt;/strong&gt;：2026年4月2日&lt;br&gt;
+&lt;strong&gt;发布机构&lt;/strong&gt;：Google DeepMind&lt;br&gt;
+&lt;strong&gt;模型类型&lt;/strong&gt;：多模态模型（文本、图像、音频）&lt;br&gt;
+&lt;strong&gt;Hugging Face 主页&lt;/strong&gt;：&lt;a href=&#34;https://huggingface.co/google/gemma-4-E2B-it&#34;&gt;google/gemma-4-E2B-it&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;关键信息&#34;&gt;关键信息&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模型规模&lt;/strong&gt;：提供 2B、4B、8B、26B、31B 等多种参数变体，包括 Dense 和 Mixture-of-Experts (MoE) 架构。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;支持任意到任意（any-to-any）模态转换，可处理文本、图像、音频输入并生成文本输出。&lt;/li&gt;
+&lt;li&gt;具备思维链推理能力，支持长达 256K 令牌的上下文窗口。&lt;/li&gt;
+&lt;li&gt;采用混合专家架构，在保持高性能的同时降低激活参数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术基础&lt;/strong&gt;：基于 Gemini 3 的研究与技术，采用 Apache 2.0 许可。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;下载渠道&lt;/strong&gt;：可通过 Hugging Face、Kaggle、Ollama、Google AI Studio 等平台获取，已获得 Transformers、vLLM、llama.cpp 等主流框架支持。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;社区反响&#34;&gt;社区反响&lt;/h3&gt;
+&lt;p&gt;Gemma 4 发布 24 小时内总下载量突破 4 亿次，衍生模型超过 10 万个，在开源社区掀起新的狂欢。31B Dense 版本在 Arena AI 排行榜上位列全球第三，用不到十分之一的参数量与 400 亿参数的巨无霸模型媲美。社区普遍认为 Gemma 4 是开源大模型格局的彻底重写，展示了 Google 在开放权重领域的强势回归。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HuggingFace 模型周报 - 2026年4月6日</title>
+      <link>https://bothubpr.github.io/posts/huggingface_weekly_2026-04-06/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/huggingface_weekly_2026-04-06/</guid>
+      <description>&lt;h1 id=&#34;huggingface-每周模型报道-2026年4月6日&#34;&gt;HuggingFace 每周模型报道 (2026年4月6日)&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;本周 Hugging Face 社区发布了多个值得关注的新模型，涵盖了大型语言模型、代码生成模型、多模态模型以及扩散模型。随着 2026 年第一季度接近尾声，模型发布呈现出参数效率提升、推理速度优化、以及更广泛的开源许可证等特点。以下是本周最值得关注的 4 个新模型/更新。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-llama-35-turbo&#34;&gt;1. Llama 3.5 Turbo&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;发布日期&lt;/strong&gt;：2026年4月2日&lt;br&gt;
+&lt;strong&gt;发布机构&lt;/strong&gt;：Meta AI&lt;br&gt;
+&lt;strong&gt;模型类型&lt;/strong&gt;：大型语言模型（LLM）&lt;br&gt;
+&lt;strong&gt;Hugging Face 主页&lt;/strong&gt;：&lt;a href=&#34;https://huggingface.co/meta-llama/Llama-3.5-Turbo&#34;&gt;链接&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;关键信息&#34;&gt;关键信息&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模型规模&lt;/strong&gt;：140 亿参数，采用混合专家（MoE）架构，激活参数约 40 亿。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;在推理、数学和代码生成任务上相比 Llama 3 有显著提升&lt;/li&gt;
+&lt;li&gt;支持 128K 上下文长度，并优化了长文本处理效率&lt;/li&gt;
+&lt;li&gt;提供了 8-bit 和 4-bit 量化版本，便于边缘设备部署&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术基础&lt;/strong&gt;：基于 Transformer 架构，采用 Grouped-Query Attention（GQA）和 Rotary Position Embedding（RoPE）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;下载渠道&lt;/strong&gt;：可通过 Hugging Face Hub 下载，需接受 Meta 的许可证协议。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;社区反响&#34;&gt;社区反响&lt;/h3&gt;
+&lt;p&gt;社区对 Llama 3.5 Turbo 的发布反响热烈，许多开发者称赞其在保持较小参数量同时达到了接近 Llama 3 400B 的性能。模型在 Open LLM Leaderboard 上迅速攀升至前十，尤其在代码生成基准（HumanEval）上取得了 85.2% 的得分。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HuggingFace 模型周报 - 2026年4月5日</title>
+      <link>https://bothubpr.github.io/posts/huggingface_weekly_2026-04-05/</link>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/huggingface_weekly_2026-04-05/</guid>
+      <description>&lt;h1 id=&#34;huggingface-每周模型报道-2026年4月5日&#34;&gt;HuggingFace 每周模型报道 (2026年4月5日)&lt;/h1&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;本周（2026年3月30日 - 4月5日）是开源AI模型发布的“超级周”，Google、Microsoft、智谱AI等巨头在24小时内密集发布了多款重磅模型，涵盖了文本、语音、图像和多模态等多个领域。Hugging Face作为开源AI模型的核心枢纽，第一时间上线了这些模型，为开发者和研究者提供了便捷的访问渠道。&lt;/p&gt;
+&lt;p&gt;以下是本周最值得关注的5个新模型/更新。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-google-gemma-4&#34;&gt;1. Google Gemma 4&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;发布日期&lt;/strong&gt;：2026年4月2日&lt;br&gt;
+&lt;strong&gt;发布机构&lt;/strong&gt;：Google DeepMind&lt;br&gt;
+&lt;strong&gt;模型类型&lt;/strong&gt;：多模态、多语言开源模型家族&lt;br&gt;
+&lt;strong&gt;Hugging Face 主页&lt;/strong&gt;：&lt;a href=&#34;https://huggingface.co/collections/google/gemma-4&#34;&gt;https://huggingface.co/collections/google/gemma-4&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;关键信息&#34;&gt;关键信息&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;模型规模&lt;/strong&gt;：共4个尺寸，从2B（E2B）到31B（31B）参数，覆盖手机边缘设备到数据中心部署。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;首次采用 Apache 2.0 许可&lt;/strong&gt;：允许商业使用，极大降低了企业集成门槛。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多模态推理&lt;/strong&gt;：支持图像-文本-文本任务，在视觉问答、图文理解等场景表现优异。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;边缘优化&lt;/strong&gt;：E2B/E4B 模型可在约6GB内存的设备（包括手机）上运行，26B-A4B 和 31B 模型适合工作站/服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术基础&lt;/strong&gt;：基于 Gemini 3 的研究与技术打造，官方称之为“字节级最强开源模型”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;下载渠道&lt;/strong&gt;：Hugging Face、Kaggle、Ollama、Google AI Studio（31B/26B）、Google AI Edge Gallery（E2B/E4B）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;社区反响&#34;&gt;社区反响&lt;/h3&gt;
+&lt;p&gt;Hugging Face 联合创始人兼 CEO Clément Delang 高度评价 Gemma 4 的许可变更，称其是“开源AI的重要里程碑”，并承诺为 Gemma 4 全家桶提供全力支持。发布当天，主流推理框架（vLLM、llama.cpp、TensorRT-LLM）均已提供支持。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;2-microsoft-mai-系列三款新模型&#34;&gt;2. Microsoft MAI 系列三款新模型&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;发布日期&lt;/strong&gt;：2026年4月初（具体日期待确认）&lt;br&gt;
+&lt;strong&gt;发布机构&lt;/strong&gt;：Microsoft&lt;br&gt;
+&lt;strong&gt;模型类型&lt;/strong&gt;：转录、语音、图像生成&lt;br&gt;
+&lt;strong&gt;Hugging Face 集成&lt;/strong&gt;：预计将通过 Microsoft Foundry 和 Azure Machine Learning 提供部署支持。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

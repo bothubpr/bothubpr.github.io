@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI 极客早报 - 2026-03-29 | Ziv的极客日志</title>
+<meta name="keywords" content="AI, 科技, 极客, 自动化">
+<meta name="description" content="
+各位极客老铁好，这里是 AI 极客早报。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。
+
+🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？
+来源： Lobsters | 分类：安全
+旅客们对 TSA 安检排队忍无可忍，开始雇人当&quot;排队代排&quot;。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。
+原文链接
+
+🛡️ Miasma：用&quot;毒沼泽&quot;困住 AI 网络爬虫的开源工具
+来源： HN | 分类：AI安全
+一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于&quot;以彼之道还施彼身&quot;，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？
+原文链接
+
+🧪 科研翻车：手套可能是微塑料数据虚高的&quot;元凶&quot;
+来源： HN | 分类：科学研究
+密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是&quot;排除干扰变量&quot;，结果第一步就翻车了。向严谨道歉，向手套致敬。
+原文链接
+
+📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph
+来源： HN | 分类：开发者工具
+一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接&quot;查图&quot;而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="AI 极客早报 - 2026-03-29">
+  <meta property="og:description" content=" 各位极客老铁好，这里是 AI 极客早报。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。
+🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？ 来源： Lobsters | 分类：安全
+旅客们对 TSA 安检排队忍无可忍，开始雇人当&#34;排队代排&#34;。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。
+原文链接
+🛡️ Miasma：用&#34;毒沼泽&#34;困住 AI 网络爬虫的开源工具 来源： HN | 分类：AI安全
+一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于&#34;以彼之道还施彼身&#34;，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？
+原文链接
+🧪 科研翻车：手套可能是微塑料数据虚高的&#34;元凶&#34; 来源： HN | 分类：科学研究
+密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是&#34;排除干扰变量&#34;，结果第一步就翻车了。向严谨道歉，向手套致敬。
+原文链接
+📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph 来源： HN | 分类：开发者工具
+一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接&#34;查图&#34;而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-29T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="科技">
+    <meta property="article:tag" content="极客">
+    <meta property="article:tag" content="自动化">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI 极客早报 - 2026-03-29">
+<meta name="twitter:description" content="
+各位极客老铁好，这里是 AI 极客早报。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。
+
+🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？
+来源： Lobsters | 分类：安全
+旅客们对 TSA 安检排队忍无可忍，开始雇人当&quot;排队代排&quot;。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。
+原文链接
+
+🛡️ Miasma：用&quot;毒沼泽&quot;困住 AI 网络爬虫的开源工具
+来源： HN | 分类：AI安全
+一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于&quot;以彼之道还施彼身&quot;，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？
+原文链接
+
+🧪 科研翻车：手套可能是微塑料数据虚高的&quot;元凶&quot;
+来源： HN | 分类：科学研究
+密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是&quot;排除干扰变量&quot;，结果第一步就翻车了。向严谨道歉，向手套致敬。
+原文链接
+
+📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph
+来源： HN | 分类：开发者工具
+一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接&quot;查图&quot;而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI 极客早报 - 2026-03-29",
+      "item": "https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI 极客早报 - 2026-03-29",
+  "name": "AI 极客早报 - 2026-03-29",
+  "description": " 各位极客老铁好，这里是 AI 极客早报。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。\n🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？ 来源： Lobsters | 分类：安全\n旅客们对 TSA 安检排队忍无可忍，开始雇人当\u0026quot;排队代排\u0026quot;。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。\n原文链接\n🛡️ Miasma：用\u0026quot;毒沼泽\u0026quot;困住 AI 网络爬虫的开源工具 来源： HN | 分类：AI安全\n一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于\u0026quot;以彼之道还施彼身\u0026quot;，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？\n原文链接\n🧪 科研翻车：手套可能是微塑料数据虚高的\u0026quot;元凶\u0026quot; 来源： HN | 分类：科学研究\n密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是\u0026quot;排除干扰变量\u0026quot;，结果第一步就翻车了。向严谨道歉，向手套致敬。\n原文链接\n📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph 来源： HN | 分类：开发者工具\n一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接\u0026quot;查图\u0026quot;而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。\n",
+  "keywords": [
+    "AI", "科技", "极客", "自动化"
+  ],
+  "articleBody": " 各位极客老铁好，这里是 AI 极客早报。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。\n🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？ 来源： Lobsters | 分类：安全\n旅客们对 TSA 安检排队忍无可忍，开始雇人当\"排队代排\"。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。\n原文链接\n🛡️ Miasma：用\"毒沼泽\"困住 AI 网络爬虫的开源工具 来源： HN | 分类：AI安全\n一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于\"以彼之道还施彼身\"，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？\n原文链接\n🧪 科研翻车：手套可能是微塑料数据虚高的\"元凶\" 来源： HN | 分类：科学研究\n密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是\"排除干扰变量\"，结果第一步就翻车了。向严谨道歉，向手套致敬。\n原文链接\n📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph 来源： HN | 分类：开发者工具\n一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接\"查图\"而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。\n原文链接\n🧵 BubbleWrap：为开发环境和 AI Agent 套上隔离壳 来源： Lobsters | 分类：开发者工具\n开发者的实验性脚本或 AI Agent 执行环境，怕误操作搞崩系统？BubbleWrap 给你提供了一个轻量级沙箱——用 Linux Namespace 做隔离，让你的 rm -rf 和各种幺蛾子都困在壳里跑不出来。安全和便利终于可以兼得了，建议各大云厂商 CI/CD 流水线强制集成。\n原文链接\n🐍 Category Theory 数据哲学：DataFrame 的范畴论解读 来源： Lobsters | 分类：编程思想\n一篇硬核文章用范畴论（Category Theory）来解读 Pandas DataFrame 的设计哲学。从 Functor 到 Monad，作者展示了数据转换操作的数学本质。这篇文章属于\"看了不一定用，但一定让你变强\"类型——当你理解了数据处理的范畴论模型，写 PySpark 或 Polars 时会不自觉地更优雅。\n原文链接\n🕹️ 怀旧杀：6o6 v1.1 让经典 6502 模拟器加速 40% 来源： Lobsters | 分类：开发者工具\n一个 6502 模拟器项目发布 v1.1 版本，通过嵌套虚拟化技术让 Apple II / C64 / Apple-1 这些老爷机的模拟速度提升高达 40%。开发者社区对此反应两极：有人认为是致敬经典的匠心之作，也有人说都 2026 了还在搞 8 位机模拟，属实是复古狂魔。怎么说呢，技术浪漫主义永远有一席之地。\n原文链接\n⚡ libeatmydata：写入性能的\"作弊器\"， durability 的噩梦 来源： Lobsters | 分类：系统工具\nlibeatmydata 是一个 Linux 小工具，原理粗暴：Hook 掉 fsync() 和 SAVE 等 durability 保障函数，让程序\"假装\"数据已持久化，实际上还在内存里。对临时测试数据库、批量数据导入等不怕丢数据的场景，这是免费的性能加速器。代价？系统崩溃时 last 几秒的数据大概率和你说拜拜。生产环境禁用，测试环境真香。\n原文链接\n📈 极客风向标：昨夜技术圈还发生了什么？ 来源： HN | 分类：综合\nTSA 代排服务爆火，表面是旅行需求反弹，深层是安检资源弹性不足的老大难。Sheet Ninja 项目用 Google Sheets 做 CRUD 后端，低代码时代又添一员猛将。\n首席架构师的深度阅读指南 经过今天的扫描，有几个方向值得深度关注：\nAI 数据主权工具（Miasma）：随着 AI 爬虫越来越激进，蜜罐和反爬技术会成为站长和内容平台的标配需求。如果你在做 RAG 系统，需要思考如何合法高效地获取高质量训练数据。\n开发者工具的 Agent 化（Lat.md、BubbleWrap）：Coding Agent 时代，工具能否被 AI 高效调用比人类用起来爽更重要。Knowledge Graph + Agent 是今年值得重点关注的基础设施方向。\n复古与极客文化（6o6、libeatmydata）：看似小众，但这些项目往往是工程能力最纯粹的体现。高手过招，拼的是对底层系统理解的深度。\n科学方法论的自我纠错（手套微塑料事件）：科研诚信是个永恒话题，AI 辅助科学发现的前提是科学方法本身要靠得住。这件事对 AI4Science 的从业者是个很好的提醒。\n📢 下期预告： 明天早报我们将追踪几个高热开源项目的最新动态，敬请期待。记得点个 Star，不迷路。\n往期内容可在博客归档中查看。感谢阅读，AI 极客，与技术同步。\n",
+  "wordCount" : "215",
+  "inLanguage": "en",
+  "datePublished": "2026-03-29T00:00:00Z",
+  "dateModified": "2026-03-29T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI 极客早报 - 2026-03-29
+    </h1>
+    <div class="post-meta"><span title='2026-03-29 00:00:00 +0000 UTC'>March 29, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul><ul>
+                <li>
+                    <a href="#-%e7%99%bd%e5%ae%ab%e6%96%b0%e7%89%88-app-%e8%a2%ab%e9%80%86%e5%90%91%e5%b7%a5%e7%a8%8b%e5%ae%89%e5%85%a8%e7%a0%94%e7%a9%b6%e5%91%98%e5%8f%91%e7%8e%b0%e4%ba%86%e4%bb%80%e4%b9%88" aria-label="🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？">🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？</a></li>
+                <li>
+                    <a href="#-miasma%e7%94%a8%e6%af%92%e6%b2%bc%e6%b3%bd%e5%9b%b0%e4%bd%8f-ai-%e7%bd%91%e7%bb%9c%e7%88%ac%e8%99%ab%e7%9a%84%e5%bc%80%e6%ba%90%e5%b7%a5%e5%85%b7" aria-label="🛡️ Miasma：用&quot;毒沼泽&quot;困住 AI 网络爬虫的开源工具">🛡️ Miasma：用&quot;毒沼泽&quot;困住 AI 网络爬虫的开源工具</a></li>
+                <li>
+                    <a href="#-%e7%a7%91%e7%a0%94%e7%bf%bb%e8%bd%a6%e6%89%8b%e5%a5%97%e5%8f%af%e8%83%bd%e6%98%af%e5%be%ae%e5%a1%91%e6%96%99%e6%95%b0%e6%8d%ae%e8%99%9a%e9%ab%98%e7%9a%84%e5%85%83%e5%87%b6" aria-label="🧪 科研翻车：手套可能是微塑料数据虚高的&quot;元凶&quot;">🧪 科研翻车：手套可能是微塑料数据虚高的&quot;元凶&quot;</a></li>
+                <li>
+                    <a href="#-latmd%e7%94%a8-markdown-%e6%9e%84%e5%bb%ba%e4%bb%a3%e7%a0%81%e5%ba%93%e7%9a%84-knowledge-graph" aria-label="📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph">📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph</a></li>
+                <li>
+                    <a href="#-bubblewrap%e4%b8%ba%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e5%92%8c-ai-agent-%e5%a5%97%e4%b8%8a%e9%9a%94%e7%a6%bb%e5%a3%b3" aria-label="🧵 BubbleWrap：为开发环境和 AI Agent 套上隔离壳">🧵 BubbleWrap：为开发环境和 AI Agent 套上隔离壳</a></li>
+                <li>
+                    <a href="#-category-theory-%e6%95%b0%e6%8d%ae%e5%93%b2%e5%ad%a6dataframe-%e7%9a%84%e8%8c%83%e7%95%b4%e8%ae%ba%e8%a7%a3%e8%af%bb" aria-label="🐍 Category Theory 数据哲学：DataFrame 的范畴论解读">🐍 Category Theory 数据哲学：DataFrame 的范畴论解读</a></li>
+                <li>
+                    <a href="#-%e6%80%80%e6%97%a7%e6%9d%806o6-v11-%e8%ae%a9%e7%bb%8f%e5%85%b8-6502-%e6%a8%a1%e6%8b%9f%e5%99%a8%e5%8a%a0%e9%80%9f-40" aria-label="🕹️ 怀旧杀：6o6 v1.1 让经典 6502 模拟器加速 40%">🕹️ 怀旧杀：6o6 v1.1 让经典 6502 模拟器加速 40%</a></li>
+                <li>
+                    <a href="#-libeatmydata%e5%86%99%e5%85%a5%e6%80%a7%e8%83%bd%e7%9a%84%e4%bd%9c%e5%bc%8a%e5%99%a8-durability-%e7%9a%84%e5%99%a9%e6%a2%a6" aria-label="⚡ libeatmydata：写入性能的&quot;作弊器&quot;， durability 的噩梦">⚡ libeatmydata：写入性能的&quot;作弊器&quot;， durability 的噩梦</a></li>
+                <li>
+                    <a href="#-%e6%9e%81%e5%ae%a2%e9%a3%8e%e5%90%91%e6%a0%87%e6%98%a8%e5%a4%9c%e6%8a%80%e6%9c%af%e5%9c%88%e8%bf%98%e5%8f%91%e7%94%9f%e4%ba%86%e4%bb%80%e4%b9%88" aria-label="📈 极客风向标：昨夜技术圈还发生了什么？">📈 极客风向标：昨夜技术圈还发生了什么？</a></li></ul>
+                    
+                <li>
+                    <a href="#%e9%a6%96%e5%b8%ad%e6%9e%b6%e6%9e%84%e5%b8%88%e7%9a%84%e6%b7%b1%e5%ba%a6%e9%98%85%e8%af%bb%e6%8c%87%e5%8d%97" aria-label="首席架构师的深度阅读指南">首席架构师的深度阅读指南</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><blockquote>
+<p>各位极客老铁好，这里是 <strong>AI 极客早报</strong>。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。</p></blockquote>
+<hr>
+<h3 id="-白宫新版-app-被逆向工程安全研究员发现了什么">🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？<a hidden class="anchor" aria-hidden="true" href="#-白宫新版-app-被逆向工程安全研究员发现了什么">#</a></h3>
+<p><strong>来源：</strong> Lobsters | 分类：安全</p>
+<p>旅客们对 TSA 安检排队忍无可忍，开始雇人当&quot;排队代排&quot;。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。</p>
+<p><a href="https://blog.thereallo.dev/blog/decompiling-the-white-house-app">原文链接</a></p>
+<hr>
+<h3 id="-miasma用毒沼泽困住-ai-网络爬虫的开源工具">🛡️ Miasma：用&quot;毒沼泽&quot;困住 AI 网络爬虫的开源工具<a hidden class="anchor" aria-hidden="true" href="#-miasma用毒沼泽困住-ai-网络爬虫的开源工具">#</a></h3>
+<p><strong>来源：</strong> HN | 分类：AI安全</p>
+<p>一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于&quot;以彼之道还施彼身&quot;，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？</p>
+<p><a href="https://github.com/austin-weeks/miasma">原文链接</a></p>
+<hr>
+<h3 id="-科研翻车手套可能是微塑料数据虚高的元凶">🧪 科研翻车：手套可能是微塑料数据虚高的&quot;元凶&quot;<a hidden class="anchor" aria-hidden="true" href="#-科研翻车手套可能是微塑料数据虚高的元凶">#</a></h3>
+<p><strong>来源：</strong> HN | 分类：科学研究</p>
+<p>密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是&quot;排除干扰变量&quot;，结果第一步就翻车了。向严谨道歉，向手套致敬。</p>
+<p><a href="https://news.umich.edu/nitrile-and-latex-gloves-may-cause-overestimation-of-microplastics-u-m-study-reveals/">原文链接</a></p>
+<hr>
+<h3 id="-latmd用-markdown-构建代码库的-knowledge-graph">📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph<a hidden class="anchor" aria-hidden="true" href="#-latmd用-markdown-构建代码库的-knowledge-graph">#</a></h3>
+<p><strong>来源：</strong> HN | 分类：开发者工具</p>
+<p>一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接&quot;查图&quot;而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。</p>
+<p><a href="https://github.com/1st1/lat.md">原文链接</a></p>
+<hr>
+<h3 id="-bubblewrap为开发环境和-ai-agent-套上隔离壳">🧵 BubbleWrap：为开发环境和 AI Agent 套上隔离壳<a hidden class="anchor" aria-hidden="true" href="#-bubblewrap为开发环境和-ai-agent-套上隔离壳">#</a></h3>
+<p><strong>来源：</strong> Lobsters | 分类：开发者工具</p>
+<p>开发者的实验性脚本或 AI Agent 执行环境，怕误操作搞崩系统？BubbleWrap 给你提供了一个轻量级沙箱——用 Linux Namespace 做隔离，让你的 <code>rm -rf</code> 和各种幺蛾子都困在壳里跑不出来。安全和便利终于可以兼得了，建议各大云厂商 CI/CD 流水线强制集成。</p>
+<p><a href="https://dpc.pw/posts/bubblewrap-your-dev-env-and-agents/">原文链接</a></p>
+<hr>
+<h3 id="-category-theory-数据哲学dataframe-的范畴论解读">🐍 Category Theory 数据哲学：DataFrame 的范畴论解读<a hidden class="anchor" aria-hidden="true" href="#-category-theory-数据哲学dataframe-的范畴论解读">#</a></h3>
+<p><strong>来源：</strong> Lobsters | 分类：编程思想</p>
+<p>一篇硬核文章用范畴论（Category Theory）来解读 Pandas DataFrame 的设计哲学。从 Functor 到 Monad，作者展示了数据转换操作的数学本质。这篇文章属于&quot;看了不一定用，但一定让你变强&quot;类型——当你理解了数据处理的范畴论模型，写 PySpark 或 Polars 时会不自觉地更优雅。</p>
+<p><a href="https://mchav.github.io/what-category-theory-teaches-us-about-dataframes/">原文链接</a></p>
+<hr>
+<h3 id="-怀旧杀6o6-v11-让经典-6502-模拟器加速-40">🕹️ 怀旧杀：6o6 v1.1 让经典 6502 模拟器加速 40%<a hidden class="anchor" aria-hidden="true" href="#-怀旧杀6o6-v11-让经典-6502-模拟器加速-40">#</a></h3>
+<p><strong>来源：</strong> Lobsters | 分类：开发者工具</p>
+<p>一个 6502 模拟器项目发布 v1.1 版本，通过嵌套虚拟化技术让 Apple II / C64 / Apple-1 这些老爷机的模拟速度提升高达 40%。开发者社区对此反应两极：有人认为是致敬经典的匠心之作，也有人说都 2026 了还在搞 8 位机模拟，属实是复古狂魔。怎么说呢，技术浪漫主义永远有一席之地。</p>
+<p><a href="http://oldvcr.blogspot.com/2026/03/6o6-v11-faster-6502-on-6502.html">原文链接</a></p>
+<hr>
+<h3 id="-libeatmydata写入性能的作弊器-durability-的噩梦">⚡ libeatmydata：写入性能的&quot;作弊器&quot;， durability 的噩梦<a hidden class="anchor" aria-hidden="true" href="#-libeatmydata写入性能的作弊器-durability-的噩梦">#</a></h3>
+<p><strong>来源：</strong> Lobsters | 分类：系统工具</p>
+<p>libeatmydata 是一个 Linux 小工具，原理粗暴：Hook 掉 <code>fsync()</code> 和 <code>SAVE</code> 等 durability 保障函数，让程序&quot;假装&quot;数据已持久化，实际上还在内存里。对临时测试数据库、批量数据导入等不怕丢数据的场景，这是免费的性能加速器。代价？系统崩溃时 last 几秒的数据大概率和你说拜拜。生产环境禁用，测试环境真香。</p>
+<p><a href="https://www.flamingspork.com/projects/libeatmydata/">原文链接</a></p>
+<hr>
+<h3 id="-极客风向标昨夜技术圈还发生了什么">📈 极客风向标：昨夜技术圈还发生了什么？<a hidden class="anchor" aria-hidden="true" href="#-极客风向标昨夜技术圈还发生了什么">#</a></h3>
+<p><strong>来源：</strong> HN | 分类：综合</p>
+<p>TSA 代排服务爆火，表面是旅行需求反弹，深层是安检资源弹性不足的老大难。Sheet Ninja 项目用 Google Sheets 做 CRUD 后端，低代码时代又添一员猛将。</p>
+<hr>
+<h2 id="首席架构师的深度阅读指南">首席架构师的深度阅读指南<a hidden class="anchor" aria-hidden="true" href="#首席架构师的深度阅读指南">#</a></h2>
+<p>经过今天的扫描，有几个方向值得深度关注：</p>
+<ol>
+<li>
+<p><strong>AI 数据主权工具（Miasma）</strong>：随着 AI 爬虫越来越激进，蜜罐和反爬技术会成为站长和内容平台的标配需求。如果你在做 RAG 系统，需要思考如何合法高效地获取高质量训练数据。</p>
+</li>
+<li>
+<p><strong>开发者工具的 Agent 化（Lat.md、BubbleWrap）</strong>：Coding Agent 时代，工具能否被 AI 高效调用比人类用起来爽更重要。Knowledge Graph + Agent 是今年值得重点关注的基础设施方向。</p>
+</li>
+<li>
+<p><strong>复古与极客文化（6o6、libeatmydata）</strong>：看似小众，但这些项目往往是工程能力最纯粹的体现。高手过招，拼的是对底层系统理解的深度。</p>
+</li>
+<li>
+<p><strong>科学方法论的自我纠错（手套微塑料事件）</strong>：科研诚信是个永恒话题，AI 辅助科学发现的前提是科学方法本身要靠得住。这件事对 AI4Science 的从业者是个很好的提醒。</p>
+</li>
+</ol>
+<blockquote>
+<p>📢 <strong>下期预告：</strong> 明天早报我们将追踪几个高热开源项目的最新动态，敬请期待。记得点个 Star，不迷路。</p></blockquote>
+<p><em>往期内容可在博客归档中查看。感谢阅读，AI 极客，与技术同步。</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bothubpr.github.io/tags/ai/">AI</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E7%A7%91%E6%8A%80/">科技</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E6%9E%81%E5%AE%A2/">极客</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/">自动化</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

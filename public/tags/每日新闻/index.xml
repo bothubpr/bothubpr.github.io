@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>每日新闻 on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/tags/%E6%AF%8F%E6%97%A5%E6%96%B0%E9%97%BB/</link>
+    <description>Recent content in 每日新闻 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Apr 2026 08:00:00 +0800</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/%E6%AF%8F%E6%97%A5%E6%96%B0%E9%97%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 极客早报 | 2026年4月8日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/</link>
+      <pubDate>Wed, 08 Apr 2026 08:00:00 +0800</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;anthropic-发布-project-glasswingai-时代关键软件安全新方案&#34;&gt;Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://www.anthropic.com/glasswing&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Anthropic 正式发布 &lt;strong&gt;Project Glasswing&lt;/strong&gt;，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 &lt;strong&gt;490 个 HN points&lt;/strong&gt;，社区关注度极高。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://www.anthropic.com/glasswing&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;伊朗黑客升级攻击策略持续瞄准美国关键基础设施&#34;&gt;伊朗黑客升级攻击策略，持续瞄准美国关键基础设施&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://techcrunch.com/2026/04/07/iranian-hackers-are-targeting-american-critical-infrastructure-u-s-agencies-warn/&#34;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://techcrunch.com/2026/04/07/iranian-hackers-are-targeting-american-critical-infrastructure-u-s-agencies-warn/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;俄罗斯-apt28-组织入侵数千台家用路由器发动大规模间谍活动&#34;&gt;俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://techcrunch.com/2026/04/07/russian-government-hackers-broke-into-thousands-of-home-routers-to-steal-passwords/&#34;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;俄罗斯政府黑客组织 &lt;strong&gt;APT28（Fancy Bear）&lt;/strong&gt; 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://techcrunch.com/2026/04/07/russian-government-hackers-broke-into-thousands-of-home-routers-to-steal-passwords/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;cloudflare-公布后量子密码学路线图2029-年完成全面升级&#34;&gt;Cloudflare 公布后量子密码学路线图：2029 年完成全面升级&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://blog.cloudflare.com/post-quantum-roadmap/&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 &lt;strong&gt;2029 年前&lt;/strong&gt;将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 &amp;ldquo;Q-Day&amp;rdquo; 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔗 &lt;a href=&#34;https://blog.cloudflare.com/post-quantum-roadmap/&#34;&gt;阅读原文&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;评测显示-google-ai-overviews-准确率约-90每小时产生数十万条错误答案&#34;&gt;评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;来源&lt;/strong&gt;：&lt;a href=&#34;https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

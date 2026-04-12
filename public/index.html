@@ -2,25 +2,25 @@
 <html lang="en" dir="auto" data-theme="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.157.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8081&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.146.0"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Ziv的极客日志</title>
 
 <meta name="description" content="">
 <meta name="author" content="Ziv">
-<link rel="canonical" href="http://localhost:8081/">
+<link rel="canonical" href="https://bothubpr.github.io/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:8081/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:8081/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:8081/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:8081/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:8081/safari-pinned-tab.svg">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:8081/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:8081/">
+<link rel="alternate" type="application/rss+xml" href="https://bothubpr.github.io/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/">
 <noscript>
     <style>
         #theme-toggle,
@@ -100,13 +100,34 @@
         font-size: 12px !important;
     }
 </style>
+<meta property="og:url" content="https://bothubpr.github.io/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="Ziv的极客日志">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ziv的极客日志">
+<meta name="twitter:description" content="">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ziv的极客日志",
+  "url": "https://bothubpr.github.io/",
+  "description": "",
+  "logo": "https://bothubpr.github.io/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
 </head>
 <body class="list" id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:8081/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -138,214 +159,210 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”
+    <h2 class="entry-hint-parent">极客早报 | 2026-04-14
     </h2>
   </header>
   <div class="entry-content">
-    <p>哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 【最终章】！
-在前三篇里，俺们从零搭建了一个完全无人值守的 【本地极客知识库】：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。
-基础设施已经完美闭环，但极客的折腾永无止境！ 既然有了一个 24 小时待命的自动化基座，咱们为什么还要自己写文章？为何不直接压榨 AI 的“睡后算力”，让它成为咱们的 【赛博记者】？
-今天，俺将带你手搓一个纯 Python 的 AI 聚合爬虫。它会在每天清晨你还没睡醒时，自动去外网极客社区“进货”，并排版成一份带暗黑模式的硬核早报，直接塞进你的博客里！
-★ 痛点破局：信息过载与“机翻”的灾难 每天早晨刷手机，大伙儿肯定面临过这两个痛点：
-【信息源太分散】：Hacker News、Reddit、Product Hunt，挨个刷一遍半小时就没了。外文长篇大论，根本没时间细看。 【劣质翻译的灾难】：如果用浏览器自带的翻译，它会把所有的专业术语全毁掉。比如把 Kubernetes 翻成“舵手”，把 Containerization 翻成“集装箱化”，读起来简直让人吐血。 咱们的 【AI 赛博记者】 就是来“降维打击”这些痛点的。
-★ 核心逻辑与“反爬”突围战 这个脚本的核心逻辑很简单：利用 Python 的 urllib 抓取四大极客社区的 RSS 源，打包丢给大模型（如 DeepSeek 或 OpenAI）进行总结，最后生成 Markdown 扔进咱们的 SyncDrive 网盘。
-但第一步“抓取”就差点翻车。当俺试图去抓 Reddit 的技术板块时，直接被它背后的 Cloudflare 防御盾弹了一个 403 Forbidden。
-【架构师的解法】：咱们必须进行深度伪装。在原生 Python HTTP 请求中，强行注入极其逼真的浏览器 User-Agent，并声明我们接收 application/rss&#43;xml。如果 Reddit 还是傲娇，俺还加入了 【Lobsters】（国外极硬核且对爬虫友好的开发者社区）作为最强替补！
+    <p>早上好，各位极客们。今天是 2026 年 4 月 14 日，星期二，欢迎收听今天的极客早报。
+本期我们有 7 条新闻，涵盖 AI 评测诚信危机、NASA Artemis II 任务收官、印度零售市场博弈、美国阅读习惯调查、Hubble 常数危机获实证支撑、开源工具 Eleventy 终止开发，以及 AI 预测足球比赛全线失误的深度分析。
+如何攻破顶级 AI Agent 基准测试：Berkeley RDI 披露内情 当前 AI 行业对 Agent（智能体）的评估体系，正面临一场信任危机。Berkeley RDI（Responsible AI Institute）研究团队日前发布深度报告，系统性地披露了 SWE-Bench、BrowseComp 等主流基准测试被&#34;攻克&#34;的完整技术路径。这些基准测试曾被视为衡量 AI 模型真实能力的黄金标准，但研究发现，评测数据中存在大量可被模型识别和利用的模式——包括隐含的测试集污染、任务设计的系统性偏差，以及评分机制的可操控空间。
+值得注意的是，报告揭示的核心问题并非模型&#34;作弊&#34;，而是基准测试本身的构建方式存在根本性缺陷。当模型能在训练阶段隐约接触到评测任务时，它可以在不真正理解问题的情况下通过模式匹配给出正确答案。这意味着行业花费数百万美元构建的评估体系，可能并不能真实反映模型的推理和执行能力。对开发者和投资人而言，这一发现无疑是一记警钟：在没有可靠基准的情况下，AI 能力的进步可能只是幻觉。
+来源：HN
+Artemis II 任务圆满落幕：人类 54 年来首次深空航行收官 NASA 的 Artemis II 任务在本周画上句号。Orion 飞船以超音速约 30 倍的速度坠落太平洋，四名宇航员安全归来——这是自 1972 年阿波罗 17 号以来，人类首次进入深空并成功返回。在轨期间，宇航员完成了生命支持系统验证、轨道机动测试以及地月空间环境数据采集，为后续 Artemis III 载人登月任务积累了宝贵的一手经验。
+然而，任务的成功也意味着压力的转移。NASA 接下来必须兑现 Artemis III 的承诺——将首位女性和首位有色人种宇航员送上月球表面。与此同时，商业竞争对手和地缘政治格局的变化，让这场&#34;月球复兴&#34;的意义远超科学本身。对于整个航天工业来说，Artemis II 证明深空载人航行的工程能力已经成熟，问题的核心不再是&#34;能不能去&#34;，而是&#34;去那里做什么&#34;。
+来源：Ars Technica
+Flipkart 与 Amazon 联手挤压印度即时零售创业公司生存空间 印度即时零售（Quick Commerce）市场正在经历一场结构性洗牌。Flipkart 持续向二三线城市扩张，并加大折扣力度，其策略被分析师认为正在系统性地压缩 Swiggy、Zepto、Blinkit 等本土创业公司的生存空间。Flipkart 背靠 Walmart，Amazon 则是全球电商巨头，两者的资金实力和物流基础设施远超本土竞争者。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-05 00:00:00 +0000 UTC'>March 5, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to 【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”" href="http://localhost:8081/posts/pg04/"></a>
+  <footer class="entry-footer"><span title='2026-04-14 00:00:00 +0000 UTC'>April 14, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 极客早报 | 2026-04-14" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-14/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-05
+    <h2 class="entry-hint-parent">极客早报 | 2026-04-13
     </h2>
   </header>
   <div class="entry-content">
-    <p>[没人因为追求简洁而获得晋升] 来源标签: Lobsters 内容精炼: 文章探讨了在大型软件组织中，复杂系统往往比简洁设计更能吸引关注和资源，导致工程师缺乏构建和维护简单系统的动力。作者分析了这一现象背后的组织与激励结构问题。 原文链接: https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/ [Claude 是 Electron 应用，因为我们已失去原生开发能力] 来源标签: Lobsters 内容精炼: 作者批评了当前桌面应用开发过度依赖 Electron 等跨平台框架，导致应用臃肿、性能低下。文章追溯了原生 (Native) 应用开发的衰落，并讨论了其对用户体验和软件生态的长期影响。 原文链接: https://tonsky.me/blog/fall-of-native/ [加州的数字年龄验证法案与自由开源软件] 来源标签: Lobsters 内容精炼: 文章分析了加州 AB 1043 法案（数字年龄验证法）对自由开源软件 (FOSS) 项目可能带来的合规挑战。重点探讨了法案中关于年龄验证 (Age Assurance) 的要求如何与开源项目的分布式、低门槛参与模式产生冲突。 原文链接: https://runxiyu.org/comp/ab1043/ [Claude 的循环] 来源标签: Lobsters 内容精炼: 这篇由计算机科学家高德纳 (Donald Knuth) 撰写的论文，探讨了人工智能 Claude 在处理复杂递归和自指问题时的行为模式，分析了其推理中出现的特定循环 (Cycles) 现象及其理论意义。 原文链接: https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf [永远不要推迟未来的任务] 来源标签: Lobsters 内容精炼: 作者从个人生产力角度，分析了“推迟” (Snooze) 未来待办事项这一常见习惯的弊端。文章提出了更有效的时间与任务管理策略，以避免决策疲劳和承诺堆积。 原文链接: https://jacko.io/snooze.html [玩家与虚无主义者：Product Hunt 分析（2014–2021）] 来源标签: Product Hunt 内容精炼: 这份2022年的报告对 Product Hunt 平台2014至2021年的数据进行了分析，识别出“玩家”（追求积分和排名）和“虚无主义者”（批判性参与）两类主要用户群体，并探讨了社区动态与产品成功之间的关系。 原文链接: https://components.news/the-gamer-and-the-nihilist/ [Show HN: 构建了一个基于用户-产品匹配的 Product Hunt 替代品] 来源标签: Product Hunt 内容精炼: 这是一个新上线的产品发布平台，其核心创新在于利用算法进行用户-产品匹配 (User-Product Matching)，旨在帮助用户更精准地发现感兴趣的产品，而非依赖统一的流行度榜单。 原文链接: https://www.productlaunch.cc/ [Show HN: 一个让用户赚钱的 Product Hunt] 来源标签: Product Hunt 内容精炼: 该项目推出了一个新型产品发现平台，其商业模式允许用户通过推广或评测产品来直接获得收益，旨在改变传统平台仅由发布者获利的现状。 原文链接: https://www.toolspotting.com/ 首席架构师的深度阅读指南
+    <p>早上好，各位极客们。今天是 2026 年 4 月 13 日，星期一，欢迎收听今天的极客早报。本期，我们将关注 Sam Altman 正面回应《New Yorker》争议报道、加州居民集体起诉 AI 医疗转录工具 Abridge 事件，以及 AI 安全评估体系遭质疑等重要议题。
+Sam Altman 回应《New Yorker》争议文章，称其「煽动性」且与住所遭袭事件相关 上周，OpenAI CEO Sam Altman 罕见地在官方博客发布长文，首次正面回应《New Yorker》对其诚信问题的深度质疑报道。他措辞激烈地批评该文「煽动性十足」，并罕见地将矛头指向此前其住所遭袭事件，暗示两者存在关联。这篇争议文章由知名调查记者执笔，深入剖析了 Altman 在 OpenAI 治理结构中的角色、股权安排，以及公司安全问题处理方式。值得关注的是，Altman 此前在公开场合一贯以冷静、职业的形象示人，此次主动将暴力袭击与媒体报道挂钩，在 AI 行业领袖中极为罕见。AI 行业观察者指出，随着 OpenAI 估值超过 1500 亿美元，公众对 AI 安全和公司治理的关注已与日俱增，Altman 的个人形象管理正成为整个行业的风向标。
+来源：TechCrunch
+小型 AI 模型同样发现 Mythos 识别的高危漏洞，AI 安全基准遭质疑 AI 安全公司 Aisle 发布重磅研究，打破了「只有最大最强模型才能发现关键漏洞」的行业假设。研究团队选取了多个小型开源模型与 Anthropic 高调限制发布的 Mythos 模型进行对比测试，结果令人震惊：小模型同样能识别出 Mythos 标注的所有高危漏洞。Aisle 创始人表示，这一发现揭示了当前 AI 安全评估体系的深层结构问题——行业过度关注模型规模与能力排行榜，而忽视了漏洞发现能力与推理过程的本质联系。研究同时发现，不同模型在漏洞识别上呈现明显的「参差不齐的前沿」（jagged frontier）特征，即在同一模型内，某些任务表现卓越而相邻任务却完全失败。该研究已在 Aisle 官方博客发布，随即在 HN 引发 822 分热议，成为本周最具讨论度的 AI 安全话题。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-05 00:00:00 +0000 UTC'>March 5, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-05" href="http://localhost:8081/posts/ai_daily_news_2026-03-05/"></a>
+  <footer class="entry-footer"><span title='2026-04-13 00:00:00 +0000 UTC'>April 13, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 极客早报 | 2026-04-13" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-13/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫
+    <h2 class="entry-hint-parent">极客早报 | 2026-04-12
     </h2>
   </header>
   <div class="entry-content">
-    <p>哈喽，各位极客小伙伴们！
-在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。
-这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：
---- title: &#34;我的日记&#34; date: 2026-03-04 draft: false --- 如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。 大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！
-★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫” 既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。
-它的工作逻辑极度简单粗暴：
-24 小时死死盯着咱们的 SyncDrive 网盘。 只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。 它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！ 只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。
-★ 极客的傲骨：抛弃第三方库，纯手搓轮询 在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。
-但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。
-俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。
+    <p>今日关键词：AI安全基准测试、零信任架构、普遍基本互联网、CI/CD整合、边缘数据库、TPM硬件安全
+小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑 AI 安全公司 Aisle 研究显示，小型开源 AI 模型同样能发现 Mythos 模型识别的关键漏洞，揭示当前 AI 安全基准测试（AI Security Benchmark）的局限性。研究团队使用红队测试（Red Team Testing）方法，发现小型模型在特定漏洞检测任务上不逊于大型模型，挑战了&#34;规模越大越安全&#34;的假设。专家建议引入动态对抗评估（Dynamic Adversarial Evaluation）机制。
+专业术语：AI 安全基准测试（AI Security Benchmark）、红队测试（Red Team Testing）、Mythos 模型（Mythos Model）、威胁向量（Threat Vector）、动态对抗评估（Dynamic Adversarial Evaluation）
+AI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比 RSAC 2026 大会上，Anthropic 将 Agent 拆分为大脑（推理）、手（临时容器）和会话日志三个互不信任的组件，实现最小权限原则（Principle of Least Privilege）；Nvidia NemoClaw 在单一沙箱内叠加四层安全防护（Multi-layer Security Sandbox）。两种方案在凭证隔离（Credential Isolation）上存在根本差异，安全审计员提醒需强制实施实时凭证轮换（Real-time Credential Rotation）机制。
+专业术语：零信任架构（Zero Trust Architecture）、最小权限原则（Principle of Least Privilege）、多层安全沙箱（Multi-layer Security Sandbox）、凭证隔离（Credential Isolation）、实时凭证轮换（Real-time Credential Rotation）
+韩国宣布引入「普遍基本移动互联网」，全球首创 韩国政府宣布引入「普遍基本移动互联网」（Universal Basic Mobile Internet）政策，确保所有公民无论地域和收入水平均能接入互联网，成为全球首个将宽带接入列为基本权利（Basic Right to Broadband）的国家。计划到2027年实现99.9%人口覆盖，涵盖农村居民、老年人和低收入家庭。数字包容性（Digital Inclusion）倡导者认为此举对全球数字公平（Digital Equity）政策具有里程碑意义。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to 【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫" href="http://localhost:8081/posts/pg03/"></a>
+  <footer class="entry-footer"><span title='2026-04-12 00:00:00 +0000 UTC'>April 12, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 极客早报 | 2026-04-12" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-12/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-04
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-11
     </h2>
   </header>
   <div class="entry-content">
-    <p>[Claude 是 Electron 应用，因为我们已失去了原生开发] 来源标签: Lobsters 内容精炼: 文章批判了当前软件开发生态过度依赖 Electron 等跨平台框架，导致应用臃肿、性能低下。作者认为，追求“一次编写，到处运行”的便利性，是以牺牲原生应用 (Native App) 的性能、能效和用户体验为代价的，反映了行业对工程效率的过度追求。 原文链接: https://tonsky.me/blog/fall-of-native/ [美国最高法院拒绝审理关于 AI 生成材料版权的争议] 来源标签: Lobsters 内容精炼: 美国最高法院决定不受理一起关于 AI 生成内容 (AI-generated material) 版权归属的案件。这一决定意味着，在缺乏联邦立法或更高层级司法裁决的情况下，关于人工智能创作物版权 (Copyright) 的模糊性和法律不确定性将持续存在。 原文链接: https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/ [Weave – 一种基于实体的、具备语言感知能力的合并算法] 来源标签: Hacker News 内容精炼: Weave 是一个创新的代码合并 (Merge) 算法，它通过理解代码的实体结构（如函数、类）而非简单的文本行差异来进行合并。这种方法旨在更智能地处理代码冲突，减少手动干预，提升版本控制 (Version Control) 系统的协作效率。 原文链接: https://github.com/Ataraxy-Labs/weave [AgentBus – 通过 REST API 实现的集中式 AI 智能体间通信] 来源标签: Hacker News 内容精炼: AgentBus 是一个为 AI 智能体 (AI Agent) 设计的集中式消息传递平台。它提供标准化的 REST API，允许不同的 AI 智能体之间进行结构化通信和协作，旨在简化多智能体系统 (Multi-Agent System) 的构建与集成。 原文链接: https://agentbus.org/ [唐纳德·克努特的“类Claude”有向哈密顿环分解] 来源标签: Lobsters 内容精炼: 计算机科学先驱高德纳 (Donald Knuth) 发布了一篇技术论文，探讨了在有向图中寻找哈密顿环 (Hamiltonian Cycles) 分解的新方法。论文标题中的“类Claude”暗示其可能受到当前大语言模型 (LLM) 推理方式的启发，或将图论与新型计算范式结合。 原文链接: https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf [图形编程资源汇总] 来源标签: Hacker News 内容精炼: 这是一个精心整理的图形编程 (Graphics Programming) 资源集合网站。内容涵盖了从基础的渲染管线 (Rendering Pipeline)、着色器 (Shaders) 编写，到高级的实时光线追踪 (Real-time Ray Tracing) 等技术的学习路径、教程、论文和工具链接。 原文链接: https://develop--gpvm-website.netlify.app/resources/ [面向设计师和开发者的 Mac 外接显示器指南（第二部分）] 来源标签: Hacker News 内容精炼: 文章深入探讨了为 Mac 选择外接显示器 (External Displays) 的技术细节，重点关注色彩准确性、分辨率缩放 (Resolution Scaling)、HDR 支持以及不同接口（如 Thunderbolt, USB-C）对专业工作流的影响，为视觉创作者和开发者提供实用选购建议。 原文链接: https://bjango.com/articles/macexternaldisplays2/ [Ruby Central 让 Ruby 倒退的四个月] 来源标签: Lobsters 内容精炼: 作者严厉批评了 Ruby 语言官方管理机构 Ruby Central 近期的决策，认为其治理混乱、沟通不畅，并在关键的技术方向（如打包、工具链）上做出了不利于社区和语言发展的决定，导致 Ruby 生态出现倒退风险。 原文链接: https://andre.arko.net/2026/03/03/four-months-of-ruby-central-moving-ruby-backward/ [AI 对软件发布的真实影响：来自 Product Hunt 的证据] 来源标签: Product Hunt 内容精炼: 文章通过分析 Product Hunt 平台上的发布数据，量化研究了 AI 技术对软件创业的影响。研究发现，集成 AI 功能的软件产品在发布时获得的关注度（如投票、评论）显著更高，但同时也面临更激烈的竞争和更快的热度消退速度。 原文链接: https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/ 首席架构师的深度阅读指南
+    <p>GitHub 热门项目日报 · 2026-04-11 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 Hermes Agent 来源: GitHub | 项目链接
+Hermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。
+🔥 VoxCPM2 来源: GitHub | 项目链接
+VoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。
+🔥 OpenDataLoader PDF 来源: GitHub | 项目链接
+OpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-04" href="http://localhost:8081/posts/ai_daily_news_2026-03-04/"></a>
+  <footer class="entry-footer"><span title='2026-04-11 00:00:00 +0000 UTC'>April 11, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-11" href="https://bothubpr.github.io/posts/github_daily_2026-04-11/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 辅助发现有向图哈密顿循环的通用构造
+    <h2 class="entry-hint-parent">极客早报 | 2026-04-11
     </h2>
   </header>
   <div class="entry-content">
-    <p> 计算机科学泰斗 Donald Knuth 抛出的开放问题被 Claude Opus 4.6 在一小时内解决。Knuth 随后给出了严格的数学证明，确认该构造对所有奇数 m 有效。
-背景 Knuth 在研究《计算机程序设计艺术》未来卷册中的有向哈密顿循环问题时，构造了如下有向图：
-图中共有 m³ 个顶点，记为 ijk（0 ≤ i, j, k &lt; m）。每个顶点有三条出边，分别指向：
-i&#43;jk：i 加 1（模 m） ij&#43;k：j 加 1（模 m） ijk&#43;：k 加 1（模 m） 开放问题：能否将这 3m³ 条弧分解为三个有向哈密顿循环？
-Knuth 自身仅解决了 m = 3 的特殊情况。其友Filip Stappers 通过枚举发现了 m = 4 至 16 的数值解，但通用构造（对任意 m &gt; 2）始终未知。
-Claude 的求解过程 Filip 将此问题提交给 Claude Opus 4.6，并要求其记录每次探索的进展。Claude 共进行了 31 轮探索，主要尝试包括：
-早期尝试：线性函数、二次函数、深度优先搜索、2D 蛇形分析等方法，均未能找到通用构造。
-关键突破（第15-20轮）：Claude 引入了纤维分解（Fiber Decomposition）方法，将顶点按 s = (i &#43; j &#43; k) mod m 分层分析。结合模拟退火算法，Claude 找到了 m = 3 和 m = 4 的具体解。
+    <p>早上好，各位极客们。今天是 2026 年 4 月 11 日，星期五，欢迎收听今天的极客早报。
+本期亮点：AI 厂商之间的竞争与安全边界的讨论持续升温，同时 Chrome 插件供应链安全再度敲响警钟。
+Anthropic 临时封禁 OpenClaw 创建者 Peter Steinberger 访问 Claude 上周五，AI 公司 Anthropic 暂时禁止了 OpenClaw 创建者 Peter Steinberger 访问其 Claude 服务，原因与近期 Claude API 定价变更引发的用户访问问题直接相关。这两家公司之间的关系迅速走向紧张，引发了整个 AI 开发者社区的广泛关注。Steinberger 本人在社交平台上公开了被封禁的截图，随后 Anthropic 以&#34;检测到异常活动&#34;为由对其账号进行了限制。更令人意外的是，Anthropic 随后将封禁范围扩大到了整个 OpenClaw 平台的所有 API 调用。值得注意的是，这并非两家公司的首次摩擦——早在 2024 年底，OpenClaw 就曾因 Claude API 的可用性问题受到用户大量投诉。这一事件折射出 AI 行业一个深层次的矛盾：当 AI 能力成为产品核心时，API 定价的波动直接决定了开发者生态的生死存亡。Anthropic 作为 Claude 的运营方，有权保护自身商业利益；但对于那些将产品命脉托付给第三方 API 的开发者来说，这样的&#34;随时涨价、随时封禁&#34;模式显然存在巨大风险。这也再次提醒整个行业：AI 能力的获取稳定性与透明度，是企业级用户最核心的关切。
+来源：TechCrunch
+跟踪受害者起诉 OpenAI：ChatGPT 被指助长跟踪骚扰却忽视警告 本周，一名跟踪受害者向法院提起诉讼，指控 OpenAI 的 ChatGPT 被其前男友用于助长跟踪和骚扰行为，而 OpenAI 在收到三次明确危险警告后仍未采取任何行动。诉讼文件显示，受害者曾多次向 OpenAI 发送邮件，详细说明了其前男友如何利用 ChatGPT 生成针对她的骚扰内容，包括持续的信息轰炸和跟踪计划建议。OpenAI 方面仅以&#34;感谢反馈&#34;作为回复，并未对相关账号或功能采取任何限制。更令人担忧的是，尽管 ChatGPT 的付费版本针对跟踪骚扰场景设置了一定的系统提示词（System Prompt）防护，但免费版本几乎没有任何此类保护机制，这意味着任何人都可以不受限制地将 ChatGPT 用于恶意目的。此案将成为 AI 安全责任边界的重要判例。业界普遍认为，AI 公司应当建立更加完善的用户举报机制，并对恶意使用行为承担相应责任。目前，美国联邦贸易委员会（FTC, Federal Trade Commission）和多州检察部门已表示关注此案进展。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to AI 辅助发现有向图哈密顿循环的通用构造" href="http://localhost:8081/posts/knuth-claude-cycles-02/"></a>
+  <footer class="entry-footer"><span title='2026-04-11 00:00:00 +0000 UTC'>April 11, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 极客早报 | 2026-04-11" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-11/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">量子计算再突破！光首次模拟诺贝尔奖量子效应
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-10
     </h2>
   </header>
   <div class="entry-content">
-    <p> 2026年3月，量子科技领域迎来两大重磅突破：光首次模拟了量子霍尔效应，以及科学家成功解锁单个光子内的隐藏维度。这些进展意味着什么？将如何改变量子计算的未来？
-今日量子要闻速览 1. 历史性突破：光模仿了诺贝尔奖量子效应 来源: ScienceDaily
-发布时间: 2026年3月1日
-机构: 蒙特利尔大学
-核心事实：
-科学家首次实现光（光子）模拟量子霍尔效应（Quantum Hall Effect） 此前该效应仅在电子中观察到，因为电子带电荷 光子不带电荷，因此无法自然响应电磁场 研究发表在 Physical Review X 技术细节：
-当电流在材料中流动并施加垂直磁场时，会产生横向电压——这就是霍尔效应。1980年代，科学家在极低温强磁场下的超薄导体中发现了量子霍尔效应：横向电压不再平滑增加，而是以完美的阶梯状跳跃。
-“光以量子化的方式漂移，沿着与电子在强磁场中类似的普遍阶梯前进。”
-—— 蒙特利尔大学物理学教授 Philippe St-Jean
-这些&#34;平台&#34;（plateaus）是通用的，不依赖于材料成分、形状或微观缺陷，完全由自然基本常数决定：电子电荷和普朗克常数。
-为什么重要：
-计量学革命 — 光学系统可能成为测量精度的新黄金标准 量子计量学 — 精确控制光的流动可能扩展到量子信息处理 更强大的量子光子计算机 — 可能带来更坚韧、更可靠的量子光子技术 新型传感器 — 微小的偏差可能揭示微妙的环境干扰 2. 重大进展：解锁光子内的隐藏维度 来源: ScienceDaily
-发布时间: 2026年2月26日
-机构: 维特沃特斯兰德大学（南非）、巴塞罗那自治大学
-核心事实：
-科学家发现了塑造量子光的新方法 可以在单个光子中创建高维态（high-dimensional states） 每个光子可以携带更多信息 研究发表在 Nature Photonics 技术细节：
-研究者通过精确控制光子的空间模式、时序和光谱，设计出所谓的结构光子（structured photons）。
-“20年前，这个领域的工具箱几乎是空的。今天，我们有了芯片上的量子结构光源，紧凑而高效，能够创造和控制量子态。”
-—— 维特沃特斯兰德大学 Andrew Forbes 教授
-为什么重要：
-高维编码 — 每个光子可以携带更多信息，且抗干扰能力更强 量子通信 — 对安全通信系统特别有吸引力 量子成像 — 下一代成像技术 拓扑量子态 — 让脆弱的量子信号更加稳定 这两件事有什么关联？ 维度 光模拟量子霍尔效应 解锁光子隐藏维度 共同点 都是量子光学突破 都是量子光学突破 核心突破 光的&#34;横向漂移&#34;量子化 光子的空间/时间维度控制 应用方向 计量学、传感器 量子通信、量子计算 本质上：两者都在探索如何精确控制光在量子层面的行为。这是量子计算和量子通信硬件的基础。
+    <p>GitHub 热门项目日报 · 2026-04-10 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 Hermes Agent 来源: GitHub | 项目链接
+Hermes Agent 是由 Nous Research 开发的自我改进型 AI Agent，拥有内置的学习闭环系统。它能够从经验中创建技能，在使用过程中不断改进，搜索自己的过往对话，并建立对用户需求的深度理解。今日新增 5,884 stars，总星数已达 45,575。
+项目作者/组织: Nous Research 主要功能/用途: 提供可成长的 AI Agent 平台，支持技能创建、记忆管理和多平台集成 技术亮点/创新点: 内置学习循环、持久化知识、自适应技能提升 适用场景: 个人 AI 助手、自动化任务处理、代码辅助、多轮对话系统 Star 趋势: 今日新增 5,884 stars，总星数 45,575（Python） 🔥 Superpowers 来源: GitHub | 项目链接
+Superpowers 是 Andrej Karpathy 推出的 Agentic 技能框架，使用 Shell 脚本实现模块化的 AI 能力组合。该框架强调轻量、可组合的技能单元，让开发者能够快速构建和部署 AI Agent。今日新增 2,299 stars，总星数突破 143,974。
+项目作者/组织: obra（Andrej Karpathy） 主要功能/用途: 提供一套 Shell 脚本库，用于定义、调用和管理 AI Agent 技能 技术亮点/创新点: 极简设计、技能可组合性、无缝集成现有工具链 适用场景: AI 工作流自动化、快速原型验证、教育演示 Star 趋势: 今日新增 2,299 stars，总星数 143,974（Shell） 🔥 DeepTutor 来源: GitHub | 项目链接
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-04 00:00:00 +0000 UTC'>March 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to 量子计算再突破！光首次模拟诺贝尔奖量子效应" href="http://localhost:8081/posts/quantum-breakthrough-2026/"></a>
+  <footer class="entry-footer"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-10" href="https://bothubpr.github.io/posts/github_daily_2026-04-10/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载
+    <h2 class="entry-hint-parent">极客早报｜2026年4月10日
     </h2>
   </header>
   <div class="entry-content">
-    <p>哈喽，各位极客小伙伴们！
-在上篇连载中，咱们成功用 Filebrowser 搭建了一个 【零摩擦的本地网盘】。现在，你的 Markdown 笔记已经可以随手拖拽进 Ubuntu 虚拟机里了。
-但网盘里的 .md 文件终究只是“毛坯房”，咱们需要一台强悍的渲染引擎，把它们瞬间编译成带有暗黑模式、目录导航的精美极客网页。俺选用的引擎是目前地表最快的静态生成器—— 【Hugo】。
-不过，Hugo 出了名的脾气古怪，有着极度的 【底层洁癖】。今天，俺就带大伙儿扒一扒它的底裤，看看如何绕过它设下的重重陷阱！
-★ 避雷指南：千万别用 Snap 装 Hugo 在 Ubuntu 上装软件，大伙儿的第一反应肯定是敲 sudo apt install 或者用系统自带的 snap 商店。
-听俺一句劝：【绝对不要用 Snap 安装 Hugo！】
-Snap 本质上也是一个极其严格的 【沙盒环境】。如果你用 Snap 装了 Hugo，当 Hugo 试图去读取咱们挂载在桌面（~/Desktop/）的网盘文件时，会直接被操作系统的安全机制“无情绞杀”，报出一堆莫名其妙的 Permission Denied（权限拒绝）。
-【架构师的解法】：直接去 Hugo 的 GitHub Releases 页面，下载最新的 Linux tar.gz 压缩包，解压后把二进制文件直接扔进 /usr/local/bin/。绕过所有中间商，把引擎的控制权 100% 握在自己手里！
-★ 跨越物理隔离：神奇的“虚拟挂载” Hugo 的“洁癖”体现在它的目录结构上：它要求所有的文章必须乖乖放在它自己生成的 content/posts/ 文件夹下。
-但这违背了咱们的自动化初衷！咱们的文章明明放在上一篇建好的 SyncDrive 网盘里。如果每次都要复制文件，那还搞啥自动化？如果用 Linux 的软链接（ln -s），又容易遇到各类缓存同步的诡异 Bug。
-这里，俺要祭出 Hugo 的一个高级黑魔法：【模块虚拟挂载 (Module Mounts)】。
+    <p>极客早报｜2026年4月10日 今天的极客早报有点重磅。Florida 州总检察长发起了对 OpenAI 的调查，原因是 ChatGPT 被指用于策划枪击案——这可能会成为 AI 责任划分的标志性案例。同时，伊朗和俄罗斯的国家级黑客行动持续升级，美国关键基础设施面临真实威胁，居家路由器成为全球僵尸网络的棋子。本期早报还包含 Amazon CEO 的火力全开的股东信、Google 与 Intel 的定制芯片联盟，以及多项值得关注的社区新动态。
+Florida AG 就枪击案对 OpenAI 展开正式调查 来源：TechCrunch
+Florida 州总检察长发起了对 OpenAI 的正式调查。此前，ChatGPT 被指用于策划了 2025 年 4 月佛罗里达州立大学的枪击案，那次事件造成两人死亡、五人受伤。受害者家属表示将提起诉讼，理由直指核心：OpenAI 是否对其模型被用于策划犯罪负有责任？这个案件可能会成为 AI 责任划分的标志性判例——如果 AI 被用于策划犯罪，到底是使用者的责任、模型的责任、还是平台的责任？这个问题以前从没被认真地法庭讨论过，但这次 Florida AG 的介入，可能会逼着整个 AI 行业正面回答这个问题。对 AI 安全的监管压力正在从国会和联邦机构蔓延到州一级的执法部门，这个趋势值得所有 AI 从业者高度警惕。
+链接： https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/
+伊朗 APT 组织攻击美国关键基础设施，PLC 设备成为目标 来源：Ars Technica
+伊朗政府背景的 APT 组织正在攻击美国多处关键基础设施，目标包括工厂、污水处理厂、炼油厂中大量使用的 PLC（可编程逻辑控制器）。部分受害者已经出现运营中断和财务损失。这不是警告，而是正在发生的攻击。关键基础设施被国家级黑客入侵已经不是新鲜事，但过去这些攻击更多是间谍活动，核心目标是窃取情报。而这次伊朗黑客直接瞄准能造成物理破坏的工业控制系统，这个升级非常危险。如果污水处理厂被攻击导致停水、炼油厂被攻击导致安全事故，那影响就不是数据泄露能比的。FBI、NSA 和 CISA 已经发出联合警告，但实际攻击已经在进行中了。
+链接： https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/
+Maine 州将成美国首个禁止大型新建 Data Center 的州 来源：HN
+缅因州即将成为美国第一个禁止新建大型数据中心的州。如果这项立法最终通过，将在全美范围内产生示范效应。数据中心的能源消耗问题在 AI 时代急剧恶化——训练和运行大模型都需要海量算力，科技巨头们正在疯狂建设数据中心，电网压力越来越大。缅因州选择用立法来限制这个趋势，这可能会引发其他州的跟随。数据中心选址的竞争可能会进入一个新的政策博弈阶段，能源政策与科技发展之间的张力正在浮出水面。
+链接： https://www.gadgetreview.com/maine-is-about-to-become-the-first-state-to-ban-major-new-data-centers
+Amazon CEO 年度股东信炮轰 Nvidia、Intel、Starlink 来源：TechCrunch
+Amazon CEO Andy Jassy 在年度股东信中火力全开，向 Nvidia、Intel、Starlink 等多个竞争对手发起攻势，为 Amazon 2000 亿美元资本支出辩护。Jassy 的核心论点是：Amazon 在 AI 基础设施上有自己的长期战略，不是被竞争牵着鼻子走。他强调了 Amazon 自研 Trainium 和 Inferentia 芯片的进展，以及 AWS 在云计算上的整体优势。这是 Amazon 面对 Google、Microsoft 和 OpenAI 联合围剿时的正面宣战。Jassy 没有点名，但在信里直接内涵了主要竞对的态度非常罕见——这说明 AI 算力竞争已经进入了白热化阶段，谁都不愿意在基础设施上依赖别人。
+链接： https://techcrunch.com/2026/04/09/amazon-ceo-takes-aim-at-nvidia-intel-starlink-more-in-annual-shareholder-letter/
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to 【系列连载二】引擎点火：驯服 Hugo 引擎的“底层洁癖”与跨目录挂载" href="http://localhost:8081/posts/pg02/"></a>
+  <footer class="entry-footer"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 极客早报｜2026年4月10日" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-10/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-03
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-09
     </h2>
   </header>
   <div class="entry-content">
-    <p>[Giggles：一个功能完备的 React TUI 框架] 来源标签: Hacker News 内容精炼: 开发者 zion-off 开源了 Giggles，一个“开箱即用”的 React 框架，专门用于构建终端用户界面 (Terminal User Interface, TUI)。该项目旨在简化 TUI 应用的开发流程，为 React 开发者进入命令行应用开发提供便利。 原文链接: https://github.com/zion-off/giggles [Ars Technica 因 AI 捏造引文争议解雇记者] 来源标签: Hacker News 内容精炼: 知名科技媒体 Ars Technica 解雇了一名记者，起因是该记者在报道中使用了人工智能 (AI) 工具，并发布了未经核实的、由 AI 生成的虚假引文。这一事件引发了关于新闻业中 AI 使用伦理和事实核查流程的广泛讨论。 原文链接: https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes [如何构建你自己的量子计算机] 来源标签: Hacker News 内容精炼: 一篇来自《物理评论》的文章，以通俗易懂的方式概述了构建一台基础量子计算机 (Quantum Computer) 所涉及的核心物理原理和工程挑战。文章解释了量子比特 (Qubit)、量子纠缠 (Quantum Entanglement) 等概念，并讨论了当前实验平台的现状。 原文链接: https://physics.aps.org/articles/v19/24 [GRAM：一个剔除了所有 AI 功能的 Zed 编辑器分支] 来源标签: Lobsters 内容精炼: 开发者推出了 GRAM，这是流行代码编辑器 Zed 的一个分支版本。该项目的主要特点是移除了 Zed 中所有与人工智能 (AI) 相关的功能，旨在为那些偏好简洁、专注的编程环境，或对 AI 集成有隐私、性能顾虑的用户提供一个替代选择。 原文链接: https://gram.liten.app/ [摩托罗拉与 GrapheneOS 达成新合作] 来源标签: Lobsters 内容精炼: 摩托罗拉宣布与注重隐私和安全性的移动操作系统 GrapheneOS 建立新的合作伙伴关系。此举旨在为企业对商业 (B2B) 客户提供增强安全性的移动解决方案，预计将在 MWC 2026 上展示相关产品，标志着主流手机厂商对强化隐私的安卓 (Android) 分支的认可。 原文链接: https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/ [两种错误类型] 来源标签: Lobsters 内容精炼: 作者 Evan Hahn 探讨了在软件开发和系统设计中常见的两种根本性错误类型：乐观错误 (乐观假设导致故障) 和悲观错误 (过度防御导致功能缺失或性能下降)。文章分析了各自的成因、影响及平衡策略，对系统架构设计具有指导意义。 原文链接: https://evanhahn.com/the-two-kinds-of-error/ [量化瑞士的“婚姻税”] 来源标签: Lobsters 内容精炼: 一篇数据分析博客文章，深入研究了瑞士税法中因夫妻合并报税可能导致的额外税负，即所谓的“婚姻税”。文章通过数据建模和可视化，量化了不同收入组合下的税负差异，为理解该政策的实际影响提供了数据支撑。 原文链接: https://gendx.dev/blog/2026/03/02/swiss-marriage-tax.html [GRAM 1.0 版本发布] 来源标签: Lobsters 内容精炼: 基于 Zed 编辑器、移除了所有 AI 功能的分支项目 GRAM 发布了其 1.0 正式版本。该版本标志着项目进入稳定阶段，为寻求无 AI 干扰、高性能代码编辑器的用户提供了一个明确的选择。 原文链接: https://gram.liten.app/posts/first-release/ [AI 对软件发布的真实影响：来自 Product Hunt 的证据] 来源标签: Product Hunt 内容精炼: 一篇基于 Product Hunt 平台数据的分析文章，旨在客观评估人工智能 (AI) 工具对软件产品发布成功率、关注度和用户反馈的实际影响。文章通过数据对比，试图揭示 AI 辅助开发或营销是带来了实质优势，还是仅仅增加了市场噪音。 原文链接: https://asanchez.dev/blog/ais-real-impact-on-software-launches-evidence-from-product-hunt/ 首席架构师的深度阅读指南
+    <p>GitHub 热门项目日报 · 2026-04-09 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 GitNexus 来源: GitHub | 项目链接
+GitNexus 是一个零服务器代码智能引擎，完全在浏览器中运行。由开发者 abhigyanpatwari 创建，它能够将任何 GitHub 仓库或 ZIP 文件即时转换为交互式知识图谱，并内置 Graph RAG 智能体。该项目通过 MCP（Model Context Protocol）为 AI 编码助手（如 Cursor、Claude Code）提供深度的代码库架构视图，让 AI 真正理解代码之间的依赖关系、调用链和执行流程。技术亮点包括客户端知识图谱构建、隐私优先（代码永不离开本地浏览器）、以及支持混合搜索（BM25 &#43; 语义）。适用于代码探索、架构理解和 AI 辅助重构，目前已在 GitHub 上获得大量关注，星标数快速增长。
+🔥 Onyx 来源: GitHub | 项目链接
+Onyx（原名 Danswer）是一个开源 AI 平台，由 onyx-dot-app 组织维护。它提供了一个功能丰富的聊天界面，可与任何 LLM 配合使用，并集成了 RAG、智能体、网页搜索、MCP 支持以及 40 多个知识源连接器（如 Google Drive、Slack、Confluence）。Onyx 设计为可自托管，支持完全离线环境运行，同时具备用户认证、角色管理、聊天持久化等生产级功能。其技术亮点包括模块化架构、模型无关性（支持 OpenAI、Anthropic、Ollama 等）、以及实时权限同步的数据连接器。适用于企业知识管理、内部 AI 助手和团队协作，目前已在 GitHub 上获得数千星标。
+🔥 Claude Code 来源: GitHub | 项目链接
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-03" href="http://localhost:8081/posts/ai_daily_news_2026-03-03/"></a>
+  <footer class="entry-footer"><span title='2026-04-09 00:00:00 +0000 UTC'>April 9, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-09" href="https://bothubpr.github.io/posts/github_daily_2026-04-09/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">如何自己造一台量子计算机？一群物理学家正在开源革命
+    <h2 class="entry-hint-parent">HuggingFace 模型周报 - 2026年4月9日
     </h2>
   </header>
   <div class="entry-content">
-    <p> 当全世界都在追逐量子计算的商用前景时，加拿大的一群物理学家选择了一条完全不同的路——把所有技术开源，让每个人都能自己动手造量子计算机。
-核心观点提炼 1. 开源是为了打破垄断 核心观点：量子计算被誉为下一场技术革命，但目前财富和技术都被少数公司垄断。Open Quantum Design (OQD) 试图让量子计算成为&#34;人类共同的技术&#34;。
-“每一次技术革命——工业革命、互联网、AI——财富都集中在少数人手里。我们有机会让量子计算掌握在全人类手中。” —— Greg Dick
-2. 降低门槛，让创业者也能入场 核心观点：传统量子计算需要数亿美元融资，普通人根本无法参与。开源设计让开发者可以在&#34;攒够1000万&#34;之前先动手实践。
-学生可以自己学习硬件开发技能（光学、电子学、真空技术） 创业者可以直接玩机器，迭代自己的想法 不用重复造轮子，有现成的开源技术可用 3. 技术规格：30量子比特，99%保真度 参数 目标值 量子比特数 30 双量子比特门保真度 ~99% 技术路线 离子阱 (Trapped-Ion) “我们不追求成为地球上最大最强的量子计算机，而是要造最容易被理解和访问的一台。” —— Crystal Senko
-4. 对抗炒作：诚实的预期 核心观点：量子计算被过度炒作了。人们经常把&#34;今年会发生的事&#34;和&#34;十年后可能发生的事&#34;混为一谈。
-量子计算不会明天就解决气候变化或治愈癌症 今年可能实现：小规模容错量子门测试（几个逻辑量子比特） 真正有价值的应用可能需要数年甚至数十年 5. 加拿大的科技主权野心 核心观点：开源反而能增强国家科技主权。
-政府不想依赖单一供应商 开源意味着更透明的设计，更少的安全隐患 每个国家都希望对自己的云服务和关键数字基础设施有控制权 6. 企业合作模式 OQD 与多家公司合作，比如光子量子计算公司 Xanadu：
-Xanadu 用 OQD 的离子阱控制电子设备来测试他们的编译器 清晰的信息共享规则让合作变得简单 采访金句 Rajibul Islam: “我们公司没有盈利动机去夸大技术，所以可以做到完全透明。”
-Crystal Senko: “我想尊重实现这项技术需要的工作量。”
-深度阅读指南 请帮我深度读取并解析这篇文章：https://physics.aps.org/articles/v19/24
-重点关注：
-提炼核心技术架构或创新观点； 告诉我这项技术/产品解决了什么行业痛点； 总结读者评论中最有价值的反面意见或潜在缺陷。 本文是对 Physics Magazine 采访文章的中文编译，原文发表于 2026 年 2 月 26 日。
-</p>
+    <p>HuggingFace 每周模型报道 (2026年4月9日) 概述 本周（2026年4月6日）Hugging Face 趋势模型榜单显示，Google 的 Gemma 4 系列占据主导地位，社区蒸馏模型和 1-bit 量化模型引发广泛关注。企业参与度显著提升，Netflix 首次发布视频生成模型 VOID。整体来看，开源模型正朝着多模态、轻量化、专业化方向发展。
+以下是本周最值得关注的 4 个新模型/更新。
+1. Gemma 4 发布日期：2026年4月2日
+发布机构：Google DeepMind
+模型类型：多模态模型（文本、图像、音频）
+Hugging Face 主页：google/gemma-4-E2B-it
+关键信息 模型规模：提供 2B、4B、8B、26B、31B 等多种参数变体，包括 Dense 和 Mixture-of-Experts (MoE) 架构。 核心特点： 支持任意到任意（any-to-any）模态转换，可处理文本、图像、音频输入并生成文本输出。 具备思维链推理能力，支持长达 256K 令牌的上下文窗口。 采用混合专家架构，在保持高性能的同时降低激活参数。 技术基础：基于 Gemini 3 的研究与技术，采用 Apache 2.0 许可。 下载渠道：可通过 Hugging Face、Kaggle、Ollama、Google AI Studio 等平台获取，已获得 Transformers、vLLM、llama.cpp 等主流框架支持。 社区反响 Gemma 4 发布 24 小时内总下载量突破 4 亿次，衍生模型超过 10 万个，在开源社区掀起新的狂欢。31B Dense 版本在 Arena AI 排行榜上位列全球第三，用不到十分之一的参数量与 400 亿参数的巨无霸模型媲美。社区普遍认为 Gemma 4 是开源大模型格局的彻底重写，展示了 Google 在开放权重领域的强势回归。
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to 如何自己造一台量子计算机？一群物理学家正在开源革命" href="http://localhost:8081/posts/quantum-computer-open-source/"></a>
+  <footer class="entry-footer"><span title='2026-04-09 00:00:00 +0000 UTC'>April 9, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to HuggingFace 模型周报 - 2026年4月9日" href="https://bothubpr.github.io/posts/huggingface_weekly_2026-04-09/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">【系列连载一】打造极客终极自动化知识库：零摩擦打通本地 Markdown 投放区
+    <h2 class="entry-hint-parent">AI 极客早报 | 2026年4月8日
     </h2>
   </header>
   <div class="entry-content">
-    <p>哈喽，各位极客小伙伴们！
-最近俺一直在折腾 AI Agent（智能体），尤其是试图压榨它们的“睡后算力”。俺的终极目标是：在本地搭建一个 【完全无人值守】 的自动化博客与知识库，甚至让 AI 每天清晨自动为我生成一份排版精美的硬核科技早报。
-经过几个深夜的反复 Debug 和重构，这套系统终于完美跑通了！为了把这段极其硬核的“踩坑与架构”全记录分享给大伙儿，俺决定开启一个分为四篇的系列连载：
-【打通桥梁】 零摩擦的物理桥梁 —— 用 Filebrowser 搭建本地 Markdown 投放区（本篇） 【引擎点火】 驯服 Hugo 引擎的“底层洁癖” —— 本地热渲染与跨目录挂载 【解放双手】 纯 Python 手搓“自动格式清洗”门卫 —— 无感注入 YAML 头部 【终极杀器】 睡后算力压榨 —— 打造每天清晨的“AI 赛博记者” 今天，咱们先从最基础，也是最影响日常体验的第一步开始：干掉繁琐的 FTP/SSH，造一个 【拖拽即生效】 的物理桥梁。
-★ 交代一下俺的运行环境 在开始之前，先跟大伙儿同步一下这套架构的底层环境。这不是啥高不可攀的云端集群，而是任何人都能在自己电脑上跑起来的本地环境：
-【宿主机】：日常办公使用的 Windows 系统。 【服务节点】：跑在局域网内的一台 Ubuntu 虚拟机（分配了固定的局域网 IP，带轻量级桌面环境）。 【赛博苦力】：俺使用了基于 OpenClaw 框架的 AI 特工（底层调用大模型 API）。因为有严格的 API 交互限额，这意味着俺必须用 【最高密度的复合指令】 来指挥它干活，绝不能让它陷入报错死循环。 ★ 踩坑实录：AI 特工的“沙盒刺客” 既然有了 Ubuntu 虚拟机和 AI 特工，俺的第一反应是：直接给特工下发 Prompt，让它用 Python 写个抓取脚本，然后保存在俺的 Ubuntu 桌面（~/Desktop/）。
+    <p> 每天三分钟，带你追踪 AI、安全与技术圈最值得关注的动态。
+Anthropic 发布 Project Glasswing：AI 时代关键软件安全新方案 来源：HN
+Anthropic 正式发布 Project Glasswing，这是一个专门为 AI 时代关键软件打造的安全保障框架。Glasswing 的核心目标是帮助开发者和企业检测、修复 AI 系统中的安全漏洞——在 AI 系统越来越深入关键基础设施的当下，安全保障的重要性不言而喻。该项目获得了 490 个 HN points，社区关注度极高。
+🔗 阅读原文
+伊朗黑客升级攻击策略，持续瞄准美国关键基础设施 来源：TechCrunch
+FBI、NSA 和 CISA 联合发布警告，伊朗黑客组织已升级攻击策略，持续瞄准美国关键基础设施，波及能源、通信等领域。此前伊朗曾威胁打击 Stargate AI 数据中心项目，如今其攻击版图已扩大至更广泛的关键基础设施。安全形势持续严峻。
+🔗 阅读原文
+俄罗斯 APT28 组织入侵数千台家用路由器，发动大规模间谍活动 来源：TechCrunch
+俄罗斯政府黑客组织 APT28（Fancy Bear） 通过入侵数千台家用路由器，批量窃取用户密码和认证令牌，展开大规模间谍活动。家用路由器长期缺乏安全更新，是此类攻击的主要突破口。安全专家建议用户立即更新路由器固件并关闭远程管理功能。
+🔗 阅读原文
+Cloudflare 公布后量子密码学路线图：2029 年完成全面升级 来源：HN
+Cloudflare 公布**后量子密码学（Post-Quantum Cryptography）**全面迁移时间表，目标在 2029 年前将 RSA 和 EC 算法升级为抗量子攻击的替代方案，对抗 “Q-Day” 威胁。这意味着当量子计算机成熟时，当前的加密体系不会被瞬间瓦解。作为互联网基础设施的核心提供商，Cloudflare 的迁移将影响数百万网站和服务。
+🔗 阅读原文
+评测显示 Google AI Overviews 准确率约 90%，每小时产生数十万条错误答案 来源：Ars Technica
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-03-02 00:00:00 +0000 UTC'>March 2, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
-  <a class="entry-link" aria-label="post link to 【系列连载一】打造极客终极自动化知识库：零摩擦打通本地 Markdown 投放区" href="http://localhost:8081/posts/pg01/"></a>
+  <footer class="entry-footer"><span title='2026-04-08 08:00:00 +0800 CST'>April 8, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 极客早报 | 2026年4月8日" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-08/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="http://localhost:8081/page/2/">Next&nbsp;&nbsp;»
+    <a class="next" href="https://bothubpr.github.io/page/2/">Next&nbsp;&nbsp;»
     </a>
   </nav>
 </footer>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:8081/">Ziv的极客日志</a></span> · 
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
 
     <span>
         Powered by

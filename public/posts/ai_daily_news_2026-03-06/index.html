@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI 极客早报 - 2026-03-06 | Ziv的极客日志</title>
+<meta name="keywords" content="">
+<meta name="description" content="[苹果发布新款 M4 芯片，首次搭载于 iPad Pro]
+
+来源标签: Apple Newsroom
+内容精炼: 苹果发布新款 M4 芯片，采用第二代 3 纳米制程，CPU 性能比前代 M2 提升最高达 50%。其全新 10 核 GPU 首次为 iPad 平台带来硬件加速光线追踪 (Hardware-accelerated Ray Tracing) 和网格着色 (Mesh Shading) 技术，显著提升专业级渲染和游戏体验。
+原文链接: https://www.apple.com/newsroom/2024/05/apple-unveils-the-new-ipad-pro-with-the-ultra-powerful-m4-chip/
+
+[微软推出 Phi-3 系列小型语言模型，挑战大模型性能]
+
+来源标签: Microsoft Research Blog
+内容精炼: 微软发布 Phi-3 系列小型语言模型 (Small Language Models)，其中 Phi-3-mini 仅 38 亿参数，但在多项基准测试中性能媲美参数大得多的模型。该系列模型优化了在移动和边缘设备 (Edge Devices) 上本地运行的能力，为资源受限场景提供了高效的人工智能 (AI) 解决方案。
+原文链接: https://www.microsoft.com/en-us/research/blog/phi-3-redefining-whats-possible-with-slms/
+
+[谷歌发布 Gemma 2 开源模型，性能大幅提升]
+
+来源标签: Google Blog
+内容精炼: 谷歌发布下一代开源模型 Gemma 2，提供 90 亿和 270 亿参数版本。新模型在推理 (Reasoning)、数学 (Mathematics) 和代码生成 (Code Generation) 能力上相比前代有显著提升，并针对主流 GPU 和 TPU 进行了优化，旨在为开发者和研究者提供更强大的基础模型 (Foundation Model)。
+原文链接: https://blog.google/technology/developers/google-gemma-2-open-models/
+
+[Meta 开源 Llama 3，支持 8K 上下文长度]
+
+来源标签: Meta AI Blog
+内容精炼: Meta 开源了 Llama 3 大语言模型，提供 80 亿和 700 亿参数版本。新模型在代码、推理和指令遵循 (Instruction Following) 方面表现优异，并支持 8K 的上下文长度 (Context Length)。其改进的标记化器 (Tokenizer) 提升了编码效率，降低了延迟。
+原文链接: https://ai.meta.com/blog/meta-llama-3/
+
+[OpenAI 推出 GPT-4o，实现实时多模态交互]
+
+来源标签: OpenAI Blog
+内容精炼: OpenAI 发布新旗舰模型 GPT-4o（“o”代表“全能”），能够实时处理文本、音频和视觉输入，并生成相应的文本、音频和图像输出。其响应时间接近人类对话水平，且在视觉和音频理解方面相比以往模型有巨大飞跃，标志着向更自然的人机交互 (Human-Computer Interaction) 迈进。
+原文链接: https://openai.com/index/hello-gpt-4o/
+
+[英伟达发布 Blackwell 架构与 B200 GPU]
+
+来源标签: NVIDIA Newsroom
+内容精炼: 英伟达发布下一代 GPU 架构 Blackwell 及首款芯片 B200。该架构采用台积电 4NP 制程，通过芯片间 10 TB/s 的超高速互连 (NVLink) 将两块裸片 (Die) 融合为一个巨型 GPU。B200 在训练拥有 1.8 万亿参数的模型时，性能比前代 H100 提升高达 4 倍。
+原文链接: https://nvidianews.nvidia.com/news/nvidia-accelerates-ai-computing-with-new-blackwell-gpu-architecture
+
+[英特尔推出 Gaudi 3 AI 加速器，性能对标 H100]
+
+来源标签: Intel Newsroom
+内容精炼: 英特尔正式推出 Gaudi 3 AI 加速器，采用 5 纳米制程。官方宣称，在训练和推理主流大语言模型 (LLM) 时，其性能平均是英伟达 H100 GPU 的 1.5 倍，能效平均提升 40%。该产品旨在为人工智能 (AI) 计算提供更具竞争力的替代方案。
+原文链接: https://www.intel.com/content/www/us/en/newsroom/news/accelerating-ai-everywhere-intel-unveils-gaudi-3-ai-accelerator.html
+
+[AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存]
+
+来源标签: AMD Newsroom
+内容精炼: AMD 发布 Instinct MI300X 加速器，专为大规模人工智能 (AI) 推理和高性能计算 (HPC) 设计。其最大亮点是集成了高达 192GB 的 HBM3 内存，带宽达 5.2 TB/s，能够直接在内存中容纳更大的模型，减少与系统内存的数据交换，从而显著提升大模型推理效率。
+原文链接: https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html
+
+[Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先]
+
+来源标签: Anthropic Blog
+内容精炼: Anthropic 发布 Claude 3 系列模型，包含 Haiku、Sonnet 和 Opus 三个版本，在认知能力上依次增强。该公司声称，最强的 Opus 模型在本科水平知识 (MMLU)、研究生水平推理 (GPQA) 和数学 (GSM8K) 等多项基准测试中，性能超越了 GPT-4 和 Gemini Ultra。
+原文链接: https://www.anthropic.com/news/claude-3-family
+
+[Stability AI 发布 Stable Diffusion 3 早期预览版]
+
+来源标签: Stability AI Blog
+内容精炼: Stability AI 发布了下一代文生图模型 Stable Diffusion 3 的早期预览版。新模型采用了全新的多模态扩散 Transformer (Multimodal Diffusion Transformer) 架构，显著提升了文本渲染的准确性和图像的整体质量，在多主题提示词 (Prompt) 理解和拼写方面表现更佳。
+原文链接: https://stability.ai/news/stable-diffusion-3
+
+[特斯拉发布人形机器人 Optimus 最新演示视频]
+
+来源标签: Tesla
+内容精炼: 特斯拉通过视频展示了其人形机器人 Optimus 的最新进展。视频中，Optimus 已能在实验室环境中自主行走，并完成对电池电芯的精细分类、放入托盘的复杂任务。这标志着其在环境感知、自主导航和灵巧操作 (Dexterous Manipulation) 方面取得了实质性进步。
+原文链接: https://www.tesla.com/AI
+
+[亚马逊推出 Graviton4 和 Trainium2 自研芯片]
+
+来源标签: AWS News Blog
+内容精炼: 亚马逊云科技发布新一代自研处理器：通用计算芯片 Graviton4 和 AI 训练芯片 Trainium2。Graviton4 比前代性能提升高达 30%，核心数更多。Trainium2 的 AI 训练性能提升高达 4 倍，两者均旨在为 AWS 客户提供更高性能和能效的云实例 (Cloud Instance)。
+原文链接: https://aws.amazon.com/cn/blogs/aws/amazon-ec2-graviton4-and-trainium2-instances/
+
+[Cloudflare 推出 AI 驱动的防火墙功能]
+
+来源标签: Cloudflare Blog
+内容精炼: Cloudflare 宣布为其 Web 应用防火墙 (WAF) 引入人工智能 (AI) 驱动的功能。该功能利用大语言模型 (LLM) 分析应用程序的流量模式，能够自动识别和生成针对新兴威胁（如零日漏洞和复杂机器人攻击）的防护规则，提升安全响应的自动化水平。
+原文链接: https://blog.cloudflare.com/ai-powered-waf
+
+[Vercel 推出 AI SDK，简化 AI 应用开发]
+
+来源标签: Vercel Blog
+内容精炼: 前端开发平台 Vercel 发布了 AI SDK，这是一个用于构建人工智能 (AI) 驱动界面的开源工具包。它统一了调用不同大语言模型 (LLM)（如 OpenAI、Anthropic）的接口，并内置了流式响应 (Streaming)、上下文长度管理等功能，旨在简化开发者在应用中集成对话式 AI 的流程。
+原文链接: https://vercel.com/blog/introducing-the-vercel-ai-sdk
+
+[Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI]
+
+来源标签: Mozilla Blog
+内容精炼: Mozilla 宣布成立 Mozilla.ai 社区并启动相关项目，专注于开发开源、可信赖的人工智能 (AI)。其初期重点包括创建能推荐个性化内容但保护隐私的推荐系统，以及开发使大语言模型 (LLM) 更安全、更透明的工具，旨在构建一个更开放和负责任的 AI 生态系统。
+原文链接: https://blog.mozilla.org/en/mozilla/mozilla-ai/
+
+
+首席架构师的深度阅读指南">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-06/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-06/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/ai_daily_news_2026-03-06/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="AI 极客早报 - 2026-03-06">
+  <meta property="og:description" content="[苹果发布新款 M4 芯片，首次搭载于 iPad Pro] 来源标签: Apple Newsroom 内容精炼: 苹果发布新款 M4 芯片，采用第二代 3 纳米制程，CPU 性能比前代 M2 提升最高达 50%。其全新 10 核 GPU 首次为 iPad 平台带来硬件加速光线追踪 (Hardware-accelerated Ray Tracing) 和网格着色 (Mesh Shading) 技术，显著提升专业级渲染和游戏体验。 原文链接: https://www.apple.com/newsroom/2024/05/apple-unveils-the-new-ipad-pro-with-the-ultra-powerful-m4-chip/ [微软推出 Phi-3 系列小型语言模型，挑战大模型性能] 来源标签: Microsoft Research Blog 内容精炼: 微软发布 Phi-3 系列小型语言模型 (Small Language Models)，其中 Phi-3-mini 仅 38 亿参数，但在多项基准测试中性能媲美参数大得多的模型。该系列模型优化了在移动和边缘设备 (Edge Devices) 上本地运行的能力，为资源受限场景提供了高效的人工智能 (AI) 解决方案。 原文链接: https://www.microsoft.com/en-us/research/blog/phi-3-redefining-whats-possible-with-slms/ [谷歌发布 Gemma 2 开源模型，性能大幅提升] 来源标签: Google Blog 内容精炼: 谷歌发布下一代开源模型 Gemma 2，提供 90 亿和 270 亿参数版本。新模型在推理 (Reasoning)、数学 (Mathematics) 和代码生成 (Code Generation) 能力上相比前代有显著提升，并针对主流 GPU 和 TPU 进行了优化，旨在为开发者和研究者提供更强大的基础模型 (Foundation Model)。 原文链接: https://blog.google/technology/developers/google-gemma-2-open-models/ [Meta 开源 Llama 3，支持 8K 上下文长度] 来源标签: Meta AI Blog 内容精炼: Meta 开源了 Llama 3 大语言模型，提供 80 亿和 700 亿参数版本。新模型在代码、推理和指令遵循 (Instruction Following) 方面表现优异，并支持 8K 的上下文长度 (Context Length)。其改进的标记化器 (Tokenizer) 提升了编码效率，降低了延迟。 原文链接: https://ai.meta.com/blog/meta-llama-3/ [OpenAI 推出 GPT-4o，实现实时多模态交互] 来源标签: OpenAI Blog 内容精炼: OpenAI 发布新旗舰模型 GPT-4o（“o”代表“全能”），能够实时处理文本、音频和视觉输入，并生成相应的文本、音频和图像输出。其响应时间接近人类对话水平，且在视觉和音频理解方面相比以往模型有巨大飞跃，标志着向更自然的人机交互 (Human-Computer Interaction) 迈进。 原文链接: https://openai.com/index/hello-gpt-4o/ [英伟达发布 Blackwell 架构与 B200 GPU] 来源标签: NVIDIA Newsroom 内容精炼: 英伟达发布下一代 GPU 架构 Blackwell 及首款芯片 B200。该架构采用台积电 4NP 制程，通过芯片间 10 TB/s 的超高速互连 (NVLink) 将两块裸片 (Die) 融合为一个巨型 GPU。B200 在训练拥有 1.8 万亿参数的模型时，性能比前代 H100 提升高达 4 倍。 原文链接: https://nvidianews.nvidia.com/news/nvidia-accelerates-ai-computing-with-new-blackwell-gpu-architecture [英特尔推出 Gaudi 3 AI 加速器，性能对标 H100] 来源标签: Intel Newsroom 内容精炼: 英特尔正式推出 Gaudi 3 AI 加速器，采用 5 纳米制程。官方宣称，在训练和推理主流大语言模型 (LLM) 时，其性能平均是英伟达 H100 GPU 的 1.5 倍，能效平均提升 40%。该产品旨在为人工智能 (AI) 计算提供更具竞争力的替代方案。 原文链接: https://www.intel.com/content/www/us/en/newsroom/news/accelerating-ai-everywhere-intel-unveils-gaudi-3-ai-accelerator.html [AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存] 来源标签: AMD Newsroom 内容精炼: AMD 发布 Instinct MI300X 加速器，专为大规模人工智能 (AI) 推理和高性能计算 (HPC) 设计。其最大亮点是集成了高达 192GB 的 HBM3 内存，带宽达 5.2 TB/s，能够直接在内存中容纳更大的模型，减少与系统内存的数据交换，从而显著提升大模型推理效率。 原文链接: https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html [Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先] 来源标签: Anthropic Blog 内容精炼: Anthropic 发布 Claude 3 系列模型，包含 Haiku、Sonnet 和 Opus 三个版本，在认知能力上依次增强。该公司声称，最强的 Opus 模型在本科水平知识 (MMLU)、研究生水平推理 (GPQA) 和数学 (GSM8K) 等多项基准测试中，性能超越了 GPT-4 和 Gemini Ultra。 原文链接: https://www.anthropic.com/news/claude-3-family [Stability AI 发布 Stable Diffusion 3 早期预览版] 来源标签: Stability AI Blog 内容精炼: Stability AI 发布了下一代文生图模型 Stable Diffusion 3 的早期预览版。新模型采用了全新的多模态扩散 Transformer (Multimodal Diffusion Transformer) 架构，显著提升了文本渲染的准确性和图像的整体质量，在多主题提示词 (Prompt) 理解和拼写方面表现更佳。 原文链接: https://stability.ai/news/stable-diffusion-3 [特斯拉发布人形机器人 Optimus 最新演示视频] 来源标签: Tesla 内容精炼: 特斯拉通过视频展示了其人形机器人 Optimus 的最新进展。视频中，Optimus 已能在实验室环境中自主行走，并完成对电池电芯的精细分类、放入托盘的复杂任务。这标志着其在环境感知、自主导航和灵巧操作 (Dexterous Manipulation) 方面取得了实质性进步。 原文链接: https://www.tesla.com/AI [亚马逊推出 Graviton4 和 Trainium2 自研芯片] 来源标签: AWS News Blog 内容精炼: 亚马逊云科技发布新一代自研处理器：通用计算芯片 Graviton4 和 AI 训练芯片 Trainium2。Graviton4 比前代性能提升高达 30%，核心数更多。Trainium2 的 AI 训练性能提升高达 4 倍，两者均旨在为 AWS 客户提供更高性能和能效的云实例 (Cloud Instance)。 原文链接: https://aws.amazon.com/cn/blogs/aws/amazon-ec2-graviton4-and-trainium2-instances/ [Cloudflare 推出 AI 驱动的防火墙功能] 来源标签: Cloudflare Blog 内容精炼: Cloudflare 宣布为其 Web 应用防火墙 (WAF) 引入人工智能 (AI) 驱动的功能。该功能利用大语言模型 (LLM) 分析应用程序的流量模式，能够自动识别和生成针对新兴威胁（如零日漏洞和复杂机器人攻击）的防护规则，提升安全响应的自动化水平。 原文链接: https://blog.cloudflare.com/ai-powered-waf [Vercel 推出 AI SDK，简化 AI 应用开发] 来源标签: Vercel Blog 内容精炼: 前端开发平台 Vercel 发布了 AI SDK，这是一个用于构建人工智能 (AI) 驱动界面的开源工具包。它统一了调用不同大语言模型 (LLM)（如 OpenAI、Anthropic）的接口，并内置了流式响应 (Streaming)、上下文长度管理等功能，旨在简化开发者在应用中集成对话式 AI 的流程。 原文链接: https://vercel.com/blog/introducing-the-vercel-ai-sdk [Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI] 来源标签: Mozilla Blog 内容精炼: Mozilla 宣布成立 Mozilla.ai 社区并启动相关项目，专注于开发开源、可信赖的人工智能 (AI)。其初期重点包括创建能推荐个性化内容但保护隐私的推荐系统，以及开发使大语言模型 (LLM) 更安全、更透明的工具，旨在构建一个更开放和负责任的 AI 生态系统。 原文链接: https://blog.mozilla.org/en/mozilla/mozilla-ai/ 首席架构师的深度阅读指南">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-06T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI 极客早报 - 2026-03-06">
+<meta name="twitter:description" content="[苹果发布新款 M4 芯片，首次搭载于 iPad Pro]
+
+来源标签: Apple Newsroom
+内容精炼: 苹果发布新款 M4 芯片，采用第二代 3 纳米制程，CPU 性能比前代 M2 提升最高达 50%。其全新 10 核 GPU 首次为 iPad 平台带来硬件加速光线追踪 (Hardware-accelerated Ray Tracing) 和网格着色 (Mesh Shading) 技术，显著提升专业级渲染和游戏体验。
+原文链接: https://www.apple.com/newsroom/2024/05/apple-unveils-the-new-ipad-pro-with-the-ultra-powerful-m4-chip/
+
+[微软推出 Phi-3 系列小型语言模型，挑战大模型性能]
+
+来源标签: Microsoft Research Blog
+内容精炼: 微软发布 Phi-3 系列小型语言模型 (Small Language Models)，其中 Phi-3-mini 仅 38 亿参数，但在多项基准测试中性能媲美参数大得多的模型。该系列模型优化了在移动和边缘设备 (Edge Devices) 上本地运行的能力，为资源受限场景提供了高效的人工智能 (AI) 解决方案。
+原文链接: https://www.microsoft.com/en-us/research/blog/phi-3-redefining-whats-possible-with-slms/
+
+[谷歌发布 Gemma 2 开源模型，性能大幅提升]
+
+来源标签: Google Blog
+内容精炼: 谷歌发布下一代开源模型 Gemma 2，提供 90 亿和 270 亿参数版本。新模型在推理 (Reasoning)、数学 (Mathematics) 和代码生成 (Code Generation) 能力上相比前代有显著提升，并针对主流 GPU 和 TPU 进行了优化，旨在为开发者和研究者提供更强大的基础模型 (Foundation Model)。
+原文链接: https://blog.google/technology/developers/google-gemma-2-open-models/
+
+[Meta 开源 Llama 3，支持 8K 上下文长度]
+
+来源标签: Meta AI Blog
+内容精炼: Meta 开源了 Llama 3 大语言模型，提供 80 亿和 700 亿参数版本。新模型在代码、推理和指令遵循 (Instruction Following) 方面表现优异，并支持 8K 的上下文长度 (Context Length)。其改进的标记化器 (Tokenizer) 提升了编码效率，降低了延迟。
+原文链接: https://ai.meta.com/blog/meta-llama-3/
+
+[OpenAI 推出 GPT-4o，实现实时多模态交互]
+
+来源标签: OpenAI Blog
+内容精炼: OpenAI 发布新旗舰模型 GPT-4o（“o”代表“全能”），能够实时处理文本、音频和视觉输入，并生成相应的文本、音频和图像输出。其响应时间接近人类对话水平，且在视觉和音频理解方面相比以往模型有巨大飞跃，标志着向更自然的人机交互 (Human-Computer Interaction) 迈进。
+原文链接: https://openai.com/index/hello-gpt-4o/
+
+[英伟达发布 Blackwell 架构与 B200 GPU]
+
+来源标签: NVIDIA Newsroom
+内容精炼: 英伟达发布下一代 GPU 架构 Blackwell 及首款芯片 B200。该架构采用台积电 4NP 制程，通过芯片间 10 TB/s 的超高速互连 (NVLink) 将两块裸片 (Die) 融合为一个巨型 GPU。B200 在训练拥有 1.8 万亿参数的模型时，性能比前代 H100 提升高达 4 倍。
+原文链接: https://nvidianews.nvidia.com/news/nvidia-accelerates-ai-computing-with-new-blackwell-gpu-architecture
+
+[英特尔推出 Gaudi 3 AI 加速器，性能对标 H100]
+
+来源标签: Intel Newsroom
+内容精炼: 英特尔正式推出 Gaudi 3 AI 加速器，采用 5 纳米制程。官方宣称，在训练和推理主流大语言模型 (LLM) 时，其性能平均是英伟达 H100 GPU 的 1.5 倍，能效平均提升 40%。该产品旨在为人工智能 (AI) 计算提供更具竞争力的替代方案。
+原文链接: https://www.intel.com/content/www/us/en/newsroom/news/accelerating-ai-everywhere-intel-unveils-gaudi-3-ai-accelerator.html
+
+[AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存]
+
+来源标签: AMD Newsroom
+内容精炼: AMD 发布 Instinct MI300X 加速器，专为大规模人工智能 (AI) 推理和高性能计算 (HPC) 设计。其最大亮点是集成了高达 192GB 的 HBM3 内存，带宽达 5.2 TB/s，能够直接在内存中容纳更大的模型，减少与系统内存的数据交换，从而显著提升大模型推理效率。
+原文链接: https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html
+
+[Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先]
+
+来源标签: Anthropic Blog
+内容精炼: Anthropic 发布 Claude 3 系列模型，包含 Haiku、Sonnet 和 Opus 三个版本，在认知能力上依次增强。该公司声称，最强的 Opus 模型在本科水平知识 (MMLU)、研究生水平推理 (GPQA) 和数学 (GSM8K) 等多项基准测试中，性能超越了 GPT-4 和 Gemini Ultra。
+原文链接: https://www.anthropic.com/news/claude-3-family
+
+[Stability AI 发布 Stable Diffusion 3 早期预览版]
+
+来源标签: Stability AI Blog
+内容精炼: Stability AI 发布了下一代文生图模型 Stable Diffusion 3 的早期预览版。新模型采用了全新的多模态扩散 Transformer (Multimodal Diffusion Transformer) 架构，显著提升了文本渲染的准确性和图像的整体质量，在多主题提示词 (Prompt) 理解和拼写方面表现更佳。
+原文链接: https://stability.ai/news/stable-diffusion-3
+
+[特斯拉发布人形机器人 Optimus 最新演示视频]
+
+来源标签: Tesla
+内容精炼: 特斯拉通过视频展示了其人形机器人 Optimus 的最新进展。视频中，Optimus 已能在实验室环境中自主行走，并完成对电池电芯的精细分类、放入托盘的复杂任务。这标志着其在环境感知、自主导航和灵巧操作 (Dexterous Manipulation) 方面取得了实质性进步。
+原文链接: https://www.tesla.com/AI
+
+[亚马逊推出 Graviton4 和 Trainium2 自研芯片]
+
+来源标签: AWS News Blog
+内容精炼: 亚马逊云科技发布新一代自研处理器：通用计算芯片 Graviton4 和 AI 训练芯片 Trainium2。Graviton4 比前代性能提升高达 30%，核心数更多。Trainium2 的 AI 训练性能提升高达 4 倍，两者均旨在为 AWS 客户提供更高性能和能效的云实例 (Cloud Instance)。
+原文链接: https://aws.amazon.com/cn/blogs/aws/amazon-ec2-graviton4-and-trainium2-instances/
+
+[Cloudflare 推出 AI 驱动的防火墙功能]
+
+来源标签: Cloudflare Blog
+内容精炼: Cloudflare 宣布为其 Web 应用防火墙 (WAF) 引入人工智能 (AI) 驱动的功能。该功能利用大语言模型 (LLM) 分析应用程序的流量模式，能够自动识别和生成针对新兴威胁（如零日漏洞和复杂机器人攻击）的防护规则，提升安全响应的自动化水平。
+原文链接: https://blog.cloudflare.com/ai-powered-waf
+
+[Vercel 推出 AI SDK，简化 AI 应用开发]
+
+来源标签: Vercel Blog
+内容精炼: 前端开发平台 Vercel 发布了 AI SDK，这是一个用于构建人工智能 (AI) 驱动界面的开源工具包。它统一了调用不同大语言模型 (LLM)（如 OpenAI、Anthropic）的接口，并内置了流式响应 (Streaming)、上下文长度管理等功能，旨在简化开发者在应用中集成对话式 AI 的流程。
+原文链接: https://vercel.com/blog/introducing-the-vercel-ai-sdk
+
+[Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI]
+
+来源标签: Mozilla Blog
+内容精炼: Mozilla 宣布成立 Mozilla.ai 社区并启动相关项目，专注于开发开源、可信赖的人工智能 (AI)。其初期重点包括创建能推荐个性化内容但保护隐私的推荐系统，以及开发使大语言模型 (LLM) 更安全、更透明的工具，旨在构建一个更开放和负责任的 AI 生态系统。
+原文链接: https://blog.mozilla.org/en/mozilla/mozilla-ai/
+
+
+首席架构师的深度阅读指南">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI 极客早报 - 2026-03-06",
+      "item": "https://bothubpr.github.io/posts/ai_daily_news_2026-03-06/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI 极客早报 - 2026-03-06",
+  "name": "AI 极客早报 - 2026-03-06",
+  "description": "[苹果发布新款 M4 芯片，首次搭载于 iPad Pro] 来源标签: Apple Newsroom 内容精炼: 苹果发布新款 M4 芯片，采用第二代 3 纳米制程，CPU 性能比前代 M2 提升最高达 50%。其全新 10 核 GPU 首次为 iPad 平台带来硬件加速光线追踪 (Hardware-accelerated Ray Tracing) 和网格着色 (Mesh Shading) 技术，显著提升专业级渲染和游戏体验。 原文链接: https://www.apple.com/newsroom/2024/05/apple-unveils-the-new-ipad-pro-with-the-ultra-powerful-m4-chip/ [微软推出 Phi-3 系列小型语言模型，挑战大模型性能] 来源标签: Microsoft Research Blog 内容精炼: 微软发布 Phi-3 系列小型语言模型 (Small Language Models)，其中 Phi-3-mini 仅 38 亿参数，但在多项基准测试中性能媲美参数大得多的模型。该系列模型优化了在移动和边缘设备 (Edge Devices) 上本地运行的能力，为资源受限场景提供了高效的人工智能 (AI) 解决方案。 原文链接: https://www.microsoft.com/en-us/research/blog/phi-3-redefining-whats-possible-with-slms/ [谷歌发布 Gemma 2 开源模型，性能大幅提升] 来源标签: Google Blog 内容精炼: 谷歌发布下一代开源模型 Gemma 2，提供 90 亿和 270 亿参数版本。新模型在推理 (Reasoning)、数学 (Mathematics) 和代码生成 (Code Generation) 能力上相比前代有显著提升，并针对主流 GPU 和 TPU 进行了优化，旨在为开发者和研究者提供更强大的基础模型 (Foundation Model)。 原文链接: https://blog.google/technology/developers/google-gemma-2-open-models/ [Meta 开源 Llama 3，支持 8K 上下文长度] 来源标签: Meta AI Blog 内容精炼: Meta 开源了 Llama 3 大语言模型，提供 80 亿和 700 亿参数版本。新模型在代码、推理和指令遵循 (Instruction Following) 方面表现优异，并支持 8K 的上下文长度 (Context Length)。其改进的标记化器 (Tokenizer) 提升了编码效率，降低了延迟。 原文链接: https://ai.meta.com/blog/meta-llama-3/ [OpenAI 推出 GPT-4o，实现实时多模态交互] 来源标签: OpenAI Blog 内容精炼: OpenAI 发布新旗舰模型 GPT-4o（“o”代表“全能”），能够实时处理文本、音频和视觉输入，并生成相应的文本、音频和图像输出。其响应时间接近人类对话水平，且在视觉和音频理解方面相比以往模型有巨大飞跃，标志着向更自然的人机交互 (Human-Computer Interaction) 迈进。 原文链接: https://openai.com/index/hello-gpt-4o/ [英伟达发布 Blackwell 架构与 B200 GPU] 来源标签: NVIDIA Newsroom 内容精炼: 英伟达发布下一代 GPU 架构 Blackwell 及首款芯片 B200。该架构采用台积电 4NP 制程，通过芯片间 10 TB/s 的超高速互连 (NVLink) 将两块裸片 (Die) 融合为一个巨型 GPU。B200 在训练拥有 1.8 万亿参数的模型时，性能比前代 H100 提升高达 4 倍。 原文链接: https://nvidianews.nvidia.com/news/nvidia-accelerates-ai-computing-with-new-blackwell-gpu-architecture [英特尔推出 Gaudi 3 AI 加速器，性能对标 H100] 来源标签: Intel Newsroom 内容精炼: 英特尔正式推出 Gaudi 3 AI 加速器，采用 5 纳米制程。官方宣称，在训练和推理主流大语言模型 (LLM) 时，其性能平均是英伟达 H100 GPU 的 1.5 倍，能效平均提升 40%。该产品旨在为人工智能 (AI) 计算提供更具竞争力的替代方案。 原文链接: https://www.intel.com/content/www/us/en/newsroom/news/accelerating-ai-everywhere-intel-unveils-gaudi-3-ai-accelerator.html [AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存] 来源标签: AMD Newsroom 内容精炼: AMD 发布 Instinct MI300X 加速器，专为大规模人工智能 (AI) 推理和高性能计算 (HPC) 设计。其最大亮点是集成了高达 192GB 的 HBM3 内存，带宽达 5.2 TB/s，能够直接在内存中容纳更大的模型，减少与系统内存的数据交换，从而显著提升大模型推理效率。 原文链接: https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html [Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先] 来源标签: Anthropic Blog 内容精炼: Anthropic 发布 Claude 3 系列模型，包含 Haiku、Sonnet 和 Opus 三个版本，在认知能力上依次增强。该公司声称，最强的 Opus 模型在本科水平知识 (MMLU)、研究生水平推理 (GPQA) 和数学 (GSM8K) 等多项基准测试中，性能超越了 GPT-4 和 Gemini Ultra。 原文链接: https://www.anthropic.com/news/claude-3-family [Stability AI 发布 Stable Diffusion 3 早期预览版] 来源标签: Stability AI Blog 内容精炼: Stability AI 发布了下一代文生图模型 Stable Diffusion 3 的早期预览版。新模型采用了全新的多模态扩散 Transformer (Multimodal Diffusion Transformer) 架构，显著提升了文本渲染的准确性和图像的整体质量，在多主题提示词 (Prompt) 理解和拼写方面表现更佳。 原文链接: https://stability.ai/news/stable-diffusion-3 [特斯拉发布人形机器人 Optimus 最新演示视频] 来源标签: Tesla 内容精炼: 特斯拉通过视频展示了其人形机器人 Optimus 的最新进展。视频中，Optimus 已能在实验室环境中自主行走，并完成对电池电芯的精细分类、放入托盘的复杂任务。这标志着其在环境感知、自主导航和灵巧操作 (Dexterous Manipulation) 方面取得了实质性进步。 原文链接: https://www.tesla.com/AI [亚马逊推出 Graviton4 和 Trainium2 自研芯片] 来源标签: AWS News Blog 内容精炼: 亚马逊云科技发布新一代自研处理器：通用计算芯片 Graviton4 和 AI 训练芯片 Trainium2。Graviton4 比前代性能提升高达 30%，核心数更多。Trainium2 的 AI 训练性能提升高达 4 倍，两者均旨在为 AWS 客户提供更高性能和能效的云实例 (Cloud Instance)。 原文链接: https://aws.amazon.com/cn/blogs/aws/amazon-ec2-graviton4-and-trainium2-instances/ [Cloudflare 推出 AI 驱动的防火墙功能] 来源标签: Cloudflare Blog 内容精炼: Cloudflare 宣布为其 Web 应用防火墙 (WAF) 引入人工智能 (AI) 驱动的功能。该功能利用大语言模型 (LLM) 分析应用程序的流量模式，能够自动识别和生成针对新兴威胁（如零日漏洞和复杂机器人攻击）的防护规则，提升安全响应的自动化水平。 原文链接: https://blog.cloudflare.com/ai-powered-waf [Vercel 推出 AI SDK，简化 AI 应用开发] 来源标签: Vercel Blog 内容精炼: 前端开发平台 Vercel 发布了 AI SDK，这是一个用于构建人工智能 (AI) 驱动界面的开源工具包。它统一了调用不同大语言模型 (LLM)（如 OpenAI、Anthropic）的接口，并内置了流式响应 (Streaming)、上下文长度管理等功能，旨在简化开发者在应用中集成对话式 AI 的流程。 原文链接: https://vercel.com/blog/introducing-the-vercel-ai-sdk [Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI] 来源标签: Mozilla Blog 内容精炼: Mozilla 宣布成立 Mozilla.ai 社区并启动相关项目，专注于开发开源、可信赖的人工智能 (AI)。其初期重点包括创建能推荐个性化内容但保护隐私的推荐系统，以及开发使大语言模型 (LLM) 更安全、更透明的工具，旨在构建一个更开放和负责任的 AI 生态系统。 原文链接: https://blog.mozilla.org/en/mozilla/mozilla-ai/ 首席架构师的深度阅读指南\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "[苹果发布新款 M4 芯片，首次搭载于 iPad Pro] 来源标签: Apple Newsroom 内容精炼: 苹果发布新款 M4 芯片，采用第二代 3 纳米制程，CPU 性能比前代 M2 提升最高达 50%。其全新 10 核 GPU 首次为 iPad 平台带来硬件加速光线追踪 (Hardware-accelerated Ray Tracing) 和网格着色 (Mesh Shading) 技术，显著提升专业级渲染和游戏体验。 原文链接: https://www.apple.com/newsroom/2024/05/apple-unveils-the-new-ipad-pro-with-the-ultra-powerful-m4-chip/ [微软推出 Phi-3 系列小型语言模型，挑战大模型性能] 来源标签: Microsoft Research Blog 内容精炼: 微软发布 Phi-3 系列小型语言模型 (Small Language Models)，其中 Phi-3-mini 仅 38 亿参数，但在多项基准测试中性能媲美参数大得多的模型。该系列模型优化了在移动和边缘设备 (Edge Devices) 上本地运行的能力，为资源受限场景提供了高效的人工智能 (AI) 解决方案。 原文链接: https://www.microsoft.com/en-us/research/blog/phi-3-redefining-whats-possible-with-slms/ [谷歌发布 Gemma 2 开源模型，性能大幅提升] 来源标签: Google Blog 内容精炼: 谷歌发布下一代开源模型 Gemma 2，提供 90 亿和 270 亿参数版本。新模型在推理 (Reasoning)、数学 (Mathematics) 和代码生成 (Code Generation) 能力上相比前代有显著提升，并针对主流 GPU 和 TPU 进行了优化，旨在为开发者和研究者提供更强大的基础模型 (Foundation Model)。 原文链接: https://blog.google/technology/developers/google-gemma-2-open-models/ [Meta 开源 Llama 3，支持 8K 上下文长度] 来源标签: Meta AI Blog 内容精炼: Meta 开源了 Llama 3 大语言模型，提供 80 亿和 700 亿参数版本。新模型在代码、推理和指令遵循 (Instruction Following) 方面表现优异，并支持 8K 的上下文长度 (Context Length)。其改进的标记化器 (Tokenizer) 提升了编码效率，降低了延迟。 原文链接: https://ai.meta.com/blog/meta-llama-3/ [OpenAI 推出 GPT-4o，实现实时多模态交互] 来源标签: OpenAI Blog 内容精炼: OpenAI 发布新旗舰模型 GPT-4o（“o”代表“全能”），能够实时处理文本、音频和视觉输入，并生成相应的文本、音频和图像输出。其响应时间接近人类对话水平，且在视觉和音频理解方面相比以往模型有巨大飞跃，标志着向更自然的人机交互 (Human-Computer Interaction) 迈进。 原文链接: https://openai.com/index/hello-gpt-4o/ [英伟达发布 Blackwell 架构与 B200 GPU] 来源标签: NVIDIA Newsroom 内容精炼: 英伟达发布下一代 GPU 架构 Blackwell 及首款芯片 B200。该架构采用台积电 4NP 制程，通过芯片间 10 TB/s 的超高速互连 (NVLink) 将两块裸片 (Die) 融合为一个巨型 GPU。B200 在训练拥有 1.8 万亿参数的模型时，性能比前代 H100 提升高达 4 倍。 原文链接: https://nvidianews.nvidia.com/news/nvidia-accelerates-ai-computing-with-new-blackwell-gpu-architecture [英特尔推出 Gaudi 3 AI 加速器，性能对标 H100] 来源标签: Intel Newsroom 内容精炼: 英特尔正式推出 Gaudi 3 AI 加速器，采用 5 纳米制程。官方宣称，在训练和推理主流大语言模型 (LLM) 时，其性能平均是英伟达 H100 GPU 的 1.5 倍，能效平均提升 40%。该产品旨在为人工智能 (AI) 计算提供更具竞争力的替代方案。 原文链接: https://www.intel.com/content/www/us/en/newsroom/news/accelerating-ai-everywhere-intel-unveils-gaudi-3-ai-accelerator.html [AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存] 来源标签: AMD Newsroom 内容精炼: AMD 发布 Instinct MI300X 加速器，专为大规模人工智能 (AI) 推理和高性能计算 (HPC) 设计。其最大亮点是集成了高达 192GB 的 HBM3 内存，带宽达 5.2 TB/s，能够直接在内存中容纳更大的模型，减少与系统内存的数据交换，从而显著提升大模型推理效率。 原文链接: https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html [Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先] 来源标签: Anthropic Blog 内容精炼: Anthropic 发布 Claude 3 系列模型，包含 Haiku、Sonnet 和 Opus 三个版本，在认知能力上依次增强。该公司声称，最强的 Opus 模型在本科水平知识 (MMLU)、研究生水平推理 (GPQA) 和数学 (GSM8K) 等多项基准测试中，性能超越了 GPT-4 和 Gemini Ultra。 原文链接: https://www.anthropic.com/news/claude-3-family [Stability AI 发布 Stable Diffusion 3 早期预览版] 来源标签: Stability AI Blog 内容精炼: Stability AI 发布了下一代文生图模型 Stable Diffusion 3 的早期预览版。新模型采用了全新的多模态扩散 Transformer (Multimodal Diffusion Transformer) 架构，显著提升了文本渲染的准确性和图像的整体质量，在多主题提示词 (Prompt) 理解和拼写方面表现更佳。 原文链接: https://stability.ai/news/stable-diffusion-3 [特斯拉发布人形机器人 Optimus 最新演示视频] 来源标签: Tesla 内容精炼: 特斯拉通过视频展示了其人形机器人 Optimus 的最新进展。视频中，Optimus 已能在实验室环境中自主行走，并完成对电池电芯的精细分类、放入托盘的复杂任务。这标志着其在环境感知、自主导航和灵巧操作 (Dexterous Manipulation) 方面取得了实质性进步。 原文链接: https://www.tesla.com/AI [亚马逊推出 Graviton4 和 Trainium2 自研芯片] 来源标签: AWS News Blog 内容精炼: 亚马逊云科技发布新一代自研处理器：通用计算芯片 Graviton4 和 AI 训练芯片 Trainium2。Graviton4 比前代性能提升高达 30%，核心数更多。Trainium2 的 AI 训练性能提升高达 4 倍，两者均旨在为 AWS 客户提供更高性能和能效的云实例 (Cloud Instance)。 原文链接: https://aws.amazon.com/cn/blogs/aws/amazon-ec2-graviton4-and-trainium2-instances/ [Cloudflare 推出 AI 驱动的防火墙功能] 来源标签: Cloudflare Blog 内容精炼: Cloudflare 宣布为其 Web 应用防火墙 (WAF) 引入人工智能 (AI) 驱动的功能。该功能利用大语言模型 (LLM) 分析应用程序的流量模式，能够自动识别和生成针对新兴威胁（如零日漏洞和复杂机器人攻击）的防护规则，提升安全响应的自动化水平。 原文链接: https://blog.cloudflare.com/ai-powered-waf [Vercel 推出 AI SDK，简化 AI 应用开发] 来源标签: Vercel Blog 内容精炼: 前端开发平台 Vercel 发布了 AI SDK，这是一个用于构建人工智能 (AI) 驱动界面的开源工具包。它统一了调用不同大语言模型 (LLM)（如 OpenAI、Anthropic）的接口，并内置了流式响应 (Streaming)、上下文长度管理等功能，旨在简化开发者在应用中集成对话式 AI 的流程。 原文链接: https://vercel.com/blog/introducing-the-vercel-ai-sdk [Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI] 来源标签: Mozilla Blog 内容精炼: Mozilla 宣布成立 Mozilla.ai 社区并启动相关项目，专注于开发开源、可信赖的人工智能 (AI)。其初期重点包括创建能推荐个性化内容但保护隐私的推荐系统，以及开发使大语言模型 (LLM) 更安全、更透明的工具，旨在构建一个更开放和负责任的 AI 生态系统。 原文链接: https://blog.mozilla.org/en/mozilla/mozilla-ai/ 首席架构师的深度阅读指南\n请帮我深度读取并解析这篇文章：[此处粘贴URL]。我希望你：\n提炼核心技术架构或核心观点； 告诉我这项技术/产品解决了什么行业痛点； 总结读者评论中最有价值的反面意见或潜在缺陷。 ",
+  "wordCount" : "398",
+  "inLanguage": "en",
+  "datePublished": "2026-03-06T00:00:00Z",
+  "dateModified": "2026-03-06T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/ai_daily_news_2026-03-06/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI 极客早报 - 2026-03-06
+    </h1>
+    <div class="post-meta"><span title='2026-03-06 00:00:00 +0000 UTC'>March 6, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e8%8b%b9%e6%9e%9c%e5%8f%91%e5%b8%83%e6%96%b0%e6%ac%be-m4-%e8%8a%af%e7%89%87%e9%a6%96%e6%ac%a1%e6%90%ad%e8%bd%bd%e4%ba%8e-ipad-pro" aria-label="[苹果发布新款 M4 芯片，首次搭载于 iPad Pro]">[苹果发布新款 M4 芯片，首次搭载于 iPad Pro]</a></li>
+                <li>
+                    <a href="#%e5%be%ae%e8%bd%af%e6%8e%a8%e5%87%ba-phi-3-%e7%b3%bb%e5%88%97%e5%b0%8f%e5%9e%8b%e8%af%ad%e8%a8%80%e6%a8%a1%e5%9e%8b%e6%8c%91%e6%88%98%e5%a4%a7%e6%a8%a1%e5%9e%8b%e6%80%a7%e8%83%bd" aria-label="[微软推出 Phi-3 系列小型语言模型，挑战大模型性能]">[微软推出 Phi-3 系列小型语言模型，挑战大模型性能]</a></li>
+                <li>
+                    <a href="#%e8%b0%b7%e6%ad%8c%e5%8f%91%e5%b8%83-gemma-2-%e5%bc%80%e6%ba%90%e6%a8%a1%e5%9e%8b%e6%80%a7%e8%83%bd%e5%a4%a7%e5%b9%85%e6%8f%90%e5%8d%87" aria-label="[谷歌发布 Gemma 2 开源模型，性能大幅提升]">[谷歌发布 Gemma 2 开源模型，性能大幅提升]</a></li>
+                <li>
+                    <a href="#meta-%e5%bc%80%e6%ba%90-llama-3%e6%94%af%e6%8c%81-8k-%e4%b8%8a%e4%b8%8b%e6%96%87%e9%95%bf%e5%ba%a6" aria-label="[Meta 开源 Llama 3，支持 8K 上下文长度]">[Meta 开源 Llama 3，支持 8K 上下文长度]</a></li>
+                <li>
+                    <a href="#openai-%e6%8e%a8%e5%87%ba-gpt-4o%e5%ae%9e%e7%8e%b0%e5%ae%9e%e6%97%b6%e5%a4%9a%e6%a8%a1%e6%80%81%e4%ba%a4%e4%ba%92" aria-label="[OpenAI 推出 GPT-4o，实现实时多模态交互]">[OpenAI 推出 GPT-4o，实现实时多模态交互]</a></li>
+                <li>
+                    <a href="#%e8%8b%b1%e4%bc%9f%e8%be%be%e5%8f%91%e5%b8%83-blackwell-%e6%9e%b6%e6%9e%84%e4%b8%8e-b200-gpu" aria-label="[英伟达发布 Blackwell 架构与 B200 GPU]">[英伟达发布 Blackwell 架构与 B200 GPU]</a></li>
+                <li>
+                    <a href="#%e8%8b%b1%e7%89%b9%e5%b0%94%e6%8e%a8%e5%87%ba-gaudi-3-ai-%e5%8a%a0%e9%80%9f%e5%99%a8%e6%80%a7%e8%83%bd%e5%af%b9%e6%a0%87-h100" aria-label="[英特尔推出 Gaudi 3 AI 加速器，性能对标 H100]">[英特尔推出 Gaudi 3 AI 加速器，性能对标 H100]</a></li>
+                <li>
+                    <a href="#amd-%e5%8f%91%e5%b8%83-instinct-mi300x-%e5%8a%a0%e9%80%9f%e5%99%a8%e9%85%8d%e5%a4%87-192gb-hbm3-%e5%86%85%e5%ad%98" aria-label="[AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存]">[AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存]</a></li>
+                <li>
+                    <a href="#anthropic-%e6%8e%a8%e5%87%ba-claude-3-%e6%a8%a1%e5%9e%8b%e5%ae%b6%e6%97%8f%e5%a3%b0%e7%a7%b0%e5%9c%a8%e5%a4%9a%e9%a1%b9%e5%9f%ba%e5%87%86%e6%b5%8b%e8%af%95%e4%b8%ad%e9%a2%86%e5%85%88" aria-label="[Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先]">[Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先]</a></li>
+                <li>
+                    <a href="#stability-ai-%e5%8f%91%e5%b8%83-stable-diffusion-3-%e6%97%a9%e6%9c%9f%e9%a2%84%e8%a7%88%e7%89%88" aria-label="[Stability AI 发布 Stable Diffusion 3 早期预览版]">[Stability AI 发布 Stable Diffusion 3 早期预览版]</a></li>
+                <li>
+                    <a href="#%e7%89%b9%e6%96%af%e6%8b%89%e5%8f%91%e5%b8%83%e4%ba%ba%e5%bd%a2%e6%9c%ba%e5%99%a8%e4%ba%ba-optimus-%e6%9c%80%e6%96%b0%e6%bc%94%e7%a4%ba%e8%a7%86%e9%a2%91" aria-label="[特斯拉发布人形机器人 Optimus 最新演示视频]">[特斯拉发布人形机器人 Optimus 最新演示视频]</a></li>
+                <li>
+                    <a href="#%e4%ba%9a%e9%a9%ac%e9%80%8a%e6%8e%a8%e5%87%ba-graviton4-%e5%92%8c-trainium2-%e8%87%aa%e7%a0%94%e8%8a%af%e7%89%87" aria-label="[亚马逊推出 Graviton4 和 Trainium2 自研芯片]">[亚马逊推出 Graviton4 和 Trainium2 自研芯片]</a></li>
+                <li>
+                    <a href="#cloudflare-%e6%8e%a8%e5%87%ba-ai-%e9%a9%b1%e5%8a%a8%e7%9a%84%e9%98%b2%e7%81%ab%e5%a2%99%e5%8a%9f%e8%83%bd" aria-label="[Cloudflare 推出 AI 驱动的防火墙功能]">[Cloudflare 推出 AI 驱动的防火墙功能]</a></li>
+                <li>
+                    <a href="#vercel-%e6%8e%a8%e5%87%ba-ai-sdk%e7%ae%80%e5%8c%96-ai-%e5%ba%94%e7%94%a8%e5%bc%80%e5%8f%91" aria-label="[Vercel 推出 AI SDK，简化 AI 应用开发]">[Vercel 推出 AI SDK，简化 AI 应用开发]</a></li>
+                <li>
+                    <a href="#mozilla-%e6%8e%a8%e5%87%ba-ai-%e5%8a%a9%e6%89%8b-mozillaai%e8%81%9a%e7%84%a6%e5%8f%af%e4%bf%a1-ai" aria-label="[Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI]">[Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI]</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="苹果发布新款-m4-芯片首次搭载于-ipad-pro">[苹果发布新款 M4 芯片，首次搭载于 iPad Pro]<a hidden class="anchor" aria-hidden="true" href="#苹果发布新款-m4-芯片首次搭载于-ipad-pro">#</a></h3>
+<ul>
+<li>来源标签: Apple Newsroom</li>
+<li>内容精炼: 苹果发布新款 M4 芯片，采用第二代 3 纳米制程，CPU 性能比前代 M2 提升最高达 50%。其全新 10 核 GPU 首次为 iPad 平台带来硬件加速光线追踪 (Hardware-accelerated Ray Tracing) 和网格着色 (Mesh Shading) 技术，显著提升专业级渲染和游戏体验。</li>
+<li>原文链接: <a href="https://www.apple.com/newsroom/2024/05/apple-unveils-the-new-ipad-pro-with-the-ultra-powerful-m4-chip/">https://www.apple.com/newsroom/2024/05/apple-unveils-the-new-ipad-pro-with-the-ultra-powerful-m4-chip/</a></li>
+</ul>
+<h3 id="微软推出-phi-3-系列小型语言模型挑战大模型性能">[微软推出 Phi-3 系列小型语言模型，挑战大模型性能]<a hidden class="anchor" aria-hidden="true" href="#微软推出-phi-3-系列小型语言模型挑战大模型性能">#</a></h3>
+<ul>
+<li>来源标签: Microsoft Research Blog</li>
+<li>内容精炼: 微软发布 Phi-3 系列小型语言模型 (Small Language Models)，其中 Phi-3-mini 仅 38 亿参数，但在多项基准测试中性能媲美参数大得多的模型。该系列模型优化了在移动和边缘设备 (Edge Devices) 上本地运行的能力，为资源受限场景提供了高效的人工智能 (AI) 解决方案。</li>
+<li>原文链接: <a href="https://www.microsoft.com/en-us/research/blog/phi-3-redefining-whats-possible-with-slms/">https://www.microsoft.com/en-us/research/blog/phi-3-redefining-whats-possible-with-slms/</a></li>
+</ul>
+<h3 id="谷歌发布-gemma-2-开源模型性能大幅提升">[谷歌发布 Gemma 2 开源模型，性能大幅提升]<a hidden class="anchor" aria-hidden="true" href="#谷歌发布-gemma-2-开源模型性能大幅提升">#</a></h3>
+<ul>
+<li>来源标签: Google Blog</li>
+<li>内容精炼: 谷歌发布下一代开源模型 Gemma 2，提供 90 亿和 270 亿参数版本。新模型在推理 (Reasoning)、数学 (Mathematics) 和代码生成 (Code Generation) 能力上相比前代有显著提升，并针对主流 GPU 和 TPU 进行了优化，旨在为开发者和研究者提供更强大的基础模型 (Foundation Model)。</li>
+<li>原文链接: <a href="https://blog.google/technology/developers/google-gemma-2-open-models/">https://blog.google/technology/developers/google-gemma-2-open-models/</a></li>
+</ul>
+<h3 id="meta-开源-llama-3支持-8k-上下文长度">[Meta 开源 Llama 3，支持 8K 上下文长度]<a hidden class="anchor" aria-hidden="true" href="#meta-开源-llama-3支持-8k-上下文长度">#</a></h3>
+<ul>
+<li>来源标签: Meta AI Blog</li>
+<li>内容精炼: Meta 开源了 Llama 3 大语言模型，提供 80 亿和 700 亿参数版本。新模型在代码、推理和指令遵循 (Instruction Following) 方面表现优异，并支持 8K 的上下文长度 (Context Length)。其改进的标记化器 (Tokenizer) 提升了编码效率，降低了延迟。</li>
+<li>原文链接: <a href="https://ai.meta.com/blog/meta-llama-3/">https://ai.meta.com/blog/meta-llama-3/</a></li>
+</ul>
+<h3 id="openai-推出-gpt-4o实现实时多模态交互">[OpenAI 推出 GPT-4o，实现实时多模态交互]<a hidden class="anchor" aria-hidden="true" href="#openai-推出-gpt-4o实现实时多模态交互">#</a></h3>
+<ul>
+<li>来源标签: OpenAI Blog</li>
+<li>内容精炼: OpenAI 发布新旗舰模型 GPT-4o（“o”代表“全能”），能够实时处理文本、音频和视觉输入，并生成相应的文本、音频和图像输出。其响应时间接近人类对话水平，且在视觉和音频理解方面相比以往模型有巨大飞跃，标志着向更自然的人机交互 (Human-Computer Interaction) 迈进。</li>
+<li>原文链接: <a href="https://openai.com/index/hello-gpt-4o/">https://openai.com/index/hello-gpt-4o/</a></li>
+</ul>
+<h3 id="英伟达发布-blackwell-架构与-b200-gpu">[英伟达发布 Blackwell 架构与 B200 GPU]<a hidden class="anchor" aria-hidden="true" href="#英伟达发布-blackwell-架构与-b200-gpu">#</a></h3>
+<ul>
+<li>来源标签: NVIDIA Newsroom</li>
+<li>内容精炼: 英伟达发布下一代 GPU 架构 Blackwell 及首款芯片 B200。该架构采用台积电 4NP 制程，通过芯片间 10 TB/s 的超高速互连 (NVLink) 将两块裸片 (Die) 融合为一个巨型 GPU。B200 在训练拥有 1.8 万亿参数的模型时，性能比前代 H100 提升高达 4 倍。</li>
+<li>原文链接: <a href="https://nvidianews.nvidia.com/news/nvidia-accelerates-ai-computing-with-new-blackwell-gpu-architecture">https://nvidianews.nvidia.com/news/nvidia-accelerates-ai-computing-with-new-blackwell-gpu-architecture</a></li>
+</ul>
+<h3 id="英特尔推出-gaudi-3-ai-加速器性能对标-h100">[英特尔推出 Gaudi 3 AI 加速器，性能对标 H100]<a hidden class="anchor" aria-hidden="true" href="#英特尔推出-gaudi-3-ai-加速器性能对标-h100">#</a></h3>
+<ul>
+<li>来源标签: Intel Newsroom</li>
+<li>内容精炼: 英特尔正式推出 Gaudi 3 AI 加速器，采用 5 纳米制程。官方宣称，在训练和推理主流大语言模型 (LLM) 时，其性能平均是英伟达 H100 GPU 的 1.5 倍，能效平均提升 40%。该产品旨在为人工智能 (AI) 计算提供更具竞争力的替代方案。</li>
+<li>原文链接: <a href="https://www.intel.com/content/www/us/en/newsroom/news/accelerating-ai-everywhere-intel-unveils-gaudi-3-ai-accelerator.html">https://www.intel.com/content/www/us/en/newsroom/news/accelerating-ai-everywhere-intel-unveils-gaudi-3-ai-accelerator.html</a></li>
+</ul>
+<h3 id="amd-发布-instinct-mi300x-加速器配备-192gb-hbm3-内存">[AMD 发布 Instinct MI300X 加速器，配备 192GB HBM3 内存]<a hidden class="anchor" aria-hidden="true" href="#amd-发布-instinct-mi300x-加速器配备-192gb-hbm3-内存">#</a></h3>
+<ul>
+<li>来源标签: AMD Newsroom</li>
+<li>内容精炼: AMD 发布 Instinct MI300X 加速器，专为大规模人工智能 (AI) 推理和高性能计算 (HPC) 设计。其最大亮点是集成了高达 192GB 的 HBM3 内存，带宽达 5.2 TB/s，能够直接在内存中容纳更大的模型，减少与系统内存的数据交换，从而显著提升大模型推理效率。</li>
+<li>原文链接: <a href="https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html">https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html</a></li>
+</ul>
+<h3 id="anthropic-推出-claude-3-模型家族声称在多项基准测试中领先">[Anthropic 推出 Claude 3 模型家族，声称在多项基准测试中领先]<a hidden class="anchor" aria-hidden="true" href="#anthropic-推出-claude-3-模型家族声称在多项基准测试中领先">#</a></h3>
+<ul>
+<li>来源标签: Anthropic Blog</li>
+<li>内容精炼: Anthropic 发布 Claude 3 系列模型，包含 Haiku、Sonnet 和 Opus 三个版本，在认知能力上依次增强。该公司声称，最强的 Opus 模型在本科水平知识 (MMLU)、研究生水平推理 (GPQA) 和数学 (GSM8K) 等多项基准测试中，性能超越了 GPT-4 和 Gemini Ultra。</li>
+<li>原文链接: <a href="https://www.anthropic.com/news/claude-3-family">https://www.anthropic.com/news/claude-3-family</a></li>
+</ul>
+<h3 id="stability-ai-发布-stable-diffusion-3-早期预览版">[Stability AI 发布 Stable Diffusion 3 早期预览版]<a hidden class="anchor" aria-hidden="true" href="#stability-ai-发布-stable-diffusion-3-早期预览版">#</a></h3>
+<ul>
+<li>来源标签: Stability AI Blog</li>
+<li>内容精炼: Stability AI 发布了下一代文生图模型 Stable Diffusion 3 的早期预览版。新模型采用了全新的多模态扩散 Transformer (Multimodal Diffusion Transformer) 架构，显著提升了文本渲染的准确性和图像的整体质量，在多主题提示词 (Prompt) 理解和拼写方面表现更佳。</li>
+<li>原文链接: <a href="https://stability.ai/news/stable-diffusion-3">https://stability.ai/news/stable-diffusion-3</a></li>
+</ul>
+<h3 id="特斯拉发布人形机器人-optimus-最新演示视频">[特斯拉发布人形机器人 Optimus 最新演示视频]<a hidden class="anchor" aria-hidden="true" href="#特斯拉发布人形机器人-optimus-最新演示视频">#</a></h3>
+<ul>
+<li>来源标签: Tesla</li>
+<li>内容精炼: 特斯拉通过视频展示了其人形机器人 Optimus 的最新进展。视频中，Optimus 已能在实验室环境中自主行走，并完成对电池电芯的精细分类、放入托盘的复杂任务。这标志着其在环境感知、自主导航和灵巧操作 (Dexterous Manipulation) 方面取得了实质性进步。</li>
+<li>原文链接: <a href="https://www.tesla.com/AI">https://www.tesla.com/AI</a></li>
+</ul>
+<h3 id="亚马逊推出-graviton4-和-trainium2-自研芯片">[亚马逊推出 Graviton4 和 Trainium2 自研芯片]<a hidden class="anchor" aria-hidden="true" href="#亚马逊推出-graviton4-和-trainium2-自研芯片">#</a></h3>
+<ul>
+<li>来源标签: AWS News Blog</li>
+<li>内容精炼: 亚马逊云科技发布新一代自研处理器：通用计算芯片 Graviton4 和 AI 训练芯片 Trainium2。Graviton4 比前代性能提升高达 30%，核心数更多。Trainium2 的 AI 训练性能提升高达 4 倍，两者均旨在为 AWS 客户提供更高性能和能效的云实例 (Cloud Instance)。</li>
+<li>原文链接: <a href="https://aws.amazon.com/cn/blogs/aws/amazon-ec2-graviton4-and-trainium2-instances/">https://aws.amazon.com/cn/blogs/aws/amazon-ec2-graviton4-and-trainium2-instances/</a></li>
+</ul>
+<h3 id="cloudflare-推出-ai-驱动的防火墙功能">[Cloudflare 推出 AI 驱动的防火墙功能]<a hidden class="anchor" aria-hidden="true" href="#cloudflare-推出-ai-驱动的防火墙功能">#</a></h3>
+<ul>
+<li>来源标签: Cloudflare Blog</li>
+<li>内容精炼: Cloudflare 宣布为其 Web 应用防火墙 (WAF) 引入人工智能 (AI) 驱动的功能。该功能利用大语言模型 (LLM) 分析应用程序的流量模式，能够自动识别和生成针对新兴威胁（如零日漏洞和复杂机器人攻击）的防护规则，提升安全响应的自动化水平。</li>
+<li>原文链接: <a href="https://blog.cloudflare.com/ai-powered-waf">https://blog.cloudflare.com/ai-powered-waf</a></li>
+</ul>
+<h3 id="vercel-推出-ai-sdk简化-ai-应用开发">[Vercel 推出 AI SDK，简化 AI 应用开发]<a hidden class="anchor" aria-hidden="true" href="#vercel-推出-ai-sdk简化-ai-应用开发">#</a></h3>
+<ul>
+<li>来源标签: Vercel Blog</li>
+<li>内容精炼: 前端开发平台 Vercel 发布了 AI SDK，这是一个用于构建人工智能 (AI) 驱动界面的开源工具包。它统一了调用不同大语言模型 (LLM)（如 OpenAI、Anthropic）的接口，并内置了流式响应 (Streaming)、上下文长度管理等功能，旨在简化开发者在应用中集成对话式 AI 的流程。</li>
+<li>原文链接: <a href="https://vercel.com/blog/introducing-the-vercel-ai-sdk">https://vercel.com/blog/introducing-the-vercel-ai-sdk</a></li>
+</ul>
+<h3 id="mozilla-推出-ai-助手-mozillaai聚焦可信-ai">[Mozilla 推出 AI 助手 Mozilla.ai，聚焦可信 AI]<a hidden class="anchor" aria-hidden="true" href="#mozilla-推出-ai-助手-mozillaai聚焦可信-ai">#</a></h3>
+<ul>
+<li>来源标签: Mozilla Blog</li>
+<li>内容精炼: Mozilla 宣布成立 Mozilla.ai 社区并启动相关项目，专注于开发开源、可信赖的人工智能 (AI)。其初期重点包括创建能推荐个性化内容但保护隐私的推荐系统，以及开发使大语言模型 (LLM) 更安全、更透明的工具，旨在构建一个更开放和负责任的 AI 生态系统。</li>
+<li>原文链接: <a href="https://blog.mozilla.org/en/mozilla/mozilla-ai/">https://blog.mozilla.org/en/mozilla/mozilla-ai/</a></li>
+</ul>
+<hr>
+<p>首席架构师的深度阅读指南</p>
+<p>请帮我深度读取并解析这篇文章：[此处粘贴URL]。我希望你：</p>
+<ol>
+<li>提炼核心技术架构或核心观点；</li>
+<li>告诉我这项技术/产品解决了什么行业痛点；</li>
+<li>总结读者评论中最有价值的反面意见或潜在缺陷。</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

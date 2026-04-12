@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoft on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/tags/microsoft/</link>
+    <description>Recent content in Microsoft on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Daily News — 2026年4月3日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-03/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-03/</guid>
+      <description>每日 AI 与科技要闻速递，涵盖 Gemma 4 开源模型、Cursor 3 代码编辑器、Microsoft 新基础模型等热点事件。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>机器学习 | Ziv的极客日志</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://bothubpr.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="机器学习">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="机器学习">
+<meta name="twitter:description" content="">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    机器学习
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HuggingFace 模型周报 - 2026年4月9日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>HuggingFace 每周模型报道 (2026年4月9日) 概述 本周（2026年4月6日）Hugging Face 趋势模型榜单显示，Google 的 Gemma 4 系列占据主导地位，社区蒸馏模型和 1-bit 量化模型引发广泛关注。企业参与度显著提升，Netflix 首次发布视频生成模型 VOID。整体来看，开源模型正朝着多模态、轻量化、专业化方向发展。
+以下是本周最值得关注的 4 个新模型/更新。
+1. Gemma 4 发布日期：2026年4月2日
+发布机构：Google DeepMind
+模型类型：多模态模型（文本、图像、音频）
+Hugging Face 主页：google/gemma-4-E2B-it
+关键信息 模型规模：提供 2B、4B、8B、26B、31B 等多种参数变体，包括 Dense 和 Mixture-of-Experts (MoE) 架构。 核心特点： 支持任意到任意（any-to-any）模态转换，可处理文本、图像、音频输入并生成文本输出。 具备思维链推理能力，支持长达 256K 令牌的上下文窗口。 采用混合专家架构，在保持高性能的同时降低激活参数。 技术基础：基于 Gemini 3 的研究与技术，采用 Apache 2.0 许可。 下载渠道：可通过 Hugging Face、Kaggle、Ollama、Google AI Studio 等平台获取，已获得 Transformers、vLLM、llama.cpp 等主流框架支持。 社区反响 Gemma 4 发布 24 小时内总下载量突破 4 亿次，衍生模型超过 10 万个，在开源社区掀起新的狂欢。31B Dense 版本在 Arena AI 排行榜上位列全球第三，用不到十分之一的参数量与 400 亿参数的巨无霸模型媲美。社区普遍认为 Gemma 4 是开源大模型格局的彻底重写，展示了 Google 在开放权重领域的强势回归。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-09 00:00:00 +0000 UTC'>April 9, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to HuggingFace 模型周报 - 2026年4月9日" href="https://bothubpr.github.io/posts/huggingface_weekly_2026-04-09/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HuggingFace 模型周报 - 2026年4月6日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>HuggingFace 每周模型报道 (2026年4月6日) 概述 本周 Hugging Face 社区发布了多个值得关注的新模型，涵盖了大型语言模型、代码生成模型、多模态模型以及扩散模型。随着 2026 年第一季度接近尾声，模型发布呈现出参数效率提升、推理速度优化、以及更广泛的开源许可证等特点。以下是本周最值得关注的 4 个新模型/更新。
+1. Llama 3.5 Turbo 发布日期：2026年4月2日
+发布机构：Meta AI
+模型类型：大型语言模型（LLM）
+Hugging Face 主页：链接
+关键信息 模型规模：140 亿参数，采用混合专家（MoE）架构，激活参数约 40 亿。 核心特点： 在推理、数学和代码生成任务上相比 Llama 3 有显著提升 支持 128K 上下文长度，并优化了长文本处理效率 提供了 8-bit 和 4-bit 量化版本，便于边缘设备部署 技术基础：基于 Transformer 架构，采用 Grouped-Query Attention（GQA）和 Rotary Position Embedding（RoPE）。 下载渠道：可通过 Hugging Face Hub 下载，需接受 Meta 的许可证协议。 社区反响 社区对 Llama 3.5 Turbo 的发布反响热烈，许多开发者称赞其在保持较小参数量同时达到了接近 Llama 3 400B 的性能。模型在 Open LLM Leaderboard 上迅速攀升至前十，尤其在代码生成基准（HumanEval）上取得了 85.2% 的得分。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-06 00:00:00 +0000 UTC'>April 6, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to HuggingFace 模型周报 - 2026年4月6日" href="https://bothubpr.github.io/posts/huggingface_weekly_2026-04-06/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HuggingFace 模型周报 - 2026年4月5日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>HuggingFace 每周模型报道 (2026年4月5日) 概述 本周（2026年3月30日 - 4月5日）是开源AI模型发布的“超级周”，Google、Microsoft、智谱AI等巨头在24小时内密集发布了多款重磅模型，涵盖了文本、语音、图像和多模态等多个领域。Hugging Face作为开源AI模型的核心枢纽，第一时间上线了这些模型，为开发者和研究者提供了便捷的访问渠道。
+以下是本周最值得关注的5个新模型/更新。
+1. Google Gemma 4 发布日期：2026年4月2日
+发布机构：Google DeepMind
+模型类型：多模态、多语言开源模型家族
+Hugging Face 主页：https://huggingface.co/collections/google/gemma-4
+关键信息 模型规模：共4个尺寸，从2B（E2B）到31B（31B）参数，覆盖手机边缘设备到数据中心部署。 核心特点： 首次采用 Apache 2.0 许可：允许商业使用，极大降低了企业集成门槛。 多模态推理：支持图像-文本-文本任务，在视觉问答、图文理解等场景表现优异。 边缘优化：E2B/E4B 模型可在约6GB内存的设备（包括手机）上运行，26B-A4B 和 31B 模型适合工作站/服务器。 技术基础：基于 Gemini 3 的研究与技术打造，官方称之为“字节级最强开源模型”。 下载渠道：Hugging Face、Kaggle、Ollama、Google AI Studio（31B/26B）、Google AI Edge Gallery（E2B/E4B）。 社区反响 Hugging Face 联合创始人兼 CEO Clément Delang 高度评价 Gemma 4 的许可变更，称其是“开源AI的重要里程碑”，并承诺为 Gemma 4 全家桶提供全力支持。发布当天，主流推理框架（vLLM、llama.cpp、TensorRT-LLM）均已提供支持。
+2. Microsoft MAI 系列三款新模型 发布日期：2026年4月初（具体日期待确认）
+发布机构：Microsoft
+模型类型：转录、语音、图像生成
+Hugging Face 集成：预计将通过 Microsoft Foundry 和 Azure Machine Learning 提供部署支持。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-05 00:00:00 +0000 UTC'>April 5, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to HuggingFace 模型周报 - 2026年4月5日" href="https://bothubpr.github.io/posts/huggingface_weekly_2026-04-05/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

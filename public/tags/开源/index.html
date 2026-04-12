@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>开源 | Ziv的极客日志</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/tags/%E5%BC%80%E6%BA%90/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://bothubpr.github.io/tags/%E5%BC%80%E6%BA%90/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/tags/%E5%BC%80%E6%BA%90/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/tags/%E5%BC%80%E6%BA%90/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="开源">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="开源">
+<meta name="twitter:description" content="">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    开源
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-11
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>GitHub 热门项目日报 · 2026-04-11 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 Hermes Agent 来源: GitHub | 项目链接
+Hermes Agent 是 Nous Research 开发的自进化 AI 助手，专为多平台、多通道的日常任务设计。它内置学习循环，能够从经验中创建技能，在使用中不断优化，并建立对用户习惯的深度理解。该代理支持跨 WhatsApp、Telegram、Discord、飞书等主流通讯工具运行，提供语音唤醒、实时画布视觉交互、本地化运行保障速度与隐私等特性。Hermes Agent 采用模块化技能架构，允许用户通过安装技能扩展其能力，适合需要个性化、自动化助理的个人用户和小型团队。
+🔥 VoxCPM2 来源: GitHub | 项目链接
+VoxCPM2 是 OpenBMB 团队推出的最新一代无分词器（Tokenizer‑Free）文本转语音模型，支持 30 种语言的高质量语音合成、创意声线设计与真实语音克隆。该模型基于 MiniCPM‑4 骨干网络，在超过 200 万小时的多语言语音数据上训练，输出质量可达 48kHz 工作室级别音频。其核心创新在于分层语义‑声学建模与半离散残差表示，实现了端到端的上下文感知语音生成。VoxCPM2 适用于语音助手、媒体配音、语言学研究以及低资源语言的 TTS 原型开发。
+🔥 OpenDataLoader PDF 来源: GitHub | 项目链接
+OpenDataLoader PDF 是一款专注于 AI 数据提取的 PDF 解析器，旨在将任意 PDF 文档转换为 AI 就绪的结构化数据（Markdown、JSON、HTML）。该工具在真实场景基准测试中取得 0.907 的综合准确率，表格提取准确率高达 0.928，支持多栏排版、科学论文等复杂版式。它提供确定性本地模式与 AI 混合模式，用户可根据需求在速度与精度之间平衡。OpenDataLoader PDF 适用于 RAG 系统、文档数字化、知识库构建以及任何需要从 PDF 中高效提取信息的自动化流程。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-11 00:00:00 +0000 UTC'>April 11, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-11" href="https://bothubpr.github.io/posts/github_daily_2026-04-11/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-10
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>GitHub 热门项目日报 · 2026-04-10 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 Hermes Agent 来源: GitHub | 项目链接
+Hermes Agent 是由 Nous Research 开发的自我改进型 AI Agent，拥有内置的学习闭环系统。它能够从经验中创建技能，在使用过程中不断改进，搜索自己的过往对话，并建立对用户需求的深度理解。今日新增 5,884 stars，总星数已达 45,575。
+项目作者/组织: Nous Research 主要功能/用途: 提供可成长的 AI Agent 平台，支持技能创建、记忆管理和多平台集成 技术亮点/创新点: 内置学习循环、持久化知识、自适应技能提升 适用场景: 个人 AI 助手、自动化任务处理、代码辅助、多轮对话系统 Star 趋势: 今日新增 5,884 stars，总星数 45,575（Python） 🔥 Superpowers 来源: GitHub | 项目链接
+Superpowers 是 Andrej Karpathy 推出的 Agentic 技能框架，使用 Shell 脚本实现模块化的 AI 能力组合。该框架强调轻量、可组合的技能单元，让开发者能够快速构建和部署 AI Agent。今日新增 2,299 stars，总星数突破 143,974。
+项目作者/组织: obra（Andrej Karpathy） 主要功能/用途: 提供一套 Shell 脚本库，用于定义、调用和管理 AI Agent 技能 技术亮点/创新点: 极简设计、技能可组合性、无缝集成现有工具链 适用场景: AI 工作流自动化、快速原型验证、教育演示 Star 趋势: 今日新增 2,299 stars，总星数 143,974（Shell） 🔥 DeepTutor 来源: GitHub | 项目链接
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-10" href="https://bothubpr.github.io/posts/github_daily_2026-04-10/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-09
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>GitHub 热门项目日报 · 2026-04-09 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 GitNexus 来源: GitHub | 项目链接
+GitNexus 是一个零服务器代码智能引擎，完全在浏览器中运行。由开发者 abhigyanpatwari 创建，它能够将任何 GitHub 仓库或 ZIP 文件即时转换为交互式知识图谱，并内置 Graph RAG 智能体。该项目通过 MCP（Model Context Protocol）为 AI 编码助手（如 Cursor、Claude Code）提供深度的代码库架构视图，让 AI 真正理解代码之间的依赖关系、调用链和执行流程。技术亮点包括客户端知识图谱构建、隐私优先（代码永不离开本地浏览器）、以及支持混合搜索（BM25 &#43; 语义）。适用于代码探索、架构理解和 AI 辅助重构，目前已在 GitHub 上获得大量关注，星标数快速增长。
+🔥 Onyx 来源: GitHub | 项目链接
+Onyx（原名 Danswer）是一个开源 AI 平台，由 onyx-dot-app 组织维护。它提供了一个功能丰富的聊天界面，可与任何 LLM 配合使用，并集成了 RAG、智能体、网页搜索、MCP 支持以及 40 多个知识源连接器（如 Google Drive、Slack、Confluence）。Onyx 设计为可自托管，支持完全离线环境运行，同时具备用户认证、角色管理、聊天持久化等生产级功能。其技术亮点包括模块化架构、模型无关性（支持 OpenAI、Anthropic、Ollama 等）、以及实时权限同步的数据连接器。适用于企业知识管理、内部 AI 助手和团队协作，目前已在 GitHub 上获得数千星标。
+🔥 Claude Code 来源: GitHub | 项目链接
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-09 00:00:00 +0000 UTC'>April 9, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-09" href="https://bothubpr.github.io/posts/github_daily_2026-04-09/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-07
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>GitHub 热门项目日报 · 2026-04-07 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 llama.cpp 来源: GitHub | 项目链接
+llama.cpp 是一个用 C/C&#43;&#43; 编写的轻量级 LLM（大型语言模型）推理引擎，支持在消费级硬件上高效运行 LLaMA、GPT-2、GPT-4 等模型。该项目由 Georgi Gerganov 创建，通过量化、内存优化和纯 CPU 推理，让用户无需高端 GPU 即可体验最新的大语言模型。技术亮点包括 GGUF 模型格式、Metal 后端（Apple Silicon 支持）、CUDA/OpenCL 加速以及完善的 Python 绑定。适用场景包括本地聊天助手、学术研究、嵌入式 AI 和隐私敏感的部署。
+🔥 Next.js 来源: GitHub | 项目链接
+Next.js 是由 Vercel 团队开发的 React 全栈框架，提供开箱即用的服务端渲染（SSR）、静态生成（SSG）、增量静态再生成（ISR）和边缘函数等现代 Web 开发能力。该项目已成为构建高性能、可扩展 React 应用的事实标准，内置了图片优化、字体优化、路由缓存等生产级功能。技术亮点包括 Turbopack 开发服务器、React Server Components、部分预渲染（Partial Prerendering）和深度集成 TypeScript。适用场景涵盖企业级网站、电商平台、营销页面和复杂的 Web 应用。
+🔥 LangChain 来源: GitHub | 项目链接
+LangChain 是一个用于构建 LLM 驱动应用的开发框架，提供了统一的接口来连接语言模型、外部数据源、工具链和内存系统。该项目由 Harrison Chase 创立，现已成为构建智能代理、知识问答、文档分析和自动化工作流的标准工具。技术亮点包括链式调用（Chains）、代理（Agents）、检索增强生成（RAG）以及丰富的集成生态（OpenAI、Anthropic、Hugging Face 等）。适用场景包括智能客服、内容生成、代码辅助、数据分析和企业知识库。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-07 00:00:00 +0000 UTC'>April 7, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-07" href="https://bothubpr.github.io/posts/github_daily_2026-04-07/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-06
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>GitHub 热门项目日报 · 2026-04-06 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 LangChain 来源: GitHub | 项目链接
+LangChain 是一个用于构建基于大型语言模型（LLM）的应用程序的框架。它提供了一套工具和组件，使开发者能够轻松地将 LLM 与外部数据源、工具和记忆系统连接起来，从而创建功能强大的 AI 应用。
+项目作者/组织: LangChain AI 主要功能/用途: 简化 LLM 应用的开发流程，支持链式调用、代理、记忆和检索等高级功能。 技术亮点/创新点: 模块化设计，支持多种 LLM 提供商（OpenAI、Anthropic、本地模型等），丰富的集成生态。 适用场景: 聊天机器人、智能助手、文档分析、自动化工作流等。 Star 数: 超过 80,000（截至 2026 年 4 月） 🔥 Vercel AI SDK 来源: GitHub | 项目链接
+Vercel AI SDK 是一个用于构建 AI 驱动的前端应用的工具包。它提供了 React、Vue、Svelte 等框架的钩子，方便开发者快速集成聊天界面、流式响应和工具调用等功能。
+项目作者/组织: Vercel 主要功能/用途: 在 Web 应用中集成 AI 功能，如聊天 UI、流式文本生成、多模型支持。 技术亮点/创新点: 框架无关的设计，开箱即用的 React 钩子，支持边缘运行。 适用场景: 下一代 Web 应用、AI 交互界面、实时聊天应用。 Star 数: 超过 20,000 🔥 Ruff 来源: GitHub | 项目链接
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-06 00:00:00 +0000 UTC'>April 6, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-06" href="https://bothubpr.github.io/posts/github_daily_2026-04-06/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">GitHub 热门项目日报 - 2026-04-05
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>GitHub 热门项目日报 · 2026-04-05 每天 5 分钟，了解 GitHub 上最值得关注的开源项目。
+🔥 oh-my-codex 作者: Yeachan-Heo 语言: 未标注 ⭐ Stars: 数据未公开 简介: OmX - Oh My codeX: 让你的 codex 不再孤单。添加钩子、代理团队、HUDs 等 亮点/为什么火: AI Agent 协作框架，强化了代理团队协同能力，为 coding agent 提供扩展功能 快速上手: 通过添加钩子和代理团队增强现有代码助手的功能 项目链接: GitHub 🔥 Claude Code 作者: anthropics 语言: 未标注 ⭐ Stars: 数据未公开 简介: Claude Code 是一个代理式编码工具，生活在你的终端中，理解你的代码库，帮助你更快编码 亮点/为什么火: 由 Anthropic 开发，直接在终端工作的智能编码助手，能够执行常规任务、解释复杂代码 快速上手: 安装后与现有代码库集成，让 Claude 在终端中协助编码工作 项目链接: GitHub 🔥 MLX-VLM 作者: Blaizzy 语言: 未标注 ⭐ Stars: 数据未公开 简介: MLX 框架的视觉语言模型实现 亮点/为什么火: 在 Apple Silicon 上运行的高效视觉语言模型，针对 M 系列芯片优化 快速上手: 基于 Apple MLX 框架，在 Mac 上运行视觉语言模型推理 项目链接: GitHub 🔥 TimesFM 作者: Google 语言: 未标注 ⭐ Stars: 数据未公开 简介: Google 发布的时间序列预测基础模型 亮点/为什么火: 首个预训练的时间序列基础模型，在预测领域实现突破性进展 快速上手: 可用于各种时间序列预测任务，作为时间序列分析的通用基础模型 项目链接: GitHub 🔥 Onyx 作者: 未标注 语言: 未标注 ⭐ Stars: 数据未公开 简介: 全模型兼容的大语言模型应用平台 亮点/为什么火: 实现多种语言模型的兼容与统一调用，简化 AI 应用开发 快速上手: 提供统一接口调用不同的大语言模型，降低多模型集成复杂度 项目链接: 信息暂缺 🔥 AI Scientist 作者: 未标注 语言: 未标注 ⭐ Stars: 数据未公开 简介: 致力于推进 AI 科学研究的项目 亮点/为什么火: 专注于 AI 领域的科学研究与算法创新 快速上手: 面向研究人员和算法开发者 项目链接: 信息暂缺 数据来源：GitHub Trending、Brave 搜索
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-05 00:00:00 +0000 UTC'>April 5, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to GitHub 热门项目日报 - 2026-04-05" href="https://bothubpr.github.io/posts/github_daily_2026-04-05/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Daily News — 2026年4月4日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Daily News 📡 2026 年 4 月 4 日｜第 4 期
+快速了解今日 AI &amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。
+OpenClaw 曝出多个高危漏洞，可导致未授权权限提升 📌 来源：Ars Technica
+AI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 CVE-2026-33579 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户假设已遭入侵，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。
+新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器 📌 来源：Ars Technica
+安全研究人员演示了 GDDRHammer、GeForge 和 GPUBreach 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。
+Oracle 一边大规模裁员，一边狂递 H-1B 签证申请 📌 来源：HN
+Oracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在&#34;用外包签证员工替代本地工程师&#34;的用工模式是否合理。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-04 00:00:00 +0000 UTC'>April 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI Daily News — 2026年4月4日" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>极客早报 | 2026-04-12 | Ziv的极客日志</title>
+<meta name="keywords" content="AI, Daily News, Tech">
+<meta name="description" content="今日关键词：AI安全基准测试、零信任架构、普遍基本互联网、CI/CD整合、边缘数据库、TPM硬件安全
+
+小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑
+AI 安全公司 Aisle 研究显示，小型开源 AI 模型同样能发现 Mythos 模型识别的关键漏洞，揭示当前 AI 安全基准测试（AI Security Benchmark）的局限性。研究团队使用红队测试（Red Team Testing）方法，发现小型模型在特定漏洞检测任务上不逊于大型模型，挑战了&quot;规模越大越安全&quot;的假设。专家建议引入动态对抗评估（Dynamic Adversarial Evaluation）机制。
+专业术语：AI 安全基准测试（AI Security Benchmark）、红队测试（Red Team Testing）、Mythos 模型（Mythos Model）、威胁向量（Threat Vector）、动态对抗评估（Dynamic Adversarial Evaluation）
+
+AI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比
+RSAC 2026 大会上，Anthropic 将 Agent 拆分为大脑（推理）、手（临时容器）和会话日志三个互不信任的组件，实现最小权限原则（Principle of Least Privilege）；Nvidia NemoClaw 在单一沙箱内叠加四层安全防护（Multi-layer Security Sandbox）。两种方案在凭证隔离（Credential Isolation）上存在根本差异，安全审计员提醒需强制实施实时凭证轮换（Real-time Credential Rotation）机制。
+专业术语：零信任架构（Zero Trust Architecture）、最小权限原则（Principle of Least Privilege）、多层安全沙箱（Multi-layer Security Sandbox）、凭证隔离（Credential Isolation）、实时凭证轮换（Real-time Credential Rotation）
+
+韩国宣布引入「普遍基本移动互联网」，全球首创
+韩国政府宣布引入「普遍基本移动互联网」（Universal Basic Mobile Internet）政策，确保所有公民无论地域和收入水平均能接入互联网，成为全球首个将宽带接入列为基本权利（Basic Right to Broadband）的国家。计划到2027年实现99.9%人口覆盖，涵盖农村居民、老年人和低收入家庭。数字包容性（Digital Inclusion）倡导者认为此举对全球数字公平（Digital Equity）政策具有里程碑意义。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-12/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/ai-daily-news-2026-04-12/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/ai-daily-news-2026-04-12/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="极客早报 | 2026-04-12">
+  <meta property="og:description" content="今日关键词：AI安全基准测试、零信任架构、普遍基本互联网、CI/CD整合、边缘数据库、TPM硬件安全
+小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑 AI 安全公司 Aisle 研究显示，小型开源 AI 模型同样能发现 Mythos 模型识别的关键漏洞，揭示当前 AI 安全基准测试（AI Security Benchmark）的局限性。研究团队使用红队测试（Red Team Testing）方法，发现小型模型在特定漏洞检测任务上不逊于大型模型，挑战了&#34;规模越大越安全&#34;的假设。专家建议引入动态对抗评估（Dynamic Adversarial Evaluation）机制。
+专业术语：AI 安全基准测试（AI Security Benchmark）、红队测试（Red Team Testing）、Mythos 模型（Mythos Model）、威胁向量（Threat Vector）、动态对抗评估（Dynamic Adversarial Evaluation）
+AI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比 RSAC 2026 大会上，Anthropic 将 Agent 拆分为大脑（推理）、手（临时容器）和会话日志三个互不信任的组件，实现最小权限原则（Principle of Least Privilege）；Nvidia NemoClaw 在单一沙箱内叠加四层安全防护（Multi-layer Security Sandbox）。两种方案在凭证隔离（Credential Isolation）上存在根本差异，安全审计员提醒需强制实施实时凭证轮换（Real-time Credential Rotation）机制。
+专业术语：零信任架构（Zero Trust Architecture）、最小权限原则（Principle of Least Privilege）、多层安全沙箱（Multi-layer Security Sandbox）、凭证隔离（Credential Isolation）、实时凭证轮换（Real-time Credential Rotation）
+韩国宣布引入「普遍基本移动互联网」，全球首创 韩国政府宣布引入「普遍基本移动互联网」（Universal Basic Mobile Internet）政策，确保所有公民无论地域和收入水平均能接入互联网，成为全球首个将宽带接入列为基本权利（Basic Right to Broadband）的国家。计划到2027年实现99.9%人口覆盖，涵盖农村居民、老年人和低收入家庭。数字包容性（Digital Inclusion）倡导者认为此举对全球数字公平（Digital Equity）政策具有里程碑意义。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-12T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Daily News">
+    <meta property="article:tag" content="Tech">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="极客早报 | 2026-04-12">
+<meta name="twitter:description" content="今日关键词：AI安全基准测试、零信任架构、普遍基本互联网、CI/CD整合、边缘数据库、TPM硬件安全
+
+小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑
+AI 安全公司 Aisle 研究显示，小型开源 AI 模型同样能发现 Mythos 模型识别的关键漏洞，揭示当前 AI 安全基准测试（AI Security Benchmark）的局限性。研究团队使用红队测试（Red Team Testing）方法，发现小型模型在特定漏洞检测任务上不逊于大型模型，挑战了&quot;规模越大越安全&quot;的假设。专家建议引入动态对抗评估（Dynamic Adversarial Evaluation）机制。
+专业术语：AI 安全基准测试（AI Security Benchmark）、红队测试（Red Team Testing）、Mythos 模型（Mythos Model）、威胁向量（Threat Vector）、动态对抗评估（Dynamic Adversarial Evaluation）
+
+AI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比
+RSAC 2026 大会上，Anthropic 将 Agent 拆分为大脑（推理）、手（临时容器）和会话日志三个互不信任的组件，实现最小权限原则（Principle of Least Privilege）；Nvidia NemoClaw 在单一沙箱内叠加四层安全防护（Multi-layer Security Sandbox）。两种方案在凭证隔离（Credential Isolation）上存在根本差异，安全审计员提醒需强制实施实时凭证轮换（Real-time Credential Rotation）机制。
+专业术语：零信任架构（Zero Trust Architecture）、最小权限原则（Principle of Least Privilege）、多层安全沙箱（Multi-layer Security Sandbox）、凭证隔离（Credential Isolation）、实时凭证轮换（Real-time Credential Rotation）
+
+韩国宣布引入「普遍基本移动互联网」，全球首创
+韩国政府宣布引入「普遍基本移动互联网」（Universal Basic Mobile Internet）政策，确保所有公民无论地域和收入水平均能接入互联网，成为全球首个将宽带接入列为基本权利（Basic Right to Broadband）的国家。计划到2027年实现99.9%人口覆盖，涵盖农村居民、老年人和低收入家庭。数字包容性（Digital Inclusion）倡导者认为此举对全球数字公平（Digital Equity）政策具有里程碑意义。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "极客早报 | 2026-04-12",
+      "item": "https://bothubpr.github.io/posts/ai-daily-news-2026-04-12/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "极客早报 | 2026-04-12",
+  "name": "极客早报 | 2026-04-12",
+  "description": "今日关键词：AI安全基准测试、零信任架构、普遍基本互联网、CI/CD整合、边缘数据库、TPM硬件安全\n小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑 AI 安全公司 Aisle 研究显示，小型开源 AI 模型同样能发现 Mythos 模型识别的关键漏洞，揭示当前 AI 安全基准测试（AI Security Benchmark）的局限性。研究团队使用红队测试（Red Team Testing）方法，发现小型模型在特定漏洞检测任务上不逊于大型模型，挑战了\u0026quot;规模越大越安全\u0026quot;的假设。专家建议引入动态对抗评估（Dynamic Adversarial Evaluation）机制。\n专业术语：AI 安全基准测试（AI Security Benchmark）、红队测试（Red Team Testing）、Mythos 模型（Mythos Model）、威胁向量（Threat Vector）、动态对抗评估（Dynamic Adversarial Evaluation）\nAI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比 RSAC 2026 大会上，Anthropic 将 Agent 拆分为大脑（推理）、手（临时容器）和会话日志三个互不信任的组件，实现最小权限原则（Principle of Least Privilege）；Nvidia NemoClaw 在单一沙箱内叠加四层安全防护（Multi-layer Security Sandbox）。两种方案在凭证隔离（Credential Isolation）上存在根本差异，安全审计员提醒需强制实施实时凭证轮换（Real-time Credential Rotation）机制。\n专业术语：零信任架构（Zero Trust Architecture）、最小权限原则（Principle of Least Privilege）、多层安全沙箱（Multi-layer Security Sandbox）、凭证隔离（Credential Isolation）、实时凭证轮换（Real-time Credential Rotation）\n韩国宣布引入「普遍基本移动互联网」，全球首创 韩国政府宣布引入「普遍基本移动互联网」（Universal Basic Mobile Internet）政策，确保所有公民无论地域和收入水平均能接入互联网，成为全球首个将宽带接入列为基本权利（Basic Right to Broadband）的国家。计划到2027年实现99.9%人口覆盖，涵盖农村居民、老年人和低收入家庭。数字包容性（Digital Inclusion）倡导者认为此举对全球数字公平（Digital Equity）政策具有里程碑意义。\n",
+  "keywords": [
+    "AI", "Daily News", "Tech"
+  ],
+  "articleBody": "今日关键词：AI安全基准测试、零信任架构、普遍基本互联网、CI/CD整合、边缘数据库、TPM硬件安全\n小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑 AI 安全公司 Aisle 研究显示，小型开源 AI 模型同样能发现 Mythos 模型识别的关键漏洞，揭示当前 AI 安全基准测试（AI Security Benchmark）的局限性。研究团队使用红队测试（Red Team Testing）方法，发现小型模型在特定漏洞检测任务上不逊于大型模型，挑战了\"规模越大越安全\"的假设。专家建议引入动态对抗评估（Dynamic Adversarial Evaluation）机制。\n专业术语：AI 安全基准测试（AI Security Benchmark）、红队测试（Red Team Testing）、Mythos 模型（Mythos Model）、威胁向量（Threat Vector）、动态对抗评估（Dynamic Adversarial Evaluation）\nAI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比 RSAC 2026 大会上，Anthropic 将 Agent 拆分为大脑（推理）、手（临时容器）和会话日志三个互不信任的组件，实现最小权限原则（Principle of Least Privilege）；Nvidia NemoClaw 在单一沙箱内叠加四层安全防护（Multi-layer Security Sandbox）。两种方案在凭证隔离（Credential Isolation）上存在根本差异，安全审计员提醒需强制实施实时凭证轮换（Real-time Credential Rotation）机制。\n专业术语：零信任架构（Zero Trust Architecture）、最小权限原则（Principle of Least Privilege）、多层安全沙箱（Multi-layer Security Sandbox）、凭证隔离（Credential Isolation）、实时凭证轮换（Real-time Credential Rotation）\n韩国宣布引入「普遍基本移动互联网」，全球首创 韩国政府宣布引入「普遍基本移动互联网」（Universal Basic Mobile Internet）政策，确保所有公民无论地域和收入水平均能接入互联网，成为全球首个将宽带接入列为基本权利（Basic Right to Broadband）的国家。计划到2027年实现99.9%人口覆盖，涵盖农村居民、老年人和低收入家庭。数字包容性（Digital Inclusion）倡导者认为此举对全球数字公平（Digital Equity）政策具有里程碑意义。\n专业术语：普遍基本移动互联网（Universal Basic Mobile Internet）、基本权利（Basic Right to Broadband）、数字包容性（Digital Inclusion）、数字公平（Digital Equity）、宽带基础设施（Broadband Infrastructure）\nCirrus Labs 宣布加入 OpenAI，剑指 AI Agent 基础设施 知名 CI/CD 平台 Cirrus Labs 宣布加入 OpenAI，将在 AI Agent 开发工具链（AI Agent Toolchain）领域展开深度整合。Cirrus Labs 以快速、可扩展的 CI/CD（持续集成/持续部署）服务闻名，其分布式构建缓存（Distributed Build Cache）技术可显著缩短开发迭代周期。此次合作被视为 OpenAI 扩展 Agent 生态系统（Agent Ecosystem）的关键一步。\n专业术语：CI/CD（持续集成/持续部署，Continuous Integration/Continuous Deployment）、AI Agent 工具链（AI Agent Toolchain）、分布式构建缓存（Distributed Build Cache）、Agent 生态系统（Agent Ecosystem）、API 集成（API Integration）\nSQLite 3.53.0 正式发布：性能与功能双升级 SQLite 3.53.0 版本正式发布，带来查询优化（Query Optimization）和 JSON 支持增强。作为全球部署最广泛的数据库引擎，新版本改进了查询规划器（Query Planner），复杂连接查询性能提升最高40%，并新增对 JSON Patch（RFC 6902）的原生支持，进一步巩固了其在边缘计算（Edge Computing）和嵌入式场景的领先地位。\n专业术语：查询优化（Query Optimization）、数据库引擎（Database Engine）、查询规划器（Query Planner）、边缘计算（Edge Computing）、JSON Patch（RFC 6902）\n将 SSH 密钥存入 TPM 芯片：安全与便利的新平衡 开发者社区探讨将 SSH 私钥存储在 TPM（可信平台模块，Trusted Platform Module）芯片中，通过硬件级保护（Hardware-level Protection）防止密钥被恶意软件窃取。TPM 2.0 规范提供安全的密钥存储接口，密钥永远无法以明文形式导出。该方案可有效防御供应链攻击（Supply Chain Attack）和键盘记录器（Keylogger），特别适合服务器集群（Server Cluster）环境。\n专业术语：可信平台模块（Trusted Platform Module, TPM）、硬件级保护（Hardware-level Protection）、TPM 2.0 规范（TPM 2.0 Specification）、供应链攻击（Supply Chain Attack）、服务器集群（Server Cluster）\nPolymarket 投注内容误入 Google News，Google 确认系「错误」 Polymarket 预测市场（Prediction Market）的投注链接一度出现在 Google News 搜索结果中，与合法新闻并列，引发市场操纵（Market Manipulation）担忧。Polymarket 是基于区块链的预测市场平台，用户可对现实事件结果进行押注。Google 发言人表示这是系统错误（System Error），相关内容已移除。此事件引发对算法内容审核（Algorithmic Content Moderation）的讨论。\n专业术语：预测市场（Prediction Market）、市场操纵（Market Manipulation）、系统错误（System Error）、算法内容审核（Algorithmic Content Moderation）、搜索引擎算法（Search Engine Algorithm）\n《New Yorker》Sam Altman 专访封面图使用 AI 生成引发争议 《New Yorker》为 Sam Altman 人物专访创作的 AI 生成封面图引发争议，插画师 David Szauder 虽披露使用 AI 工具，但艺术家群体担忧 AI 生成图像对传统插画行业的冲击。封面使用扩散模型（Diffusion Model）生成。批评者指出，未经明确标注可能误导读者对创作来源（Attribution of Creation）的认知，行业需建立新的伦理框架（Ethical Framework）和标注标准（Disclosure Standard）。\n专业术语：扩散模型（Diffusion Model）、AI 伦理（AI Ethics）、创作来源（Attribution of Creation）、伦理框架（Ethical Framework）、标注标准（Disclosure Standard）\nRust 供应链安全警钟：依赖树中的潜在攻击面 安全研究人员分析 Rust 生态系统的供应链脆弱性，发现 crates.io 依赖树中存在可被利用的攻击路径。恶意包（Malicious Package）可通过依赖混淆（Dependency Confusion）和域名仿冒（Typosquatting）等手段入侵开发环境，实现供应链投毒（Supply Chain Poisoning）。Rust 安全工作组建议启用 Cargo 锁定文件验证，并定期运行 cargo-audit 工具扫描已知漏洞（Known Vulnerability）数据库。\n专业术语：供应链安全（Supply Chain Security）、恶意包（Malicious Package）、依赖混淆（Dependency Confusion）、供应链投毒（Supply Chain Poisoning）、cargo-audit 工具（cargo-audit Tool）\n比特币矿工每产一枚 BTC 亏损 1.9 万美元，挖矿难度下降难挽颓势 比特币挖矿难度（Bitcoin Mining Difficulty）近期下降 7.8%，但矿工仍面临每枚 BTC 约1.9万美元亏损，电力成本高企与 BTC 价格低迷双重挤压，挖矿业进入新一轮洗牌期。ASIC 矿机（Application-Specific Integrated Circuit, ASIC）哈希率再创新高，能源密集型 PoW（工作量证明，Proof of Work）共识模式可持续性再受质疑。部分矿工转向可再生能源（Renewable Energy）以降低成本。\n专业术语：工作量证明（Proof of Work, PoW）、ASIC 矿机（Application-Specific Integrated Circuit, ASIC）、挖矿难度（Mining Difficulty）、哈希率（Hash Rate）、可再生能源（Renewable Energy）\n本早报由 AI 自动生成，内容基于公开数据整理，仅供参考。\n",
+  "wordCount" : "298",
+  "inLanguage": "en",
+  "datePublished": "2026-04-12T00:00:00Z",
+  "dateModified": "2026-04-12T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/ai-daily-news-2026-04-12/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      极客早报 | 2026-04-12
+    </h1>
+    <div class="post-meta"><span title='2026-04-12 00:00:00 +0000 UTC'>April 12, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%b0%8f%e5%9e%8b-ai-%e6%a8%a1%e5%9e%8b%e5%8f%91%e7%8e%b0%e4%b8%8e-mythos-%e7%9b%b8%e5%90%8c%e7%9a%84%e9%ab%98%e5%8d%b1%e6%bc%8f%e6%b4%9eai-%e5%ae%89%e5%85%a8%e8%be%b9%e7%95%8c%e5%ad%98%e7%96%91" aria-label="小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑">小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑</a></li>
+                <li>
+                    <a href="#ai-agent-%e9%9b%b6%e4%bf%a1%e4%bb%bb%e6%9e%b6%e6%9e%84%e5%ae%a1%e8%ae%a1anthropic-%e4%b8%8e-nvidia-%e6%96%b9%e6%a1%88%e5%af%b9%e6%af%94" aria-label="AI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比">AI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比</a></li>
+                <li>
+                    <a href="#%e9%9f%a9%e5%9b%bd%e5%ae%a3%e5%b8%83%e5%bc%95%e5%85%a5%e6%99%ae%e9%81%8d%e5%9f%ba%e6%9c%ac%e7%a7%bb%e5%8a%a8%e4%ba%92%e8%81%94%e7%bd%91%e5%85%a8%e7%90%83%e9%a6%96%e5%88%9b" aria-label="韩国宣布引入「普遍基本移动互联网」，全球首创">韩国宣布引入「普遍基本移动互联网」，全球首创</a></li>
+                <li>
+                    <a href="#cirrus-labs-%e5%ae%a3%e5%b8%83%e5%8a%a0%e5%85%a5-openai%e5%89%91%e6%8c%87-ai-agent-%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd" aria-label="Cirrus Labs 宣布加入 OpenAI，剑指 AI Agent 基础设施">Cirrus Labs 宣布加入 OpenAI，剑指 AI Agent 基础设施</a></li>
+                <li>
+                    <a href="#sqlite-3530-%e6%ad%a3%e5%bc%8f%e5%8f%91%e5%b8%83%e6%80%a7%e8%83%bd%e4%b8%8e%e5%8a%9f%e8%83%bd%e5%8f%8c%e5%8d%87%e7%ba%a7" aria-label="SQLite 3.53.0 正式发布：性能与功能双升级">SQLite 3.53.0 正式发布：性能与功能双升级</a></li>
+                <li>
+                    <a href="#%e5%b0%86-ssh-%e5%af%86%e9%92%a5%e5%ad%98%e5%85%a5-tpm-%e8%8a%af%e7%89%87%e5%ae%89%e5%85%a8%e4%b8%8e%e4%be%bf%e5%88%a9%e7%9a%84%e6%96%b0%e5%b9%b3%e8%a1%a1" aria-label="将 SSH 密钥存入 TPM 芯片：安全与便利的新平衡">将 SSH 密钥存入 TPM 芯片：安全与便利的新平衡</a></li>
+                <li>
+                    <a href="#polymarket-%e6%8a%95%e6%b3%a8%e5%86%85%e5%ae%b9%e8%af%af%e5%85%a5-google-newsgoogle-%e7%a1%ae%e8%ae%a4%e7%b3%bb%e9%94%99%e8%af%af" aria-label="Polymarket 投注内容误入 Google News，Google 确认系「错误」">Polymarket 投注内容误入 Google News，Google 确认系「错误」</a></li>
+                <li>
+                    <a href="#new-yorkersam-altman-%e4%b8%93%e8%ae%bf%e5%b0%81%e9%9d%a2%e5%9b%be%e4%bd%bf%e7%94%a8-ai-%e7%94%9f%e6%88%90%e5%bc%95%e5%8f%91%e4%ba%89%e8%ae%ae" aria-label="《New Yorker》Sam Altman 专访封面图使用 AI 生成引发争议">《New Yorker》Sam Altman 专访封面图使用 AI 生成引发争议</a></li>
+                <li>
+                    <a href="#rust-%e4%be%9b%e5%ba%94%e9%93%be%e5%ae%89%e5%85%a8%e8%ad%a6%e9%92%9f%e4%be%9d%e8%b5%96%e6%a0%91%e4%b8%ad%e7%9a%84%e6%bd%9c%e5%9c%a8%e6%94%bb%e5%87%bb%e9%9d%a2" aria-label="Rust 供应链安全警钟：依赖树中的潜在攻击面">Rust 供应链安全警钟：依赖树中的潜在攻击面</a></li>
+                <li>
+                    <a href="#%e6%af%94%e7%89%b9%e5%b8%81%e7%9f%bf%e5%b7%a5%e6%af%8f%e4%ba%a7%e4%b8%80%e6%9e%9a-btc-%e4%ba%8f%e6%8d%9f-19-%e4%b8%87%e7%be%8e%e5%85%83%e6%8c%96%e7%9f%bf%e9%9a%be%e5%ba%a6%e4%b8%8b%e9%99%8d%e9%9a%be%e6%8c%bd%e9%a2%93%e5%8a%bf" aria-label="比特币矿工每产一枚 BTC 亏损 1.9 万美元，挖矿难度下降难挽颓势">比特币矿工每产一枚 BTC 亏损 1.9 万美元，挖矿难度下降难挽颓势</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><strong>今日关键词</strong>：AI安全基准测试、零信任架构、普遍基本互联网、CI/CD整合、边缘数据库、TPM硬件安全</p>
+<hr>
+<h3 id="小型-ai-模型发现与-mythos-相同的高危漏洞ai-安全边界存疑">小型 AI 模型发现与 Mythos 相同的高危漏洞，AI 安全边界存疑<a hidden class="anchor" aria-hidden="true" href="#小型-ai-模型发现与-mythos-相同的高危漏洞ai-安全边界存疑">#</a></h3>
+<p>AI 安全公司 Aisle 研究显示，小型开源 AI 模型同样能发现 Mythos 模型识别的关键漏洞，揭示当前 AI 安全基准测试（AI Security Benchmark）的局限性。研究团队使用红队测试（Red Team Testing）方法，发现小型模型在特定漏洞检测任务上不逊于大型模型，挑战了&quot;规模越大越安全&quot;的假设。专家建议引入动态对抗评估（Dynamic Adversarial Evaluation）机制。</p>
+<p><strong>专业术语</strong>：AI 安全基准测试（AI Security Benchmark）、红队测试（Red Team Testing）、Mythos 模型（Mythos Model）、威胁向量（Threat Vector）、动态对抗评估（Dynamic Adversarial Evaluation）</p>
+<hr>
+<h3 id="ai-agent-零信任架构审计anthropic-与-nvidia-方案对比">AI Agent 零信任架构审计：Anthropic 与 Nvidia 方案对比<a hidden class="anchor" aria-hidden="true" href="#ai-agent-零信任架构审计anthropic-与-nvidia-方案对比">#</a></h3>
+<p>RSAC 2026 大会上，Anthropic 将 Agent 拆分为大脑（推理）、手（临时容器）和会话日志三个互不信任的组件，实现最小权限原则（Principle of Least Privilege）；Nvidia NemoClaw 在单一沙箱内叠加四层安全防护（Multi-layer Security Sandbox）。两种方案在凭证隔离（Credential Isolation）上存在根本差异，安全审计员提醒需强制实施实时凭证轮换（Real-time Credential Rotation）机制。</p>
+<p><strong>专业术语</strong>：零信任架构（Zero Trust Architecture）、最小权限原则（Principle of Least Privilege）、多层安全沙箱（Multi-layer Security Sandbox）、凭证隔离（Credential Isolation）、实时凭证轮换（Real-time Credential Rotation）</p>
+<hr>
+<h3 id="韩国宣布引入普遍基本移动互联网全球首创">韩国宣布引入「普遍基本移动互联网」，全球首创<a hidden class="anchor" aria-hidden="true" href="#韩国宣布引入普遍基本移动互联网全球首创">#</a></h3>
+<p>韩国政府宣布引入「普遍基本移动互联网」（Universal Basic Mobile Internet）政策，确保所有公民无论地域和收入水平均能接入互联网，成为全球首个将宽带接入列为基本权利（Basic Right to Broadband）的国家。计划到2027年实现99.9%人口覆盖，涵盖农村居民、老年人和低收入家庭。数字包容性（Digital Inclusion）倡导者认为此举对全球数字公平（Digital Equity）政策具有里程碑意义。</p>
+<p><strong>专业术语</strong>：普遍基本移动互联网（Universal Basic Mobile Internet）、基本权利（Basic Right to Broadband）、数字包容性（Digital Inclusion）、数字公平（Digital Equity）、宽带基础设施（Broadband Infrastructure）</p>
+<hr>
+<h3 id="cirrus-labs-宣布加入-openai剑指-ai-agent-基础设施">Cirrus Labs 宣布加入 OpenAI，剑指 AI Agent 基础设施<a hidden class="anchor" aria-hidden="true" href="#cirrus-labs-宣布加入-openai剑指-ai-agent-基础设施">#</a></h3>
+<p>知名 CI/CD 平台 Cirrus Labs 宣布加入 OpenAI，将在 AI Agent 开发工具链（AI Agent Toolchain）领域展开深度整合。Cirrus Labs 以快速、可扩展的 CI/CD（持续集成/持续部署）服务闻名，其分布式构建缓存（Distributed Build Cache）技术可显著缩短开发迭代周期。此次合作被视为 OpenAI 扩展 Agent 生态系统（Agent Ecosystem）的关键一步。</p>
+<p><strong>专业术语</strong>：CI/CD（持续集成/持续部署，Continuous Integration/Continuous Deployment）、AI Agent 工具链（AI Agent Toolchain）、分布式构建缓存（Distributed Build Cache）、Agent 生态系统（Agent Ecosystem）、API 集成（API Integration）</p>
+<hr>
+<h3 id="sqlite-3530-正式发布性能与功能双升级">SQLite 3.53.0 正式发布：性能与功能双升级<a hidden class="anchor" aria-hidden="true" href="#sqlite-3530-正式发布性能与功能双升级">#</a></h3>
+<p>SQLite 3.53.0 版本正式发布，带来查询优化（Query Optimization）和 JSON 支持增强。作为全球部署最广泛的数据库引擎，新版本改进了查询规划器（Query Planner），复杂连接查询性能提升最高40%，并新增对 JSON Patch（RFC 6902）的原生支持，进一步巩固了其在边缘计算（Edge Computing）和嵌入式场景的领先地位。</p>
+<p><strong>专业术语</strong>：查询优化（Query Optimization）、数据库引擎（Database Engine）、查询规划器（Query Planner）、边缘计算（Edge Computing）、JSON Patch（RFC 6902）</p>
+<hr>
+<h3 id="将-ssh-密钥存入-tpm-芯片安全与便利的新平衡">将 SSH 密钥存入 TPM 芯片：安全与便利的新平衡<a hidden class="anchor" aria-hidden="true" href="#将-ssh-密钥存入-tpm-芯片安全与便利的新平衡">#</a></h3>
+<p>开发者社区探讨将 SSH 私钥存储在 TPM（可信平台模块，Trusted Platform Module）芯片中，通过硬件级保护（Hardware-level Protection）防止密钥被恶意软件窃取。TPM 2.0 规范提供安全的密钥存储接口，密钥永远无法以明文形式导出。该方案可有效防御供应链攻击（Supply Chain Attack）和键盘记录器（Keylogger），特别适合服务器集群（Server Cluster）环境。</p>
+<p><strong>专业术语</strong>：可信平台模块（Trusted Platform Module, TPM）、硬件级保护（Hardware-level Protection）、TPM 2.0 规范（TPM 2.0 Specification）、供应链攻击（Supply Chain Attack）、服务器集群（Server Cluster）</p>
+<hr>
+<h3 id="polymarket-投注内容误入-google-newsgoogle-确认系错误">Polymarket 投注内容误入 Google News，Google 确认系「错误」<a hidden class="anchor" aria-hidden="true" href="#polymarket-投注内容误入-google-newsgoogle-确认系错误">#</a></h3>
+<p>Polymarket 预测市场（Prediction Market）的投注链接一度出现在 Google News 搜索结果中，与合法新闻并列，引发市场操纵（Market Manipulation）担忧。Polymarket 是基于区块链的预测市场平台，用户可对现实事件结果进行押注。Google 发言人表示这是系统错误（System Error），相关内容已移除。此事件引发对算法内容审核（Algorithmic Content Moderation）的讨论。</p>
+<p><strong>专业术语</strong>：预测市场（Prediction Market）、市场操纵（Market Manipulation）、系统错误（System Error）、算法内容审核（Algorithmic Content Moderation）、搜索引擎算法（Search Engine Algorithm）</p>
+<hr>
+<h3 id="new-yorkersam-altman-专访封面图使用-ai-生成引发争议">《New Yorker》Sam Altman 专访封面图使用 AI 生成引发争议<a hidden class="anchor" aria-hidden="true" href="#new-yorkersam-altman-专访封面图使用-ai-生成引发争议">#</a></h3>
+<p>《New Yorker》为 Sam Altman 人物专访创作的 AI 生成封面图引发争议，插画师 David Szauder 虽披露使用 AI 工具，但艺术家群体担忧 AI 生成图像对传统插画行业的冲击。封面使用扩散模型（Diffusion Model）生成。批评者指出，未经明确标注可能误导读者对创作来源（Attribution of Creation）的认知，行业需建立新的伦理框架（Ethical Framework）和标注标准（Disclosure Standard）。</p>
+<p><strong>专业术语</strong>：扩散模型（Diffusion Model）、AI 伦理（AI Ethics）、创作来源（Attribution of Creation）、伦理框架（Ethical Framework）、标注标准（Disclosure Standard）</p>
+<hr>
+<h3 id="rust-供应链安全警钟依赖树中的潜在攻击面">Rust 供应链安全警钟：依赖树中的潜在攻击面<a hidden class="anchor" aria-hidden="true" href="#rust-供应链安全警钟依赖树中的潜在攻击面">#</a></h3>
+<p>安全研究人员分析 Rust 生态系统的供应链脆弱性，发现 crates.io 依赖树中存在可被利用的攻击路径。恶意包（Malicious Package）可通过依赖混淆（Dependency Confusion）和域名仿冒（Typosquatting）等手段入侵开发环境，实现供应链投毒（Supply Chain Poisoning）。Rust 安全工作组建议启用 Cargo 锁定文件验证，并定期运行 cargo-audit 工具扫描已知漏洞（Known Vulnerability）数据库。</p>
+<p><strong>专业术语</strong>：供应链安全（Supply Chain Security）、恶意包（Malicious Package）、依赖混淆（Dependency Confusion）、供应链投毒（Supply Chain Poisoning）、cargo-audit 工具（cargo-audit Tool）</p>
+<hr>
+<h3 id="比特币矿工每产一枚-btc-亏损-19-万美元挖矿难度下降难挽颓势">比特币矿工每产一枚 BTC 亏损 1.9 万美元，挖矿难度下降难挽颓势<a hidden class="anchor" aria-hidden="true" href="#比特币矿工每产一枚-btc-亏损-19-万美元挖矿难度下降难挽颓势">#</a></h3>
+<p>比特币挖矿难度（Bitcoin Mining Difficulty）近期下降 7.8%，但矿工仍面临每枚 BTC 约1.9万美元亏损，电力成本高企与 BTC 价格低迷双重挤压，挖矿业进入新一轮洗牌期。ASIC 矿机（Application-Specific Integrated Circuit, ASIC）哈希率再创新高，能源密集型 PoW（工作量证明，Proof of Work）共识模式可持续性再受质疑。部分矿工转向可再生能源（Renewable Energy）以降低成本。</p>
+<p><strong>专业术语</strong>：工作量证明（Proof of Work, PoW）、ASIC 矿机（Application-Specific Integrated Circuit, ASIC）、挖矿难度（Mining Difficulty）、哈希率（Hash Rate）、可再生能源（Renewable Energy）</p>
+<hr>
+<p><em>本早报由 AI 自动生成，内容基于公开数据整理，仅供参考。</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bothubpr.github.io/tags/ai/">AI</a></li>
+      <li><a href="https://bothubpr.github.io/tags/daily-news/">Daily News</a></li>
+      <li><a href="https://bothubpr.github.io/tags/tech/">Tech</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

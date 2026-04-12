@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>安全 on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/tags/%E5%AE%89%E5%85%A8/</link>
+    <description>Recent content in 安全 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 07 Apr 2026 08:00:00 +0800</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/tags/%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Daily News — 2026年4月7日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-07/</link>
+      <pubDate>Tue, 07 Apr 2026 08:00:00 +0800</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-07/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;阅读更多极客日报，欢迎订阅 &lt;a href=&#34;https://github.com/your-repo/ai-daily-news&#34;&gt;GitHub 仓库&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;ai-daily-news--2026年4月7日&#34;&gt;AI Daily News — 2026年4月7日&lt;/h1&gt;
+&lt;p&gt;今天是 2026 年 4 月 7 日，星期二。今天的极客早报包含 10 条重要新闻，涵盖安全漏洞、隐私风波、量子计算、产品发布和 AI 辅助编程等多个领域。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-安全与隐私&#34;&gt;🔐 安全与隐私&lt;/h2&gt;
+&lt;h3 id=&#34;openclaw-爆高危漏洞任意配对用户可获管理员权限cvss-最高-98-分&#34;&gt;OpenClaw 爆高危漏洞：任意配对用户可获管理员权限，CVSS 最高 9.8 分&lt;/h3&gt;
+&lt;p&gt;热门的 AI Agent 工具 OpenClaw（GitHub 34.7 万星）被曝三个高危漏洞，其中 &lt;strong&gt;CVE-2026-33579&lt;/strong&gt; 评分高达 8.1–9.8 分。攻击者仅凭最低级别配对权限即可提升至管理员身份，安全研究人员建议用户&lt;strong&gt;假设已遭入侵&lt;/strong&gt;。漏洞已在上周修复，建议所有用户立即检查权限设置。&lt;/p&gt;
+&lt;p&gt;来源：&lt;a href=&#34;https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;adobe-被发现秘密修改系统-hosts-文件以检测-creative-cloud-安装状态&#34;&gt;Adobe 被发现秘密修改系统 hosts 文件以检测 Creative Cloud 安装状态&lt;/h3&gt;
+&lt;p&gt;Adobe Creative Cloud 被发现会&lt;strong&gt;秘密修改用户系统 hosts 文件&lt;/strong&gt;，用于检测软件是否安装。这一行为引发隐私与安全社区强烈抗议，122+ 分讨论聚焦软件厂商的系统级权限滥用问题。Adobe 尚未对此事作出正式回应。&lt;/p&gt;
+&lt;p&gt;来源：&lt;a href=&#34;https://www.osnews.com/story/144737/adobe-secretly-modifies-your-hosts-file-for-the-stupidest-reason/&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-重大事件&#34;&gt;🚨 重大事件&lt;/h2&gt;
+&lt;h3 id=&#34;德国警方公布-gandcrab-和-revil-勒索软件组织核心成员身份&#34;&gt;德国警方公布 GandCrab 和 REvil 勒索软件组织核心成员身份&lt;/h3&gt;
+&lt;p&gt;德国执法部门首次公开披露 GandCrab 和 REvil 两大勒索软件组织多名核心成员的真实身份信息，被视为对有组织网络犯罪跨国追逃的&lt;strong&gt;重大突破&lt;/strong&gt;。GandCrab 曾造成全球数十亿美元损失，REvil 则多次发起大规模勒索攻击。213+ 分热议背后是全球勒索攻击持续高发的安全困局。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Daily News — 2026年4月4日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/</guid>
+      <description>&lt;h1 id=&#34;ai-daily-news-&#34;&gt;AI Daily News 📡&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;2026 年 4 月 4 日｜第 4 期&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;快速了解今日 AI &amp;amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;openclaw-曝出多个高危漏洞可导致未授权权限提升&#34;&gt;OpenClaw 曝出多个高危漏洞，可导致未授权权限提升&lt;/h3&gt;
+&lt;p&gt;📌 来源：&lt;a href=&#34;https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 &lt;strong&gt;CVE-2026-33579&lt;/strong&gt; 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户&lt;strong&gt;假设已遭入侵&lt;/strong&gt;，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;新型-rowhammer-攻击可完全控制搭载-nvidia-gpu-的机器&#34;&gt;新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器&lt;/h3&gt;
+&lt;p&gt;📌 来源：&lt;a href=&#34;https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安全研究人员演示了 &lt;strong&gt;GDDRHammer、GeForge 和 GPUBreach&lt;/strong&gt; 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;oracle-一边大规模裁员一边狂递-h-1b-签证申请&#34;&gt;Oracle 一边大规模裁员，一边狂递 H-1B 签证申请&lt;/h3&gt;
+&lt;p&gt;📌 来源：&lt;a href=&#34;https://nationaltoday.com/us/tx/austin/news/2026/04/03/oracle-files-thousands-of-h-1b-visa-petitions-amid-mass-layoffs/&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在&amp;quot;用外包签证员工替代本地工程师&amp;quot;的用工模式是否合理。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Daily News — 2026年4月3日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-03/</link>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-03/</guid>
+      <description>每日 AI 与科技要闻速递，涵盖 Gemma 4 开源模型、Cursor 3 代码编辑器、Microsoft 新基础模型等热点事件。</description>
+    </item>
+    <item>
+      <title>AI Daily News — 2026年4月1日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-01/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-01/</guid>
+      <description>&lt;h1 id=&#34;ai-daily-news--2026年4月1日&#34;&gt;AI Daily News — 2026年4月1日&lt;/h1&gt;
+&lt;p&gt;各位极客朋友早上好！欢迎收听今天的&lt;strong&gt;极客早报&lt;/strong&gt;，我是你们的老朋友。4月的第一天，科技圈依然热闹非凡——OpenAI 拿到天价融资、GitHub 公开 15 年运行数据、安全圈又爆供应链攻击。话不多说，来看今天的内容。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

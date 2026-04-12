@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>科技资讯 on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/categories/%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/</link>
+    <description>Recent content in 科技资讯 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/categories/%E7%A7%91%E6%8A%80%E8%B5%84%E8%AE%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Daily News — 2026年4月4日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/</guid>
+      <description>&lt;h1 id=&#34;ai-daily-news-&#34;&gt;AI Daily News 📡&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;2026 年 4 月 4 日｜第 4 期&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;快速了解今日 AI &amp;amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;openclaw-曝出多个高危漏洞可导致未授权权限提升&#34;&gt;OpenClaw 曝出多个高危漏洞，可导致未授权权限提升&lt;/h3&gt;
+&lt;p&gt;📌 来源：&lt;a href=&#34;https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;AI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 &lt;strong&gt;CVE-2026-33579&lt;/strong&gt; 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户&lt;strong&gt;假设已遭入侵&lt;/strong&gt;，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;新型-rowhammer-攻击可完全控制搭载-nvidia-gpu-的机器&#34;&gt;新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器&lt;/h3&gt;
+&lt;p&gt;📌 来源：&lt;a href=&#34;https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安全研究人员演示了 &lt;strong&gt;GDDRHammer、GeForge 和 GPUBreach&lt;/strong&gt; 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;oracle-一边大规模裁员一边狂递-h-1b-签证申请&#34;&gt;Oracle 一边大规模裁员，一边狂递 H-1B 签证申请&lt;/h3&gt;
+&lt;p&gt;📌 来源：&lt;a href=&#34;https://nationaltoday.com/us/tx/austin/news/2026/04/03/oracle-files-thousands-of-h-1b-visa-petitions-amid-mass-layoffs/&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在&amp;quot;用外包签证员工替代本地工程师&amp;quot;的用工模式是否合理。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Daily News · 2026-03-31</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-03-31/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-03-31/</guid>
+      <description>每日 AI 与科技新闻速递 · 2026-03-31</description>
+    </item>
+    <item>
+      <title>AI Daily News | 2026-03-30</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-03-30/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-03-30/</guid>
+      <description>每日 AI 与科技新闻速递，涵盖网络安全、AI 伦理、开源工具、建筑科技与移动互联网等多个领域。</description>
+    </item>
+  </channel>
+</rss>

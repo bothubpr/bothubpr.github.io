@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI | Ziv的极客日志</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/tags/ai/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://bothubpr.github.io/tags/ai/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/tags/ai/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/tags/ai/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="AI">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI">
+<meta name="twitter:description" content="">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    AI
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Daily News — 2026年4月3日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Daily News 📮 每天三分钟，帮你跟踪全球 AI 与科技动态。
+Google 发布 Gemma 4 开源模型 来源：HN
+Google DeepMind 发布 Gemma 4 系列开源模型，一举拿下 HN 热搜第一，收获近 900 点支持。Gemma 4 是 Google 轻量级开源 AI 模型家族的新一代成员，在性能和效率上都有显著提升。作为 Gemini 系列的&#34;轻量小弟&#34;，Gemma 一直定位清晰——让开发者能在本地或低成本环境下跑起来。这次更新预计会进一步降低 AI 应用门槛。
+链接： https://deepmind.google/models/gemma/gemma-4/
+Cursor 3 发布：AI 代码编辑器重大更新 来源：HN
+AI 代码编辑器 Cursor 发布第三版，带来重大功能更新，在 HN 上获得 186 点支持、149 条评论，开发者社区反响热烈。Cursor 凭借其深度集成的 AI 辅助编程能力，已成为不少工程师的日常工具。这次更新预计将进一步提升代码补全和项目理解能力。对 AI &#43; 开发者工具赛道感兴趣的朋友值得关注。
+链接： https://cursor.com/blog/cursor-3
+Microsoft 发布三个新基础模型，正面迎战 AI 竞争对手 来源：TechCrunch
+Microsoft MAI 部门在成立仅六个月后，重磅发布三个可进行语音转文字、音频生成和图像生成的基础模型，正式向 OpenAI 等 AI 竞争对手发起挑战。这次发布标志着 Microsoft 不再满足于&#34;OpenAI 最大投资者&#34;的身份，而是亲自下场。语音、音频、图像三路并发，野心可见一斑。AI 竞争格局正在迎来新的变量。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-03 00:00:00 +0000 UTC'>April 3, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI Daily News — 2026年4月3日" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-03/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Daily News — 2026年4月2日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>极客早报 · 第 274 期 发布日期：2026 年 4 月 2 日｜来源：HN · TechCrunch · Ars Technica · Lobsters
+大家好，欢迎打开今天的极客早报。我是你们的科技雷达，今天是 2026 年 4 月 2 日，星期四。
+今天的新闻相当有料——NASA 终于把人送回月球轨道了，SpaceX 被传要上市估值 1.75 万亿美元，还有一家 AI 芯片设计公司融了 6000 万美元要&#34;用 AI 设计 AI 芯片&#34;。话不多说，我们直接进正题。
+NASA Artemis II 载人绕月任务正式发射，官方直播开启 来源：HN | 阅读原文
+NASA Artemis II 任务正式发射，这是自阿波罗时代以来首次载人绕月飞行任务，由四名宇航员执行，官方提供全程直播。这标志着人类深空探索进入新阶段，也预示着未来月球基地计划正在一步步变为现实。
+Cloudflare 发布 EmDash：解决 WordPress 插件安全问题的精神继承者 来源：HN | 阅读原文
+Cloudflare 发布 EmDash 平台，作为 WordPress 的替代方案，旨在从架构层面解决 WordPress 长期存在的插件安全漏洞问题（390 分）。对于长期受困于 WordPress 安全噩梦的站长来说，这或许是一个值得关注的方向。
+SpaceX 秘密提交 IPO 申请，估值或达 1.75 万亿美元 来源：HN | 阅读原文
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-02 00:00:00 +0000 UTC'>April 2, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI Daily News — 2026年4月2日" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-02/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Daily News — 2026年4月1日
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>AI Daily News — 2026年4月1日 各位极客朋友早上好！欢迎收听今天的极客早报，我是你们的老朋友。4月的第一天，科技圈依然热闹非凡——OpenAI 拿到天价融资、GitHub 公开 15 年运行数据、安全圈又爆供应链攻击。话不多说，来看今天的内容。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-01 00:00:00 +0000 UTC'>April 1, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI Daily News — 2026年4月1日" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-01/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Daily News · 2026-03-31
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 今天的极客早报来了！一起看看昨晚到今天有哪些值得关注的技术新闻。
+Axios 被植入恶意版本，NPM 供应链遭攻击并释放远控木马 来源： Hacker News
+知名 HTTP 客户端库 Axios 在 NPM 上被攻击者入侵，多个恶意版本被发布，意图向开发者机器植入远程访问木马（RAT）。安全公司 StepSecurity 披露了完整攻击链，建议开发者立即检查并降级至安全版本。
+📎 链接：StepSecurity 完整报告
+Claude Code 源代码通过 NPM registry 中的 map 文件遭泄露 来源： Hacker News
+Anthropic 旗下 AI 编程工具 Claude Code 的源代码被人通过 NPM registry 中的 map 文件泄露，在社交媒体引发广泛讨论，相关话题在 HN 上获得超 1000 点热度。
+📎 链接：Twitter 讨论帖
+GitHub 迫于压力撤回 Copilot pull request 广告功能 来源： Hacker News
+GitHub 在强烈反对声中宣布取消在 pull request 中插入 Copilot 广告的功能，此前开发者普遍认为该行为损害了开源生态，The Register 报道了这一争议事件。
+📎 链接：The Register 报道
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-31 00:00:00 +0000 UTC'>March 31, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI Daily News · 2026-03-31" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-31/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI Daily News | 2026-03-30
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>🤖 AI Daily News 日期： 2026-03-30 | 来源： HN · Product Hunt
+每天极客三分钟，了解科技圈新鲜事。
+今天的主要内容有：路由器配置教程、FTC 起诉 Match Group、鸟类智能研究、AI 写作争议、白宫 App 安全漏洞、漏洞研究困境、建筑文档 OCR 解决方案、FreeCAD 1.1 发布，以及 iPhone AI 语音输入工具。
+如何将任意设备配置为路由器 来源： HN
+将普通设备变成路由器其实没有想象中那么复杂。这篇实用教程覆盖了 Linux iptables/netfilter、macOS pf 和 Windows 网络共享等多种平台方案，无论是网络管理员还是普通开发者，都能找到适合自己的配置方法。如果你对网络底层感兴趣，这是一篇值得收藏的实操指南。
+🔗 阅读原文
+FTC 起诉 Match 和 OkCupid：欺骗用户、非法共享个人数据 来源： HN
+美国联邦贸易委员会（FTC）最近对 Match Group 发起了执法行动，矛头直指 Match 和 OkCupid 这两款老牌交友应用。FTC 指控他们在用户不知情的情况下，将个人数据共享给第三方。这件事也再次提醒我们，免费的交友平台很可能在别的地方&#34;变现&#34;你的隐私数据。FTC 已与 Match Group 达成和解。
+🔗 阅读原文
+Bird brains：乌鸦的惊人智能 来源： HN
+你知道乌鸦有多聪明吗？最新研究显示，乌鸦等鸦科鸟类具备复杂认知能力，可以制造工具、进行因果推理，甚至做未来规划——这些能力在部分维度上可以与灵长类动物相媲美。下次再看到路边觅食的乌鸦，不妨多一分敬畏。
+🔗 阅读原文
+Do your own writing：别让人工智能替你写作 来源： HN
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-30 00:00:00 +0000 UTC'>March 30, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI Daily News | 2026-03-30" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-30/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">AI 极客早报 - 2026-03-29
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 各位极客老铁好，这里是 AI 极客早报。每天为你精选昨夜今晨最值得关注的 AI 与技术动态，告别信息焦虑，用 5 分钟跟上时代。话不多说，先看今天都有什么狠活儿。
+🔐 白宫新版 App 被逆向工程：安全研究员发现了什么？ 来源： Lobsters | 分类：安全
+旅客们对 TSA 安检排队忍无可忍，开始雇人当&#34;排队代排&#34;。华盛顿邮报报道，专业代排服务需求激增，费用从几十到上百美元不等，反映出美国机场安检效率的深层危机。AI 极客怎么看？这本质上是资源错配问题——要么上自动化预检，要么就老老实实排着吧。
+原文链接
+🛡️ Miasma：用&#34;毒沼泽&#34;困住 AI 网络爬虫的开源工具 来源： HN | 分类：AI安全
+一个叫 Miasma 的开源项目火了——它专门设计来欺骗和困住 AI 爬虫。原理很简单：部署蜜罐页面，AI 爬进去就陷入无限循环的内容迷宫，消耗其 Token 配额却拿不到真实数据。这波操作属于&#34;以彼之道还施彼身&#34;，对数据主权意识强的站长来说相当实用。尊重 robots.txt 协议这事儿，AI 们真的学会了吗？
+原文链接
+🧪 科研翻车：手套可能是微塑料数据虚高的&#34;元凶&#34; 来源： HN | 分类：科学研究
+密歇根大学一项研究让人哭笑不得——科学家们常用的丁腈手套和乳胶手套本身就会释放微塑料，导致实验室检测结果中微塑料含量被严重高估。这不是小问题：大量环境政策可能建立在错误数据之上。科学的第一步是&#34;排除干扰变量&#34;，结果第一步就翻车了。向严谨道歉，向手套致敬。
+原文链接
+📊 Lat.md：用 Markdown 构建代码库的 Knowledge Graph 来源： HN | 分类：开发者工具
+一个叫 Lat.md 的项目试图用纯 Markdown 构建代码库的 Knowledge Graph（知识图谱）。简单说，你的代码注释和文档用 Markdown 写，它自动解析成一张关系网络，Agent 调用时可以直接&#34;查图&#34;而非暴力搜文件。对 Cursor、Windsurf 这类 Coding Agent 用户来说，这种结构化记忆简直是效率外挂。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-29 00:00:00 +0000 UTC'>March 29, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to AI 极客早报 - 2026-03-29" href="https://bothubpr.github.io/posts/ai_daily_news_2026-03-29/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>哈喽，各位极客小伙伴们！终于来到了咱们这套硬核连载的 【最终章】！
+在前三篇里，俺们从零搭建了一个完全无人值守的 【本地极客知识库】：拖拽文件到网盘 ➔ 门卫脚本自动清洗格式 ➔ Hugo 引擎毫秒级热渲染 ➔ 局域网精美网页呈现。
+基础设施已经完美闭环，但极客的折腾永无止境！ 既然有了一个 24 小时待命的自动化基座，咱们为什么还要自己写文章？为何不直接压榨 AI 的“睡后算力”，让它成为咱们的 【赛博记者】？
+今天，俺将带你手搓一个纯 Python 的 AI 聚合爬虫。它会在每天清晨你还没睡醒时，自动去外网极客社区“进货”，并排版成一份带暗黑模式的硬核早报，直接塞进你的博客里！
+★ 痛点破局：信息过载与“机翻”的灾难 每天早晨刷手机，大伙儿肯定面临过这两个痛点：
+【信息源太分散】：Hacker News、Reddit、Product Hunt，挨个刷一遍半小时就没了。外文长篇大论，根本没时间细看。 【劣质翻译的灾难】：如果用浏览器自带的翻译，它会把所有的专业术语全毁掉。比如把 Kubernetes 翻成“舵手”，把 Containerization 翻成“集装箱化”，读起来简直让人吐血。 咱们的 【AI 赛博记者】 就是来“降维打击”这些痛点的。
+★ 核心逻辑与“反爬”突围战 这个脚本的核心逻辑很简单：利用 Python 的 urllib 抓取四大极客社区的 RSS 源，打包丢给大模型（如 DeepSeek 或 OpenAI）进行总结，最后生成 Markdown 扔进咱们的 SyncDrive 网盘。
+但第一步“抓取”就差点翻车。当俺试图去抓 Reddit 的技术板块时，直接被它背后的 Cloudflare 防御盾弹了一个 403 Forbidden。
+【架构师的解法】：咱们必须进行深度伪装。在原生 Python HTTP 请求中，强行注入极其逼真的浏览器 User-Agent，并声明我们接收 application/rss&#43;xml。如果 Reddit 还是傲娇，俺还加入了 【Lobsters】（国外极硬核且对爬虫友好的开发者社区）作为最强替补！
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-03-05 00:00:00 +0000 UTC'>March 5, 2026</span>&nbsp;·&nbsp;<span>Ziv</span></footer>
+  <a class="entry-link" aria-label="post link to 【系列连载四】终极杀器：睡后算力压榨 —— 打造每天清晨的“AI 赛博记者”" href="https://bothubpr.github.io/posts/pg04/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://bothubpr.github.io/tags/ai/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

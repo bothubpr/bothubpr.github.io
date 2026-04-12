@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8081&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫 | Ziv的极客日志</title>
 <meta name="keywords" content="自动化, Python, 极客教程">
 <meta name="description" content="哈喽，各位极客小伙伴们！
@@ -32,16 +32,16 @@ draft: false
 但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。
 俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。">
 <meta name="author" content="Ziv">
-<link rel="canonical" href="http://localhost:8081/posts/pg03/">
+<link rel="canonical" href="https://bothubpr.github.io/posts/pg03/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:8081/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:8081/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:8081/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:8081/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:8081/safari-pinned-tab.svg">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:8081/posts/pg03/">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/pg03/">
 <noscript>
     <style>
         #theme-toggle,
@@ -121,13 +121,114 @@ draft: false
         font-size: 12px !important;
     }
 </style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/pg03/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫">
+  <meta property="og:description" content="哈喽，各位极客小伙伴们！
+在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。
+这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：
+--- title: &#34;我的日记&#34; date: 2026-03-04 draft: false --- 如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。 大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！
+★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫” 既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。
+它的工作逻辑极度简单粗暴：
+24 小时死死盯着咱们的 SyncDrive 网盘。 只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。 它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！ 只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。
+★ 极客的傲骨：抛弃第三方库，纯手搓轮询 在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。
+但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。
+俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-04T00:00:00+00:00">
+    <meta property="article:tag" content="自动化">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="极客教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫">
+<meta name="twitter:description" content="哈喽，各位极客小伙伴们！
+在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。
+这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。
+但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：
+---
+title: &#34;我的日记&#34;
+date: 2026-03-04
+draft: false
+---
+如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。
+大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！
+★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫”
+既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。
+它的工作逻辑极度简单粗暴：
 
+24 小时死死盯着咱们的 SyncDrive 网盘。
+只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。
+它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！
+
+只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。
+★ 极客的傲骨：抛弃第三方库，纯手搓轮询
+在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。
+但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。
+俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫",
+      "item": "https://bothubpr.github.io/posts/pg03/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫",
+  "name": "【系列连载三】解放双手：纯 Python 手搓“自动格式清洗”门卫",
+  "description": "哈喽，各位极客小伙伴们！\n在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。\n这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：\n--- title: \u0026#34;我的日记\u0026#34; date: 2026-03-04 draft: false --- 如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。 大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！\n★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫” 既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。\n它的工作逻辑极度简单粗暴：\n24 小时死死盯着咱们的 SyncDrive 网盘。 只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。 它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！ 只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。\n★ 极客的傲骨：抛弃第三方库，纯手搓轮询 在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。\n但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。\n俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。\n",
+  "keywords": [
+    "自动化", "Python", "极客教程"
+  ],
+  "articleBody": "哈喽，各位极客小伙伴们！\n在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 【死死盯住】 了它。\n这听起来很完美：你往网盘扔一个 .md 文件，网页就自动生成。 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 【YAML 格式头（Front Matter）】。比如这样：\n--- title: \"我的日记\" date: 2026-03-04 draft: false --- 如果少了这个头，Hugo 要么把你当空气（不渲染），要么排版直接崩盘。 大伙儿想想，俺们好不容易实现了“随手记、随手拖拽”，难道每次扔文件前，还要用文本编辑器小心翼翼地敲上这几行代码？这绝对是 【反人类的伪自动化】！\n★ 痛点破局：我们需要一个 24 小时待命的“赛博门卫” 既然要追求极致的自动化，那咱们就贯彻到底。俺决定在 Ubuntu 服务器里，安插一个 【格式清洗门卫】。\n它的工作逻辑极度简单粗暴：\n24 小时死死盯着咱们的 SyncDrive 网盘。 只要发现新进来的 .md 文件没有 --- 这个标志性的 YAML 头部。 它就瞬间冲上去，把文件的名字提取出来当做 title，抓取当前的系统时间当做 date，然后强行把标准的 YAML 头部 【缝合】 进文章里！ 只要门卫处理得足够快，Hugo 引擎就会立刻接手，整个过程在毫秒间完成。你在这头刚把文件拖进网页，在那头刷新博客，一篇排版精美的文章就已经诞生了。\n★ 极客的傲骨：抛弃第三方库，纯手搓轮询 在写这个脚本时，很多人第一反应是去 pip install watchdog（一个专门监控文件系统的 Python 库）。\n但俺作为首席架构师，有着不可妥协的 【代码洁癖】：能用系统标准库解决的，绝不引入哪怕一个第三方依赖！这叫降低系统的信息熵，提升 【绝对的稳定性】。\n俺直接动用 Python 自带的 os 和 time 库，写了一个极度轻量的死循环轮询脚本。\n核心 Python 代码大公开 请在你的 Ubuntu ~/Desktop/auto_sub/ 目录下（俺专门用来放自动化脚本的文件夹），新建一个文件叫 format_cleaner.py，把下面这段代码贴进去：\nimport os import time import datetime # 【核心配置区】死死盯住咱们的网盘 WATCH_DIR = \"/home/ziv/Desktop/SyncDrive\" def process_file(filepath): # 读取原始内容 with open(filepath, 'r', encoding='utf-8') as f: content = f.read() # 【核心逻辑】：如果文件不包含 YAML 头（即不是以 --- 开头） if not content.startswith(\"---\"): print(f\"[{datetime.datetime.now().strftime('%H:%M:%S')}] 发现毛坯文件，开始清洗: {filepath}\") # 提取文件名（去掉 .md 后缀，把减号替换为空格当做优雅的标题） filename = os.path.basename(filepath) title = os.path.splitext(filename)[0].replace(\"-\", \" \") today = datetime.datetime.now().strftime(\"%Y-%m-%d\") # 强行生成标准 YAML 头部 front_matter = f\"---\\ntitle: '{title}'\\ndate: {today}\\ndraft: false\\n---\\n\\n\" # 缝合并覆盖保存 with open(filepath, 'w', encoding='utf-8') as f: f.write(front_matter + content) def start_watchdog(): print(f\"★ 赛博门卫已就绪，正在监听目录: {WATCH_DIR}\") while True: try: # 遍历网盘里的所有 .md 文件 for filename in os.listdir(WATCH_DIR): if filename.endswith(\".md\"): filepath = os.path.join(WATCH_DIR, filename) process_file(filepath) except Exception as e: print(f\"监听出错，忽略异常继续运行: {e}\") # 每次巡逻完，门卫打个盹（3秒），避免榨干 CPU time.sleep(3) if __name__ == \"__main__\": start_watchdog() ★ 终极点火：让门卫隐入后台 (nohup 魔法) 脚本写好了，如果直接用 python3 format_cleaner.py 跑，终端一关，门卫就下班了。这显然不行。\n我们需要用 Linux 的祖传魔法 【nohup（不挂断）】，把它剥离出当前的终端会话，让它像幽灵一样永远运行在操作系统的后台。\n直接在终端敲下这行命令：\nnohup python3 /home/ziv/Desktop/auto_sub/format_cleaner.py \u003e /home/ziv/Desktop/auto_sub/cleaner.log 2\u003e\u00261 \u0026 敲完回车，哪怕你立刻拔掉连接 Ubuntu 的网线，这个特工也会在后台 24 小时不知疲倦地为你清洗数据。\n★ 下期预告：Killer App 登场 至此，咱们的“全自动知识库基座”已经 【100% 竣工】。 你获得了这个时代极其稀缺的体验：真正的无感发布。随手写点什么，拖进去，网页见。\n但在下一篇，也是本系列的最核心的 【终极杀器篇】 中，俺将为你展示，有了这个强大的全自动基座后，咱们能整出怎样惊世骇俗的“大活”。\n俺将带你写一段融合了大模型 API 的 Python 爬虫，打造一个每天清晨 6 点准时为你汇总 Hacker News、Reddit 最热外文资讯，并自动翻译、提炼摘要的 【AI 赛博记者】！\n它会在你睡觉时自动爬取、自动写稿、自动清洗格式、自动触发 Hugo 渲染。明早你醒来，一份专属的极客早报就已经躺在你的博客里了！\n咱们终章见！\n",
+  "wordCount" : "245",
+  "inLanguage": "en",
+  "datePublished": "2026-03-04T00:00:00Z",
+  "dateModified": "2026-03-04T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/pg03/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:8081/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -195,7 +296,7 @@ draft: false
 <p>在前两篇连载中，咱们成功用 Filebrowser 搭起了网盘，并用虚拟挂载让 Hugo 引擎 <strong>【死死盯住】</strong> 了它。</p>
 <p>这听起来很完美：你往网盘扔一个 <code>.md</code> 文件，网页就自动生成。
 但现实很快给了俺一记响亮的耳光：Hugo 引擎是个极度死板的“八股文考官”。它要求你的每一篇文章，开头必须带有严格的 <strong>【YAML 格式头（Front Matter）】</strong>。比如这样：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;我的日记&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2026-03-04</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">draft</span>: <span style="color:#66d9ef">false</span>
@@ -217,7 +318,7 @@ draft: false
 <p>俺直接动用 Python 自带的 <code>os</code> 和 <code>time</code> 库，写了一个极度轻量的死循环轮询脚本。</p>
 <h3 id="核心-python-代码大公开">核心 Python 代码大公开<a hidden class="anchor" aria-hidden="true" href="#核心-python-代码大公开">#</a></h3>
 <p>请在你的 Ubuntu <code>~/Desktop/auto_sub/</code> 目录下（俺专门用来放自动化脚本的文件夹），新建一个文件叫 <code>format_cleaner.py</code>，把下面这段代码贴进去：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> datetime
 </span></span><span style="display:flex;"><span>
@@ -266,7 +367,7 @@ draft: false
 <p>脚本写好了，如果直接用 <code>python3 format_cleaner.py</code> 跑，终端一关，门卫就下班了。这显然不行。</p>
 <p>我们需要用 Linux 的祖传魔法 <strong>【nohup（不挂断）】</strong>，把它剥离出当前的终端会话，让它像幽灵一样永远运行在操作系统的后台。</p>
 <p>直接在终端敲下这行命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nohup python3 /home/ziv/Desktop/auto_sub/format_cleaner.py &gt; /home/ziv/Desktop/auto_sub/cleaner.log 2&gt;&amp;<span style="color:#ae81ff">1</span> &amp;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nohup python3 /home/ziv/Desktop/auto_sub/format_cleaner.py &gt; /home/ziv/Desktop/auto_sub/cleaner.log 2&gt;&amp;<span style="color:#ae81ff">1</span> &amp;
 </span></span></code></pre></div><p>敲完回车，哪怕你立刻拔掉连接 Ubuntu 的网线，这个特工也会在后台 24 小时不知疲倦地为你清洗数据。</p>
 <h2 id="-下期预告killer-app-登场">★ 下期预告：Killer App 登场<a hidden class="anchor" aria-hidden="true" href="#-下期预告killer-app-登场">#</a></h2>
 <p>至此，咱们的“全自动知识库基座”已经 <strong>【100% 竣工】</strong>。
@@ -281,16 +382,16 @@ draft: false
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:8081/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/">自动化</a></li>
-      <li><a href="http://localhost:8081/tags/python/">Python</a></li>
-      <li><a href="http://localhost:8081/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/">极客教程</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/">自动化</a></li>
+      <li><a href="https://bothubpr.github.io/tags/python/">Python</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E6%9E%81%E5%AE%A2%E6%95%99%E7%A8%8B/">极客教程</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:8081/">Ziv的极客日志</a></span> · 
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
 
     <span>
         Powered by

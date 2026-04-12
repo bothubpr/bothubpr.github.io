@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI日报 on Ziv的极客日志</title>
+    <link>https://bothubpr.github.io/categories/ai%E6%97%A5%E6%8A%A5/</link>
+    <description>Recent content in AI日报 on Ziv的极客日志</description>
+    <generator>Hugo -- 0.146.0</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 07 Apr 2026 08:00:00 +0800</lastBuildDate>
+    <atom:link href="https://bothubpr.github.io/categories/ai%E6%97%A5%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Daily News — 2026年4月7日</title>
+      <link>https://bothubpr.github.io/posts/ai_daily_news_2026-04-07/</link>
+      <pubDate>Tue, 07 Apr 2026 08:00:00 +0800</pubDate>
+      <guid>https://bothubpr.github.io/posts/ai_daily_news_2026-04-07/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;阅读更多极客日报，欢迎订阅 &lt;a href=&#34;https://github.com/your-repo/ai-daily-news&#34;&gt;GitHub 仓库&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;ai-daily-news--2026年4月7日&#34;&gt;AI Daily News — 2026年4月7日&lt;/h1&gt;
+&lt;p&gt;今天是 2026 年 4 月 7 日，星期二。今天的极客早报包含 10 条重要新闻，涵盖安全漏洞、隐私风波、量子计算、产品发布和 AI 辅助编程等多个领域。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-安全与隐私&#34;&gt;🔐 安全与隐私&lt;/h2&gt;
+&lt;h3 id=&#34;openclaw-爆高危漏洞任意配对用户可获管理员权限cvss-最高-98-分&#34;&gt;OpenClaw 爆高危漏洞：任意配对用户可获管理员权限，CVSS 最高 9.8 分&lt;/h3&gt;
+&lt;p&gt;热门的 AI Agent 工具 OpenClaw（GitHub 34.7 万星）被曝三个高危漏洞，其中 &lt;strong&gt;CVE-2026-33579&lt;/strong&gt; 评分高达 8.1–9.8 分。攻击者仅凭最低级别配对权限即可提升至管理员身份，安全研究人员建议用户&lt;strong&gt;假设已遭入侵&lt;/strong&gt;。漏洞已在上周修复，建议所有用户立即检查权限设置。&lt;/p&gt;
+&lt;p&gt;来源：&lt;a href=&#34;https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/&#34;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;adobe-被发现秘密修改系统-hosts-文件以检测-creative-cloud-安装状态&#34;&gt;Adobe 被发现秘密修改系统 hosts 文件以检测 Creative Cloud 安装状态&lt;/h3&gt;
+&lt;p&gt;Adobe Creative Cloud 被发现会&lt;strong&gt;秘密修改用户系统 hosts 文件&lt;/strong&gt;，用于检测软件是否安装。这一行为引发隐私与安全社区强烈抗议，122+ 分讨论聚焦软件厂商的系统级权限滥用问题。Adobe 尚未对此事作出正式回应。&lt;/p&gt;
+&lt;p&gt;来源：&lt;a href=&#34;https://www.osnews.com/story/144737/adobe-secretly-modifies-your-hosts-file-for-the-stupidest-reason/&#34;&gt;HN&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-重大事件&#34;&gt;🚨 重大事件&lt;/h2&gt;
+&lt;h3 id=&#34;德国警方公布-gandcrab-和-revil-勒索软件组织核心成员身份&#34;&gt;德国警方公布 GandCrab 和 REvil 勒索软件组织核心成员身份&lt;/h3&gt;
+&lt;p&gt;德国执法部门首次公开披露 GandCrab 和 REvil 两大勒索软件组织多名核心成员的真实身份信息，被视为对有组织网络犯罪跨国追逃的&lt;strong&gt;重大突破&lt;/strong&gt;。GandCrab 曾造成全球数十亿美元损失，REvil 则多次发起大规模勒索攻击。213+ 分热议背后是全球勒索攻击持续高发的安全困局。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

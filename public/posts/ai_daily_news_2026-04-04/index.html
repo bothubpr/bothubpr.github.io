@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI Daily News — 2026年4月4日 | Ziv的极客日志</title>
+<meta name="keywords" content="AI, Daily News, 安全, 开源, AI Agent">
+<meta name="description" content="AI Daily News 📡
+2026 年 4 月 4 日｜第 4 期
+
+快速了解今日 AI &amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。
+
+OpenClaw 曝出多个高危漏洞，可导致未授权权限提升
+📌 来源：Ars Technica
+AI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 CVE-2026-33579 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户假设已遭入侵，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。
+
+新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器
+📌 来源：Ars Technica
+安全研究人员演示了 GDDRHammer、GeForge 和 GPUBreach 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。
+
+Oracle 一边大规模裁员，一边狂递 H-1B 签证申请
+📌 来源：HN
+Oracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在&quot;用外包签证员工替代本地工程师&quot;的用工模式是否合理。">
+<meta name="author" content="Ziv">
+<link rel="canonical" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d0273994bb9be5d1abd2d8a497ab46e33030dffcf730c29ef1ab0a4973103b16.css" integrity="sha256-0Cc5lLub5dGr0tikl6tG4zAw3/z3MMKe8asKSXMQOxY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://bothubpr.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bothubpr.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bothubpr.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://bothubpr.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://bothubpr.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><style>
+     
+    :root, html, body {
+        font-size: 14px !important; 
+    }
+    
+     
+    .post-content {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+    
+     
+    .post-title {
+        font-size: 2rem !important;
+    }
+    
+     
+    .post-content h1 { font-size: 2rem !important; }
+    .post-content h2 { font-size: 1.8rem !important; margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+    .post-content h3 { font-size: 1.5rem !important; }
+    .post-content h4 { font-size: 1.3rem !important; }
+    
+     
+    .highlight {
+        font-size: 12px !important;
+    }
+</style>
+<meta property="og:url" content="https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/">
+  <meta property="og:site_name" content="Ziv的极客日志">
+  <meta property="og:title" content="AI Daily News — 2026年4月4日">
+  <meta property="og:description" content="AI Daily News 📡 2026 年 4 月 4 日｜第 4 期
+快速了解今日 AI &amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。
+OpenClaw 曝出多个高危漏洞，可导致未授权权限提升 📌 来源：Ars Technica
+AI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 CVE-2026-33579 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户假设已遭入侵，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。
+新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器 📌 来源：Ars Technica
+安全研究人员演示了 GDDRHammer、GeForge 和 GPUBreach 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。
+Oracle 一边大规模裁员，一边狂递 H-1B 签证申请 📌 来源：HN
+Oracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在&#34;用外包签证员工替代本地工程师&#34;的用工模式是否合理。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-04T00:00:00+00:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Daily News">
+    <meta property="article:tag" content="安全">
+    <meta property="article:tag" content="开源">
+    <meta property="article:tag" content="AI Agent">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Daily News — 2026年4月4日">
+<meta name="twitter:description" content="AI Daily News 📡
+2026 年 4 月 4 日｜第 4 期
+
+快速了解今日 AI &amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。
+
+OpenClaw 曝出多个高危漏洞，可导致未授权权限提升
+📌 来源：Ars Technica
+AI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 CVE-2026-33579 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户假设已遭入侵，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。
+
+新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器
+📌 来源：Ars Technica
+安全研究人员演示了 GDDRHammer、GeForge 和 GPUBreach 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。
+
+Oracle 一边大规模裁员，一边狂递 H-1B 签证申请
+📌 来源：HN
+Oracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在&quot;用外包签证员工替代本地工程师&quot;的用工模式是否合理。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://bothubpr.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI Daily News — 2026年4月4日",
+      "item": "https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI Daily News — 2026年4月4日",
+  "name": "AI Daily News — 2026年4月4日",
+  "description": "AI Daily News 📡 2026 年 4 月 4 日｜第 4 期\n快速了解今日 AI \u0026amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。\nOpenClaw 曝出多个高危漏洞，可导致未授权权限提升 📌 来源：Ars Technica\nAI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 CVE-2026-33579 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户假设已遭入侵，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。\n新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器 📌 来源：Ars Technica\n安全研究人员演示了 GDDRHammer、GeForge 和 GPUBreach 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。\nOracle 一边大规模裁员，一边狂递 H-1B 签证申请 📌 来源：HN\nOracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在\u0026quot;用外包签证员工替代本地工程师\u0026quot;的用工模式是否合理。\n",
+  "keywords": [
+    "AI", "Daily News", "安全", "开源", "AI Agent"
+  ],
+  "articleBody": "AI Daily News 📡 2026 年 4 月 4 日｜第 4 期\n快速了解今日 AI \u0026 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。\nOpenClaw 曝出多个高危漏洞，可导致未授权权限提升 📌 来源：Ars Technica\nAI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 CVE-2026-33579 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户假设已遭入侵，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。\n新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器 📌 来源：Ars Technica\n安全研究人员演示了 GDDRHammer、GeForge 和 GPUBreach 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。\nOracle 一边大规模裁员，一边狂递 H-1B 签证申请 📌 来源：HN\nOracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在\"用外包签证员工替代本地工程师\"的用工模式是否合理。\nH.264 流媒体专利授权费暴涨 45 倍：从 10 万美元到 450 万美元 📌 来源：HN\n一家专利持有实体将 H.264 流媒体技术授权费从 10 万美元大幅提高至 450 万美元，涨幅达 45 倍。所有使用 H.264 视频编码的流媒体服务商——从 YouTube 到企业内训平台——均受到重大成本冲击。开源社区和视频行业对这类\"专利流氓\"行为表达了强烈批评，呼吁加速向 H.266/VVC 等替代编码标准迁移。\nClaude Code 发现 Linux 中隐藏 23 年的安全漏洞 📌 来源：Lobsters\n开发者在使用 Claude Code 进行常规代码审查时，意外发现了一个在 Linux 内核中存在 长达 23 年却从未被发现的漏洞。AI 在海量代码中发现人类长期遗漏的历史遗留问题，展示了 AI 辅助 code review 在安全审计领域的巨大潜力。这一发现也再次提醒：即使是被全球数百万服务器运行多年的老代码，也不能假设它是安全的。\n2026 年 4 月：用 Mac mini 本地跑 Ollama + Gemma 4 26B 指南 📌 来源：HN\n一篇详细教程展示了如何在 Mac mini M4 Pro 上本地运行 Ollama 并部署 Google 最新开源模型 Gemma 4 26B，包含全部配置步骤和环境变量说明。对于注重隐私、不希望数据上云或想降低 API 成本的开发者，本地部署已成热门选择。HN 热度 275 分，说明这个需求相当普遍。\nSSH 证书：比传统 SSH 密钥更安全的体验 📌 来源：HN\n一篇实践指南介绍如何用 SSH 证书 替代传统密钥认证，支持短期证书自动失效，大幅减少密钥泄露后的横向移动风险。相比每次新建服务器都要复制公钥的繁琐流程，证书体系在保持高安全性的同时也极大简化了运维。HN 热度 184 分，Lobsters 同步推荐，适合所有管理多台 Linux 服务器的工程师参考。\nBlogosphere：一个个人博客聚合 frontpage，帮助独立博客对抗算法 📌 来源：HN\n开发者创建了一个仿 HN 风格的个人博客聚合平台，从大量独立博客抓取最新文章，旨在对抗社交媒体和 AI 内容洪流，保持互联网多样性。 HN 热度高达 586 分，164 条评论，说明\"厌倦算法推荐、想回归有温度的独立写作\"是一个真实而强烈的需求。如果你厌倦了信息茧房，可以去 Blogosphere 找找那些还没被算法淹没的真实声音。\n伊朗攻击导致亚马逊巴林和迪拜可用区下线 📌 来源：HN\n伊朗军事打击行动导致 AWS 在巴林和迪拜的可用区（Availability Zone）遭受物理破坏而下线。这是首次因地缘政治冲突直接导致主要云 region 瘫痪的公开案例。业务连续性规划（BCP）通常很少考虑这种级别的地缘风险，云厂商的多可用区设计在此场景下也显得脆弱，引发了云架构高可用设计的新思考。\n每个新增依赖都是一场等待发生的供应链攻击 📌 来源：Lobsters\n开发者 Ben Hoyt 结合 Trivy 等真实供应链攻击案例，论述软件依赖的隐蔽风险：每引入一个 npm install，就可能引入一个未审计的信任链。文章呼吁开发者重新审视依赖管理策略——不是不用依赖，而是有意识地选择和管理依赖，在开发效率与供应链安全之间找到更健康的平衡点。\n首席架构师的深度阅读指南 本周最值得深读的三篇：\n🛡️ OpenClaw 漏洞报告 → 如果你在生产环境使用 OpenClaw，立即检查版本并假定已被入侵 📄 SSH 证书实践 → 长期管理多台机器的工程师值得花半天迁移到证书体系 🤖 AI Agent 记忆系统综述 → 构建可靠 AI 应用的理论基础，值得细读 以上就是今天的极客早报，我们明天见！🚀\n",
+  "wordCount" : "230",
+  "inLanguage": "en",
+  "datePublished": "2026-04-04T00:00:00Z",
+  "dateModified": "2026-04-04T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ziv"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://bothubpr.github.io/posts/ai_daily_news_2026-04-04/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ziv的极客日志",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bothubpr.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://bothubpr.github.io/" accesskey="h" title="Ziv的极客日志 (Alt + H)">Ziv的极客日志</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI Daily News — 2026年4月4日
+    </h1>
+    <div class="post-meta"><span title='2026-04-04 00:00:00 +0000 UTC'>April 4, 2026</span>&nbsp;·&nbsp;<span>Ziv</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#ai-daily-news-" aria-label="AI Daily News 📡">AI Daily News 📡</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#openclaw-%e6%9b%9d%e5%87%ba%e5%a4%9a%e4%b8%aa%e9%ab%98%e5%8d%b1%e6%bc%8f%e6%b4%9e%e5%8f%af%e5%af%bc%e8%87%b4%e6%9c%aa%e6%8e%88%e6%9d%83%e6%9d%83%e9%99%90%e6%8f%90%e5%8d%87" aria-label="OpenClaw 曝出多个高危漏洞，可导致未授权权限提升">OpenClaw 曝出多个高危漏洞，可导致未授权权限提升</a></li>
+                <li>
+                    <a href="#%e6%96%b0%e5%9e%8b-rowhammer-%e6%94%bb%e5%87%bb%e5%8f%af%e5%ae%8c%e5%85%a8%e6%8e%a7%e5%88%b6%e6%90%ad%e8%bd%bd-nvidia-gpu-%e7%9a%84%e6%9c%ba%e5%99%a8" aria-label="新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器">新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器</a></li>
+                <li>
+                    <a href="#oracle-%e4%b8%80%e8%be%b9%e5%a4%a7%e8%a7%84%e6%a8%a1%e8%a3%81%e5%91%98%e4%b8%80%e8%be%b9%e7%8b%82%e9%80%92-h-1b-%e7%ad%be%e8%af%81%e7%94%b3%e8%af%b7" aria-label="Oracle 一边大规模裁员，一边狂递 H-1B 签证申请">Oracle 一边大规模裁员，一边狂递 H-1B 签证申请</a></li>
+                <li>
+                    <a href="#h264-%e6%b5%81%e5%aa%92%e4%bd%93%e4%b8%93%e5%88%a9%e6%8e%88%e6%9d%83%e8%b4%b9%e6%9a%b4%e6%b6%a8-45-%e5%80%8d%e4%bb%8e-10-%e4%b8%87%e7%be%8e%e5%85%83%e5%88%b0-450-%e4%b8%87%e7%be%8e%e5%85%83" aria-label="H.264 流媒体专利授权费暴涨 45 倍：从 10 万美元到 450 万美元">H.264 流媒体专利授权费暴涨 45 倍：从 10 万美元到 450 万美元</a></li>
+                <li>
+                    <a href="#claude-code-%e5%8f%91%e7%8e%b0-linux-%e4%b8%ad%e9%9a%90%e8%97%8f-23-%e5%b9%b4%e7%9a%84%e5%ae%89%e5%85%a8%e6%bc%8f%e6%b4%9e" aria-label="Claude Code 发现 Linux 中隐藏 23 年的安全漏洞">Claude Code 发现 Linux 中隐藏 23 年的安全漏洞</a></li>
+                <li>
+                    <a href="#2026-%e5%b9%b4-4-%e6%9c%88%e7%94%a8-mac-mini-%e6%9c%ac%e5%9c%b0%e8%b7%91-ollama--gemma-4-26b-%e6%8c%87%e5%8d%97" aria-label="2026 年 4 月：用 Mac mini 本地跑 Ollama &#43; Gemma 4 26B 指南">2026 年 4 月：用 Mac mini 本地跑 Ollama + Gemma 4 26B 指南</a></li>
+                <li>
+                    <a href="#ssh-%e8%af%81%e4%b9%a6%e6%af%94%e4%bc%a0%e7%bb%9f-ssh-%e5%af%86%e9%92%a5%e6%9b%b4%e5%ae%89%e5%85%a8%e7%9a%84%e4%bd%93%e9%aa%8c" aria-label="SSH 证书：比传统 SSH 密钥更安全的体验">SSH 证书：比传统 SSH 密钥更安全的体验</a></li>
+                <li>
+                    <a href="#blogosphere%e4%b8%80%e4%b8%aa%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e8%81%9a%e5%90%88-frontpage%e5%b8%ae%e5%8a%a9%e7%8b%ac%e7%ab%8b%e5%8d%9a%e5%ae%a2%e5%af%b9%e6%8a%97%e7%ae%97%e6%b3%95" aria-label="Blogosphere：一个个人博客聚合 frontpage，帮助独立博客对抗算法">Blogosphere：一个个人博客聚合 frontpage，帮助独立博客对抗算法</a></li>
+                <li>
+                    <a href="#%e4%bc%8a%e6%9c%97%e6%94%bb%e5%87%bb%e5%af%bc%e8%87%b4%e4%ba%9a%e9%a9%ac%e9%80%8a%e5%b7%b4%e6%9e%97%e5%92%8c%e8%bf%aa%e6%8b%9c%e5%8f%af%e7%94%a8%e5%8c%ba%e4%b8%8b%e7%ba%bf" aria-label="伊朗攻击导致亚马逊巴林和迪拜可用区下线">伊朗攻击导致亚马逊巴林和迪拜可用区下线</a></li>
+                <li>
+                    <a href="#%e6%af%8f%e4%b8%aa%e6%96%b0%e5%a2%9e%e4%be%9d%e8%b5%96%e9%83%bd%e6%98%af%e4%b8%80%e5%9c%ba%e7%ad%89%e5%be%85%e5%8f%91%e7%94%9f%e7%9a%84%e4%be%9b%e5%ba%94%e9%93%be%e6%94%bb%e5%87%bb" aria-label="每个新增依赖都是一场等待发生的供应链攻击">每个新增依赖都是一场等待发生的供应链攻击</a></li></ul>
+                    
+                <li>
+                    <a href="#%e9%a6%96%e5%b8%ad%e6%9e%b6%e6%9e%84%e5%b8%88%e7%9a%84%e6%b7%b1%e5%ba%a6%e9%98%85%e8%af%bb%e6%8c%87%e5%8d%97" aria-label="首席架构师的深度阅读指南">首席架构师的深度阅读指南</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="ai-daily-news-">AI Daily News 📡<a hidden class="anchor" aria-hidden="true" href="#ai-daily-news-">#</a></h1>
+<p><strong>2026 年 4 月 4 日｜第 4 期</strong></p>
+<blockquote>
+<p>快速了解今日 AI &amp; 科技圈最值得关注的 10 条动态，涵盖安全漏洞、开放模型、硬件攻击、隐私合规四大方向。全文阅读约 5 分钟。</p></blockquote>
+<hr>
+<h3 id="openclaw-曝出多个高危漏洞可导致未授权权限提升">OpenClaw 曝出多个高危漏洞，可导致未授权权限提升<a hidden class="anchor" aria-hidden="true" href="#openclaw-曝出多个高危漏洞可导致未授权权限提升">#</a></h3>
+<p>📌 来源：<a href="https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/">Ars Technica</a></p>
+<p>AI 代理工具 OpenClaw（GitHub 347k stars）被发现三个高危漏洞，其中 <strong>CVE-2026-33579</strong> 评分高达 8.1-9.8/10，允许任意配对权限用户直接提升至管理员权限。安全研究人员建议所有用户<strong>假设已遭入侵</strong>，漏洞已于上周紧急修复。持有管理权限或开放配对端口的用户尤需注意，建议立即检查审计日志并重置凭证。</p>
+<hr>
+<h3 id="新型-rowhammer-攻击可完全控制搭载-nvidia-gpu-的机器">新型 Rowhammer 攻击可完全控制搭载 Nvidia GPU 的机器<a hidden class="anchor" aria-hidden="true" href="#新型-rowhammer-攻击可完全控制搭载-nvidia-gpu-的机器">#</a></h3>
+<p>📌 来源：<a href="https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/">Ars Technica</a></p>
+<p>安全研究人员演示了 <strong>GDDRHammer、GeForge 和 GPUBreach</strong> 三种新型 Rowhammer 攻击，通过在 Nvidia 高性能 GPU 上反复访问内存引发位翻转，最终获得主机 root 权限。云环境中单块 GPU 价值通常超过 8000 美元且多租户共享，风险极高。Nvidia 已收到通报并着手评估硬件级缓解方案。</p>
+<hr>
+<h3 id="oracle-一边大规模裁员一边狂递-h-1b-签证申请">Oracle 一边大规模裁员，一边狂递 H-1B 签证申请<a hidden class="anchor" aria-hidden="true" href="#oracle-一边大规模裁员一边狂递-h-1b-签证申请">#</a></h3>
+<p>📌 来源：<a href="https://nationaltoday.com/us/tx/austin/news/2026/04/03/oracle-files-thousands-of-h-1b-visa-petitions-amid-mass-layoffs/">HN</a></p>
+<p>Oracle 近日在裁员数千人的同时，向美国移民局提交了数千份 H-1B 签证申请，形成鲜明对比。社区对科技公司依赖外籍劳工而忽视本地员工的讨论再度升温。HN 热度 153 分，75 条评论，争议焦点集中在&quot;用外包签证员工替代本地工程师&quot;的用工模式是否合理。</p>
+<hr>
+<h3 id="h264-流媒体专利授权费暴涨-45-倍从-10-万美元到-450-万美元">H.264 流媒体专利授权费暴涨 45 倍：从 10 万美元到 450 万美元<a hidden class="anchor" aria-hidden="true" href="#h264-流媒体专利授权费暴涨-45-倍从-10-万美元到-450-万美元">#</a></h3>
+<p>📌 来源：<a href="https://www.tomshardware.com/service-providers/streaming/h264-streaming-license-fees-jump-from-100000-to-4-5-million">HN</a></p>
+<p>一家专利持有实体将 H.264 流媒体技术授权费从 10 万美元大幅提高至 <strong>450 万美元</strong>，涨幅达 45 倍。所有使用 H.264 视频编码的流媒体服务商——从 YouTube 到企业内训平台——均受到重大成本冲击。开源社区和视频行业对这类&quot;专利流氓&quot;行为表达了强烈批评，呼吁加速向 H.266/VVC 等替代编码标准迁移。</p>
+<hr>
+<h3 id="claude-code-发现-linux-中隐藏-23-年的安全漏洞">Claude Code 发现 Linux 中隐藏 23 年的安全漏洞<a hidden class="anchor" aria-hidden="true" href="#claude-code-发现-linux-中隐藏-23-年的安全漏洞">#</a></h3>
+<p>📌 来源：<a href="https://mtlynch.io/claude-code-found-linux-vulnerability/">Lobsters</a></p>
+<p>开发者在使用 Claude Code 进行常规代码审查时，意外发现了一个在 Linux 内核中存在 <strong>长达 23 年却从未被发现的漏洞</strong>。AI 在海量代码中发现人类长期遗漏的历史遗留问题，展示了 AI 辅助 code review 在安全审计领域的巨大潜力。这一发现也再次提醒：即使是被全球数百万服务器运行多年的老代码，也不能假设它是安全的。</p>
+<hr>
+<h3 id="2026-年-4-月用-mac-mini-本地跑-ollama--gemma-4-26b-指南">2026 年 4 月：用 Mac mini 本地跑 Ollama + Gemma 4 26B 指南<a hidden class="anchor" aria-hidden="true" href="#2026-年-4-月用-mac-mini-本地跑-ollama--gemma-4-26b-指南">#</a></h3>
+<p>📌 来源：<a href="https://gist.github.com/greenstevester/fc49b4e60a4fef9effc79066c1033ae5">HN</a></p>
+<p>一篇详细教程展示了如何在 <strong>Mac mini M4 Pro</strong> 上本地运行 Ollama 并部署 Google 最新开源模型 <strong>Gemma 4 26B</strong>，包含全部配置步骤和环境变量说明。对于注重隐私、不希望数据上云或想降低 API 成本的开发者，本地部署已成热门选择。HN 热度 275 分，说明这个需求相当普遍。</p>
+<hr>
+<h3 id="ssh-证书比传统-ssh-密钥更安全的体验">SSH 证书：比传统 SSH 密钥更安全的体验<a hidden class="anchor" aria-hidden="true" href="#ssh-证书比传统-ssh-密钥更安全的体验">#</a></h3>
+<p>📌 来源：<a href="https://jpmens.net/2026/04/03/ssh-certificates-the-better-ssh-experience/">HN</a></p>
+<p>一篇实践指南介绍如何用 <strong>SSH 证书</strong> 替代传统密钥认证，支持短期证书自动失效，大幅减少密钥泄露后的横向移动风险。相比每次新建服务器都要复制公钥的繁琐流程，证书体系在保持高安全性的同时也极大简化了运维。HN 热度 184 分，Lobsters 同步推荐，适合所有管理多台 Linux 服务器的工程师参考。</p>
+<hr>
+<h3 id="blogosphere一个个人博客聚合-frontpage帮助独立博客对抗算法">Blogosphere：一个个人博客聚合 frontpage，帮助独立博客对抗算法<a hidden class="anchor" aria-hidden="true" href="#blogosphere一个个人博客聚合-frontpage帮助独立博客对抗算法">#</a></h3>
+<p>📌 来源：<a href="https://text.blogosphere.app/">HN</a></p>
+<p>开发者创建了一个仿 HN 风格的<strong>个人博客聚合平台</strong>，从大量独立博客抓取最新文章，旨在对抗社交媒体和 AI 内容洪流，保持互联网多样性。 HN 热度高达 586 分，164 条评论，说明&quot;厌倦算法推荐、想回归有温度的独立写作&quot;是一个真实而强烈的需求。如果你厌倦了信息茧房，可以去 Blogosphere 找找那些还没被算法淹没的真实声音。</p>
+<hr>
+<h3 id="伊朗攻击导致亚马逊巴林和迪拜可用区下线">伊朗攻击导致亚马逊巴林和迪拜可用区下线<a hidden class="anchor" aria-hidden="true" href="#伊朗攻击导致亚马逊巴林和迪拜可用区下线">#</a></h3>
+<p>📌 来源：<a href="https://www.bigtechnology.com/p/iran-strikes-leave-amazon-availability">HN</a></p>
+<p>伊朗军事打击行动导致 AWS 在<strong>巴林和迪拜的可用区</strong>（Availability Zone）遭受物理破坏而下线。这是首次因地缘政治冲突直接导致主要云 region 瘫痪的公开案例。业务连续性规划（BCP）通常很少考虑这种级别的地缘风险，云厂商的多可用区设计在此场景下也显得脆弱，引发了云架构高可用设计的新思考。</p>
+<hr>
+<h3 id="每个新增依赖都是一场等待发生的供应链攻击">每个新增依赖都是一场等待发生的供应链攻击<a hidden class="anchor" aria-hidden="true" href="#每个新增依赖都是一场等待发生的供应链攻击">#</a></h3>
+<p>📌 来源：<a href="https://benhoyt.com/writings/dependencies/">Lobsters</a></p>
+<p>开发者 Ben Hoyt 结合 Trivy 等真实供应链攻击案例，论述软件依赖的隐蔽风险：每引入一个 npm install，就可能引入一个未审计的信任链。文章呼吁开发者重新审视依赖管理策略——不是不用依赖，而是<strong>有意识地选择和管理依赖</strong>，在开发效率与供应链安全之间找到更健康的平衡点。</p>
+<hr>
+<h2 id="首席架构师的深度阅读指南">首席架构师的深度阅读指南<a hidden class="anchor" aria-hidden="true" href="#首席架构师的深度阅读指南">#</a></h2>
+<p>本周最值得深读的三篇：</p>
+<ol>
+<li>🛡️ <strong>OpenClaw 漏洞报告</strong> → 如果你在生产环境使用 OpenClaw，立即检查版本并假定已被入侵</li>
+<li>📄 <strong>SSH 证书实践</strong> → 长期管理多台机器的工程师值得花半天迁移到证书体系</li>
+<li>🤖 <strong>AI Agent 记忆系统综述</strong> → 构建可靠 AI 应用的理论基础，值得细读</li>
+</ol>
+<blockquote>
+<p>以上就是今天的极客早报，我们明天见！🚀</p></blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://bothubpr.github.io/tags/ai/">AI</a></li>
+      <li><a href="https://bothubpr.github.io/tags/daily-news/">Daily News</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E5%AE%89%E5%85%A8/">安全</a></li>
+      <li><a href="https://bothubpr.github.io/tags/%E5%BC%80%E6%BA%90/">开源</a></li>
+      <li><a href="https://bothubpr.github.io/tags/ai-agent/">AI Agent</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://bothubpr.github.io/">Ziv的极客日志</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
